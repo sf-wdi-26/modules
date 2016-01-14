@@ -42,7 +42,7 @@ You should be able to...
 
 ###Fork our class repo
 
-* Navigate to the [class repo](https://github.com/sf-wdi-21/notes)
+* Navigate to the [class repo](https://github.com/sf-wdi-26/modules)
 * Fork it! 
 
 ![Fork](http://i.imgur.com/L9ABwKh.png)
@@ -55,8 +55,6 @@ You should be able to...
 * You should now be on your forked version
 * Clone it down to your machine by copying the text inside the `clone URL` textbox (both ssh & https URLs work)
 
-![](http://i.imgur.com/EhKvKsu.png)
-
 * In your terminal navigate to your `~/dev` folder and enter the command `git clone <YOUR CLONE URL HERE>`
 
 * You can now `ls` and be able to see a folder `notes` (feel free to rename the folder if you wish)
@@ -66,7 +64,7 @@ You should be able to...
 ###Point to Upstream
 
 * Lastly we need to give your local repo an alias that points to the original version of the class room notes (the one that we will update daily)
-* To do this you must type `git remote add upstream git@github.com:sf-wdi-21/notes.git` this command adds a remote alias named upstream which points to the URL given.
+* To do this you must type `git remote add upstream git@github.com:sf-wdi-26/modules.git` this command adds a remote alias named upstream which points to the URL given.
 * Type `git remote -v` again to make sure this was done correctly. You should now see 4 alias, 2 origin and 2 upstream
 
 ##Final Workflow
