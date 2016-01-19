@@ -16,37 +16,173 @@
 - Use chrome developer tools to interact with the DOM
 - Create javascript objects and functions
 
-Head to the [SF SPCA website](https://www.sfspca.org/) to get started.
+Head to the GitHub's [showcase](https://github.com/showcases) section to get started.
 
-##Select & Modify (15m)
+##Select & Modify: Str8-up H4cked (15m)
 
+####Mission
+Select each showcase element change them all to `WDI Rulez: str8-up h4cked`.
 
+![str8-up hacked](./images/str8-up-h4cked.png)
 
-##Create & Append (15m)
+---
 
-##Styling with Javascript (15m)
+####Guidance
 
-##Set Event Listeners (15m)
+* How we can identify all the showcase elements? Do they share any HTML attributes?
 
+<!--
+`.collection-card-title`
+-->
 
-**Tools to teach**
+* Once we've identified an attribute they all share, how can we select them all?
+	* Tip: try [`document.querySelectorAll(...)`](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll) to grab everything that matches a query. Note this is different to `.querySelector` which just selects the first item it finds.
 
-`for(...; ...; ...;)`
-`.querySelector`
-`.querySelectorAll`
-`document.createElement`
-`.appendChild`
-`.removeChild`
-`.parentNode`
-`.children`
-`.getAttribute`
-`.setAttribute`
-`.textContent`
-`.style`
-`.addEventListener`
-`.removeEventListener`
+<!--
+`var showcases = document.querySelectorAll("collection-card-title")`
+-->
 
-##Ref
+* Now that we have a collection, how do we change the text off all of them at once?
+	* Tip: iterate through the collection and reset the `textContent` of each.
 
-* https://github.com/wdi-sf-fall/notes/tree/master/week_01_fundamentals/day_4_dom_events
-* https://github.com/sf-wdi-14/notes/blob/master/lectures%2Fweek-1%2F_4_thursday%2Fdusk%2Fintroduction-to-dom.md
+<!--
+```
+for(var i = 0; i < showcases.length; i++) {
+	showcases[i].textContent = "WDI Rulez: str8-up h4cked"
+}
+```
+-->
+
+##Create & Append: More Octocat (15m)
+
+####Mission
+
+The internet loves cats. Let's put another octocat icon after the search box.
+
+![more-octocat](./images/more-octocat.png)
+
+---
+
+####Guidance
+
+* Grab the search box
+
+<!--
+`var searchBox = document.querySelector(".collection-listing-search")`
+-->
+
+* Create an span element in the console with the classes `.mega-octicon` and `.octicon-mark-github`
+
+<!--
+```
+var octocat = document.createElement("span")
+octocat.className = "mega-octicon"
+octocat.className += " octicon-mark-github"
+```
+-->
+
+* Add an ID for good measure (it could help us select it again later)
+	* Tip: try `setAttribute`
+
+<!--
+octocat.setAttribute("id", "wdi-octocat")
+-->
+
+* Append it to the DOM
+
+<!--
+`searchBox.appendChild(octocat)`
+-->
+
+##Styling with Javascript: Big Kitty (10m)
+
+####Mission
+
+Our octocat is not big or bold enough! Let's increase it's size and give it a fun color.
+
+![big-kitty](./images/big-kitty.png)
+
+---
+
+####Guidance
+
+Try `.style`
+
+<!--
+```
+octocat.style.fontSize = "200px"
+octocat.style.color = "pink"
+```
+-->
+
+##Set Event Listeners (10m)
+
+####Mission
+
+Register an event which fires when our octocat is clicked that creates an alert message saying "meow"
+
+---
+
+###Guidance
+
+Try `.addEventListener`
+
+<!--
+```
+var octocat = document.querySelector("#wdi-octocat")
+octocat.addEventListener("click", function() {
+  alert("meow!")
+})
+```
+-->
+
+##Bonus Mission
+
+####Mission
+
+When the octocat is hovered-over change its color to grey.
+
+<!--
+octocat.addEventListener("mouseenter", function(e) {
+  e.target.style.color = "grey"
+})
+octocat.addEventListener("mouseleave", function(e) {
+  e.target.style.color = "pink"
+})
+
+-->
+
+##Conclusion
+
+Today we uncovered some Web API basics that allowed us to interact with the DOM as a whole and elements individually.
+
+####We covered
+**General Concepts**
+
+* `for` loop
+
+**Document API**
+
+* `.querySelector`
+* `.querySelectorAll`
+* `.createElement`
+
+**Element API**
+
+* `.appendChild`
+* `.textContent`
+* `.setAttribute`
+* `.style` (`.<someCSSProperty`)
+* `.addEventListener`
+
+####More worth knowing
+
+**Element API**
+
+* `.removeChild`
+* `.parentNode`
+* `.children`
+* `.getAttribute`
+* `.removeEventListener`
+
+For documentation reference the Mozilla Developer Network, aka [MDN](https://developer.mozilla.org/en-US/)
