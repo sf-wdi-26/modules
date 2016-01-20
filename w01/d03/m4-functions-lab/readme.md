@@ -1,18 +1,8 @@
----
-title: Functions Lab
-type: lab
-duration: "1:25"
-creator:
-  name: Gerry Mathe, Alex Notov
-  city: London, San Francisco
-competencies: Programming
----
-
 # Functions Lab
 
 ## Introduction
 
-> ***Note:*** _This can be a pair programming activity or done independently._
+> *This can be a pair programming activity or done independently.*
 
 This lab provides an opportunity to pracitce implementing some real-world functions.
 

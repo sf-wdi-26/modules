@@ -17,8 +17,6 @@
 - Write basic HTML
 - Use the chrome console
 
-> Note: Solution code for this lesson is built out as the lesson progresses.
-
 ## An Intro to The Box Model (5 mins)
 
 
@@ -136,7 +134,6 @@ div {
 }
 
 ```
-> Note: Demonstrate altering each of these values in the dev tools for the div selector.
 
 You can also set an element's margins all at once: you just start from the top margin and go around clockwise (going from top to right to bottom to left). For instance,
 
@@ -270,9 +267,6 @@ With this CSS:
 We would end up with something like this:
 
 ![display](https://i.imgur.com/zeD1f2m.png)
-
-> Note: Explain the styling in this image.
-
 
 ## Positioning - Codealong (10 mins)
 
