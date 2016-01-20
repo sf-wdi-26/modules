@@ -11,7 +11,7 @@ Time | Monday - Wednesday | Thursday | Friday |
 12:30 | Lunch | Lunch | Lunch |
 1:30 | Module 3 | *Outcomes* | *Review* |
 2:45 | Break | Break | Break |
-3:00 | Module 4 | Module 4 | Module 4 |
+3:00 | Module 4 | Module 3 | Module 4 |
 4:15 | Break | Break | Break |
 4:30 | One-on-ones | One-on-ones | *Retrospective* |
 
