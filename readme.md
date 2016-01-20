@@ -9,11 +9,11 @@ Time | Monday - Wednesday | Thursday | Friday |
 10:30 | Break | Break | Break  |
 10:45 | Module 2 | Module 2 | Module 2 |
 12:30 | Lunch | Lunch | Lunch |
-1:30 | Module 3 | **Outcomes** | **Review** |
+1:30 | Module 3 | *Outcomes* | *Review* |
 2:45 | Break | Break | Break |
 3:00 | Module 4 | Module 4 | Module 4 |
 4:15 | Break | Break | Break |
-4:30 | One-on-ones | One-on-ones | **Retrospective** |
+4:30 | One-on-ones | One-on-ones | *Retrospective* |
 
 ## Unit 1 - Foundations of Web Development
 
