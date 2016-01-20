@@ -1,13 +1,3 @@
----
-title: CSS Positioning Lab
-type: lab
-duration: "1:25"
-creator:
-  name: Alex Chin
-  city: London
-competencies: Front-end intro
----
-
 # CSS Positioning Lab
 
 ## Introduction
