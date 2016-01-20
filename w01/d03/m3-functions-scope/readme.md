@@ -34,11 +34,11 @@ A function can be defined using two different syntaxes. For example, we can defi
 
 ```javascript
 var speak = function(words){
-alert(words);
+  alert(words);
 }
 
 function speak(words){
-alert(words);
+  alert(words);
 }
 ```
 
@@ -61,8 +61,8 @@ You call a function by using parenthesis after the function's name `()`:
 
 
 ```javascript
-var hello = function(){
-  console.log("hello there")
+var hello = function() {
+  return "hello there";
 }
 
 hello();
@@ -70,19 +70,19 @@ hello();
 => hello there
 ```
 
-#### Passing a function as an argument
+#### First order functions
 
 
 A function can be passed as an argument to another function:
 
 
 ```javascript
-function sayHello(name){
-return 'hello '+ name;
+function sayHello(name) {
+  return 'hello '+ name;
 }
 
 function shout(a, foo) {
-alert(foo(a));
+  alert(foo(a));
 }
 
 shout('world!', sayHello);
