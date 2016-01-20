@@ -34,11 +34,11 @@ A function can be defined using two different syntaxes. For example, we can defi
 
 ```javascript
 var speak = function(words){
-alert(words);
+  alert(words);
 }
 
 function speak(words){
-alert(words);
+  alert(words);
 }
 ```
 
@@ -61,8 +61,8 @@ You call a function by using parenthesis after the function's name `()`:
 
 
 ```javascript
-var hello = function(){
-  console.log("hello there")
+var hello = function() {
+  return "hello there";
 }
 
 hello();
@@ -70,19 +70,19 @@ hello();
 => hello there
 ```
 
-#### Passing a function as an argument
+#### First order functions
 
 
 A function can be passed as an argument to another function:
 
 
 ```javascript
-function sayHello(name){
-return 'hello '+ name;
+function sayHello(name) {
+  return 'hello '+ name;
 }
 
 function shout(a, foo) {
-alert(foo(a));
+  alert(foo(a));
 }
 
 shout('world!', sayHello);
@@ -122,7 +122,7 @@ So here's what happens:
 `hello_world.c`  ==>  `hello_world`
 
 #### Interpreted Languages
-Some languages do *not* require the programmer to explicitly run a compiler. **JavaScript**, **Java**, **Ruby** are a couple of interpreted languages.
+Some languages do *not* require the programmer to explicitly run a compiler. **JavaScript**, **Ruby** are a couple of interpreted languages. Essentially they are pre-compilled collections of C routines.
 
 There is still compilation being done, but it's done automatically.
 
@@ -131,9 +131,9 @@ There is still compilation being done, but it's done automatically.
 #### From Source to Running Code.
 There are two basic phases to go through when going from code in a file to a program running.
 
-- Compile Time - a phase when the source code is translated to another form. For example, when we run a javascript program we will compile javascript to an intermediate language/bytecode that the JavaScript Virtual Machine(VM) understands.
+- Compile Time - a phase when the source code is translated to another form. For example, when we run a JavaScript program we will compile JavaScript to an intermediate language/bytecode that the JavaScript Engine, most likely [V8](https://en.wikipedia.org/wiki/V8_(JavaScript_engine)) (a virtual machine), will understand.
 
-- Runtime - a phase when the computer actually runs each statement in the program.  For example, this is when the computer runs the javascript program bytecode.
+- Runtime - a phase when the computer actually runs each statement in the program.  For example, this is when the computer runs the JavaScript program bytecode.
 
 #### Variable Scope
 
@@ -141,9 +141,9 @@ The variable scope describes where in a program a variable can be seen. In other
 
 #### Lexical Analysis
 
-Part of the Compilation phase is Lexical Analysis. In general, Lexical Analysis scans through the source code, one character at a time, looking for language constructs like variables, functions, built-in keywords, etc.
+This frist part of the Compilation phase is [Lexical Analysis](https://en.wikipedia.org/wiki/Lexical_analysis). This step depends upon a [regular language](https://en.wikipedia.org/wiki/Regular_language) being used. It will scan through the source code, one character at a time, looking for matching [regular expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions), a predefined set of possible character sequences, with specific meaning. In JavaScript examples of regular expressions include: `for`, `function`, `if`, `var`, etc.
 
-It's during this time that the compiler builds variable scope and **declares** variable inside a variable scope.
+During this step that the compiler builds variable scopes and **declares** variables inside each scope.
 
 Here's a quick summary of what your computer does when you're looking to run your JavaScript file:
 
@@ -151,7 +151,7 @@ Here's a quick summary of what your computer does when you're looking to run you
 	2. Compile the source code
 		a. Lexical Analysis
 		b. Build Scope
-		c. Turn source code into a form understood by VM, bytecode
+		c. Turn source code into bytecode
 	3. Execute bytecode
 
 ## Building Scope - Demo (10 mins)
@@ -159,8 +159,6 @@ Here's a quick summary of what your computer does when you're looking to run you
 Scope is built during the Lexical Analysis part of the Compilation phase. When scope is built during this phase it's called **Lexical Scope**. This is very common in many programming languages.
 
 Let's see how it works. Here's the code we'll work with:
-
-> Note: You might want to ask students to take a few minutes to break down the functionality in these functions.
 
 ```javascript
 var firstName = 'John'; // 1
@@ -192,24 +190,25 @@ console.log(removeYears());
 Node will load this file and pass the source code on to it's Javascript VM.  Then, the VM will run do a Lexical Analysis of this source and build Variable Scope as described in the following steps:
 
 1. Found 'var firstName' variable declaration.  
-Put firstName variable in Global Scope.  
+Declare firstName variable in Global Scope.  
 2. Found 'var lastName' variable declaration.  
-Put lastName in Global Scope.  
+Declare lastName in Global Scope.  
 3. Found 'var age' variable declaration.  
-Put age in Global Scope.  
+Declare age in Global Scope.  
 4. Found 'var displayPerson' declaration.  
-Put age in displayPerson in Global Scope.
+Declare age in displayPerson in Global Scope.
 
-  - Notice that displayPerson's value is a function. So, create a inner scope and process this function.
+  - Notice that displayPerson's value is a function, create an inner scope and process this function.
 
 5. Found the firstName and lastName declarations.
 
-   > Note: functions arguments behave just like local variables.  Put them in the displayPerson function scope.  
+  > Note: Functions arguments behave just like local variables and are declared.
+  - Declare arguments in the displayPerson function scope.  
 
 6. Found prefix, fullName variable declarations.  
-Put them in the displayPerson function scope.  
+Declare them in the displayPerson function scope.  
 7. Found getFullName declaration.  
-Put getFullName in the displayPerson function scope.
+Declare getFullName in the displayPerson function scope.
 
  - Notice that getFullName is a function. So, create an inner scope and  process this function.
  - All done with getFullName function, no more variable declarations.
@@ -218,12 +217,12 @@ Put getFullName in the displayPerson function scope.
 ![Scope](https://i.imgur.com/Ex9a0qB.png)
 
 8. Found removeYears variable declaration.
-Put removeYears in Global scope.  
+Declare removeYears in Global scope.  
 
-**Notice that removeYears value is a function. So, create a inner scope and process this function.**
+**Notice that removeYears value is a function. So, create an inner scope and process this function.**
 
 9. Found age and minusYears variable declarations.  
-Put these in the function's scope.
+Declare these in the function's scope.
 
 ![](https://i.imgur.com/cA6kaw5.png)
 
@@ -244,9 +243,7 @@ var name = 'Gerry';
 
 Global scope can be really confusing when you run into namespace clashes. You won't want to use global scoping for all your variables, as using global scope the right way is quite complex, but every Javascript program uses the global scope in one way or another.
 
-> Note: If time permits, instructors may want to briefly go over what [namespace](http://www.codeproject.com/Articles/829254/JavaScript-Namespace) means in JavaScript.
-
-#### Local scope
+#### Local Scope
 
 Local scope refers to any scope that is defined right past the global one. If you define a function, this function will have its own scope inside the body of the function. Any function defined inside another function has a also a local scope and can refer to the parent scope, but this logic doesn't work the other way around.
 
@@ -325,7 +322,7 @@ this.document === document
 
 this.aValue = "WDI";
 => "WDI"
-console.log(window.aValue);
+window.aValue;
 => "WDI"
 ```
 
@@ -339,6 +336,7 @@ var wdi = {
   whatsTheName = function() {
     return this.name;
   }
+}
 
 wdi.whatsTheName();
 => "WDI"
@@ -364,16 +362,13 @@ The transmogrified result of three numbers is the product of the first two numbe
 For example, the transmogrified result of 5, 3, and 2 is `(5 times 3) to the power of 2` is 225. Use your function to find the following answers.
 
 ```javascript
-
 transmogrifier(5, 4, 3)
 transmogrifier(13, 12, 5)
 transmogrifier(42, 13, 7)
 
 ```
 
-3.  Write a function `wordReverse` that accepts a single argument, a string. The
-method should return a string with the order of the words reversed. Don't worry
-about punctuation.
+3.  Write a function `wordReverse` that accepts a single argument, a string. The method should return a string with the order of the words reversed. Don't worry about punctuation.
 
 ```javascript
 wordReverse("Now I know what a TV dinner feels like")

@@ -2,9 +2,9 @@
 
 ## Introduction
 
-> *This can be a pair programming activity or done independently.*
+> *Pair programming encouraged*
 
-This lab provides an opportunity to pracitce implementing some real-world functions.
+This lab provides an opportunity to practice implementing some real-world functions. If you [pair program](https://en.wikipedia.org/wiki/Pair_programming), we recommend [screen sharing](http://osxdaily.com/2012/10/10/remote-control-mac-screen-sharing-os-x/) and alternating roles as a "driver" and "navigator" after each step.
 
 ## Exercise
 
