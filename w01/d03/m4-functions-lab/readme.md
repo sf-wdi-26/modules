@@ -46,7 +46,7 @@ For example, calling the function with the string "General Assembly" will return
 }
 ```
 
-#### Starter Code
+#### Getting started
 
 Open the file `functions.js`. All the function names are already inside the file, you just need to implement them by adding code inside each one.
 
@@ -54,7 +54,8 @@ Use the Chrome dev tools console to practice executing your code.
 
 #### Deliverable
 
-You'll review the answers with the instructor in class.
+Submit your solution via a pull request on Github to our `homework` repo.
+
 
 ## Additional Resources
 
