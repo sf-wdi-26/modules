@@ -161,77 +161,75 @@ Scope is built during the Lexical Analysis part of the Compilation phase. When s
 Let's see how it works. Here's the code we'll work with:
 
 ```javascript
-var firstName = 'John'; // 1
-var lastName = 'Dowd'; // 2
-var age = 19; // 3
+var firstName = 'Benjamin'; // 1
+var lastName = 'Button'; // 2
+var age = 39; // 3
 
-function displayPerson(fname, lname){ //4, 5
+function displayPerson(fname, lname) { //4, 5
   var prefix = 'Mr'; // 6
-  var fullName = null; // 6
+  var fullName; // 6
 
-  function getFullName(){ // 7
-    var suffix = "Esq.";  // Everybody's a lawyer, eh.
-    return  fullName = prefix + " " + fname + " " + lname + " " + suffix;
+  function getFullName() { // 7
+    var suffix = "Jr";
+    fullName = prefix + " " + fname + " " + lname + " " + suffix;
+    return  fullName;
   };
 
   return getFullName();
 };
 
-function removeYears(){ // 8
-  var minusYears = 10, age = 49;
+function removeYears(age, minusYears) { // 8 & 9
   return age - minusYears;
 };
 
-console.log(displayPerson(firstName, lastName));
-console.log(removeYears());
-
+displayPerson(firstName, lastName);
+removeYears(age, 10);
 ```
 
 Node will load this file and pass the source code on to it's Javascript VM.  Then, the VM will run do a Lexical Analysis of this source and build Variable Scope as described in the following steps:
 
-1. Found 'var firstName' variable declaration.  
+1. Found `var firstName` variable declaration (using regular expression).  
 Declare firstName variable in Global Scope.  
-2. Found 'var lastName' variable declaration.  
+2. Found `var lastName` variable declaration.  
 Declare lastName in Global Scope.  
-3. Found 'var age' variable declaration.  
+3. Found `var age` variable declaration.  
 Declare age in Global Scope.  
-4. Found 'var displayPerson' declaration.  
-Declare age in displayPerson in Global Scope.
+4. Found `var displayPerson` declaration.  
+Declare age in `displayPerson` in Global Scope.
 
-  - Notice that displayPerson's value is a function, create an inner scope and process this function.
+  - Notice that `displayPerson`'s value is a function, which creates an inner scope.
 
-5. Found the firstName and lastName declarations.
+5. Found the `firstName` and `lastName` declarations.
 
   > Note: Functions arguments behave just like local variables and are declared.
-  - Declare arguments in the displayPerson function scope.  
+  - Declare arguments in the `displayPerson` function scope.  
 
-6. Found prefix, fullName variable declarations.  
-Declare them in the displayPerson function scope.  
-7. Found getFullName declaration.  
-Declare getFullName in the displayPerson function scope.
+6. Found prefix, `fullName` variable declarations.  
+Declare them in the `displayPerson` function scope.  
+7. Found `getFullName` declaration.  
+Declare `getFullName` in the `displayPerson` function scope.
 
- - Notice that getFullName is a function. So, create an inner scope and  process this function.
- - All done with getFullName function, no more variable declarations.
- - All done with displayPerson function, no more variable declarations.
+ - Notice that `getFullName` is a function, which creates an inner scope.
+ - All done with `getFullName` function, no more variable declarations.
+ - All done with `displayPerson` function, no more variable declarations.
 
 ![Scope](https://i.imgur.com/Ex9a0qB.png)
 
-8. Found removeYears variable declaration.
-Declare removeYears in Global scope.  
+8. Found `removeYears` variable declaration.
+Declare `removeYears` in Global scope.
+ - `removeYears` is a function; an inner scope is created.
 
-**Notice that removeYears value is a function. So, create an inner scope and process this function.**
-
-9. Found age and minusYears variable declarations.  
+9. Found age and `minusYears` variable declarations.  
 Declare these in the function's scope.
 
-![](https://i.imgur.com/cA6kaw5.png)
+![removeYears](https://i.imgur.com/cA6kaw5.png)
 
 
 
 ## The Terminology of Scope - Codealong (10 mins)
 
 
-There are different terminologies to talk about scope in Javascript. If you read about `(function|global|lexical|public/private)scope` or `closure` or `namespace`, all these keywords are referring to the `scope`, one way or another.
+There are different terminologies to talk about scope in Javascript. If you read about `(function|global|lexical|public/private)scope` or **closure** or **namespace**, all these keywords are referring to the **scope**, one way or another.
 
 #### Global Scope
 
