@@ -252,7 +252,7 @@ A variable defined inside a function *cannot* be accessed outside the function, 
 ```javascript
 var a = "this is the global scope";
 function myFunction() {
-	var b = "this variable is defined in the local scope";
+  var b = "this variable is defined in the local scope";
 }
 myFunction();
 alert(b);
@@ -272,7 +272,7 @@ var a = "Hello";
 
 // This function is defined in the global scope
 function sayHello(name) {
-	return a + " " + name;
+  return a + " " + name;
 }
 
 sayHello("WDI");
