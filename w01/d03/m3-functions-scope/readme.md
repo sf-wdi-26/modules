@@ -245,9 +245,9 @@ Global scope can be really confusing when you run into namespace clashes. You wo
 
 Local scope refers to any scope that is defined right past the global one. If you define a function, this function will have its own scope inside the body of the function. Any function defined inside another function has a also a local scope and can refer to the parent scope, but this logic doesn't work the other way around.
 
-#### Function scope - can't get inside from outside!
+#### Function scope - can't get inside!
 
-A variable defined inside a function cannot be accessed outside the function, this is the scope function:
+A variable defined inside a function *cannot* be accessed outside the function, this is the scope function:
 
 ```javascript
 var a = "this is the global scope";
@@ -283,29 +283,31 @@ sayHello("WDI");
 
 When a function is defined inside another function, it is possible to access variables defined in the parent from the child:
 
+> Note: *Defining* functions inside of other functions is typically not best practice; however, *calling* functions inside of one another is common and encouraged. 
+
 ```javascript
-  var a = 1;
+var a = 1;
 
-  function getScore () {
-    var b = 2,
-    c = 3;
+function getScore () {
+  var b = 2,
+  c = 3;
 
-    function add() {
+  function add() { // Not good style to define functions inside of other functions (for example purposes only)
     return a + b + c;
-    }
-
-    return add();
   }
 
-  getScore();
-  => 6
+  return add();
+}
+
+getScore();
+=> 6
 ```
 
 ## `this` - Codealong (5 mins)
 
 
 
-A function's `this` keyword is always referring to the current context
+A function's `this` keyword is always referring to the current **context**. It is a reserved word in the language.
 
 #### This in the Global context
 
