@@ -24,25 +24,25 @@ A function is a statement or a group of statements that can be called anywhere i
 
 When writing functions in JavaScript, think of functions as an object, like a string or a number - this means that functions can be passed to other functions as an argument and can be used just like any other object we've been working with.
 
-Functions are essential to write JavaScript and keep the code [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself).
+Functions are essential to write JavaScript and keep the code [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself), semantic, and modular.
 
 
 ## Defining Functions and Calling Functions - Codealong (15 mins)
 
 
-A function can be defined using two different syntaxes. For example, we can define a function `eat` that receives one argument in either of the following ways:
+A function can be defined using two different syntaxes. For example, we can define a function `speak` that receives one argument in either of the following ways:
 
 ```javascript
-var speak = function(words){
+var speak = function(words) {
   alert(words);
 }
 
-function speak(words){
+function speak(words) {
   alert(words);
 }
 ```
 
-The difference is subtle but important. The first function declaration is assigning an "anonymous" function to a variable. The second function declaration is a named function. The practical difference is that the named function will be processed when the code is interpreted, so the function can be called before it's defined.
+The difference is subtle but important. The first function declaration is assigning an "anonymous" function to a variable. The second function declaration is a named function. The practical difference is that the named function will be processed when the code is interpreted, so the function can be called *before* it's defined. This is due to [variable hoisting](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var#var_hoisting), the first `speak` variable is hoisted up as `undefined`, while the second is hoisted up as a `function`.
 
 No matter what syntax you use, a function always has:
 
@@ -70,7 +70,7 @@ hello();
 => hello there
 ```
 
-#### First order functions
+#### First-order Functions
 
 
 A function can be passed as an argument to another function:
@@ -141,7 +141,7 @@ The variable scope describes where in a program a variable can be seen. In other
 
 #### Lexical Analysis
 
-This frist part of the Compilation phase is [Lexical Analysis](https://en.wikipedia.org/wiki/Lexical_analysis). This step depends upon a [regular language](https://en.wikipedia.org/wiki/Regular_language) being used. It will scan through the source code, one character at a time, looking for matching [regular expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions), a predefined set of possible character sequences, with specific meaning. In JavaScript examples of regular expressions include: `for`, `function`, `if`, `var`, etc.
+This first part of the Compilation phase is [Lexical Analysis](https://en.wikipedia.org/wiki/Lexical_analysis). This step depends upon a [regular language](https://en.wikipedia.org/wiki/Regular_language) being used. It will scan through the source code, one character at a time, looking for matching [regular expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions), a predefined set of possible character sequences, with specific meaning. In JavaScript examples of regular expressions include: `for`, `function`, `if`, `var`, etc.
 
 During this step that the compiler builds variable scopes and **declares** variables inside each scope.
 
@@ -161,77 +161,75 @@ Scope is built during the Lexical Analysis part of the Compilation phase. When s
 Let's see how it works. Here's the code we'll work with:
 
 ```javascript
-var firstName = 'John'; // 1
-var lastName = 'Dowd'; // 2
-var age = 19; // 3
+var firstName = 'Benjamin'; // 1
+var lastName = 'Button'; // 2
+var age = 39; // 3
 
-function displayPerson(fname, lname){ //4, 5
+function displayPerson(fname, lname) { //4, 5
   var prefix = 'Mr'; // 6
-  var fullName = null; // 6
+  var fullName; // 6
 
-  function getFullName(){ // 7
-    var suffix = "Esq.";  // Everybody's a lawyer, eh.
-    return  fullName = prefix + " " + fname + " " + lname + " " + suffix;
+  function getFullName() { // 7
+    var suffix = "Jr";
+    fullName = prefix + " " + fname + " " + lname + " " + suffix;
+    return  fullName;
   };
 
   return getFullName();
 };
 
-function removeYears(){ // 8
-  var minusYears = 10, age = 49;
+function removeYears(age, minusYears) { // 8 & 9
   return age - minusYears;
 };
 
-console.log(displayPerson(firstName, lastName));
-console.log(removeYears());
-
+displayPerson(firstName, lastName);
+removeYears(age, 10);
 ```
 
 Node will load this file and pass the source code on to it's Javascript VM.  Then, the VM will run do a Lexical Analysis of this source and build Variable Scope as described in the following steps:
 
-1. Found 'var firstName' variable declaration.  
+1. Found `var firstName` variable declaration (using regular expression).  
 Declare firstName variable in Global Scope.  
-2. Found 'var lastName' variable declaration.  
+2. Found `var lastName` variable declaration.  
 Declare lastName in Global Scope.  
-3. Found 'var age' variable declaration.  
+3. Found `var age` variable declaration.  
 Declare age in Global Scope.  
-4. Found 'var displayPerson' declaration.  
-Declare age in displayPerson in Global Scope.
+4. Found `var displayPerson` declaration.  
+Declare age in `displayPerson` in Global Scope.
 
-  - Notice that displayPerson's value is a function, create an inner scope and process this function.
+  - Notice that `displayPerson`'s value is a function, which creates an inner scope.
 
-5. Found the firstName and lastName declarations.
+5. Found the `firstName` and `lastName` declarations.
 
   > Note: Functions arguments behave just like local variables and are declared.
-  - Declare arguments in the displayPerson function scope.  
+  - Declare arguments in the `displayPerson` function scope.  
 
-6. Found prefix, fullName variable declarations.  
-Declare them in the displayPerson function scope.  
-7. Found getFullName declaration.  
-Declare getFullName in the displayPerson function scope.
+6. Found prefix, `fullName` variable declarations.  
+Declare them in the `displayPerson` function scope.  
+7. Found `getFullName` declaration.  
+Declare `getFullName` in the `displayPerson` function scope.
 
- - Notice that getFullName is a function. So, create an inner scope and  process this function.
- - All done with getFullName function, no more variable declarations.
- - All done with displayPerson function, no more variable declarations.
+ - Notice that `getFullName` is a function, which creates an inner scope.
+ - All done with `getFullName` function, no more variable declarations.
+ - All done with `displayPerson` function, no more variable declarations.
 
 ![Scope](https://i.imgur.com/Ex9a0qB.png)
 
-8. Found removeYears variable declaration.
-Declare removeYears in Global scope.  
+8. Found `removeYears` variable declaration.
+Declare `removeYears` in Global scope.
+ - `removeYears` is a function; an inner scope is created.
 
-**Notice that removeYears value is a function. So, create an inner scope and process this function.**
-
-9. Found age and minusYears variable declarations.  
+9. Found age and `minusYears` variable declarations.  
 Declare these in the function's scope.
 
-![](https://i.imgur.com/cA6kaw5.png)
+![removeYears](https://i.imgur.com/cA6kaw5.png)
 
 
 
 ## The Terminology of Scope - Codealong (10 mins)
 
 
-There are different terminologies to talk about scope in Javascript. If you read about `(function|global|lexical|public/private)scope` or `closure` or `namespace`, all these keywords are referring to the `scope`, one way or another.
+There are different terminologies to talk about scope in Javascript. If you read about `(function|global|lexical|public/private)scope` or **closure** or **namespace**, all these keywords are referring to the **scope**, one way or another.
 
 #### Global Scope
 
@@ -247,14 +245,14 @@ Global scope can be really confusing when you run into namespace clashes. You wo
 
 Local scope refers to any scope that is defined right past the global one. If you define a function, this function will have its own scope inside the body of the function. Any function defined inside another function has a also a local scope and can refer to the parent scope, but this logic doesn't work the other way around.
 
-#### Function scope - can't get inside from outside!
+#### Function scope - can't get inside!
 
-A variable defined inside a function cannot be accessed outside the function, this is the scope function:
+A variable defined inside a function *cannot* be accessed outside the function, this is the scope function:
 
 ```javascript
 var a = "this is the global scope";
 function myFunction() {
-	var b = "this variable is defined in the local scope";
+  var b = "this variable is defined in the local scope";
 }
 myFunction();
 alert(b);
@@ -274,7 +272,7 @@ var a = "Hello";
 
 // This function is defined in the global scope
 function sayHello(name) {
-	return a + " " + name;
+  return a + " " + name;
 }
 
 sayHello("WDI");
@@ -285,29 +283,31 @@ sayHello("WDI");
 
 When a function is defined inside another function, it is possible to access variables defined in the parent from the child:
 
+> Note: *Defining* functions inside of other functions is typically not best practice; however, *calling* functions inside of one another is common and encouraged. 
+
 ```javascript
-  var a = 1;
+var a = 1;
 
-  function getScore () {
-    var b = 2,
-    c = 3;
+function getScore () {
+  var b = 2,
+  c = 3;
 
-    function add() {
+  function add() { // Not good style to define functions inside of other functions (for example purposes only)
     return a + b + c;
-    }
-
-    return add();
   }
 
-  getScore();
-  => 6
+  return add();
+}
+
+getScore();
+=> 6
 ```
 
 ## `this` - Codealong (5 mins)
 
 
 
-A function's `this` keyword is always referring to the current context
+A function's `this` keyword is always referring to the current **context**. It is a reserved word in the language.
 
 #### This in the Global context
 

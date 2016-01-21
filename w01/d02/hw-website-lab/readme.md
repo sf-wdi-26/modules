@@ -48,4 +48,4 @@ Here are examples of a simple "About" and "Portfolio" page that fulfill the assi
 
 ## Additional Resources
 
-- W3Schools Docs on [CSS](http://www.w3schools.com/css/css_howto.asp) and [HTML](http://www.w3schools.com/html/)
+- MDN Docs on [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) and [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
