@@ -58,7 +58,7 @@ There is no starter code provided for this lab.
 
 #### Deliverable
 
-Please find some screenshots of what you'll be creating.  Feel free to get creative with how you style your interface.
+Please take a screenshot of what you'll be creating.  Feel free to get creative with how you style your interface. Here are some examples:
 
 ![Screen-shot](https://i.imgur.com/kz2L9f9.png)
 ![Screen-shot](https://i.imgur.com/d8lFshD.png)
