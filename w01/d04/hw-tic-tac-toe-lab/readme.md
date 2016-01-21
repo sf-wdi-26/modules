@@ -68,5 +68,5 @@ Please take a screenshot of what you'll be creating.  Feel free to get creative 
 
 #### Additional Resources
 
-- [W3 schools docs on the DOM](http://www.w3schools.com/jsref/dom_obj_all.asp)
-- [More W3 schools docs on events](https://developer.mozilla.org/en-US/docs/Web/Events)
+- [MDN docs on the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
+- [More MDN docs on events](https://developer.mozilla.org/en-US/docs/Web/Events)
