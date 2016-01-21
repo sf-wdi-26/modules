@@ -24,7 +24,7 @@ A function is a statement or a group of statements that can be called anywhere i
 
 When writing functions in JavaScript, think of functions as an object, like a string or a number - this means that functions can be passed to other functions as an argument and can be used just like any other object we've been working with.
 
-Functions are essential to write JavaScript and keep the code [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself).
+Functions are essential to write JavaScript and keep the code [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself), semantic, and modular.
 
 
 ## Defining Functions and Calling Functions - Codealong (15 mins)
