@@ -9,7 +9,14 @@ loops, and writing conditionals. We also learned about how HTML elements are sty
 
 For this lab, you'll be building a tic tac toe game again, this time in HTML, CSS, and pure JavaScript, that can run in your browser!
 
-You can use your code from last time if you like, but see if you can't make some improvements!
+You can use your code from last time if you like, but take a good hard look at it and see what can improve. 
+
+Can your code be:
+
+ - more readable?
+ - more logical?
+ - more elegant/ cleaner/ prettier?
+ - more modular and reusable?
 
 ## Exercise
 
