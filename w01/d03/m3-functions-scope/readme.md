@@ -30,19 +30,19 @@ Functions are essential to write JavaScript and keep the code [DRY](https://en.w
 ## Defining Functions and Calling Functions - Codealong (15 mins)
 
 
-A function can be defined using two different syntaxes. For example, we can define a function `eat` that receives one argument in either of the following ways:
+A function can be defined using two different syntaxes. For example, we can define a function `speak` that receives one argument in either of the following ways:
 
 ```javascript
-var speak = function(words){
+var speak = function(words) {
   alert(words);
 }
 
-function speak(words){
+function speak(words) {
   alert(words);
 }
 ```
 
-The difference is subtle but important. The first function declaration is assigning an "anonymous" function to a variable. The second function declaration is a named function. The practical difference is that the named function will be processed when the code is interpreted, so the function can be called before it's defined.
+The difference is subtle but important. The first function declaration is assigning an "anonymous" function to a variable. The second function declaration is a named function. The practical difference is that the named function will be processed when the code is interpreted, so the function can be called *before* it's defined. This is due to [variable hoisting](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var#var_hoisting), the first `speak` variable is hoisted up as `undefined`, while the second is hoisted up as a `function`.
 
 No matter what syntax you use, a function always has:
 
