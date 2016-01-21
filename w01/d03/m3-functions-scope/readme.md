@@ -141,7 +141,7 @@ The variable scope describes where in a program a variable can be seen. In other
 
 #### Lexical Analysis
 
-This frist part of the Compilation phase is [Lexical Analysis](https://en.wikipedia.org/wiki/Lexical_analysis). This step depends upon a [regular language](https://en.wikipedia.org/wiki/Regular_language) being used. It will scan through the source code, one character at a time, looking for matching [regular expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions), a predefined set of possible character sequences, with specific meaning. In JavaScript examples of regular expressions include: `for`, `function`, `if`, `var`, etc.
+This first part of the Compilation phase is [Lexical Analysis](https://en.wikipedia.org/wiki/Lexical_analysis). This step depends upon a [regular language](https://en.wikipedia.org/wiki/Regular_language) being used. It will scan through the source code, one character at a time, looking for matching [regular expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions), a predefined set of possible character sequences, with specific meaning. In JavaScript examples of regular expressions include: `for`, `function`, `if`, `var`, etc.
 
 During this step that the compiler builds variable scopes and **declares** variables inside each scope.
 
