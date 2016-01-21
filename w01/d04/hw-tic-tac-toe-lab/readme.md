@@ -7,7 +7,9 @@
 This week, we have been learning about writing functions, working with
 loops, and writing conditionals. We also learned about how HTML elements are styled and behave in the DOM.
 
-For this lab, you'll be building a tic tac toe game in HTML, CSS, and pure JavaScript.
+For this lab, you'll be building a tic tac toe game again, this time in HTML, CSS, and pure JavaScript, that can run in your browser!
+
+You can use your code from last time if you like, but see if you can't make some improvements!
 
 ## Exercise
 
@@ -45,11 +47,12 @@ For this lab, you'll be building a tic tac toe game in HTML, CSS, and pure JavaS
       will be used to indicate whether or not to draw an `X` or an `O`.
 
 **Bonus:**
-- Display a message to indicate which turn is about to be played
-- After the necessary moves have been played, stop the game and alert the
-  winner if one player ends up winning with three in a row
+- Display a message at the beginning of the game telling `X` or `O` to go first. 
+- Alert the winner if they have won three in a row
     * Hint: Determine a set of winning combinations. Check those
       combinations on the board contents after every move.
+- Add a scoreboard!
+- Add some basic animations using [CSS animate](https://developer.mozilla.org/en-US/docs/Web/CSS/animation)
 
 
 #### Starter code
