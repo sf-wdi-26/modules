@@ -23,9 +23,9 @@ Time | Monday - Wednesday | Thursday | Friday |
 ----- | -------- | --------------------------------                         | ------------------------------------                  | ------------------------------------     | ---------------------------------------   |
  **9:00am Module 1** | MLK   | [Ice breakers][1-1A]                                            | [Chrome dev tools (Ilias)][1-2A]      |[JS Data types, variables, and arrays (Ben)][1-3A]         | [Debugging in JavaScript (Ilias)][1-4A]             |
  **10:45am Module 2** | MLK    | [Your learning experience (TEAM, Ali lead)][1-1B]          | [CSS selector basics (Ben)][1-2B]                | [JavaScript objects (Ben)][1-3B]      | [DOM manipulation and events (Ilias)][1-4B]       |  
- **1:30pm Module 3** | MLK    | [How the internet works (Alex)][1-1C]      | [Box model and positioning (Alex)][1-2C]         | [Functions and scope (Ilias)][1-3C] | [Lab: DOM manipulation LoTR (Ilias)][1-4C]     |
-**3:00pm Module 4** | MLK    | [Navigating the file system (Ben)][1-1D]               | [Lab: CSS website replication (Alex)][1-2D]       | [Lab: JavaScript functions (Ilias)][1-3D]              | [Mastering control flow (Alex)][1-4D]             |
-**Homework** | MLK    | [Lab: Command line (Ben)][1-1E] | [Lab: Build a website (Alex)][1-2E]  | [Talk: Inventing on Principle][1-3E]     | [Lab: Tic-Tac-Toe (Alex) ][1-4E]  |
+ **1:30pm Module 3** | MLK    | [How the internet works (Alex)][1-1C]      | [Box model and positioning (Alex)][1-2C]         | Outcomes | [Lab: DOM manipulation LoTR (Ilias)][1-4C]     |
+**3:00pm Module 4** | MLK    | [Navigating the file system (Ben)][1-1D]               | [Lab: CSS website replication (Alex)][1-2D]       | [Functions and scope (Ilias)][1-3C] | [Mastering control flow (Alex)][1-4D]             |
+**Homework** | MLK    | [Lab: Command line (Ben)][1-1E] | [Lab: Build a website (Alex)][1-2E]  | [Lab: JavaScript functions (Ilias)][1-3D] | [Lab: Tic-Tac-Toe (Alex) ][1-4E]  |
 
 [1-1A]: # "Ice Breakers"  
 [1-1B]: # "Your Learning Experience"
