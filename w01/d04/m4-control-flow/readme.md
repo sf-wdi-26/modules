@@ -310,19 +310,21 @@ There are also `!=` and `!==` operators, which are the negative versions of `==`
 The switch statement can be used for multiple branches based on a number or string:
 
 ```javascript
+function makeApplePie() {
+  console.log("Making Pie! MMM!");
+};
+
 var food = "apple";
 
 switch(food) {
   case 'pear':
-    console.log("I like pears");
-    break;
+    makePoachedPear();
   case 'apple':
-    console.log("I like apples");
-    break;
+    makeApplePie();
   default:
-    console.log("No favourite");
+    goToTheStore();
 }
-//=> I like apples
+//=> Making Pie! MMM!
 ```
 
 In this case the `switch` statement compares `food` to each of the cases (`pear` and `apple`), and evaluates the expressions beneath them if there is a match. It uses `===` to evaluate equality.
