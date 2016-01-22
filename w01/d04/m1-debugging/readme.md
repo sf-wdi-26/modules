@@ -51,7 +51,7 @@ On the left side of the panel, click on a line number where you want to stop the
 
 **Multiple breakpoints**
 
-You can add several breakpoints in the scripts, and everytime a breakpoint is set, the execution will stop. You can enable and disable the breakpoints using the checkboxes on the right sidebar.
+You can add several breakpoints in the scripts, and every time a breakpoint is set, the execution will stop. You can enable and disable the breakpoints using the checkboxes on the right sidebar.
 
 It is possible to access a breakpoint by clicking on it in the source on the left.
 
