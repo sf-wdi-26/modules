@@ -69,8 +69,6 @@ setTimeout(function(){
 }, 0);
 ```
 
-> ***Note to instructor:*** _Ensure a breakpoint is above the `alert`._
-
 The DevTools console drawer will allow you to experiment within the scope of where the debugger is currently paused. Hit the **Esc** key to bring the console into view. The Esc key also closes this drawer.
 
 #### Execution control
