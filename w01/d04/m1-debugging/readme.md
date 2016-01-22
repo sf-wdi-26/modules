@@ -87,12 +87,12 @@ There are also several related keyboard shortcuts available in the Sources panel
 
 | Execution | Shortcut |
 |-----------|----------|
-| Continue | `F8` or `Command + /` |
-| Step over | `F10` or `Command+'` |
-| Step into | `F11` or `Command+;`  |
-| Step out | `Shift+F11` or `Shift+Command+;` |
-| Next call frame | `Ctrl+.` |
-| Previous call frame | `Ctrl+,` |
+| Continue | `F8` or `Command + \` |
+| Step over | `F10` or `Command + '` |
+| Step into | `F11` or `Command + ;`  |
+| Step out | `Shift + F11` or `Shift + Command + ;` |
+| Next call frame | `Ctrl + .` |
+| Previous call frame | `Ctrl + ,` |
 
 #### Interact with paused breakpoints
 
