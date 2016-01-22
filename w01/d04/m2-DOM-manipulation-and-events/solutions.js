@@ -1,6 +1,6 @@
 //MISSION 1 — Select & Modify: Str8-up H4cked
 //grab all the collection card titles
-var showcases = document.querySelectorAll("collection-card-title");
+var showcases = document.querySelectorAll(".collection-card-title");
 //for each collection title
 for(var i = 0; i < showcases.length; i++) {
   //change the text content
