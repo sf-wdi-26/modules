@@ -59,7 +59,7 @@ On the left side of the panel, click on a line number where you want to stop the
 
 **Multiple breakpoints**
 
-You can add several breakpoints in the scripts, and everytime a breakpoint is set, the execution will stop. You can enable and disable the breakpoints using the checkboxes on the right sidebar.
+You can add several breakpoints in the scripts, and every time a breakpoint is set, the execution will stop. You can enable and disable the breakpoints using the checkboxes on the right sidebar.
 
 It is possible to access a breakpoint by clicking on it in the source on the left.
 
@@ -77,15 +77,11 @@ setTimeout(function(){
 }, 0);
 ```
 
-> ***Note to instructor:*** _Ensure a breakpoint is above the `alert`._
-
 The DevTools console drawer will allow you to experiment within the scope of where the debugger is currently paused. Hit the **Esc** key to bring the console into view. The Esc key also closes this drawer.
 
 #### Execution control
 
 This section of the lesson is taken from [Chrome dev tools](https://developer.chrome.com/devtools/docs/javascript-debugging#execution-control)
-
-> ***Note to instructor:*** _Ensure that several breakpoints have been created in the JavaScript code before explaining the execution control part of the lesson._
 
 The execution control buttons are located at the top of the side panels and allow you to step through code. The buttons available are:
 
@@ -99,12 +95,12 @@ There are also several related keyboard shortcuts available in the Sources panel
 
 | Execution | Shortcut |
 |-----------|----------|
-| Continue | `F8` or `Command + /` |
-| Step over | `F10` or `Command+'` |
-| Step into | `F11` or `Command+;`  |
-| Step out | `Shift+F11` or `Shift+Command+;` |
-| Next call frame | `Ctrl+.` |
-| Previous call frame | `Ctrl+,` |
+| Continue | `F8` or `Command + \` |
+| Step over | `F10` or `Command + '` |
+| Step into | `F11` or `Command + ;`  |
+| Step out | `Shift + F11` or `Shift + Command + ;` |
+| Next call frame | `Ctrl + .` |
+| Previous call frame | `Ctrl + ,` |
 
 #### Interact with paused breakpoints
 
@@ -116,7 +112,7 @@ Most of the time, the JavaScript in a website will be minified, meaning that var
 
 > When you start building web apps in larger frameworks like Rails or Express, you'll set up your development environment so that code is only minified when you're deploying a production app, not while you're developing actively.
 
-## Independent Practice (15 mins)
+<!--## Independent Practice (15 mins)
 
 Debug the code using the Chrome development tools. Uncomment:
 
@@ -124,10 +120,8 @@ Debug the code using the Chrome development tools. Uncomment:
   <script type="text/javascript" src="./js/debug.js"></script>
 ```
 
-You need to get the functions to log out, one after the other.
+You need to get the functions to log out, one after the other.-->
 
 ## Conclusion
 
 Javascript debugging tools have improved significantly over the last few years. It is especially important to understand the link between the JS V8 Engine in Chrome and the way that error reporting is handled, and how you can interact with your scripts to figure out what's going on.
-
-*Take questions from students.*

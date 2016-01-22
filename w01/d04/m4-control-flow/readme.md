@@ -6,7 +6,7 @@
 *After this lesson, students will be able to:*
 
 - Differentiate between true, false, 'truth-y', and 'false-y'
-- Use if/else if/else conditionals to control program flow based on boolean conditions
+- Use if/else conditionals to control program flow based on boolean conditions
 - Use switch conditionals to control program flow based on explicit conditions
 - Use comparison operators to evaluate and compare statements
 - Use boolean logic (!, &&, ||) to combine and manipulate conditionals
@@ -310,19 +310,21 @@ There are also `!=` and `!==` operators, which are the negative versions of `==`
 The switch statement can be used for multiple branches based on a number or string:
 
 ```javascript
+function makeApplePie() {
+  console.log("Making Pie! MMM!");
+};
+
 var food = "apple";
 
 switch(food) {
   case 'pear':
-    console.log("I like pears");
-    break;
+    makePoachedPear();
   case 'apple':
-    console.log("I like apples");
-    break;
+    makeApplePie();
   default:
-    console.log("No favourite");
+    goToTheStore();
 }
-//=> I like apples
+//=> Making Pie! MMM!
 ```
 
 In this case the `switch` statement compares `food` to each of the cases (`pear` and `apple`), and evaluates the expressions beneath them if there is a match. It uses `===` to evaluate equality.
@@ -411,24 +413,9 @@ A typical output in the chrome dev tools would look like this:
 
 <img src="https://i.imgur.com/avioQC8.png" width="400px">
 
-#### Solution
+#### Solution 
 
-```javascript
-for (i = 1; i < 101; i++) {
-
-  if((i % 3 === 0) && (i % 5 === 0)) {
-    console.log("fizzbuzz");
-  } else if(i % 3 === 0) {
-    console.log("fizz");
-  } else if(i % 5 === 0) {
-    console.log("buzz");
-  } else {
-    console.log(i);
-  }
-}
-```
-
-The above is a good basic solution. For more creative, obscure solutions check out [this link](https://gist.github.com/jaysonrowe/1592432)
+Here is [a good basic solution](solution.js). For more creative, obscure solutions check out [this link](https://gist.github.com/jaysonrowe/1592432)
 
 ## Conclusion (5 mins)
 These are some of the foundational tools you'll use in many of your applications. You'll probably need to refresh yourself on the exact syntax a few times before you memorize it, but it's important to be able to remember, these core "control flow" concepts, in general, because they'll come up in pretty much every progamming language you'll ever encounter.

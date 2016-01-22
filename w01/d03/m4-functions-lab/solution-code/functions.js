@@ -43,11 +43,11 @@ function sumArray(arr) {
 
 // Question 4
 function multiplyArray(arr) {
-var product = arr[0];
-for (var i = 1; i < arr.length; i++) {
-product *= arr[i];
-}
-return product;
+  var product = arr[0];
+  for (var i = 1; i < arr.length; i++) {
+    product *= arr[i];
+  }
+  return product;
 }
 
 
