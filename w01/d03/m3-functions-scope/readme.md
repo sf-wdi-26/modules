@@ -333,7 +333,7 @@ If a function is part of an object (we then call it a method), `this` refers to 
 ```javascript
 var wdi = {
   name: "WDI",
-  whatsTheName = function() {
+  whatsTheName: function() {
     return this.name;
   }
 }
