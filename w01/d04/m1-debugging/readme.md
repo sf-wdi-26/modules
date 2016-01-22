@@ -75,8 +75,6 @@ The DevTools console drawer will allow you to experiment within the scope of whe
 
 This section of the lesson is taken from [Chrome dev tools](https://developer.chrome.com/devtools/docs/javascript-debugging#execution-control)
 
-> ***Note to instructor:*** _Ensure that several breakpoints have been created in the JavaScript code before explaining the execution control part of the lesson._
-
 The execution control buttons are located at the top of the side panels and allow you to step through code. The buttons available are:
 
 - **Continue**: continues code execution until we encounter another breakpoint.
@@ -119,5 +117,3 @@ You need to get the functions to log out, one after the other.
 ## Conclusion
 
 Javascript debugging tools have improved significantly over the last few years. It is especially important to understand the link between the JS V8 Engine in Chrome and the way that error reporting is handled, and how you can interact with your scripts to figure out what's going on.
-
-*Take questions from students.*
