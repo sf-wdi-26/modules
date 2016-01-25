@@ -1,6 +1,6 @@
 ## WDI 26 Web Development Immersive
 
-#### Week 2 - Web Development Foundations
+#### Week 2 - Front-end Foundations
 
 
 Day 1                                      | Day 2                                | Day 3                                      | Day 4                                      | Day 5
