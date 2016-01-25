@@ -5,7 +5,7 @@
 
 Day 1                                      | Day 2                                | Day 3                                      | Day 4                                      | Day 5
 --------------------------------           | ------------------------------------ | ------------------------------------       | ---------------------------------------    | -----------------------------------
-[Git and GitHub (Alex)][2-1A]                     |      [Lab: JavaScript calculator (Dani)][2-2B]                |  [Intro to jQuery (Alex)][2-3B]       |       [JS Prototypes(Ben)][2-4A]     | [Finish Ajax Lab][2-4D]
+[Git and GitHub (Alex)][2-1A]                     |      [Lab: JavaScript calculator (Dani)][2-2B]                |  [Intro to jQuery (Alex)][2-3B]       |       [JS Prototypes(Ben)][2-4A]     | [Review Ajax Lab][2-4D]
 [Lab: Git and GitHub (Alex)][2-1B]                |   [Lab: JavaScript calculator (Dani)][2-2C]  |    [Intermediate jQuery (Alex)][2-3C]                     |    [More OOP(Ben)][2-4B]    | [Review (TEAM)][2-5B]
 [Callbacks (Ilias)][2-1C]                          |   [Responsive CSS(Ben)][2-2C] |    [Bootstrap intro(Ilias)][2-3C]     |        [Ajax lesson (Ilias)][2-4C]              | [Review (TEAM)][2-5A]
 [Lab: Practicing callbacks (Ilias)][2-1D]                 |  [HTML Forms (Ilias)][2-2D]  | [Lab: Forms + JQuery (Ben)][2-3D] |   Outcomes  | [Create an Issue (Alex)][2-5C]|
