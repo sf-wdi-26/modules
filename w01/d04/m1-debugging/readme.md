@@ -41,6 +41,14 @@ Take a look:
 
 Schema From [Chrome dev tools Website](https://developer.chrome.com/devtools/docs/javascript-debugging)
 
+#### Editing local files in Chrome
+
+Right-click in the left-hand sidebar and select "Add folder to workspace".
+
+![add-folder-to-workspace](images/add-folder-to-workspace.png)
+
+At this point chrome will ask for permission to access & edit local files on your machine. Once you accept you will be able to see files in that workspace and make changes to them.
+
 #### Debugging with breakpoints
 
 A breakpoint is an instruction given to a program via a keyword to pause the execution of a script. The Chrome dev tools let you pause execution of a script and see what's going on.

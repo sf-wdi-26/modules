@@ -31,27 +31,11 @@ Select each showcase element change them all to `WDI Rulez: str8-up h4cked`.
 
 * How we can identify all the showcase elements? Do they share any HTML attributes?
 
-<!--
-`.collection-card-title`
--->
-
 * Once we've identified an attribute they all share, how can we select them all?
 	* Tip: try [`document.querySelectorAll(...)`](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll) to grab everything that matches a query. Note this is different to `.querySelector` which just selects the first item it finds.
 
-<!--
-`var showcases = document.querySelectorAll("collection-card-title")`
--->
-
 * Now that we have a collection, how do we change the text off all of them at once?
 	* Tip: iterate through the collection and reset the `textContent` of each.
-
-<!--
-```
-for(var i = 0; i < showcases.length; i++) {
-	showcases[i].textContent = "WDI Rulez: str8-up h4cked"
-}
-```
--->
 
 ##Create & Append: More Octocat (15m)
 
@@ -67,32 +51,12 @@ The internet loves cats. Let's put another octocat icon after the search box.
 
 * Grab the search box
 
-<!--
-`var searchBox = document.querySelector(".collection-listing-search")`
--->
-
 * Create an span element in the console with the classes `.mega-octicon` and `.octicon-mark-github`
-
-<!--
-```
-var octocat = document.createElement("span")
-octocat.className = "mega-octicon"
-octocat.className += " octicon-mark-github"
-```
--->
 
 * Add an ID for good measure (it could help us select it again later)
 	* Tip: try `setAttribute`
 
-<!--
-octocat.setAttribute("id", "wdi-octocat")
--->
-
 * Append it to the DOM
-
-<!--
-`searchBox.appendChild(octocat)`
--->
 
 ##Styling with Javascript: Big Kitty (10m)
 
@@ -108,11 +72,6 @@ Our octocat is not big or bold enough! Let's increase it's size and give it a fu
 
 Try `.style`
 
-<!--
-```
-octocat.style.fontSize = "200px"
-octocat.style.color = "pink"
-```
 -->
 
 ##Set Event Listeners (10m)
@@ -127,14 +86,6 @@ Register an event which fires when our octocat is clicked that creates an alert 
 
 Try `.addEventListener`
 
-<!--
-```
-var octocat = document.querySelector("#wdi-octocat")
-octocat.addEventListener("click", function() {
-  alert("meow!")
-})
-```
--->
 
 ##Bonus Mission
 
@@ -142,15 +93,6 @@ octocat.addEventListener("click", function() {
 
 When the octocat is hovered-over change its color to grey.
 
-<!--
-octocat.addEventListener("mouseenter", function(e) {
-  e.target.style.color = "grey"
-})
-octocat.addEventListener("mouseleave", function(e) {
-  e.target.style.color = "pink"
-})
-
--->
 
 ##Conclusion
 

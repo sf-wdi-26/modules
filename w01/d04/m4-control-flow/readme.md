@@ -263,9 +263,9 @@ When verifying equality using double equal `==`, JavaScript does a lot of the "t
 //=> true
 ```
 
-#### Equality Operator `===`
+#### Identity Operator `===`
 
-To avoid type coercion and measure equality more strictly, **use the triple-equals operator**. Because `===` more truly measures actual equality, we'll use this far more often when checking whether too things are, in fact, the same thing.
+To avoid type coercion and measure identity, **use the triple-equals operator**. Because `===` more truly measures "actual" equality, we'll use this far more often when checking whether too things are, in fact, the same thing.
 
 > **Note:** "Sameness" and "equality" have various definitions and can be somewhat "fuzzy". They can also differ by programming language. Because you'll often be measuring whether two things are equal, you should investigate the way this works carefully.
 
@@ -297,7 +297,7 @@ However, there are some incidents when it does not do what we expect, for exampl
 
 **Explanation**
 
-The examples in the second set fail equality tests because both **object literals** and **arrays** are objects, and not just "primitive" values like strings, numbers, and booleans. Objects and arrays are complex collections of values, and when we refer to them, we're actually referencing where they live in memory. That's why we call them "reference types," while things like strings and numbers are "value types."
+The examples in the second set fail comparison tests because both **object literals** and **arrays** are objects, and not just "primitive" values like strings, numbers, and booleans. Objects and arrays are complex collections of values, and when we refer to them, we're actually referencing where they live in memory. That's why we call them "reference types," while things like strings and numbers are "value types."
 
 What this means is that when we go to compare two objects or arrays with `===`, JavaScript doesn't care if they look like similar collections. It only compares whether or not they are the exact same object in memory. In each of the cases above, when checking for equality, we're actually comparing two objects that are in two different places in memory. They're not exactly "the same."
 
