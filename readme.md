@@ -34,7 +34,7 @@ Day 1                                      | Day 2                              
 [2-4A]: # " "
 [2-4B]: # " "
 [2-4C]: w02/d04/m3-ajax "Ajax"
-[2-4D]: # " "
+[2-4D]: w02/d04/m4-ajax-lab " "
 [2-4E]: # " "
 
 [2-5A]: 01-workflow/agile-user-stories-wireframes-lesson "Agile development, wireframes, and user stories"
