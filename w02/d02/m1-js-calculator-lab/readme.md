@@ -17,7 +17,8 @@ You need to write JavaScript code for four different types of calculators:
 - A trip cost calculator
 - A BMI calculator
 - A mortgage calculator
--
+
+
 #### Formulae
 
 The formula for the calculations are as follows:
