@@ -1,0 +1,76 @@
+body {
+  font-size:15px;
+  text-align:center;
+  background-color:#ccc;
+  background-image: url('../images/desk.jpg');
+  background-size: cover;
+}
+
+ul {
+  padding:10px;
+  margin: 20px auto;
+  padding: 0;
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul.calc {
+  box-shadow:0 5px 8px 1px #000;
+  background-color:#292929;
+  width:340px;
+  border:2px solid #000;
+  border-radius: 4px;
+  padding: 20px 0;
+  margin: 50px auto;
+}
+
+.number, .operator,.eq,.clear {
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  border-radius:3px;
+  background-color:#424242;
+  border:solid 1px #000;
+  background-image:linear-gradient(totop,#2929291%,#51504e95%,#898989);
+  box-shadow:0 0 0 1px #2b2b2b;
+  display:inline-block;
+  cursor:pointer;
+  color:#fff;
+  font-family:arial;
+  font-size:16px;
+  font-weight:700;
+  text-decoration:none;
+  text-shadow:0 0 0 #2b665e;
+  padding:12px 18px;
+}
+
+.display {
+  margin-bottom:20px;
+  color:#fff;
+  background-color:#171717;
+  border-radius:3px;
+  border:2px solid #000;
+  font-size:40px;
+  height:70px;
+  width:300px;
+  text-align:right;
+  padding:10px;
+}
+
+input[type=button]:active {
+  position:relative;
+  top:1px;
+}
+
+input[type=button] {
+  text-align:center;
+  padding: 10px 20px;
+  width: 50px;
+  margin: 5px;
+}
+
+input[type=button]:hover {
+  color:#95a5a6;
+}

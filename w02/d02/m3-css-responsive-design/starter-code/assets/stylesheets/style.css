@@ -1,0 +1,75 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+}
+
+header, main {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* HEADER */
+
+header nav ul li {
+  overflow: hidden;
+}
+
+header nav > ul > li:nth-child(1) h1 {
+  color: rgb(242, 138, 40);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 88px;
+}
+
+header nav > ul > li:nth-child(2) {
+  height: 35px;
+  padding: 0 10px;
+  font-size: 23px;
+  line-height: 35px;
+  color: #ffc719;
+  background: black;
+}
+
+header nav > ul > li:nth-child(3) span {
+  color: #ff0044;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 10px;
+  font-size: 25px;
+  display: inline-block;
+}
+
+header nav > ul > li:nth-child(4) {
+  background: rgb(241, 241, 241);
+  margin-bottom: 15px;
+}
+
+header nav > ul > li:nth-child(4) ul li {
+  display: inline;
+}
+
+header nav > ul > li:nth-child(4) a {
+  padding: 15px;
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+}
+
+header nav > ul > li:nth-child(4) a:hover {
+  background: #ffc000;
+}
+
+/* MAIN COLUMNS */
+main .column h2 {
+  padding: 15px;
+  color: white;
+}
+
+main .column:nth-child(1) h2 { background: rgb(126, 211, 33);}
+main .column:nth-child(2) h2 { background: rgb(235, 91, 76); }
+main .column:nth-child(3) h2 { background: rgb(0, 174, 255); }
+
+main .column p {
+  padding: 15px;
+}

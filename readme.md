@@ -50,3 +50,46 @@ Time | Monday - Wednesday | Thursday | Friday |
 [1-4C]: w01/d04/m3-LoTR-lab "Lab: DOM Manipulation LoTR"
 [1-4D]: w01/d04/m4-control-flow "Mastering Control Flow"
 [1-4E]: w01/d04/hw-tic-tac-toe-lab "Lab: Tic-Tac-Toe"
+
+#### Week 2
+
+
+Day 1                                      | Day 2                                | Day 3                                      | Day 4                                      | Day 5
+--------------------------------           | ------------------------------------ | ------------------------------------       | ---------------------------------------    | -----------------------------------
+[Git and GitHub (Alex)][2-1A]                     |      [Lab: JavaScript calculator (Dani)][2-2B]                |  [Intro to jQuery (Alex)][2-3B]       |       [JS Prototypes(Ben)][2-4A]     | [Review (TEAM)][2-5A]
+[Lab: Git and GitHub (Alex)][2-1B]                |   [Lab: JavaScript calculator (Dani)][2-2C]  |    [Intermediate jQuery (Alex)][2-3C]                     |    [More OOP(Ben)][2-4B]    | [Review (TEAM)][2-5B]
+[Callbacks (Ilias)][2-1C]                          |   [Responsive CSS(Ben)][2-2C] |    [Bootstrap intro(Ilias)][2-3C]     |        [Ajax lesson (Ilias)][2-4C]              | ??
+[Lab: Practicing callbacks (Ilias)][2-1D]                 |  [HTML Forms (Ilias)][2-2D]  | [+Lab: Forms + JQuery lab (Ilias, Ben)][2-3D] |   [Ajax Lab (Ilias)][2-4D]  | [+Create an Issue (Alex)][2-5C]|
+[HW: Finish Callbacks lab][2-1E] | MicroBlog Lab (Alex)  |  Finish JQuery lab | Finish AJAX lab  | [Weekend Lab: Fix an issue (Alex)][2-5E]
+
+
+
+[2-1A]: 01-workflow/git-github-lesson "Git and GitHub"  
+[2-1B]: 01-workflow/git-github-lab "Git and GitHub lab"
+[2-1C]: 00-programming/js-callbacks-lesson "Callbacks"
+[2-1D]: 00-programming/js-callbacks-lab "Callbacks lab"
+[2-1E]: # " "
+
+[2-2A]: # " "
+[2-2B]: # " "
+[2-2C]: # "Responsive CSS"
+[2-2D]: w02/d02/m4-html-forms "HTML Forms"
+[2-2E]: # " "
+
+[2-3A]: #          " "
+[2-3B]: #                   " "
+[2-3C]: w02/d03/m3-bootstrap "Bootstrap"
+[2-3D]: # " "
+[2-3E]: # " "
+
+[2-4A]: # " "
+[2-4B]: # " "
+[2-4C]: w02/d04/m3-ajax "Ajax"
+[2-4D]: # " "
+[2-4E]: # " "
+
+[2-5A]: 01-workflow/agile-user-stories-wireframes-lesson "Agile development, wireframes, and user stories"
+[2-5B]: # " "
+[2-5C]: # " "
+[2-5D]: # " "
+[2-5E]: # " "

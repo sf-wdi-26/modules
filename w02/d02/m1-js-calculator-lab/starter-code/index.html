@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Advanced Calc</title>
+  <script type="text/javascript" src="scripts/app.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <h1>Advanced Calc</h1>
+      <form class="form-horizontal" role="form">
+
+        <!-- BASIC -->
+        <fieldset>
+          <legend><span class="glyphicon glyphicon-plus"></span> Basic</legend>
+          <div class="form-group">
+            <label for="basic-num-1" class="col-sm-2 control-label">Number 1:</label>
+            <div class="col-sm-2">
+              <input id="basic-num-1" class="form-control" type="number" step="any"></input>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="basic-operation" class="col-sm-2 control-label">Operation:</label>
+            <div class="col-sm-2">
+              <select class="form-control" id="basic-operation">
+                <option value="+">plus</option>
+                <option value="-">minus</option>
+                <option value="*">multiplied by</option>
+                <option value="/">divided by</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="basic-num-2" class="col-sm-2 control-label">Number 2:</label>
+            <div class="col-sm-2">
+              <input id="basic-num-2" class="form-control" type="number" step="any"></input>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-2">
+              <button id="basic-calc" class="btn btn-default" type="button">Calculate</button>
+            </div>
+          </div>
+          <div id="basic-answer" >
+            <div id="basic-answer-alert" class="col-sm-offset-2 col-sm-2 alert alert-success">
+              Answer will be written here
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- TRIP -->
+        <fieldset>
+          <legend><span class="glyphicon glyphicon-road"></span> Trip</legend>
+          <div class="form-group">
+            <label for="trip-distance" class="col-sm-2 control-label">Distance (miles):</label>
+            <div class="col-sm-2">
+              <input id="trip-distance" class="form-control" type="number" step="any"></input>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="trip-mpg" class="col-sm-2 control-label">MPG:</label>
+            <div class="col-sm-2">
+              <input id="trip-mpg" class="form-control" type="number" step="any"></input>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="trip-cost" class="col-sm-2 control-label">Cost ($/gallon):</label>
+            <div class="col-sm-2">
+              <input id="trip-cost" class="form-control" type="number" step="any"></input>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="trip-speed" class="col-sm-2 control-label">Speed (MPH):</label>
+            <div class="col-sm-2">
+              <input id="trip-speed" class="form-control" type="number" step="any"></input>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-2">
+              <button id="trip-calc" class="btn btn-default" type="button" >Calculate</button>
+            </div>
+          </div>
+          <div id="trip-answer">
+            <div id="trip-answer-alert" class="col-sm-offset-2 col-sm-2 alert alert-success">
+              Answer will be written here
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- BMI -->
+        <fieldset>
+          <legend><span class="glyphicon glyphicon-user"></span> BMI</legend>
+          <!--
+          <div class="form-group">
+            <label for="bmi-units" class="col-sm-2 control-label">Units:</label>
+            <div class="col-sm-2">
+              <select class="form-control" id="bmi-units">
+                <option value="metric">metric</option>
+                <option value="imperial">imperial</option>
+              </select>
+            </div>
+          </div>
+          -->
+          <div class="form-group">
+            <label for="bmi-mass" class="col-sm-2 control-label">Mass (<span id="bmi-mass-unit">kg</span>):</label>
+            <div class="col-sm-2">
+              <input id="bmi-mass" class="form-control" type="number" step="any"></input>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="bmi-height" class="col-sm-2 control-label">Height (<span id="bmi-height-unit">m</span>):</label>
+            <div class="col-sm-2">
+              <input id="bmi-height" class="form-control" type="number" step="any"></input>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-2">
+              <button id="bmi-calc" class="btn btn-default" type="button">Calculate</button>
+            </div>
+          </div>
+          <div id="bmi-answer">
+            <div id="bmi-answer-alert" class="col-sm-offset-2 col-sm-2 alert alert-success">
+              Answer will be written here
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- Mortgage -->
+        <fieldset>
+          <legend><span class="glyphicon glyphicon-home"></span> Mortgage</legend>
+          <div class="form-group">
+            <label for="mortgage-loan" class="col-sm-2 control-label">Loan (&pound;):</label>
+            <div class="col-sm-2">
+              <input id="mortgage-loan" class="form-control" type="number" step="any"></input>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="mortgage-apr" class="col-sm-2 control-label">APR (%):</label>
+            <div class="col-sm-2">
+              <input id="mortgage-apr" class="form-control" type="number" step="any"></input>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="mortgage-term" class="col-sm-2 control-label">Term (months):</label>
+            <div class="col-sm-2">
+              <input id="mortgage-term" class="form-control" type="number" step="any"></input>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-2">
+              <button id="mortgage-calc" class="btn btn-default" type="button">Calculate</button>
+            </div>
+          </div>
+          <div id="mortgage-answer">
+            <div id="mortgage-answer-alert" class="col-sm-offset-2 col-sm-2 alert alert-success">
+              Answer will be written here
+            </div>
+          </div>
+        </fieldset>
+
+      </form>
+    </div>
+  </div>
+</body>
+</html>
