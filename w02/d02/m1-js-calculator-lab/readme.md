@@ -1,13 +1,3 @@
----
-title: DOM Manipulation lab
-type: lab
-duration: "2:30"
-creator:
-  name: Gerry Mathe, Alex Chin
-  city: London
-competencies: Front-end intro
----
-> ***Note for instructors:*** _DO NOT SHOW THE COMPLEX SOLUTION BEFORE THE REVIEW._
 
 # DOM Manipulation Lab
 
