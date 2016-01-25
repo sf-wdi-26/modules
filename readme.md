@@ -24,7 +24,7 @@ Time |Day 1                                      | Day 2                        
 
 [2-3A]: w02/d03/m1-intro-jquery/ "Intro to jQuery"
 [2-3B]: w02/d03/m2-intermediate-jquery/ "Intermediate jQuery"
-[2-3C]: w02/d03/m3-bootstrap-intro/ "Bootstrap Intro"
+[2-3C]: w02/d03/m3-bootstrap/ "Bootstrap Intro"
 [2-3D]: # " "
 [2-3E]: # " "
 
