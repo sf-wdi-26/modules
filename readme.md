@@ -9,15 +9,15 @@ Day 1                                      | Day 2                              
 [Lab: Git and GitHub (Alex)][2-1B]                |   [Lab: JavaScript calculator (Dani)][2-2C]  |    [Intermediate jQuery (Alex)][2-3C]                     |    [More OOP(Ben)][2-4B]    | [Review (TEAM)][2-5B]
 [Callbacks (Ilias)][2-1C]                          |   [Responsive CSS(Ben)][2-2C] |    [Bootstrap intro(Ilias)][2-3C]     |        [Ajax lesson (Ilias)][2-4C]              | [Review (TEAM)][2-5A]
 [Lab: Practicing callbacks (Ilias)][2-1D]                 |  [HTML Forms (Ilias)][2-2D]  | [Lab: Forms + JQuery (Ilias, Ben)][2-3D] |   Outcomes  | [Create an Issue (Alex)][2-5C]|
-[HW: Finish Callbacks lab][2-1E] | MicroBlog (Alex)  |  Lab: Forms + JQuery | [Lab: Ajax (Ilias)][2-4D] | [Weekend Lab: Fix an issue (Alex)][2-5E]
+[Brett Victor: Inventing on Principle][2-1E] | MicroBlog (Alex)  |  Lab: Forms + JQuery | [Lab: Ajax (Ilias)][2-4D] | [Weekend Lab: Fix an issue (Alex)][2-5E]
 
 
 
-[2-1A]: 01-workflow/git-github-lesson "Git and GitHub"  
-[2-1B]: 01-workflow/git-github-lab "Git and GitHub lab"
-[2-1C]: 00-programming/js-callbacks-lesson "Callbacks"
-[2-1D]: 00-programming/js-callbacks-lab "Callbacks lab"
-[2-1E]: # " "
+[2-1A]: w02/d01/m1-gh-branching-and-pages "Git and GitHub"  
+[2-1B]: w02/d01/m2-gh-lab/ "Git and GitHub lab"
+[2-1C]: w02/d01/m3-callbacks "Callbacks"
+[2-1D]: w02/d01/m4-building-iterators "Callbacks lab"
+[2-1E]: https://vimeo.com/36579366 " "
 
 [2-2A]: # " "
 [2-2B]: # " "
