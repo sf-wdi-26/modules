@@ -17,7 +17,7 @@ Skills:
 
 2. Start by creating a folder with index.html, style.css and app.js files and initializing a git repo.
 3. Your HTML page should have a list in it that will display the posts. It can be empty, with JS adding posts, or have some dummy posts in it to start.
-4. You JS will hold an array of posts that it appends to the HTML list.
+4. Your JS will hold an array of posts that it appends to the HTML list.
 5. When your user clicks submit, your JS should handle taking the content of the form and putting it in that array, and updating the DOM.
 3. Make frequent commits and pushes. You should commit every time you add a new feature, and it is working! A feature can be something as small as adding a little style.
 
