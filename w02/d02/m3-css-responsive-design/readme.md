@@ -123,10 +123,10 @@ Now let's add some html into the index.html file:
         <li><span>So many</span> devices</li>
         <li>
           <ul>
-            <li><a href="/">Desktop</a></li>
-            <li><a href="/">Phone</a></li>
-            <li><a href="/">iPad</a></li>
-            <li><a href="/">AppleWatch</a></li>
+            <li class="hidden"><a href="/">Desktop</a></li>
+            <li class="hidden"><a href="/">Phone</a></li>
+            <li class="hidden"><a href="/">iPad</a></li>
+            <li class="hidden"><a href="/">AppleWatch</a></li>
           </ul>
         </li>
       </ul>
@@ -173,6 +173,8 @@ header, main {
 
 header nav ul li {
   overflow: hidden;
+  max-height: 100%;
+  padding: 5px;
 }
 
 header nav > ul > li:nth-child(1) h1 {
@@ -433,6 +435,13 @@ We are going to have to add a new "burger icon". There are a number of different
 And let's style this with CSS.
 
 ```css
+@media only screen and (max-width: 920px) {
+
+  .shown {
+    display: inline;
+  }
+}
+
 @media only screen and (max-width: 640px) {
 
   header nav > ul > li:nth-child(4) ul li:nth-child(1) {
@@ -446,12 +455,24 @@ And let's style this with CSS.
     font-size: 2em;
   }
 
+  .hidden {
+   overflow: hidden;
+   padding-top: 0;
+   padding-bottom: 0;
+   height: 0!important;
+   border-width: 0;
+  }
+  .shown {
+    transition: height .7s linear, padding-top .7s linear, padding-bottom .7s linear, border-width .7s linear;
+  }
+
 }
 ```
 
-Let's have a look at this. All of the `li` elements will be block level.
+Let's have a look at this.
+We're going to use Javascript to toggle on and off the `.hidden` and `.shown` classes. All of the `li` elements will be block level.
 
-Now we want to hide all of the lis except the first one:
+Now we want to hide all of the `li`s except the first one:
 
 ```css
 @media only screen and (max-width: 640px) {
@@ -463,6 +484,7 @@ Now we want to hide all of the lis except the first one:
 }
 ```
 
+<!--
 Now we need to add some jQuery to make the navigation bar slide up and down.
 
 First, we need to add jQuery into the index.html:
@@ -482,15 +504,32 @@ $(function(){
   });
 })
 ```
+-->
 
-So now, we should have a responsive site!
+Now we need to add some JavaScript to make the navigation bar slide up and down.
+
+```javascript
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelector('header nav > ul > li:nth-child(4) > ul > li:nth-child(1)').addEventListener('click', function(e) {
+    var navList = this.parentNode.getElementsByTagName('li');
+    for (var i = 2; i < navList.length+1; i++){
+       var tempSelectorString = 'header nav > ul > li:nth-child(4) > ul li:nth-child(' + i + ')';
+       document.querySelector("" + tempSelectorString).style.display="block";
+       document.querySelector("" + tempSelectorString).classList.toggle('hidden');
+       document.querySelector("" + tempSelectorString).classList.toggle('shown');
+    }
+  });  
+});
+```
+
+As you can see, DOM manipulation with vanilla javascript is a little tedious. But there are numerous libraries and frameworks designed to make this process easier and we'll be using them starting tomorrow. If you typed everything correctly, we should now have a responsive site!
 
 If you get some issues with when the browser window changes size, you might need to add some `!important` tags to make sure that the browser uses the right selector.
 
 
 ## On your phone - Codealong (10 mins)
 
-Well if we want to check out the site, we'd have to upload the file to a webserver; but this will be a pain, so let's run a little server from our computers and check out our site on our phones.
+A few years ago, when we wanted to test our site on multiple operating systems, we'd have to upload the file to a webserver; but it has become very easy to run a little server from our computers and check out our site on our phones.
 
 Run the following in the folder where you saved your index.html  
 

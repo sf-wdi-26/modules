@@ -13,6 +13,8 @@ header, main {
 
 header nav ul li {
   overflow: hidden;
+  max-height: 100%;
+  padding: 5px;
 }
 
 header nav > ul > li:nth-child(1) h1 {
@@ -60,6 +62,7 @@ header nav > ul > li:nth-child(4) a:hover {
   background: #ffc000;
 }
 
+
 /* MAIN COLUMNS */
 main .column {
   width: 33.33%;
@@ -105,6 +108,9 @@ main .column p {
   main .column:last-child {
     width: 100%;
   }
+  .shown {
+    display: inline;
+  }
 }
 
 @media only screen and (max-width: 640px) {
@@ -127,7 +133,7 @@ main .column p {
   }
 
   header nav > ul > li:nth-child(4) ul li {
-    display: none;
+    display: none; 
   }
 
   header nav > ul > li:nth-child(4) ul li a {
@@ -136,5 +142,15 @@ main .column p {
 
   main .column {
     width: 100%;
+  }
+ .hidden {
+   overflow: hidden;
+   padding-top: 0;
+   padding-bottom: 0;
+   height: 0!important;
+   border-width: 0;
+  }
+  .shown {
+    transition: height .7s linear, padding-top .7s linear, padding-bottom .7s linear, border-width .7s linear;
   }
 }
