@@ -109,6 +109,9 @@ main .column p {
     width: 100%;
   }
   .shown {
+    display: inline !important;
+  }
+  .hidden {
     display: inline;
   }
 }
@@ -147,10 +150,11 @@ main .column p {
    overflow: hidden;
    padding-top: 0;
    padding-bottom: 0;
-   height: 0!important;
+   height: 0 !important;
    border-width: 0;
   }
   .shown {
+    display: block;
     transition: height .7s linear, padding-top .7s linear, padding-bottom .7s linear, border-width .7s linear;
   }
 }
