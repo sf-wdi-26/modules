@@ -310,7 +310,9 @@ $('img').show()
 
 - Try to replace the blue background in the header by another color using the function `.css()`.
 
-- Now try some of the other examples we've gone over in the Chrome REPL and see what happens to the Reddit.com website. Remember, this is your laboratory — your chance to experiment and learn. Make use of it.
+- Now try some of the other examples we've gone over in the Chrome REPL and see what happens to the Reddit.com website. Get creative! 
+
+- Take a screenshot of your hacked Reddit page and share it to Strictly Biz!
 
 ## Conclusion
 
