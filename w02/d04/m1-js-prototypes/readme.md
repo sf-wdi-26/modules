@@ -108,7 +108,7 @@ console.log(pancakeBatter.isPrototypeOf(chocolateChipPancakes))
 //=> false
 
 // now let's change the prototype and try to prove it.
-pancakeBatter.__proto__.instructions = "Mix together ingredients and cook on a griddle";
+pancakeBatter.instructions = "Mix together ingredients and cook on a griddle";
 
 // check this out. If we ask for blueberryPancakes, it does not seem to know it's instructions:
 blueberryPancakes
