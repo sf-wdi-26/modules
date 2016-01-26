@@ -575,6 +575,15 @@ Put the following code into our header.
 
 Now, recheck to see your awesome, responsive website!
 
+### Stretch
+You can create an icon and add it to the home screen of your mobile device!
+
+[Click here for iOS](https://developer.apple.com/library/ios/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html)
+
+[Click here for Android](http://www.mobilexweb.com/blog/home-screen-web-apps-android-chrome-31)
+
+_Note: The latter has not been tested recently, as the author does not have an Android device._
+
 ##Conclusion (5 mins)
 
 As noted earlier in the lesson, since mobile is increasingly becoming the user default, any project should consider mobile styling from the start.  
