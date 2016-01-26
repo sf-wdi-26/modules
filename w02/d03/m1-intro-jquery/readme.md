@@ -21,8 +21,6 @@
 jQuery is a 3rd-party library that is intended to make front-end development tasks — particularly those involving DOM selection and manipulation — easier, faster, and more fun.
 
 ##### But wait, what do we mean by 'library'?
-We've already seen that we can make our jobs easier and faster by using Node modules (AKA libraries) in our apps.
-
 **A `library`** is just a collection of reusable methods that serve a particular purpose.
 
 

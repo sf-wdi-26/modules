@@ -111,7 +111,7 @@ Bad data could be anything from a required field being empty, an email address t
 
 ###Required
 
-Try submitting the below form without entering your name:
+Try submitting the below form:
 
 ```html
 <form>
