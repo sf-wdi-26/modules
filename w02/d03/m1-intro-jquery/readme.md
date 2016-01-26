@@ -111,7 +111,7 @@ var $jqObject = $('p'); // Returns a jQuery object containing all <p> tags on yo
 var jqObject = $('p'); // This is functionally identical to the version above that includes the '$' in front of jqObject.
 ```
 
-#### Selecting a DOM element and changing it's content
+#### Selecting a DOM element and changing its content
 
 In this HTML:
 
