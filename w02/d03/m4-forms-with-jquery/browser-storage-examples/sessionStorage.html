@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sessionStorage</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript">
+	
+	$().ready(function(){
+		$("button").click(function(){
+			if(sessionStorage.clickCount){
+				sessionStorage.clickCount = Number(sessionStorage.clickCount)+1;
+				document.getElementById("result").innerHTML = "You have clicked the button " + sessionStorage.clickCount + " time(s).";
+			}else{
+				sessionStorage.clickCount = 1;
+				document.getElementById("result").innerHTML = "You have clicked the button " + sessionStorage.clickCount + " time(s).";
+			}
+		});
+	});
+	</script>
+</head>
+<body>
+	<button>Click Me!</button>
+	<p id="result"></p>
+</body>
+</html>
