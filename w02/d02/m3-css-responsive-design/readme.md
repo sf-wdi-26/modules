@@ -100,17 +100,19 @@ Download the [starter-code](starter-code)
 
 Now open everything in Atom or Sublime and add the contents of a [reset.css](http://cssreset.com/) to the reset stylesheet.
 
-#### Add some HTML
+There are two general approaches to responsive design:  *progressive enhancement* and *graceful degredation*. Nobody really talks about this anymore, but it used to be important and it may be useful vocabulary for future interviews. So progressive enhancement is more commonly called mobile-first design and is more common when starting from scratch. In this case, we have a desktop design and we want to reorganize and remove design elements so that it looks better on smaller screens. When done well, this is known as graceful degredation.
 
-Now let's add some html into the index.html file:
+#### Starter Code
+
+Let's take a few moments to look at our HTML in the `index.html` file:
 
 ```html
 <!DOCTYPE html>
 <html>
 <head>
   <title>Responsive design</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-  <script type="text/javascript" src="./js/app.js"></script>
   <link rel="stylesheet" type="text/css" href="./stylesheets/reset.css">
   <link rel="stylesheet" type="text/css" href="./stylesheets/style.css">
 </head>
@@ -123,10 +125,13 @@ Now let's add some html into the index.html file:
         <li><span>So many</span> devices</li>
         <li>
           <ul>
-            <li class="hidden"><a href="/">Desktop</a></li>
-            <li class="hidden"><a href="/">Phone</a></li>
-            <li class="hidden"><a href="/">iPad</a></li>
-            <li class="hidden"><a href="/">AppleWatch</a></li>
+            <li><a href="/">Desktop</a></li>
+            <li><a href="/">Phone5</a></li>
+            <li><a href="/">Phone4</a></li>
+            <li><a href="/">Phone3</a></li>
+            <li><a href="/">iPad</a></li>
+            <li><a href="/">iPad2</a></li>
+            <li><a href="/">iWatch</a></li>
           </ul>
         </li>
       </ul>
@@ -146,18 +151,13 @@ Now let's add some html into the index.html file:
       <p>But it has to be done now...</p>
     </div>
   </main>
+  <script type="text/javascript" src="./js/app.js"></script>
 </body>
 </html>
 ```
-And then add some CSS:
+And a few more to look through our `style.css`:
 
 ```css
-*{
-  box-sizing: border-box;   
-  margin: 0px;  
-  padding: 0px;  
-}
-
 body {
   font-family: 'Montserrat', sans-serif;
   color: black;
@@ -165,16 +165,12 @@ body {
 
 header, main {
   width: 960px;
-  margin: 0 auto;
-  position: relative;
 }
 
 /* HEADER */
 
 header nav ul li {
   overflow: hidden;
-  max-height: 100%;
-  padding: 5px;
 }
 
 header nav > ul > li:nth-child(1) h1 {
@@ -237,12 +233,11 @@ main .column p {
 }
 ```
 
-
 #### Make the columns responsive
 
-How do we go about splitting these columns across the page?
+We have written our HTML `<main>` to expect three separate columns. How do we go about splitting these columns across the page?
 
-Where the CSS for the columns have been defined (at the bottom) let's add:
+Where the CSS for the columns have been defined (line 64) let's add:
 
 ```css
 main .column {
@@ -251,9 +246,11 @@ main .column {
 }
 ```
 
+Refresh the page and you will see the change at full width.
+
 #### Adjusting the container width
 
-If we try and resize the page - nothing. This is because the contain element has a fixed width. Let's change the css for the main selector:
+However, if we try to resize the page - nothing. This is because the contain element has a fixed width. Let's change the css for the main selector:
 
 ```css
 header, main {
@@ -307,17 +304,19 @@ One way of doing this is by including `media` in your stylesheet link.
 ```html
 <link rel='stylesheet' media='screen and (min-width: 701px) and (max-width: 900px)' href='css/medium.css' />
 ```
-But this is not very cool. A better way is to include in your CSS. This is the syntax:
+But this is not very cool. (I don't even know why we just showed you that!) A much better way is to include in your CSS. This is the syntax:
 
 #### Max-width 960px
 
 ```css
 @media only screen and (max-width: 960px) {  
-  /*style*/
+  /* style */
 }
 ```
 
-This will apply style only when this condition is true.
+This will apply the styles inside the query *only* when the outer condition is true.
+
+* Question: * Does this target the biggest size or the middle size?
 
 We include this at the bottom of the page.
 
@@ -331,12 +330,17 @@ We include this at the bottom of the page.
   }
 }
 ```
-
 Specificity still applies. So if we didn't add `main` then this still wouldn't be as specific as the one above.
+
+* A few more thoughts on media queries: *
+In this case, we're targeting `max-width`. You can also use `min-width`, `-webkit-min-device-pixel-ratio` and other selectors, but just remember to use the same selector for all your media queries. In other words, if you mix one media query using `max-width` and target another size using `min-width`, you may get some unexpected results.
+
+* Question: * CSS is interpreted by the browser from the top of the document down. How would you write media queries differently if you use `max-width` versus `min-width`?
+
 
 #### Max-width 640px
 
-This looks good when the window is greater than 640px, but we'll need to add one more media query for when the window is smaller than this.
+This looks good when the window is greater than 640px, but we'll need to add one more media query for when the window is smaller than this. Check it out in the browser and then add this:
 
 ```css
 @media only screen and (max-width: 640px) {
@@ -346,20 +350,21 @@ This looks good when the window is greater than 640px, but we'll need to add one
 }
 ```
 
-Let's test! Great!
+<!-- This is a great time for a brief Q&A.  -->
 
 
 #### Style the header
 
 Our columns are now working but we need to do a little bit of work on our header.
 
-Sometimes, with responsive design, we have to decide to omit content from a site. This can sometimes mean that we are loading content on the mobile device that the user can't see - that will slow their page down - however, for this example, we will not worry about that.
+Sometimes, with responsive design (specifically graceful degredation), we may decide to omit content from a site. This can sometimes mean that we are loading content on the mobile device that the user can't see - that will slow their page down - however, for this example, we will not worry about that.
 
 ```css
 @media only screen and (max-width: 960px) {
   header nav ul li {
     display: none;
   }
+  /* ... main .column, etc ... */
 }
 ```
 
@@ -375,6 +380,8 @@ If we resize the page, everything in the header disappears. Let's just show the 
   header nav > ul > li:nth-child(4) {
     display: block;
   }
+
+  /* ... main .column, etc ... */
 }
 ```
 
@@ -403,6 +410,7 @@ Now we want the title to change size depending on the browser size. Let's do the
   header nav > ul > li:nth-child(1) h1 {
     font-size: 40px;
   }
+  /* ... etc ... */
 }
 ```
 
@@ -421,27 +429,28 @@ Now, let's do the smaller browser:
 }
 ```
 
-
 #### Adding a hamburger menu
 
-The issue we have is the menu. When we get to a small size, there isn't enough room for all of the links.
+The next big issue we have is the menu. When we get to a small size, there isn't enough room for all of the links.
 
-We are going to have to add a new "burger icon". There are a number of different ways to do this - we'll try it with a text icon. Let's add another `li` to the `nav ul`:
+We are going to have to add a new "burger icon". There are a number of different ways to do this - we'll try it with a text icon. Let's add another `li` to the `nav ul` and add the `.hidden` class to our other `<li>`'s:
 
 ```html
-<li><a href="#"></a></li>
+        <ul>
+          <li><a href="#"></a></li>
+          <li class="hidden"><a href="/">Desktop</a></li>
+          <li class="hidden"><a href="/">Phone5</a></li>
+          <li class="hidden"><a href="/">Phone4</a></li>
+          <li class="hidden"><a href="/">Phone3</a></li>
+          <li class="hidden"><a href="/">iPad</a></li>
+          <li class="hidden"><a href="/">iPad2</a></li>
+          <li class="hidden"><a href="/">iWatch</a></li>
+        </ul>
 ```
 
 And let's style this with CSS.
 
 ```css
-@media only screen and (max-width: 960px) {
-
-  .shown {
-    display: inline;
-  }
-}
-
 @media only screen and (max-width: 640px) {
 
   header nav > ul > li:nth-child(4) ul li:nth-child(1) {
@@ -449,38 +458,41 @@ And let's style this with CSS.
     display: block;
   }
 
-  header nav > ul > li:nth-child(5) a:before {
+  header nav > ul > li:nth-child(4) a:before {
     content:'\2630';
-    color: #fff45a;
-    font-size: 2em;
+    font-size: 24px;
   }
 
   .hidden {
-   overflow: hidden;
-   padding-top: 0;
-   padding-bottom: 0;
-   height: 0!important;
-   border-width: 0;
+    overflow: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 0!important;
+    border-width: 0;
   }
-  .shown {
-    transition: height .7s linear, padding-top .7s linear, padding-bottom .7s linear, border-width .7s linear;
-  }
-
 }
 ```
-
-Let's have a look at this.
-We're going to use Javascript to toggle on and off the `.hidden` and `.shown` classes. All of the `li` elements will be block level.
 
 Now we want to hide all of the `li`s except the first one:
 
 ```css
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 960px) {
+  .hidden {
+    display: inline;
+  }
+  .shown {
+    display: inline !important;
+  }
+}
 
+@media only screen and (max-width: 640px) {
   header nav > ul > li:nth-child(4) ul li {
-    display: none;
+    display: block;
   }
 
+  .shown {
+    transition: height .7s linear, padding-top .7s linear, padding-bottom .7s linear, border-width .7s linear;
+  }
 }
 ```
 
@@ -506,15 +518,15 @@ $(function(){
 ```
 -->
 
-Now we need to add some JavaScript to make the navigation bar slide up and down.
+We should now be able to see our nav disappear but we need to use Javascript to toggle on and off the `.hidden` and `.shown` classes. Paste the following script into `js/app.js`
 
 ```javascript
 document.addEventListener('DOMContentLoaded', function() {
-  document.querySelector('header nav > ul > li:nth-child(4) > ul > li:nth-child(1)').addEventListener('click', function(e) {
+  var hamburger = document.querySelector('header nav > ul > li:nth-child(4) > ul > li:nth-child(1)');
+  hamburger.addEventListener('click', function(e) {
     var navList = this.parentNode.getElementsByTagName('li');
     for (var i = 2; i < navList.length+1; i++){
        var tempSelectorString = 'header nav > ul > li:nth-child(4) > ul li:nth-child(' + i + ')';
-       document.querySelector("" + tempSelectorString).style.display="block";
        document.querySelector("" + tempSelectorString).classList.toggle('hidden');
        document.querySelector("" + tempSelectorString).classList.toggle('shown');
     }
