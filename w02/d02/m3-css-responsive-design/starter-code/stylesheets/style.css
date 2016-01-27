@@ -60,7 +60,14 @@ header nav > ul > li:nth-child(4) a:hover {
   background: #ffc000;
 }
 
+header, main {
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+
 /* MAIN COLUMNS */
+
 main .column h2 {
   padding: 15px;
   color: white;
@@ -73,3 +80,113 @@ main .column:nth-child(3) h2 { background: rgb(0, 174, 255); }
 main .column p {
   padding: 15px;
 }
+
+main .column {
+  float: left;
+  width: 33.33%;
+}
+
+main .column {
+  float: left;
+  width: 33.33%;
+  min-width: 320px;
+}
+
+/*media queries */
+@media only screen and (max-width: 960px) {  
+  main .column {
+    width: 50%;
+  }
+  main .column:last-child {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  main .column {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 960px) {  
+  header nav ul li {
+    display: none;
+  }
+
+/*remove items that dont fit*/
+  header nav > ul > li:nth-child(1),
+  header nav > ul > li:nth-child(4) {
+    display: block;
+  }
+}
+
+/*middle size screen*/
+@media only screen and (max-width: 960px) {  
+  header nav ul li {
+    display: none;
+  }
+
+  header nav > ul > li:nth-child(1),
+  header nav > ul > li:nth-child(4) {
+    display: block;
+  }
+
+  header nav > ul > li:nth-child(1) {
+    text-align: center;
+    padding: 30px 0;
+  }
+
+  header nav > ul > li:nth-child(1) h1 {
+    font-size: 40px;
+  }
+}
+/*smaller*/
+@media only screen and (max-width: 640px) {
+  header nav > ul > li:nth-child(1) {
+    text-align: center;
+    padding: 15px 0;
+  }
+  
+
+
+  header nav > ul > li:nth-child(1) h1 {
+    font-size: 30px;
+  }
+
+
+
+@media only screen and (max-width: 960px) {
+
+  .shown {
+    display: inline;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+
+  header nav > ul > li:nth-child(4) ul li:nth-child(1) {
+    float: right;
+    display: block;
+  }
+
+  header nav > ul > li:nth-child(5) a:before {
+    content:'\2630';
+    color: #fff45a;
+    font-size: 2em;
+  }
+
+  .hidden {
+   overflow: hidden;
+   padding-top: 0;
+   padding-bottom: 0;
+   height: 0!important;
+   border-width: 0;
+  }
+  .shown {
+    transition: height .7s linear, padding-top .7s linear, padding-bottom .7s linear, border-width .7s linear;
+  }
+
+}
+}
+/*burger menu?*/
+
