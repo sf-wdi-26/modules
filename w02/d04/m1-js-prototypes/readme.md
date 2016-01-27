@@ -108,7 +108,7 @@ console.log(pancakeBatter.isPrototypeOf(chocolateChipPancakes))
 //=> false
 
 // now let's change the prototype and try to prove it.
-pancakeBatter.__proto__.instructions = "Mix together ingredients and cook on a griddle";
+pancakeBatter.instructions = "Mix together ingredients and cook on a griddle";
 
 // check this out. If we ask for blueberryPancakes, it does not seem to know it's instructions:
 blueberryPancakes
@@ -129,10 +129,10 @@ chocolateChipPancakes.instructions
 // Here we create the object explicitly:
 var iWantExplicitPancakes = Object.create(pancakeBatter);
 
-// Here we use a constructor method.
+// Here we use a constructor method. (There are different ways of doing this.)
 var CookPancakes = {
-new :  function() {
-    return Object.create(pancakeBatter);
+    new :  function() {
+        return Object.create(pancakeBatter);
     }
 }
 
@@ -140,7 +140,9 @@ new :  function() {
 var iWantPancakes = CookPancakes.new();
 
 // To truly understand this, we need to get the difference between __proto__ and the prototype property
+
 // Let's make a prototype function called Breakfast. It is common to capitalize prototype functions
+// Here is another way to construct an object. I would call this a factory method because I can pass in a different name and the method will return a different instance of the same prototype object
 
 function Breakfast(name) {
     this.name = name;

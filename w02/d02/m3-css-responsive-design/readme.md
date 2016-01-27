@@ -435,7 +435,7 @@ We are going to have to add a new "burger icon". There are a number of different
 And let's style this with CSS.
 
 ```css
-@media only screen and (max-width: 920px) {
+@media only screen and (max-width: 960px) {
 
   .shown {
     display: inline;
