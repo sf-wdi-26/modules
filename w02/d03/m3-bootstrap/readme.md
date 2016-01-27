@@ -1,6 +1,7 @@
 #Bootstrap
 ###Learning Objectives
 
+* Understand class-based CSS
 * Require Bootstrap into your project
 * Understand and implement a grid system
 * Design HTML pages with the aid of Bootstrap & mockups
@@ -15,7 +16,7 @@ Bootstrap is extremely popular and knowledge of at least one CSS framework is a 
 
 Bootstrap comes with a ton of features, including:
 
-- Reponsive Grid System
+- Responsive Grid System
 - CSS library for quick and easy styling
 - UI components - HTML + CSS 
   - navigation
@@ -25,10 +26,30 @@ Bootstrap comes with a ton of features, including:
 - Javascript widgets to make your page interactive
 - Tons more
 
+##Sites Using Bootstrap
+
+* [NBA.com](http://www.nba.com/)
+* [Bloomberg](http://www.bloomberg.com/)
+* [CodeAcademy](https://www.codecademy.com/)
+
+##What is Class-based CSS?
+
+Create modular classes that *encapsulate* a certain behavior and name them semantically.
+
+How would you style CSS for these elements?
+
+* `.shout` — uppercase the text inside the element
+* `.shadow` — add a drop-text to text inside the element
+* `.invert` — flip an element upside-down
+
+<!--
+ `transform: rotate(180deg)`
+ -->
+
 
 ##Including Bootstrap with HTML
 * To use Bootstrap, we need to include Bootstrap's CSS and Javascript libraries (+ or - an optional Bootstrap-Theme CSS file).
-* We also need to inclue jQuery, as Bootstrap's JS plug-ins depend on it.  
+* We also need to include jQuery, as Bootstrap's JS plug-ins depend on it.  
 * There are a few different ways to accomplish this, listed below. In this class, we'll keep it simple and stick with the CDN.
 
 1. CDN (Content Delivery Network - someone else hosts the library/framework and you access it via a URL):  [http://getbootstrap.com/getting-started/#download-cdn](http://getbootstrap.com/getting-started/#download-cdn). Where do we include these in our HTML file?

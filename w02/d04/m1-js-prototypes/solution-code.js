@@ -45,7 +45,7 @@ console.log(pancakeBatter.isPrototypeOf(chocolateChipPancakes))
 //=> false
 
 // now let's change the prototype and try to prove it.
-pancakeBatter.prototype.instructions = "Mix together ingredients and cook on a griddle";
+pancakeBatter.instructions = "Mix together ingredients and cook on a griddle";
 
 
 // now if we check for blueberryPancakes.instructions
