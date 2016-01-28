@@ -8,16 +8,12 @@
 
 ## APIs
 
-Application Program Interfaces (APIs) are similar to Graphical User Interfaces (GUIs):
-  * A **GUI** is an interface between a program and a human (e.g. <a href="https://github.com/" target="_blank">github.com</a>).
-  * An **API** is an interface between two programs (e.g. <a href="https://developer.github.com/v3" target="_blank">GitHub API</a>).
+An Application Program Interface (API) is the way in which you interact with a piece of software. In other words it is the interface for an application or a program.
 
-A **GUI** exists to make an application more convenient for the user. An **API** does the same for its users, which are usually developers of other applications.
+  * Organizations have APIs to publicly expose parts of their program to the outside world, allowing people to send them queries and receive data (e.g. <a href="https://developer.github.com/v3" target="_blank">GitHub API</a>), but this is a narrow view of what the term fully encompasses.
+  * Remember, even an `Array` has an API. Its API consists of all the methods that can be called on it, such as: `.forEach`, `.pop`, `.length` etc. See the full list: `Object.getOwnPropertyNames(Array.prototype)`. 
 
-#### Examples:
-
-* Logging into Spotify with your Facebook account (Spotify uses Facebook's API)
-* Posting Instagram photos to Facebook or Twitter (Instagram uses Facebook's and Twitter's APIs)
+A **GUI** exists to make an application more convenient for the user. An **API** does the same for its users, but with a lexical rather than a graphical interface.
 
 ## AJAX
 

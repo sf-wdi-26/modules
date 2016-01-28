@@ -4,7 +4,6 @@
 | :--- |
 | Practice AJAX with the USGS Earthquake API |
 | Follow the Google Maps tutorial & problem solve adding pins to a map |
-| Use basic underscore templating |
 
 ### GeoQuakes Lab
 
