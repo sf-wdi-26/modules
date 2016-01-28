@@ -1,0 +1,15 @@
+body { 
+	background: pink;
+}
+
+.shout {
+	text-transform: uppercase;
+}
+
+.shadow {
+	text-shadow: 1px 1px 2px black; 
+}
+
+.invert {
+	transform: rotate(180deg); 
+}
