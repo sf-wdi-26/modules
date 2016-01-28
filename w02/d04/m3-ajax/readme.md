@@ -130,24 +130,18 @@ $('form').on('submit', function(event){
 We can't guarantee that our API will respond, or will respond quick enough. In these cases the Ajax request will fail or error. Using the `jquery.get()` shorthand we can handle these eventualities by "chaining" additional listeners to our initial request:
 
 ```js
-var endpoint = 'https://api.spotify.com/v1/artists/1jTAvg7eLZQFonjWIXHiiT';
-$.get(endpoint).success(function(response_data) {
-    console.log(response_data);
-}).fail(function() {
-    console.log(":(");
-});
+var endpoint = 'https://api.spotify.com/v1/search?q=come%20together&type=track';
 
-// or with this alternative style:
-
-$.get(endpoint).
-  success(function(response_data) {
+$.get(endpoint)
+  .done(function(response_data) {
     // We're all good! (status code in the 200s).
-    console.log(response_data);
-  }).
-  fail(function() {
-    // Timeout or server error (status code in the 400s).
-    console.log(":(");
+    console.log("data: ", response_data);
   })
+  .fail(function() {
+    // Timeout or server error (status code in the 400s).
+    console.log("no data :(");
+  })
+;
 ```
 
 ## Docs & Reading
