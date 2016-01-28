@@ -1,6 +1,10 @@
 #OOP Lab: Flower Power!
 
-
+| Objectives |
+| :--- |
+| Impliment OOP patterns |
+| Create constructor objects |
+| Define prototype methods for shared behavior |
 
 We have a fully functioning Flower object that we can use to create flowers. Take a moment to digest this code.
 
