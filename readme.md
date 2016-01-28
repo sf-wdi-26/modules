@@ -4,10 +4,10 @@
 
 Time |Day 1                                      | Day 2                                | Day 3                                      | Day 4                                      | Day 5
 ----- |--------------------------------           | ------------------------------------ | ------------------------------------       | ---------------------------------------    | -----------------------------------
- **9:00am Module 1** | [Git and GitHub (Alex)][2-1A]                     |      [Lab: JavaScript calculator (Dani)][2-2A]                |  [Intro to jQuery (Alex)][2-3A]       |      [JS Prototypes(Ben)][2-4A]     | [Ajax Lab][2-5A]
+ **9:00am Module 1** | [Git and GitHub (Alex)][2-1A]                     |      [Lab: JavaScript calculator (Dani)][2-2A]                |  [Intro to jQuery (Alex)][2-3A]       |      [JS Prototypes(Ben)][2-4A]     | [Ajax Lab (Ilias)][2-5A]
  **10:45am Module 2** |[Lab: Git and GitHub (Alex)][2-1B]                |   [Lab: JavaScript calculator (Dani)][2-2B]  |    [Intermediate jQuery (Alex)][2-3B]                     |    [More Practice(Ben)][2-4B]    | [Review (TEAM)][2-5B]
-**1:30pm Module 3** |[Callbacks (Ilias)][2-1C]                          |   [Responsive CSS(Ben)][2-2C] |    [Bootstrap intro(Ilias)][2-3C]     |        [Ajax lesson (Ilias)][2-4C]              | [Review (TEAM)][2-5B]
-**3:00pm Module 4** | [Lab: Practicing callbacks (Ilias)][2-1D]                 |  [HTML Forms (Ilias)][2-2D]  | [Lab: Forms + JQuery (Ben)][2-3D] |   Outcomes  | [Create an Issue (Alex)][2-5C]|
+**1:30pm Module 3** |[Callbacks (Ilias)][2-1C]                          |   [Responsive CSS(Ben)][2-2C] |    [Bootstrap intro(Ilias)][2-3C]     |        Outcomes     | [Review (TEAM)][2-5B]
+**3:00pm Module 4** | [Lab: Practicing callbacks (Ilias)][2-1D]                 |  [HTML Forms (Ilias)][2-2D]  | [Lab: Forms + JQuery (Ben)][2-3D] |  [Ajax lesson (Ilias)][2-4C]  | [Create an Issue (Alex)][2-5C]|
 **Homework** |[Brett Victor: Inventing on Principle][2-1E] | [MicroBlog (Alex)][2-2E]  |  [Microblog Bootstrap Refactor][2-3E] | [Lab: Ajax (Ilias)][2-4D] | [Weekend Lab: Fix an issue (Alex)][2-5E]
 
 [2-1A]: w02/d01/m1-gh-branching-and-pages/ "Git and GitHub Branching and Pages"  
@@ -30,8 +30,8 @@ Time |Day 1                                      | Day 2                        
 
 [2-4A]: w02/d04/m1-js-prototypes "JS Prototypes"
 [2-4B]: w02/d04/m2-jquery-form-practice "More Practice"
-[2-4C]: # "Outcomes"
-[2-4D]: w02/d04/m3-ajax/ "AJAX"
+[2-4C]: w02/d04/m3-ajax/ "AJAX"
+[2-4D]: w02/d04/m4-ajax-lab/ "AJAX Lab"
 [2-4E]: # " "
 
 [2-5A]: w02/d04/m4-ajax-lab/ "AJAX Lab"
