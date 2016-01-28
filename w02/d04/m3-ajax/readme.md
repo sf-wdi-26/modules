@@ -23,23 +23,24 @@ Asynchronous JavaScript And XML (Ajax) allows us to make requests to a server (o
 
 * Ajax lets us exchange data with the server behind the scenes. When a change is made on the client we can send off an Ajax Request to notify the server of what just happened. This is an important way to maintain state between a client and a server that communicate in HTTP, an inherently stateless protocol.
 
-* Limiting page reloads makes our web apps *faster* and gives our users a *better experience*. (Imagine if you experienced a full page refresh every time you "liked" a post on Facebook!)
+* Limiting page reloads makes our web apps feel *faster* and mostly gives our users a *better experience*. Imagine if you experienced a full page refresh every time you "liked" a post on Facebook...
 
 #### How do we use it?
 
-jQuery gives us a <a href="https://api.jquery.com/category/Ajax" target="_blank">list of methods</a> for making Ajax requests.
+jQuery gives us a [several methods](https://api.jquery.com/category/Ajax) for making Ajax requests.
 
 ## GET and POST
 
-The HyperText Transfer Protocol (HTTP) is similar to a written language like English.
-English was made for humans; the HTTP language is specifically for web browsers and servers to communicate with each other.
+The HTTP protocol was designed specifically for web browsers and servers to communicate with each other in a request/responce cycle.
 
-`GET` and `POST` are the most important verbs in HTTP:
+`GET` and `POST` are the most common verbs used in HTTP requests:
 
   * A browser will use `GET` to indicate it would like to receive a specific web page or resource from a server.
   * A browser will use `POST` to indicate it would like to send some data to a server.
 
-We can use Ajax to make both `GET` and `POST` requests to servers. jQuery gives us the <a href="https://api.jquery.com/jQuery.ajax" target="_blank">$.ajax()</a> method, which will allow us to perform any Ajax request. It also gives us the helper methods <a href="https://api.jquery.com/jQuery.get" target="_blank">$.get()</a> and <a href="https://api.jquery.com/jQuery.post" target="_blank">$.post()</a>, which, you guessed it, are specifically for `GET` and `POST` requests.
+Conveniently can use Ajax to make both `GET` and `POST` requests to servers. From the perspective of the server, it is just another request.
+
+jQuery gives us the [`$.ajax()`](https://api.jquery.com/jQuery.ajax) method, which will allow us to perform any Ajax request.
 
 ## Ajax Setup
 
@@ -89,16 +90,16 @@ $.ajax({
 });
 ```
 
-Just like with `GET`, the `POST` request above can be refactored to use the much simpler `$.post()` method. We pass in the request URL, data, and callback function.
+Just like with `GET`, the `POST` request above can be refactored to use the much simpler `$.post()` method. We pass in the request URL, data, and callback function. Note: there is an equivalent [`$.get()`](https://api.jquery.com/jquery.get/) method as well.
 
 ```js
 var book_data = {
-    title: "The Giver",
-    author: "Lowis Lowry"
+  title: "The Giver",
+  author: "Lowis Lowry"
 };
 
 $.post('/books', book, function(data) {
-    console.log(data);
+  console.log(data);
 });
 ```
 
@@ -111,16 +112,16 @@ var endpoint = 'https://api.spotify.com/v1/search?q=goodbye&type=artist'
 
 // click event on button
 $('button').on('click', function(event) {
-      $.get(spotify_endpoint, function(data) {
-            console.log(data);
-      });
+  $.get(spotify_endpoint, function(data) {
+    console.log(data);
+  });
 });
 
 // submit event on form
 $('form').on('submit', function(event){
-      $.get(endpoint, function(data) {
-            console.log(data);
-      });
+  $.get(endpoint, function(data) {
+    console.log(data);
+  });
 });
 ```
 
