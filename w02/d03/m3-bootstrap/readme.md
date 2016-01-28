@@ -26,6 +26,12 @@ Bootstrap comes with a ton of features, including:
 - Javascript widgets to make your page interactive
 - Tons more
 
+##Sites Using Bootstrap
+
+* [NBA.com](http://www.nba.com/)
+* [Bloomberg](http://www.bloomberg.com/)
+* [CodeAcademy](https://www.codecademy.com/)
+
 ##What is Class-based CSS?
 
 Create modular classes that *encapsulate* a certain behavior and name them semantically.
