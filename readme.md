@@ -31,7 +31,7 @@ Time |Day 1                                      | Day 2                        
 [2-4A]: w02/d04/m1-js-prototypes "JS Prototypes"
 [2-4B]: w02/d04/m2-jquery-form-practice "More Practice"
 [2-4C]: w02/d04/m3-ajax/ "AJAX"
-[2-4D]: # "Outcomes"
+[2-4D]: w02/d04/m4-ajax-lab/ "AJAX Lab"
 [2-4E]: # " "
 
 [2-5A]: w02/d04/m4-ajax-lab/ "AJAX Lab"
