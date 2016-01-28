@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>localStorage</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+	<button>Click Me!</button>
+	<p id="result"></p>
+	<a id="clear" href="#">Clear localStorage</a>
+
+	<script type="text/javascript">
+
+	var daysOfTheWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+	$().ready(function(){
+		$("button").click(function(){
+			if(!localStorage.dayIterator || localStorage.dayIterator >= 6){
+				localStorage.dayIterator = 0;
+				document.getElementById("result").innerHTML = "The first day of the week is " + daysOfTheWeek[localStorage.dayIterator] + ".";
+			}else{
+					localStorage.dayIterator = Number(localStorage.dayIterator)+1;
+					document.getElementById("result").innerHTML = "The current selected day is " + daysOfTheWeek[localStorage.dayIterator] + ".";
+			}
+
+		});
+
+		//Empty the local storage.
+		$("a").click(function(){
+			localStorage.clear();
+			document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.dayIterator + " time(s).";
+		})
+	});
+	</script>
+
+</body>
+</html>
