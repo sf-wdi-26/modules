@@ -1,0 +1,29 @@
+body {
+  color: #333;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #FAFCFD;
+}
+
+html, body, #map {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.column {
+  width: 48%;
+  padding: 2%;
+  float: left;
+}
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+p {
+  padding: 10px 0;
+}
+p + p {
+  border-top: 1px solid black;
+}
