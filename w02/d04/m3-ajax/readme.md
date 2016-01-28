@@ -3,8 +3,7 @@
 | Objectives |
 | :--- |
 | Explore Ajax and why we use it |
-| Use Ajax to GET data from an API |
-| Use jQuery to render data from an API |
+| Use Ajax to GET & POST data to an API |
 
 ## APIs
 
@@ -17,7 +16,7 @@ A **GUI** exists to make an application more convenient for the user. An **API**
 
 ## Ajax
 
-Asynchronous JavaScript And XML (Ajax) allows us to make requests to a server (ours or another application's) without refreshing the page.
+Asynchronous JavaScript And XML (Ajax) allows us to make requests to a server (ours or another application's) without refreshing the page. You may also hear the term `XMLHttpRequest`. This is the same thing as Ajax! In fact, `window` object in the Browser has available to it another object, `XMLHttpRequest`. This is how you would make these types of requests without using jQuery.
 
 #### Why do we care?
 
@@ -51,13 +50,15 @@ Using jQuery's `$.ajax()` method, we can specify a list of parameters, including
 * data type
 * callback function (which will run on successful completion of the Ajax request)
 
+Let's try sending a get request to [Spotify's API](https://developer.spotify.com/web-api/search-item)
+
 ```js
 $.ajax({
   type: 'GET',
   url: 'https://api.spotify.com/v1/artists/1jTAvg7eLZQFonjWIXHiiT',
   dataType: 'json',
   success: function(data) {
-    console.log(data);
+    //celebrate!
   }
 });
 ```
@@ -67,7 +68,9 @@ If we're doing a simple `GET` request, we can (and should) avoid the `$.ajax()` 
 ```js
 var endpoint = 'https://api.spotify.com/v1/artists/1jTAvg7eLZQFonjWIXHiiT';
 $.get(endpoint, function(response_data) {
-    console.log(response_data);
+  // creating a global variable to inspect the new data is good
+  // just remember to make it local once your done inspecting!
+  window.newData = response_data;
 });
 ```
 
@@ -144,7 +147,6 @@ $.get(endpoint)
 ;
 ```
 
-## Docs & Reading
+## Docs & Further Reading
 
-* <a href="https://developer.spotify.com/web-api/search-item" target="_blank">Spotify API Search Endpoint</a>
-* <a href="https://api.jquery.com/jquery.get" target="_blank">jQuery.get()</a>
+* What is [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)?
