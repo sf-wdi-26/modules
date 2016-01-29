@@ -29,7 +29,7 @@ Flower.prototype = {
         return 'What a noxious weed!';
       }
   },
-  describe: function describe(answer) {
+  describe: function describe() {
     alert("This flower is " + this.color + ".")
   },
   compare: function compare(otherFlower) {
