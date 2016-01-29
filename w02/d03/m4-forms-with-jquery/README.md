@@ -38,6 +38,7 @@ Let's brainstorm something else we can do with localStorage and edit the code in
 - Restart SublimeText3 (close and re-open the application)
 - Type 'bs3-template:html5' and hit `tab`
 - Make any changes you need (language = 'en', title, etc)
+- Add `http` to all the CDN links
 - Scroll down to below the `<h1>` tag and type 'bs3-form' and press `tab` again
 - Add any form elements you wish and try to store the input data using browser storage.
 

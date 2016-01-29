@@ -1,10 +1,46 @@
 ## WDI 26 Web Development Immersive
 
-#### Week 2
+#### Week 3 - Project 1:  Browser Games
+
+Time | Day 1                                      | Day 2                                | Day 3                                      | Day 4                                      | Day 5
+----- |--------------------------------    | ------------------------------ | ---------------------------------  | ---------------------------------   | -----------------------------------
+**9:30am Module 1** | [Review Homework][3-1A] | [Binary Search (Ben)][3-2A]  | [Bubble Sort (Alex)][3-3A] |[ Merge Sort (Ilias)][3-4A] | [Presentations] [3-5A]
+ **10:45am Module 2** |[SASS/CSS preprocessors (Ben) ][3-1B]| [PROJECT 1][3-2B]  | [PROJECT 1][3-3B] | [PROJECT 1 ][3-4B]| [Presentations] [3-5B]
+**1:30pm Module 3** |[Agile development, wireframes, and user stories (Alex)] [3-1C]| [PROJECT 1][3-2C]  | [PROJECT 1][3-3C] | [Outcomes][3-4C] |  [Review][3-5C]
+**3:00pm Module 4** | [Project 1 Specs][3-1D] |  [PROJECT 1][3-2D]|  [PROJECT 1][3-3D]|  [PROJECT 1][3-4D]| [Happy Hour][3-5D]
+**Homework** | Project 1 | Project 1 | Project 1 | Project 1 | Try Ruby.org 
+
+[3-1A]: # "Review Homework"  
+[3-1B]: # "SASS Lesson"
+[3-1C]: # "Callbacks"
+[3-1D]: # "Project Management"
+
+[3-2A]: # "Binary Search"
+[3-2B]: # "Project 1"
+[3-2C]: # "Project 1"
+[3-2D]: # "Project 1"
+
+[3-3A]: # "Bubble Sort"
+[3-3B]: # "Project 1"
+[3-3C]: # "Project 1"
+[3-3D]: # "Project 1"
+
+[3-4A]: # "Merge Sort"
+[3-4B]: # "Project 1"
+[3-4C]: # "Outcomes"
+[3-4D]: # "Project 1"
+
+[3-5A]: # "Presentations"
+[3-5B]: # "Presentations"
+[3-5C]: # "Review"
+[3-5D]: # "Happy Hour"
+[3-5E]: # "Homework: tryruby.org Lessons 1 - 2"
+
+#### Week 2 - jQuery and Bootstrap
 
 Time |Day 1                                      | Day 2                                | Day 3                                      | Day 4                                      | Day 5
 ----- |--------------------------------           | ------------------------------------ | ------------------------------------       | ---------------------------------------    | -----------------------------------
- **9:00am Module 1** | [Git and GitHub (Alex)][2-1A]                     |      [Lab: JavaScript calculator (Dani)][2-2A]                |  [Intro to jQuery (Alex)][2-3A]       |      [JS Prototypes(Ben)][2-4A]     | [Ajax Lab (Ilias)][2-5A]
+ **9:00am Module 1** | [Git and GitHub (Alex)][2-1A]                     |      [Lab: JavaScript calculator (Dani)][2-2A]                |  [Intro to jQuery (Alex)][2-3A]       |      [JS Prototypes(Ben)][2-4A]     | [Flower Power OOP Lab (Ilias)][2-5A]
  **10:45am Module 2** |[Lab: Git and GitHub (Alex)][2-1B]                |   [Lab: JavaScript calculator (Dani)][2-2B]  |    [Intermediate jQuery (Alex)][2-3B]                     |    [More Practice(Ben)][2-4B]    | [Review (TEAM)][2-5B]
 **1:30pm Module 3** |[Callbacks (Ilias)][2-1C]                          |   [Responsive CSS(Ben)][2-2C] |    [Bootstrap intro(Ilias)][2-3C]     |        Outcomes     | [Review (TEAM)][2-5B]
 **3:00pm Module 4** | [Lab: Practicing callbacks (Ilias)][2-1D]                 |  [HTML Forms (Ilias)][2-2D]  | [Lab: Forms + JQuery (Ben)][2-3D] |  [Ajax lesson (Ilias)][2-4C]  | [Create an Issue (Alex)][2-5C]|
@@ -34,7 +70,7 @@ Time |Day 1                                      | Day 2                        
 [2-4D]: w02/d04/m4-ajax-lab/ "AJAX Lab"
 [2-4E]: # " "
 
-[2-5A]: w02/d04/m4-ajax-lab/ "AJAX Lab"
+[2-5A]: w02/d05/m1-OOP-flower-lab/ "Flower Power OOP Lab"
 [2-5B]: # "Review"
 [2-5C]: w02/d05/m4-create-an-issue/ "Create an Issue"
 [2-5D]: # " "
