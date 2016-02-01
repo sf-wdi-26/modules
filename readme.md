@@ -5,9 +5,9 @@
 Time | Day 1                                      | Day 2                                | Day 3                                      | Day 4                                      | Day 5
 ----- |--------------------------------    | ------------------------------ | ---------------------------------  | ---------------------------------   | -----------------------------------
 **9:30am Module 1** | Review Homework (Alex)| [Binary Search (Ben)][3-2A]  | [Bubble Sort (Alex)][3-3A] |[ Merge Sort (Ilias)][3-4A] | [Presentations] [3-5A]
- **10:45am Module 2** |[SASS/CSS preprocessors (Ben) ][3-1B]| [PROJECT 1][3-2B]  | [PROJECT 1][3-3B] | [PROJECT 1 ][3-4B]| [Presentations] [3-5B]
-**1:30pm Module 3** |[Agile development, wireframes, and user stories (Alex)] [3-1C]| [PROJECT 1][3-2C]  | [PROJECT 1][3-3C] | [Outcomes][3-4C] |  [Review][3-5C]
-**3:00pm Module 4** | [Project 1 Specs][3-1D] |  [PROJECT 1][3-2D]|  [PROJECT 1][3-3D]|  [PROJECT 1][3-4D]| [Happy Hour][3-5D]
+ **10:45am Module 2** |[SASS/CSS preprocessors (Ben) ][3-1B]| [Project 1][3-2B]  | [Project 1][3-3B] | [Project 1 ][3-4B]| [Presentations] [3-5B]
+**1:30pm Module 3** |[Agile development, wireframes, and user stories (Alex)] [3-1C]| [Project 1][3-2C]  | [Project 1][3-3C] | [Outcomes][3-4C] |  [Review][3-5C]
+**3:00pm Module 4** | [Project 1 Specs][3-1D] |  [Project 1][3-2D]|  [Project 1][3-3D]|  [Project 1][3-4D]| [Happy Hour][3-5D]
 **Homework** | Project 1 | Project 1 | Project 1 | Project 1 | Try Ruby.org 
 
 [3-1A]: # "Review Homework"  
