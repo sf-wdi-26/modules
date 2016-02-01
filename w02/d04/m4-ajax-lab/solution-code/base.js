@@ -1,29 +1,23 @@
 // globals
-var weekly_quakes_endpoint = "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_week.geojson"
-var $info_row_target;
+var weeklyQuakesEndpoint = "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_week.geojson"
+var $infoRowTarget;
 var map;
 
-$(document).ready(function(){
-
-  $info_row_target = $("#info");
-  //render a map
-  createMap();
-  //grab the data
-  fetchQuakeData();
-
-});
-
 function fetchQuakeData(){
-  $.get(weekly_quakes_endpoint, function(response){
-    response.features.forEach(function renderRowAndMarker(quake){
+  $.get(weeklyQuakesEndpoint, function(response){
+    response.features.forEach(function(quake) {
       // Add title of the quake
       var title = quake.properties.title;
       // In UNIX time (miliseconds) find the difference between the time now and the time
-      // when the quake happend. Then convert to hours
-      var hours_ago = Math.round( ( Date.now() - quake.properties.time ) / (1000*60*60) );
+      // when the quake happened. Then convert to hours
+      var hoursAgo = Math.round(
+        ( Date.now() - quake.properties.time ) / (1000*60*60)
+      );
+      //create info element
+      //set inner text to include title & time difference
       // Append the info to the page
-      $info_row_target.append( "<p>" + title + " / " + hours_ago + " hours ago</p>");
-
+      $infoRowTarget.append("<p>")
+                    .append(title + " / " + hoursAgo + " hours ago");
       // Create the map markers
       var lat = quake.geometry.coordinates[1];
       var lng = quake.geometry.coordinates[0];
@@ -44,4 +38,9 @@ function createMap(){
   });
 }
 
-
+function init() {
+  $infoRowTarget = $("#info");
+  //render a map
+  createMap();
+  fetchQuakeData();
+}
