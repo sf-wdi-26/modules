@@ -11,7 +11,7 @@ Time | Day 1                                      | Day 2                       
 **Homework** | Project 1 | Project 1 | Project 1 | Project 1 | Try Ruby.org 
 
 [3-1A]: # "Review Homework"  
-[3-1B]: # "SASS Lesson"
+[3-1B]: w03/d01/m2-sass/ "SASS Lesson"
 [3-1C]: w03/d01/m3-agile/ "Agile development, wireframes, and user stories"
 [3-1D]: # "Project Management"
 
