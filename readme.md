@@ -12,7 +12,7 @@ Time | Day 1                                      | Day 2                       
 
 [3-1A]: # "Review Homework"  
 [3-1B]: # "SASS Lesson"
-[3-1C]: # "Callbacks"
+[3-1C]: w03/d01/m3-agile/ "Agile development, wireframes, and user stories"
 [3-1D]: # "Project Management"
 
 [3-2A]: # "Binary Search"
