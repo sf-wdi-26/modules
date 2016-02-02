@@ -15,7 +15,7 @@ Time | Day 1                                      | Day 2                       
 [3-1C]: w03/d01/m3-agile/ "Agile development, wireframes, and user stories"
 [3-1D]: w03/d01/m4-project-1-specs "Project Management"
 
-[3-2A]: # "Binary Search"
+[3-2A]: w03/d02/m1-binary-search/ "Binary Search"
 [3-2B]: # "Project 1"
 [3-2C]: # "Project 1"
 [3-2D]: # "Project 1"
