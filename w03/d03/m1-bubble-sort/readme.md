@@ -8,7 +8,7 @@ So! there are a lot of solutions. The term "algorithm" is used in software devel
 
 ## Why bubble sort?  
 
-We'll look at a few different sorting algorithms, but we're starting with bubble sort because:
+We'll look at a few different sorting algorithms, here's why to use bubble sort:
 
  - it's simple (but slower than some more complex algorithms)
  - it performs great on already sorted data!
@@ -38,7 +38,7 @@ From Romania</a> (you can watch on double speed).
 
 * Work with a partner.
 
-* Write on the whiteboard. No computer code allowed!
+* Write on the whiteboard/tables. No computer code allowed!
 
 * Start with pseudocode (English descriptions of what you want to do in the code).
 
