@@ -12,9 +12,13 @@ Merge Sort works on the basic principal of dividing your list into sub-lists (re
 ##How would I build it?
 There are TWO functions that work together to accomplish a Merge Sort:
 
--  A `mergeSort` function that takes an array, splits the array in two, and calls a merge function.  The `mergeSort` function is [recursive](https://en.wikipedia.org/wiki/Recursion_(computer_science)).  
+-  The `mergeSort` function takes an array, cuts it in half [recursively](https://en.wikipedia.org/wiki/Recursion_(computer_science)) until it has divided the whole array into single items. At this point the recursive calls finally starts returning to the function that invoked it. Here a seperate `merge` function is run on a pair of returned results which merges them together (see visualization above).
+-  The `merge` function takes two arrays as parameters, looks at the the first elements of the two lists, and assembles a resulting list based on the two lists 'zipped' together by pushing the lowest to highest valued elements. The `merge` function **is not recursive**.
 
--  A merge function that takes two arrays as parameters, looks at the the first elements of the two lists, and assembles a resulting list based on the two lists 'zipped' together by pushing the lowest to highest valued elements. The `merge` function **is not recursive**.
+####Recursion
+![recursion](https://upload.wikimedia.org/wikipedia/commons/6/62/Droste.jpg)
 
 ##Drill
-Pseudocode your own implementation of `mergeSort`
+Pseudocode your own implementation of `merge`.
+
+**Bonus**: Pseudocode an implementation of `mergeSort`.
