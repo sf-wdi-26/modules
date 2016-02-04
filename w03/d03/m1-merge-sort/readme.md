@@ -1,7 +1,7 @@
 #Merge Sort
 
 ##Why Merge Sort?
-Merge sort is the first powerful sorting algorithm that you will encounter in the wilds of the real world (baked into Safari and Firefox.) It uses an extremely efficient application of the 'Divide and Conquer' concept to lists of elements. We worked on Bubble Sort yesterday, now let us up our game and work on Merge Sort!
+Merge sort is the first powerful sorting algorithm that you will encounter in the wilds of the real world (baked into Safari and Firefox). It uses an extremely efficient application of the 'Divide and Conquer' concept to lists of elements. We worked on Bubble Sort yesterday, now let us up our game and work on Merge Sort!
 
 ##How does it work?
 Merge Sort works on the basic principal of dividing your list into sub-lists (recursively) until your sub-lists are of length one or zero. Once your sub-lists are at that size, you merge with a neighboring sub-list. When you merge them, you merge them in ascending or descending order, depending on your implementation.
@@ -17,4 +17,4 @@ There are TWO functions that work together to accomplish a Merge Sort:
 -  A merge function that takes two arrays as parameters, looks at the the first elements of the two lists, and assembles a resulting list based on the two lists 'zipped' together by pushing the lowest to highest valued elements. The `merge` function **is not recursive**.
 
 ##Drill
-Pseudocode your own implimentation of `mergeSort`
+Pseudocode your own implementation of `mergeSort`
