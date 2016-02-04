@@ -2,7 +2,7 @@
 
 Binary search is a type of search method used to find the position of a target item in a sorted array.
 
-```js
+``` js
 function binarySearch(array, target) {
   // your code here
 };
@@ -10,28 +10,32 @@ function binarySearch(array, target) {
 var sample = [0, 1, 3, 5, 8, 13, 21];
 var target = 1;
 
-binarySearch(sample, 1); // 2 (the index it is located at in the sample array)
+binarySearch(sample, 1); 
+// 2 (the index it is located at in the sample array)
+
 ```
 
 The binary search algorithm begins by comparing the target value to the value of the middle element of the sorted array.
 
-```js
+``` js
 var low = 0;
 var high  = array.length - 1;
 var mid = Math.floor((low + high) / 2);
-mid; // 3
+
+mid;
+//  =>  3
 ```
 
 If the target value is equal to the middle element's value, then the position is returned and the search is finished.
 
-```js
+``` js
 array[mid] === target // 3 === 1
 // Nope, keep going
 ```
 
 If the target value is less than the middle element's value, then the search continues on the lower half of the array; or if the target value is greater than the middle element's value, then the search continues on the upper half of the array.
 
-```js
+``` js
 array[mid] > target // 3 > 1
 // Yep, move to lower half
 
@@ -45,7 +49,58 @@ This process continues, eliminating half of the elements, and comparing the targ
 
 ## A real-life example
 
-Searching for a name in a telephone book using binary search - https://study.cs50.net/binary_search (an awesome introduction to binary search).
+Searching for a name in a telephone book using [Binary Search](https://study.cs50.net/binary_search) (an awesome introduction to the concept).
+
+### A Few Words About Recursion:
+
+Recursion is a technique where a function calls itself to do the same repetitive task 
+on smaller versions of the original argument.
+
+We're going to create a function to `countRecursively` which calls itself. Often developers just use a letter to represent a big word they don't want to type:
+
+``` js
+var countR = function(num){
+    console.log(num);
+    if(num > 0) {
+        countR(num-1)
+    };
+};
+
+```
+
+For simple tasks you may be able to accomplish the same result with a `do while` statement:
+
+``` js
+var countD = function(num){
+    var i = 0;
+    do {
+       i += 1;
+       console.log(i);
+    } while (i < num);
+};
+
+```
+
+Here is another recursive function: 
+
+``` js
+var singBottles = function(c){
+  if (c > 0){
+      console.log(c + ' bottles of beer on the wall, '
+      + c + ' bottles of beer! 
+      Take one down, pass it around, ' + (c-1) + ' 
+      bottles of beer on the wall!');
+      c--;
+      singBottles(c);
+  } else {
+      console.log("*BUUUUUUUURP!!!*");
+  }
+}
+
+```
+
+Binary search offers an excellent challenge to practice writing a recursive function.
+
 
 ## Exercise
 
@@ -64,26 +119,35 @@ After this real-life demo, students will pseudocode their plan for implementing 
 
 ### Sample Data
 
-```js
-var primeNumbers = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199, 211, 223, 227, 229, 233, 239, 241, 251, 257, 263, 269, 271, 277, 281, 283, 293, 307, 311, 313, 317, 331, 337, 347, 349, 353, 359, 367, 373, 379, 383, 389, 397, 401, 409, 419, 421, 431, 433, 439, 443, 449, 457, 461, 463, 467, 479, 487, 491, 499, 503, 509, 521, 523, 541];
+``` js
+var primeNumbers = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 
+	41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103,
+	107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 
+	173, 179, 181, 191, 193, 197, 199, 211, 223, 227, 229, 233, 
+	239, 241, 251, 257, 263, 269, 271, 277, 281, 283, 293, 307, 
+	311, 313, 317, 331, 337, 347, 349, 353, 359, 367, 373, 379, 
+	383, 389, 397, 401, 409, 419, 421, 431, 433, 439, 443, 449, 
+	457, 461, 463, 467, 479, 487, 491, 499, 503, 509, 521, 
+	523, 541];
 
 // string arrays to sort:
-var array = ["Jan", "Feb", "mar", "Apr", "May", "Jun", "jul", "Aug", "Sept", "Oct", "Nov", "Dec"];
+var array = ["Jan", "Feb", "mar", "Apr", "May", "Jun", "jul",
+	"Aug", "Sept", "Oct", "Nov", "Dec"];
 
-var wdi_22_enrollment = ['Angelo', 'Dani', 'Jennifer', 'Mikey', 'sam', 'Laura E.', 'Chris', 'Margaux', 'Uriel', 'Josh', 'Francesca', 'Racha', 'Brian', 'Jamey', 'Laura B.', 'Riley', 'Matt'];
+var wdi_26_students = ['Rider', 'Jasmine', 'Caleb', 'Lucca',
+	'jessie', 'Anna', 'Monq', 'Vien', 'Brian', 'Daniel F.', 
+	'Cindy', 'Annabel', 'Derek', 'Al', 'Nidhi', 'tashi', 
+	'Leslie', 'Jehnean', 'Christina', 'Josh', 'matt', 
+	'Franchini', 'Will', 'Lena', 'Ivan', 'Nicholas', 'Daniel S.'];
 
-var wdi_23_enrollment = ['Ling', 'Annie', 'John', 'Meredith', 'Breana', 'Randee', 'Michael', 'Brendan', 'Vince', 'Emily A.', 'Jeehye', 'Emily K.', 'Jorge', 'Eric', 'Natasha', 'Scot', 'Zain', 'Isom', 'Noel', 'Roy'];
-
-// combined, with typos:
-var wdi_combined_enrollment = ['Angelo', 'dani', 'Jennifer', 'Mikey', 'Sam', 'Laura e.', 'Chris', 'Margaux', 'uriel', 'Josh', 'Francesca', 'racha', 'Brian', 'Jamey', 'Laura B.', 'Riley', 'Matt', 'Ling', 'Annie', 'John', 'Meredith', 'Breana', 'Randee', 'michael', 'Brendan', 'vince', 'Emily A.', 'Jeehye', 'Emily k.', 'jorge', 'Eric', 'Natasha', 'Scot', 'Zain', 'Isom', 'Noel', 'Roy'];
 
 ```
 
 
 ## Solutions
-[Solutions](https://github.com/sf-wdi-22-23/modules/blob/master/w04-associations-and-auth/d3-drills/solutions.js)
+[Solutions](solutions.js)
 
-### Further Reading
+### Further Reading (Includes sample code in Ruby and C++)
 
 - [Big O Notation cheatsheet](http://bigocheatsheet.com/)
 - [Carnagie Mellon University - Binary Search](http://www.cs.cmu.edu/~15110-f12/Unit05PtB-handout.pdf)
