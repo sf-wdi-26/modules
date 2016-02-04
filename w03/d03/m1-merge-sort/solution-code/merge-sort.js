@@ -1,5 +1,6 @@
 function mergeSort(arr) {
   // if array is length is less than or equal to one, return it
+  // exit condition
   if (arr.length <= 1) {
     return arr;
   }
@@ -12,7 +13,8 @@ function mergeSort(arr) {
   // create an array of right half
   var right = arr.slice(middle, arr.length);
 
-  // call merge on a recursively called left half and right half
+  // sort the left & right arrays and merge them back together
+  // recursive condition
   return merge(mergeSort(left), mergeSort(right));
 }
 
@@ -33,7 +35,7 @@ function merge(left, right) {
   // if left is the only array with elements, push them all in
   while (left.length) {
       result.push(left.shift());
-  // if right is the only array with elmeents, push them all in
+  // if right is the only array with elements, push them all in
   }
   while (right.length) {
     result.push(right.shift());
