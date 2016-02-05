@@ -34,7 +34,7 @@ Time | Day 1                                      | Day 2                       
 [3-5B]: # "Presentations"
 [3-5C]: # "Review"
 [3-5D]: # "Happy Hour"
-[3-5E]: # "Homework: tryruby.org Lessons 1 - 2"
+[3-5E]: w03/d05/hmwk-ruby-prep "Homework: tryruby.org Lessons 1 - 2"
 
 #### Week 2 - jQuery and Bootstrap
 
