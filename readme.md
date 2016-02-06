@@ -1,4 +1,52 @@
-## WDI 26 Web Development Immersive
+# WDI 26 Web Development Immersive
+
+
+## Unit 2: The Backend
+
+#### Week 4 - Intro to Ruby
+
+Time | Day 1 | Day 2 | Day 3 | Day 4 | Day 5
+----| -------------------------------- | ------------------------------------ | ------------------------------------ | --------------------------------------- | -----------------------------------
+**9:30am Module 1** | [Intro to Ruby Data Types (Alex)][4-1A] | [Rspec intro & Car Racing Lab (Ilias)][4-2A] | [Data Modeling (Alex)][4-3A]  | [Models & Migrations (Ilias)][4-4A]        | [RESTful Forms (Alex)][4-5A] 
+**10:45am Module 2** |   [Intro to Ruby Lab (Alex)][4-1C] | [Username Generator TDD Lab (Ilias)][4-2B]   | [Database Design Lab (Alex)][4-3B]       | [Models & Migrations Lab (Ilias)][4-4B]              | [Review (Alex)][4-5B]
+**1:30pm Module 3** |  [Methods & Classes (Ben)][4-1D]| [Intro to Sinatra, View Templating(Alex)][4-2C] | [Intro to SQL (Ben)][4-3C] |  [Outcomes (Neda)][4-4C]       | [Review (Ilias)][4-5C]
+**3:00pm Module 4** |[OOP Lab (Ben)][4-1E]  | [Sinatra Controllers & RESTful routing (Alex)][4-2D]   | [SQL Lab (Ben)][4-3D]                    | [ActiveRecord Lab (Ben)][4-4D]   | [Sinatra App Lab][4-5D]
+**Homework** | [Finish/Refactor Labs][4-1F]  | [Your own Sinatra app][4-2E]                  | [Database Design][4-3E]      | [ActiveRecord Lab][4-4E] | [Sinatra App Lab][4-5E]
+
+[4-1A]: # "Intro to Ruby - Data Types & Variables"
+[4-1B]: # "Arrays, Hashes, & Blocks"
+[4-1C]: # "Control flow in Ruby"
+[4-1D]: # "Objects & Methods in Ruby"
+[4-1E]: # "Arrays & Hashes Lab"
+[4-1F]: # "Classes, Objects, & Methods Lab"
+
+[4-2A]: # "Rspec"
+[4-2B]: # "Username Generator"
+[4-2C]: # "Sinatra Setup + Layouts & Templating"
+[4-2D]: #          "Controllers & RESTful Routing"
+[4-2E]: # " "
+
+[4-3A]: #                             "Intro to Relational Data Modeling"
+[4-3B]: #                           "Practice Database Design"
+[4-3C]: #                  "SQL - Setup, Insert, Update, Delete"
+[4-3D]: #                                         "SQL Select"
+[4-3E]: #         "Data Modeling Homework"
+
+[4-4A]: #         "Building Models with ActiveRecord and Migrations"
+[4-4B]: #             "Models and Migrations Lab"
+[4-4C]: # " "
+[4-4D]: # "ActiveRecord Methods and Finders"
+[4-4E]: # "ActiveRecord Finders lab"
+
+[4-5A]: #                        "Building and Submitting Forms"
+[4-5B]: # " "
+[4-5C]: # " "
+[4-5D]: # " "
+[4-5E]: #                      "Weekend Sinatra app"
+
+
+
+## Unit 1: The Frontend
 
 #### Week 3 - Project 1:  Browser Games
 
