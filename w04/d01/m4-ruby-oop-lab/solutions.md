@@ -7,7 +7,7 @@ class Animal
   end
 
   def eat (food)
-    puts "Yum! I am eating #{food}!"
+    puts "Yum! I, as a #{@type} love to eat #{food}!"
   end
 
   def sleep
@@ -50,7 +50,7 @@ class Person < Animal
   end
 
   def greet
-    puts "Hi, I'm #{@name}. I'm a #{@type}, and I'm #{@age} years old."
+    puts "Hi, I'm #{@name}. I'm a #{@type}, and #{@age} years old."
   end
 end
 

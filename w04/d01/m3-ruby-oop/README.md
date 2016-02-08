@@ -1,8 +1,39 @@
-# <img src="https://cloud.githubusercontent.com/assets/7833470/10423298/ea833a68-7079-11e5-84f8-0a925ab96893.png" width="60"> Introduction to Classes
+#Ruby <3's OOP
 
-### Object vs. Class
+##Learning Objectives
+By the end of lesson, students will be able to...
 
-An object represents an abstract thing, usually with some properties (attributes) and some sort of behavior (methods). A class, in turn, can create many objects with the same set of properties (attributes) and behaviors (methods).
+* Distinguish between hashes & classes in Ruby
+* Understand what "everything is an object means"
+* Initialize classes
+* Define attributes & instance methods
+* Distinguish between instance and class variables
+
+##Hashes (10m)
+
+Let's create a new Hash
+
+* Hashes are simple key value stores.
+
+**Challenge:**
+How can I organize my data using key/value pairs in Ruby? Like so:
+
+```ruby
+{:name=>"Napoleon", :fav_food=>"steak", :skills=>["archery", "combat", "egg farming"]}
+```
+
+##Objects (10m)
+
+* Everything in Ruby is an Object; however, we almost never use plain vanilla Objects because there are more sophisticated implementations of them such a `String`, `Integer`, and `Hash`.
+
+**Challenge:**
+How can we prove that the Hash we just created inherited from `Basic Object`?
+
+###SuperClass Inheritance Tree
+
+![Class inheritance](http://i.stack.imgur.com/rvcEi.png)
+
+##Classes (10m)
 
 ### Define and Instantiate a Class
 
@@ -19,7 +50,7 @@ To create instances of our class, we will create a variable and assign it the re
 car = Car.new
 ```
 
-### Instance methods and instance variables
+### Instance methods
 
 We are able to create instances of a `Car`, but our class is *very* simple and our instances currently don't give us much. We'd like to add properties and behaviors (attributes and methods) for our car instances. We'll start by looking at **instance methods** and **instance variables**. An instance method represents a function that is accessible on every instance of a class. To create an instance method, we just create a regular method inside our class definition. Here's the syntax:
 
@@ -36,6 +67,34 @@ Now every car we create will have a "drive" behavior.
 ```ruby
 car.drive
 ```
+
+
+**Challenge:**
+How do we create a class in Ruby? 
+
+Goal: Let's create a Car that goes "Vroom" when it's first *initialized*
+
+*Refresher: Classes are datatypes used to create more data. They are analogous to constructors in JavaScript.*
+
+###Attributes
+
+What should we do if we want to set attributes on the car, such as a paint color and year?
+
+**Challenge:**
+Enable this code...
+
+```ruby
+fiat = Car.new
+fiat.color = "hot pink"
+fiat.color
+=> "hot pink"
+```
+
+*Hint: Use `attr_accessor`.*
+
+*Bonus: Don't use `attr_accessor`*
+
+###Instance Variables
 
 Let's give each instance of `Car` a color using instance variables.
 
@@ -68,7 +127,7 @@ car_three.color
 
 Every time an instance of `Car` is assigned a color, it will have its *own* instance variable named `@color`.
 
-### method: `initialize`
+###Initialization
 
 In Ruby there's a built-in method named `initialize` that is invoked every time a class is instantiated. Let's prove that this is true by adding a method named `initialize`.
 
@@ -335,7 +394,6 @@ The syntax for inheritance uses `<` in the class definition.  Our pickup trucks 
 
 ```ruby
 class Pickup < Car
-  attr_accessor :make, :color, :bed_capacity, :speed
 
   def initialize(color, make, bed_capacity)
     @speed = 0
@@ -362,7 +420,7 @@ truck_one.speed
 => 40
 ```
 
-Inheritance doesn't go the other way, though -- new cars don't know how to use the `ride_in_back` behavior.
+Inheritance doesn't go the other way, new cars don't know how to use the `ride_in_back` behavior.
 
 ```ruby
 focus = Car.new("green", "Ford")
@@ -372,29 +430,53 @@ focus.ride_in_back
 #=> @speed=0, @color="green", @make="Ford">
 ```
 
-### Inheritance and Class Variables
+*Note:* All subclasses share the same class variable, so changing a class variable within a subclass changes the class variable for the base class and all other subclasses. This can be good when, for instance, we want to update the total `Car` count whenever a new `Pickup` is created. However, `Pickup`'s `@@count` will always be equal to the total `Car` count.  
 
-Class variables  in Ruby don't interact with inheritance in the way many people would expect.  All subclasses share the same class variable, so changing a class variable within a subclass changes the class variable for the base class and all other subclasses.  This can be good when, for instance, we want to update the total `Car` count whenever a new `Pickup` is created. However, `Pickup`'s `@@count` will always be equal to the total `Car` count.  
+### Super
 
-This connection can cause lots of issues if it's not intended. For example, a `Vehicle` class might have an `@@num_wheels` variable that stores a "default" number of wheels for a vehicle, say 4.  If `Boat` is later created as a subclass of `Vehicle`, and `Boat`'s `@@num_wheels` is set to 0, then all vehicles will now have their number of wheels set to 0, even `Motorcylces`, `Cars`, `EighteenWheelers` and any other instances of `Vehicle` subclasses.
+We can refactor the `Pickup` class with the super keyword, that is a placeholder for anything the car has previously defined. The example below is equivalent to above.
 
-A better pattern that fits this scenario uses "class instance variables". For the "class instance variable pattern", we create an instance variable for the shared data within the parent class itself (outside of a method definition). Then, we create a class getter method using within the parent class to access the class instance variable. Finally, we create a new version of the class instance variable for each subclass.  The data is no longer shared among multiple classes when we use this pattern. Let's see an example.
-<!-- this is a comment in markdown -->
+```ruby
+class Pickup < Car
+
+  def initialize(color, make, bed_capacity)
+    super(color, make)
+    @bed_capacity = bed_capacity
+    @@count = @@count + 1
+  end
+
+  def ride_in_back
+    puts "Bumpy but breezy!"
+  end
+end
+```
+
+### String Interpolation
+
+Interpolate Ruby into strings, referencing methods and variables.
 
 ``` ruby
 class Vehicle
-  @num_wheels = 4
-  def self.num_wheels
-    @num_wheels
+	attr_accessor :num_wheels
+  def how_many_wheels?
+    "I have #{num_wheels} wheels" #string interpolation
   end
 end
 
 class Boat < Vehicle
-  @num_wheels = 0
+  def initialize
+  	@num_wheels = 0
+  end
 end
 
 class EighteenWheeler < Vehicle
-  @num_wheels = 18
+  def initialize
+  	@num_wheels = 18
+  end
 end
+
+massive_truck = EighteenWheeler.new
+massive_truck.how_many_wheels?
+=> "I have 18 wheels"
 ```
 

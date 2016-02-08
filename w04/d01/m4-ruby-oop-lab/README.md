@@ -1,28 +1,24 @@
-# Car Race
+## Exercises: The Animal Kingdom
 
-###Challenge
+##### Create the following:
 
-Build out code in the `lib` directory that simulates a car race!
+1. An `Animal` class, with the following:
+  * Properties:
+    * `type`: A string that stores the type of animal
+  * Instance Methods:
+    * `eat`: Takes a parameter `food` to eat and prints out a message that the <type> of animal is eating `food`
+    * `sleep` & `wake`: These two methods should NOT be passed any arguments. Instead, they will set an instance variable `@state` to the string `"asleep"` or `"awake"` respectively.
 
-###Steps
+2. A `Person` class, with the following characteristics:
+  * Inherits from `Animal`
+  * Automatically sets `@type` to `"person"`
+  * Adds 3 new instance vars:
+    * age
+    * gender
+    * name
+  * Also, people aren't cannibals! Make sure your `Person` class *overrides* the existing `eat` method (in `Animal`) so that a `Person` cannot eat a `"person"`
 
-* run `rspec` in the main directory to see your failing tests
-* READ THE ERRORS and methodically pass each one by one
-* Once you get the errors into passing tests, see if you can refactor (remember: "red, green, refactor")
+#### Stretch Challenges
 
-Once the tests are passing you should have:
-
-- a Car class that can accelerate to a certain speed
-- a Race class that when instantiated instantiates two cars and accelerates each to a random speed between 0-100
-- an instance method on the Race class called `winner` that returns the winning car (determined by a greater speed)
-- an instance method on the Race class called `loser` that returns the losing car (determined by a lesser speed)
-
-& you will be able to run:
-
-```ruby
-race = Race.new
-race.winner
-# => <Car ...>
-race.loser
-# => <Car ...>
-```
+* People can speak, and it's good to be polite. Add an instance method called `greet` that prints out a person's name, age, and gender in the following format: "Hi, I'm Teddy. I'm a person, and 156 years old." (Hint: look up how to interpolate strings in Ruby)
+* Add a `class variable` that keeps track of all the people you create.
