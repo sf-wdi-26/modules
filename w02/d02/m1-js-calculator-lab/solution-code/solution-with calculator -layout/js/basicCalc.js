@@ -1,5 +1,4 @@
 // Setup initial state variables
-// Variables defined in global scope, not the best idea
 var numbers   = document.getElementsByClassName("number");
 var operators = document.getElementsByClassName("operator");
 var display   = document.getElementsByClassName("display")[0];
@@ -20,7 +19,7 @@ for( var i=0; i<operators.length; i++ ) {
 }
 
 eq.addEventListener("click", function(){
-  calculate(first_number, second_number, operator)
+  calculate(first_number, second_number, operator);
 });
 
 clear.addEventListener("click", clearForm);

@@ -7,10 +7,10 @@
 
 Time | Day 1 | Day 2 | Day 3 | Day 4 | Day 5
 ----| -------------------------------- | ------------------------------------ | ------------------------------------ | --------------------------------------- | -----------------------------------
-**9:30am Module 1** | [Intro to Ruby (Alex)][4-1A] | [Rspec intro & Car Racing Lab (Ilias)][4-2A] | [Data Modeling (Alex)][4-3A]  | [Models & Migrations (Ilias)][4-4A]        | [RESTful Forms (Alex)][4-5A] 
+**9:00am Module 1** | [Intro to Ruby (Alex)][4-1A] | [Rspec intro & Car Racing Lab (Ilias)][4-2A] | [Data Modeling (Alex)][4-3A]  | [Models & Migrations (Ilias)][4-4A]        | [RESTful Forms (Alex)][4-5A] 
 **10:45am Module 2** |   [Intro to Ruby Lab (Alex)][4-1B] | [Username Generator TDD Lab (Ilias)][4-2B]   | [Database Design Lab (Alex)][4-3B]       | [Models & Migrations Lab (Ilias)][4-4B]              | [Review (Alex)][4-5B]
-**1:30pm Module 3** |  [Ruby OOP Lesson (Ben)][4-1D]| [Intro to Sinatra, View Templating(Alex)][4-2C] | [Intro to SQL (Ben)][4-3C] |  [Outcomes (Neda)][4-4C]       | [Review (Ilias)][4-5C]
-**3:00pm Module 4** |[Ruby OOP Lab (Ben)][4-1E]  | [Sinatra Controllers & RESTful routing (Alex)][4-2D]   | [SQL Lab (Ben)][4-3D]                    | [ActiveRecord Lab (Ben)][4-4D]   | [Sinatra App Lab][4-5D]
+**1:30pm Module 3** |  [Ruby OOP Lesson (Ilias)][4-1D]| [Intro to Sinatra, View Templating(Alex)][4-2C] | [Intro to SQL (Ben)][4-3C] |  [Outcomes (Neda)][4-4C]       | [Review (Ilias)][4-5C]
+**3:00pm Module 4** |[Ruby OOP Lab (Ilias)][4-1E]  | [Sinatra Controllers & RESTful routing (Alex)][4-2D]   | [SQL Lab (Ben)][4-3D]                    | [ActiveRecord Lab (Ben)][4-4D]   | [Sinatra App Lab][4-5D]
 **Homework** | [Finish/Refactor Labs][4-1F]  | [Your own Sinatra app][4-2E]                  | [Database Design][4-3E]      | [ActiveRecord Lab][4-4E] | [Sinatra App Lab][4-5E]
 
 [4-1A]: w04/d01/m1/ "Intro to Ruby"
