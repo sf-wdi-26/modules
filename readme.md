@@ -1,31 +1,78 @@
-## WDI 26 Web Development Immersive
+# WDI 26 Web Development Immersive
+
+
+## Unit 2: The Backend
+
+#### Week 4 - Intro to Ruby
+
+Time | Day 1 | Day 2 | Day 3 | Day 4 | Day 5
+----| -------------------------------- | ------------------------------------ | ------------------------------------ | --------------------------------------- | -----------------------------------
+**9:00am Module 1** | [Intro to Ruby (Alex)][4-1A] | [Rspec intro & Car Racing Lab (Ilias)][4-2A] | [Data Modeling (Alex)][4-3A]  | [Models & Migrations (Ilias)][4-4A]        | [RESTful Forms (Alex)][4-5A] 
+**10:45am Module 2** |   [Intro to Ruby Lab (Alex)][4-1B] | [Username Generator TDD Lab (Ilias)][4-2B]   | [Database Design Lab (Alex)][4-3B]       | [Models & Migrations Lab (Ilias)][4-4B]              | [Review (Alex)][4-5B]
+**1:30pm Module 3** |  [Ruby OOP Lesson (Ilias)][4-1D]| [Intro to Sinatra, View Templating(Alex)][4-2C] | [Intro to SQL (Ben)][4-3C] |  [Outcomes (Neda)][4-4C]       | [Review (Ilias)][4-5C]
+**3:00pm Module 4** |[Ruby OOP Lab (Ilias)][4-1E]  | [Sinatra Controllers & RESTful routing (Alex)][4-2D]   | [SQL Lab (Ben)][4-3D]                    | [ActiveRecord Lab (Ben)][4-4D]   | [Sinatra App Lab][4-5D]
+**Homework** | [Finish/Refactor Labs][4-1F]  | [Your own Sinatra app][4-2E]                  | [Database Design][4-3E]      | [ActiveRecord Lab][4-4E] | [Sinatra App Lab][4-5E]
+
+[4-1A]: w04/d01/m1/ "Intro to Ruby"
+[4-1B]: w04/d01/m2/ "Intro to Ruby Lab"
+[4-1D]: w04/d01/m3-ruby-oop/ "Ruby OOP Lesson"
+[4-1E]: w04/d01/m4-ruby-oop-lab/ "Ruby OOP Lab"
+[4-1F]: # "Ruby OOP Lab"
+
+[4-2A]: # "Rspec"
+[4-2B]: # "Username Generator"
+[4-2C]: # "Sinatra Setup + Layouts & Templating"
+[4-2D]: #          "Controllers & RESTful Routing"
+[4-2E]: # " "
+
+[4-3A]: #                             "Intro to Relational Data Modeling"
+[4-3B]: #                           "Practice Database Design"
+[4-3C]: #                  "SQL - Setup, Insert, Update, Delete"
+[4-3D]: #                                         "SQL Select"
+[4-3E]: #         "Data Modeling Homework"
+
+[4-4A]: #         "Building Models with ActiveRecord and Migrations"
+[4-4B]: #             "Models and Migrations Lab"
+[4-4C]: # " "
+[4-4D]: # "ActiveRecord Methods and Finders"
+[4-4E]: # "ActiveRecord Finders lab"
+
+[4-5A]: #                        "Building and Submitting Forms"
+[4-5B]: # " "
+[4-5C]: # " "
+[4-5D]: # " "
+[4-5E]: #                      "Weekend Sinatra app"
+
+
+
+## Unit 1: The Frontend
 
 #### Week 3 - Project 1:  Browser Games
 
 Time | Day 1                                      | Day 2                                | Day 3                                      | Day 4                                      | Day 5
 ----- |--------------------------------    | ------------------------------ | ---------------------------------  | ---------------------------------   | -----------------------------------
 **9:30am Module 1** | Review Homework (Alex)| [Binary Search (Ben)][3-2A]  | [Bubble Sort (Alex)][3-3A] |[ Merge Sort (Ilias)][3-4A] | [Presentations] [3-5A]
- **10:45am Module 2** |[SASS/CSS preprocessors (Ben) ][3-1B]| [Project 1][3-2B]  | [Project 1][3-3B] | [Project 1 ][3-4B]| [Presentations] [3-5B]
+ **10:45am Module 2** |[SASS/CSS preprocessors (Ben) ][3-1B]| [Project 1][3-2B]  | [Project 1][3-3B] | [Project 1][3-4B]| [Presentations] [3-5B]
 **1:30pm Module 3** |[Agile development, wireframes, and user stories (Alex)] [3-1C]| [Project 1][3-2C]  | [Project 1][3-3C] | [Outcomes][3-4C] |  [Review][3-5C]
 **3:00pm Module 4** | [Project 1 Specs][3-1D] |  [Project 1][3-2D]|  [Project 1][3-3D]|  [Project 1][3-4D]| [Happy Hour][3-5D]
-**Homework** | Project 1 | Project 1 | Project 1 | Project 1 | Try Ruby.org 
+**Homework** | Project 1 | Project 1 | Project 1 | Project 1 | [Ruby Intro and Fix an Issue][3-5E]
 
 [3-1A]: # "Review Homework"  
 [3-1B]: w03/d01/m2-sass/ "SASS Lesson"
 [3-1C]: w03/d01/m3-agile/ "Agile development, wireframes, and user stories"
-[3-1D]: # "Project Management"
+[3-1D]: w03/d01/m4-project-1-specs "Project Management"
 
-[3-2A]: # "Binary Search"
+[3-2A]: w03/d02/m1-binary-search/ "Binary Search"
 [3-2B]: # "Project 1"
 [3-2C]: # "Project 1"
 [3-2D]: # "Project 1"
 
-[3-3A]: # "Bubble Sort"
+[3-3A]: w03/d03/m1-bubble-sort/ "Bubble Sort"
 [3-3B]: # "Project 1"
 [3-3C]: # "Project 1"
 [3-3D]: # "Project 1"
 
-[3-4A]: # "Merge Sort"
+[3-4A]: w03/d04/m1-merge-sort "Merge Sort"
 [3-4B]: # "Project 1"
 [3-4C]: # "Outcomes"
 [3-4D]: # "Project 1"
@@ -34,7 +81,7 @@ Time | Day 1                                      | Day 2                       
 [3-5B]: # "Presentations"
 [3-5C]: # "Review"
 [3-5D]: # "Happy Hour"
-[3-5E]: # "Homework: tryruby.org Lessons 1 - 2"
+[3-5E]: w03/d05/hmwk-ruby-prep "Homework: tryruby.org Lessons 1 - 2"
 
 #### Week 2 - jQuery and Bootstrap
 

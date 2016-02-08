@@ -30,7 +30,7 @@ Your app must:
 * A **working game, built by you**, hosted somewhere on the internet
 * A **link to your hosted working game** in the URL section of your Github repo
 * A **git repository hosted on Github**, with a link to your hosted game, and frequent commits dating back to the very beginning of the project
-* **A ``readme.md`` file** with explanations of the technologies used, the approach taken, installation instructions, unsolved problems, etc.
+* **A `readme.md` file** with explanations of the technologies used, the approach taken, installation instructions, unsolved problems, etc.
 
 ---
 
@@ -45,27 +45,34 @@ Your app must:
 
 ---
 
-### Potential Project Ideas
+### Suggestions
 
 ##### Blackjack
 User bets money on guessing which card the computer will deal next!
 
-##### Concentration (Memory
-A card game in which all of the cards are laid face down on a surface and two cards are flipped face up over each turn. User should be able to pick the cards and win once they matched them all!
+##### Typing Race
+The user has to type letters that appear on the screen. They score points for every correct letter and advance their racer character across the screen!
 
-##### Self-scoring Trivia
+##### Trivia
 Test your wits & knowledge with whatever-the-heck you care about. User can guess answers and have the computer validate them!
 
+##### Concentration (Memory)
+A card game in which all of the cards are laid face down on a surface and two cards are flipped face up over each turn. User should be able to pick the cards and win once they matched them all!
+
+##### Battleship
+User can challenge the computer, each takes a turn trying to sink the other ships. The player who sinks the other player's ships first wins!
+
 ##### Something Else!
-Make sure you get the approval of your [squad's](#) instructor if you choose anything else.
+Make sure you get the approval of your [squad](http://bit.ly/1nZsVo9)'s instructor if you choose anything else.
 
 ---
 
 ### Useful Resources
 
-* **[MDN Javascript Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript)** _(a great reference for all things Vanilla Javascript)_
+* **[MDN Javascript Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript)** _(the best reference for all things Javascript, CSS, and HTML)_
 * **[jQuery Docs](http://api.jquery.com)** _(if you're using jQuery)_
-* **[Bit Balloon](https://www.bitballoon.com/docs)** _(for hosting your game)_
+* **[CSS Animations](https://css-tricks.com/almanac/properties/a/animation/)**_(add a little pizzazz to your game)_
+* **[Bit Balloon](https://www.bitballoon.com/docs)** _(hosting the game)_
 
 ---
 

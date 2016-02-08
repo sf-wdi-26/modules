@@ -5,27 +5,28 @@ window.onload = function(){
 
   function hideAllAnswers() {
     ['basic-answer','trip-answer','bmi-answer','mortgage-answer'].forEach(function(id){
-      hide(id)
-    })
+      hide(id);
+    });
   }
 
   function unhide(id) {
-    var element = document.getElementById(id)
+    var element = document.getElementById(id);
     if(/hide/.test(element.attributes.class.value))
       element.className = element.className.replace(/\bhide\b/,'');
-    element.style.display = "block"
+    element.style.display = "block";
+    console.log(element.attributes);
   }
 
   function getValue(id) {
-    return document.getElementById(id).value
+    return document.getElementById(id).value;
   }
 
   function getFloat(id) {
-    return parseFloat(getValue(id))
+    return parseFloat(getValue(id));
   }
 
   function roundToTwoDp(value) {
-    return Math.round(value * 100) / 100
+    return Math.round(value * 100) / 100;
   }
 
   function setHtml(id, html) {
@@ -36,19 +37,20 @@ window.onload = function(){
     var num1 = getFloat("basic-num-1");
     var num2 = getFloat("basic-num-2");
     var op   = getValue("basic-operation");
+    var ans;
 
     switch(op){
       case '+':
-      var ans = num1 + num2;
+      ans = num1 + num2;
       break;
       case '-':
-      var ans = num1 - num2;
+      ans = num1 - num2;
       break;
       case '*':
-      var ans = num1 * num2;
+      ans = num1 * num2;
       break;
       case '/':
-      var ans = num1 / num2;
+      ans = num1 / num2;
       break;
     }
     setHtml("basic-answer-alert", num1 + " " + op + " " + num2 + " = " + ans);
@@ -62,13 +64,14 @@ window.onload = function(){
     var mpg   = getFloat("trip-mpg");
     var cost  = getFloat("trip-cost");
     var speed = getFloat("trip-speed");
+    var actualMpg;
 
     time = roundToTwoDp(dist / speed);
 
     if (mpg > 60) {
-      var actualMpg = mpg - (speed - 60) * 2;
+      actualMpg = mpg - (speed - 60) * 2;
     } else {
-      var actualMpg = mpg;
+      actualMpg = mpg;
     }
 
     cost = roundToTwoDp(dist / actualMpg * cost);
@@ -95,17 +98,19 @@ window.onload = function(){
     hide('bmi-answer');
   }
 
+
   function bmiCalc() {
     var units  = getValue("bmi-units");
     var mass   = getFloat("bmi-mass");
     var height = getFloat("bmi-height");
+    var bmi;
 
     switch(units){
       case 'metric':
-      var bmi = roundToTwoDp(mass / Math.pow(height, 2));
+      bmi = roundToTwoDp(mass / Math.pow(height, 2));
       break;
       case 'imperial':
-      var bmi = roundToTwoDp(mass / Math.pow(height, 2) * 703);
+      bmi = roundToTwoDp(mass / Math.pow(height, 2) * 703);
       break;
     }
 
@@ -133,7 +138,7 @@ window.onload = function(){
   document.getElementById("bmi-calc").addEventListener("click",bmiCalc);
   document.getElementById("mortgage-calc").addEventListener("click", mortgageCalc);
 
-}
+};
 
 
 
