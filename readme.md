@@ -19,8 +19,8 @@ Time | Day 1 | Day 2 | Day 3 | Day 4 | Day 5
 [4-1E]: w04/d01/m4-ruby-oop-lab/ "Ruby OOP Lab"
 [4-1F]: # "Ruby OOP Lab"
 
-[4-2A]: # "Rspec"
-[4-2B]: # "Username Generator"
+[4-2A]: w04/d02/m1-rspec-intro "Rspec"
+[4-2B]: w04/d02/m2-username-generator "Username Generator"
 [4-2C]: # "Sinatra Setup + Layouts & Templating"
 [4-2D]: #          "Controllers & RESTful Routing"
 [4-2E]: # " "
