@@ -43,10 +43,10 @@ Create a function called `build_username` that takes a user's first_name, last_n
 #### Level 2
 Create a function called `check_privilege` that takes a level (integer) and returns the corresponding user_type (string).  
 * Allocate privilege using the following table:
-    * 0 --> "user" (the default privilege level)
-    * 1 --> "seller"
-    * 2 --> "manager"
-    * 3 --> "admin"
+    * 0 -> "user" (default privilege level)
+    * 1 -> "seller"
+    * 2 -> "manager"
+    * 3 -> "admin"
 
 Create a function called `user_type_prefix` that takes a level (integer) and returns the corresponding prefix, e.g. "admin-", "manager-", "seller-". See the tests for more details.
 
@@ -55,9 +55,9 @@ Update your `build_username` function to use prefixes. It should now accept a pr
 #### Level 3
 Create a function called `generate_username` that has four arguments (first_name, last_name, birth_year, privilege_level) and returns a _unique_ username. Come up with a simple way to store usernames as you create them. 
 
-STRETCH: If a username already exists, append "_1". Then, increment the counter each time you reuse the username (e.g. "jdoe78", "jdoe78\_1", "jdoe7\_2", "bbunny60", "bbunny60\_1").
+Stretch: If a username already exists, append "_1". Then, increment the counter each time you reuse the username (e.g. "jdoe78", "jdoe78\_1", "jdoe7\_2", "bbunny60", "bbunny60\_1").
 
-#### BONUS -- Command-line inputs
-* OPTION 1 -- Interactively get user input from the command line and output a username to the console. I.e. when I run `ruby username.rb` I should be prompted (from the command line) for my name, birth year, etc.
-* OPTION 2 -- Accept command line arguments (e.g. `ruby username.rb john doe 1980`) and output a username to the console.
+#### Bonus — Command-line inputs
+* Interactively get user input from the command line and output a username to the console. I.e. when I run `ruby username.rb` I should be prompted (from the command line) for my name, birth year, etc.
+* Accept command line arguments (e.g. `ruby username.rb john doe 1980`) and output a username to the console.
 
