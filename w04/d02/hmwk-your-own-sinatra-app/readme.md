@@ -7,7 +7,7 @@
 
 2. Create RESTful routes like we did in class. Use the lecture notes from today as a guide.
 
-3. Create views for each route.
+3. Create views for each GET route.
 
 4. Give it a little style! Add bootstrap if you like.
 
