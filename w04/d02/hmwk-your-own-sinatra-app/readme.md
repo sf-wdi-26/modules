@@ -3,7 +3,7 @@
 ![](http://i.giphy.com/rfofDhVoQbdSg.gif)
 ## Start Spreading the News!
 
-1. Copy (cp -r path/to/original path/to/destination) the starter code into its own folder (outside of any existing git repo)
+1. Copy (`cp -r path/to/original path/to/destination`) the starter code into its own folder (outside of any existing git repo)
 
 2. Create RESTful routes like we did in class. Use the lecture notes from today as a guide.
 
