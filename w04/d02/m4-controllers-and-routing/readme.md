@@ -1,13 +1,3 @@
----
-title: Controllers & RESTful Routing
-type: lesson
-duration: "1:25"
-creator:
-    name: Micah Rich
-    city: LA
-competencies: Server Applications
----
-
 # Controllers & RESTful Routing
 
 ### Objectives
