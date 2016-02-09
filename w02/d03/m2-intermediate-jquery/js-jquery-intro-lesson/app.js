@@ -14,8 +14,7 @@ $("#template").clone().appendTo("tbody");
 // pseudocode
 // get each object from newHomes array
 // create new tr for each object in array
-// create new td for each value 
-// append each VALUE to corresping th tag
+// create new td for e// append each VALUE to corresping th tag
 
 
 function addNewHomeListing () {
