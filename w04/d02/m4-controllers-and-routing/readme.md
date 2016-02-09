@@ -1,7 +1,6 @@
 # Controllers & RESTful Routing
 
 ### Objectives
-
 - Describe the purpose of a controller
 - Identify all the RESTful actions and describe each one's purpose
 - Write a route for each RESTful action, creating the equivalent of a Sinatra controller
