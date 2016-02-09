@@ -1,13 +1,3 @@
----
-title: Sinatra Setup / Layouts & Templating
-type: lesson
-duration: "1:25"
-creator:
-    name: Micah Rich
-    city: LA
-competencies: Server Applications
----
-
 # Sinatra Setup / Layouts & Templating
 
 ### Objectives
@@ -19,13 +9,6 @@ competencies: Server Applications
 - Use Gemfile to install Sinatra
 - Create a Rail-like folder structure in a Sinatra app
 - Explain briefly concepts of MVC
-
-### Preparation
-
-*Before this lesson, students should already be able to:*
-
-- Write HTML, preferably too much of it
-- Explain and use Ruby variables
 
 ## Intro (20 mins)
 
@@ -47,7 +30,7 @@ Today we're doing something really exciting – we're getting past programming b
   - Super fast & easy to build stuff
   - Very flexible – once you get it, you can build however they like
 
-## Set up a Sinatra project from nothing - Codealong (15 mins)
+## Set up a Sinatra project from nothing
 First, `mkdir` & `cd` into `first_sinatra_app` folder. Then, run `gem install bundler`.
 
 #### Now, Rubygems:
