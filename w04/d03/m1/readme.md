@@ -1,13 +1,3 @@
----
-title: Intro to Relational Data Modeling
-type: lesson
-duration: "1:25"
-creator:
-    name: Micah Rich
-    city: LA
-competencies: Databases
----
-
 # Intro to Relational Data Modeling
 
 ### Objectives
