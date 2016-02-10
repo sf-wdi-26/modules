@@ -27,9 +27,9 @@ Time | Day 1 | Day 2 | Day 3 | Day 4 | Day 5
 
 [4-3A]: w04/d03/m1  "Intro to Relational Data Modeling"
 [4-3B]: w04/d03/m2  "Practice Database Design"
-[4-3C]: #                  "SQL - Setup, Insert, Update, Delete"
-[4-3D]: #                                         "SQL Select"
-[4-3E]: #         "Data Modeling Homework"
+[4-3C]: w04/d03/m3-intro-sql "SQL - Setup, Insert, Update, Delete"
+[4-3D]: w04/d03/m4-sql-lab "SQL Select Lab"
+[4-3E]: w04/d03/hw "Data Modeling Homework"
 
 [4-4A]: #         "Building Models with ActiveRecord and Migrations"
 [4-4B]: #             "Models and Migrations Lab"
