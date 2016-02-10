@@ -1,13 +1,3 @@
----
-title: Practice Database Design
-type: lab
-duration: "1:25"
-creator:
-    name: Micah Rich
-    city: LA
-competencies: Databases
----
-
 # Practice Database Design
 
 ## Introduction
