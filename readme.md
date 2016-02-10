@@ -21,15 +21,15 @@ Time | Day 1 | Day 2 | Day 3 | Day 4 | Day 5
 
 [4-2A]: w04/d02/m1-rspec-intro "Rspec"
 [4-2B]: w04/d02/m2-username-generator "Username Generator"
-[4-2C]: # "Sinatra Setup + Layouts & Templating"
-[4-2D]: #          "Controllers & RESTful Routing"
-[4-2E]: # " "
+[4-2C]: w04/d02/m3-sinatra-intro "Sinatra Setup + Layouts & Templating"
+[4-2D]: w04/d02/m4-controllers-and-routing  "Controllers & RESTful Routing"
+[4-2E]: w04/d02/hmwk-your-own-sinatra-app "Your own Sinatra app"
 
-[4-3A]: #                             "Intro to Relational Data Modeling"
-[4-3B]: #                           "Practice Database Design"
-[4-3C]: #                  "SQL - Setup, Insert, Update, Delete"
-[4-3D]: #                                         "SQL Select"
-[4-3E]: #         "Data Modeling Homework"
+[4-3A]: w04/d03/m1  "Intro to Relational Data Modeling"
+[4-3B]: w04/d03/m2  "Practice Database Design"
+[4-3C]: w04/d03/m3-intro-sql "SQL - Setup, Insert, Update, Delete"
+[4-3D]: w04/d03/m4-sql-lab "SQL Select Lab"
+[4-3E]: w04/d03/hw "Data Modeling Homework"
 
 [4-4A]: #         "Building Models with ActiveRecord and Migrations"
 [4-4B]: #             "Models and Migrations Lab"

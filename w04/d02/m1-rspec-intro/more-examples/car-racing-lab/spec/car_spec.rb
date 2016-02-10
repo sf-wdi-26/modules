@@ -14,6 +14,10 @@ describe Car do
       it 'accelerates by a given speed' do
         expect(car.speed).to eq 20
       end
+      it 'accelerates by another 20' do
+        car.accelerate(10)
+        expect(car.speed).to eq 30
+      end
     end
 
     describe '#initialize' do
