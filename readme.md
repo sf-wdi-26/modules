@@ -25,8 +25,8 @@ Time | Day 1 | Day 2 | Day 3 | Day 4 | Day 5
 [4-2D]: w04/d02/m4-controllers-and-routing  "Controllers & RESTful Routing"
 [4-2E]: w04/d02/hmwk-your-own-sinatra-app "Your own Sinatra app"
 
-[4-3A]: #                             "Intro to Relational Data Modeling"
-[4-3B]: #                           "Practice Database Design"
+[4-3A]: w04/d03/m1  "Intro to Relational Data Modeling"
+[4-3B]: w04/d03/m2  "Practice Database Design"
 [4-3C]: #                  "SQL - Setup, Insert, Update, Delete"
 [4-3D]: #                                         "SQL Select"
 [4-3E]: #         "Data Modeling Homework"
