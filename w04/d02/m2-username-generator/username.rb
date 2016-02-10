@@ -25,14 +25,12 @@ def build_username(first, last, year)
 	user_name = full + formatted_year
 end
 
-# def check_priviledge(i, user_type)
-# 	if i = 1 
-# 		user_type = "seller"
-# 	else if i = 2
-# 		user_type = "manager"
-# 	else if i = 3
-# 		user_type = "admin"
-# 	else 
-# 		user_type = "user"
-# 	end	
-# end
+$user_types = ["user", "seller", "manager", "admin"]
+
+def check_privilege(type=0)
+  if type >= 0
+    $user_types[type] || $user_types.last
+  else
+    $user_types.first
+  end
+end
