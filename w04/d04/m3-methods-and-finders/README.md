@@ -44,7 +44,7 @@ p1 = Pizza.new
 That's cool, but not much good when it's all empty. Let's overwrite `p1` with a pizza that has more substance.
 
 ```ruby
-p1 = Pizza.create(name: "Art Lover", sauce: "red sauce", cheese: true, mushrooms: false, extra_toppings: "artichokes, chopped garlic")
+p1 = Pizza.create({name: "Art Lover", sauce: "red sauce", cheese: true, mushrooms: false, extra_toppings: "artichokes, chopped garlic"})
 ```
 
 DID YOU SEE THAT? ActiveRecord just took our ruby method (`.create`) and converted it to SQL for us! It saved it to our table as a new row, with all those attributes – all we had to do was pass it a hash.
