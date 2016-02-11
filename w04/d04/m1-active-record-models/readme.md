@@ -221,7 +221,7 @@ To create a table we need to create a "migration".  [Ruby Guides: Migrations](ht
 
 *"Migrations are a convenient way to alter your database schema over time in a consistent and easy way. They use a Ruby DSL [Domain Specific Language] so that you don't have to write SQL by hand, allowing your schema and changes to be database independent. You can think of each migration as being a new 'version' of the database."*
 
-Migrations are instructions for an iteration to your database's architecture. Each one's name is generated for you and timestamped, so it knows how to walk through them over time to repeat the same instructions on any new computer that needs to migrate to the same database state. An proper understanding of this is crucial, especially when on a team of developers, because it keeps your local databases in sync when changes are made on one computer. When the rest of the team `pull`s the new migration files migration the full set of them are a perfect record of all changes that have been made over time.
+Migrations are instructions for an iteration to your database's architecture. Each one's name is generated for you and timestamped, so it knows how to walk through them over time to repeat the same instructions on any new computer that needs to migrate to the same database state. A proper understanding of this is crucial, especially when on a team of developers, because it keeps your local databases in sync when changes are made on one computer. When the rest of the team `pull`s the new migration files migration the full set of them are a perfect record of all changes that have been made over time.
 
 So let's build a new version of our database that has an artists table:
 
@@ -247,7 +247,7 @@ end
 
 ```
 
-Run the migration with ```rake db:migrate```. That'll run any migrations it haven't been run yet and make the appropriate changes to the database.
+Run the migration with `rake db:migrate`. That'll run any migrations that haven't been run yet and make the appropriate changes to the database.
 
 ```bash
 == 20150710152405 CreateArtistsTable: migrating ===============================
@@ -256,7 +256,7 @@ Run the migration with ```rake db:migrate```. That'll run any migrations it have
 
 ###Sacred Cows
 
-And we have a table! Nice work!  And _now_ you've got a `schema.rb` file that was generated for you – this file is _sacred_. **Not** to be touched, only to be admired. It's a snapshot of the current state of your database, and rake is the only one who should be modifying it, ever. Similarly, never change a migration file after it has been run. Repeat after me: "I shall never change a migration file after it has been run." Again! You can get a quick view of which files have been run by entering `rake db:migrate:status`; the files that have been run have a status of `up`, while those which have been not have a status of `down`. Your file should have an `up` status now.
+And we have a table! Nice work!  And _now_ you've got a `schema.rb` file that was generated for you – this file is _sacred_. **Not** to be touched, only to be admired. It's a snapshot of the current state of your database, and rake is the only one who should be modifying it, ever. Similarly, never change a migration file after it has been run. Repeat after me: "I shall never change a migration file after it has been run." Again! You can get a quick view of which files have been run by entering `rake db:migrate:status`; the files that have been run have a status of `up`, while those that have not have a status of `down`. Your file should have an `up` status now.
 
 <img style="max-height: 200px;" src="http://www.thebrsblog.com/wp-content/uploads/2012/04/httpwww-andrewolsen-netwp-contentuploads201105sacred-cow.jpg"/>
 
@@ -302,9 +302,9 @@ class AddInstrumentToArtists < ActiveRecord::Migration
 end
 ```
 
-You can probably guess what this line - `add_column :artists, :instruments, :string` - says: "add a column to the artists table called 'instruments' with a string as its data type".  Run `rake db:migrate:status` for funzies (you should have two migration files, one `up` and one `down`), but when you want to migrate run `rake db:migrate` and BAM, you have a new column.
+You can probably guess what this line - `add_column :artists, :instruments, :string` - says: "add a column to the artists table called 'instruments' with a string as its data type".  Run `rake db:migrate:status` for "funzies" (you should have two migration files, one `up` and one `down`), but when you want to migrate run `rake db:migrate` and BAM, you have a new column.
 
-Make a migration _every_ time you need to change your database – whether it's adding or removing things, no exceptions! Changing the database in any way means making a new migration, and telling the computer what you need done. Think of it as an assistant; you don't do the tedious Postgres work, you just tell it what needs doing and tell it to go do it. If you make changes in other ways to your local databse, a team member who has cloned the same project will loose state with you. Running migrations of your other team members *is how* your local databases stay in state!
+Make a migration _every_ time you need to change your database – whether it's adding or removing things, no exceptions! Changing the database in any way means making a new migration, and telling the computer what you need done. Think of it as an assistant; you don't do the tedious Postgres work, you just tell it what needs doing and tell it to go do it. If you make changes in other ways to your local database, a team member who has cloned the same project will loose state with you. Running migrations of your other team members *is how* your both your separate local databases stay in state!
 
 #### Changing or deleting column
 
@@ -364,7 +364,7 @@ As always, if you can't remember the exact syntax, reference the [rails guides](
 
 ##Playing with our Data
 
-**Ok great, I can rely on my application to CRUD data if all my routes are setup and I get a specfic request from the front-end, but that seems like a lot of work... what if I just want to do it manually in the console?** Good news, that's totally encouraged! Getting your hand dirty in that fashion is a good way to actually get to play with the models, see how they are working and quickly give youself some test data to work with (a `seed.rb` file is an even faster way to give yourself fake data to work with, but we'll talk about that later).
+**Ok great, I can rely on my application to CRUD data if all my routes are setup and I get a specific request from the front-end, but that seems like a lot of work... what if I just want to do it manually in the console?** Good news, that's totally encouraged! Getting your hand dirty in that fashion is a good way to actually get to play with the models, see how they are working and quickly give yourself some test data to work with (a `seed.rb` file is an even faster way to give yourself fake data to work with, but we'll talk about that later).
 
 We have a gem available to us called `tux`. It will pop us into a ruby environment within the *context* of our application. Run:
 
