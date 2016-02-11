@@ -51,12 +51,6 @@ You and the people at Tunr want to add some functionality to your talent managem
  
 * Actually, edit `Pavarotti`'s nationality to `Italiano`, bene!
 
-**Bonus:**
-
-- An artist can have many songs and a manager can have many artists: configure your app to make sure it is configured with these relationships using [official docs](http://guides.rubyonrails.org/association_basics.html). P.S. We're learning this next week.
-	* _Hint: In addition to the code you have to add to the models, you'll have to add foreign keys to both the `artists` and `songs` tables._
-
-
 ## Starting Advice
 
 * Use the code in `starter-code` to get started!
@@ -91,3 +85,8 @@ A whole bunch of migrations, and your `schema.rb` file should look like this:
 	- :text
 	- :timestamp
 - Checkout sinatra's autoreload [gem](https://rubygems.org/gems/sinatra-auto-reload/versions/0.0.6) if you're tired on constantly restarting your server.
+
+##Bonus
+
+An artist can have many songs and a manager can have many artists: configure your app to make sure it is configured with these relationships using [official docs](http://guides.rubyonrails.org/association_basics.html). P.S. We're learning this next week.
+* _Hint: In addition to the code you have to add to the models, you'll have to add foreign keys to both the `artists` and `songs` tables._
