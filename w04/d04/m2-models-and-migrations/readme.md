@@ -46,6 +46,14 @@ The same code as our lesson is included in the `starter-code` folder. The Sinatr
 
 Shoot to create a complete RESTful controller with appropriate ActiveRecord methods inside and compare your work with the solution code when complete.
 
+You'll get a lot more practice with this so don't sweat it if you're struggling, but if you are:
+
+* Don't freeze up, try things out
+* Read all errors carefully
+* Identify your knowledge gaps
+* Formulate a question
+* ASK THAT QUESTION!
+
 ###Resources
 
 - [Rails Guides: ActiveRecord](http://guides.rubyonrails.org/active_record_basics.html)
