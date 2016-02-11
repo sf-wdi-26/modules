@@ -7,15 +7,18 @@ Your task is to write a RESTful routes & controllers for our Pizza Shop and fill
 There are two important details to keep in mind. Tomorrow morning, we'll be demonstrating how to use HTML forms to send data from user input to our controller actions, which will be the final piece of the puzzle for creating a full blown web application.
 
 * You don't have to create the controller actions for `new` and `edit`. Skip those until tomorrow (unless you want to jump ahead on your own).
-* Use hashes full of dummy data to fill in details about new pizzas, or when updating pizzas, because (we'll work on making those real data)
-    * i.e.
-    ``` ruby
-    asdf
-    asdf
-    asdf
-    ```
-* Don't forget what we learned about params! That'll come in handy in one or two of our controller actions.
-* Use `tux` to test out your code first *before* placing inside your controller
+* Hardcode your params for now. You'll need to specifically in your `create` and `update` actions. We'll get those to be real data tomorrow.
+
+```ruby
+#create
+post "/pizzas" do
+    params = {name: "Red Anchove Delight", sauce: 'red', cheese:true, mushrooms:true, extra_toppings: "anchoves"}
+    #...
+```
+
+* Definitely use `tux` to test out if your code works *before* placing inside your controller!!
+* Feel free to test out your routes with the [`curl`](http://conqueringthecommandline.com/book/curl#cid25) command (use `localhost:9292` as the url you'll hit).
+    * Tip: [how to send a POST request with curl, using parameters!](http://conqueringthecommandline.com/book/curl#uid105)
 
 > In the last 10 minutes, we'll walk through a complete solution example so you can gauge how you did!
 
@@ -43,6 +46,6 @@ The same code as our lesson is included in the `starter-code` folder. The Sinatr
 
 Shoot to create a complete RESTful controller with appropriate ActiveRecord methods inside and compare your work with the solution code when complete.
 
-## Additional Resources
+###Resources
 
-- [ActiveRecord Basics](http://guides.rubyonrails.org/active_record_basics.html)
+- [Rails Guides: ActiveRecord](http://guides.rubyonrails.org/active_record_basics.html)
