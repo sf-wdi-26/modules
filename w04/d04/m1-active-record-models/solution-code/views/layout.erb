@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to Tun.r</title>
+  <link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Tun.r</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/artists">Artists</a></li>
+        <li><a href="/artists/new">Add Artist</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <%= yield %>
+  </main>
+  <footer>
+    &copy; Tun.r
+  </footer>
+</body>
+</html>
