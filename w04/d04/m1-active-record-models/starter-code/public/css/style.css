@@ -1,0 +1,135 @@
+body {
+  font-family: 'Slabo 27px', serif;
+  line-height: 1.5;
+  background: #f1f4f6;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0 0 20px;
+}
+
+h1, h2 {
+  font-size: 30px;
+}
+
+a {
+  color: #000;
+}
+
+header {
+  width: 100%;
+  background: black;
+}
+
+header nav { 
+  max-width: 960px;
+  margin: 0 auto;
+  height: 60px;
+  line-height: 60px;
+}
+
+header nav ul {
+  height: 60px;
+  line-height: 60px;
+}
+
+header nav ul li:first-child {
+  float: left;
+  padding: 0;
+  font-size: 35px;
+}
+
+header nav ul li {
+  display: inline;
+  list-style-type: none;
+  height: 60px;
+  line-height: 60px;
+  float: right;
+  padding: 0 10px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+main, footer {
+  max-width: 960px;
+  margin: 40px auto;
+}
+
+main .artists {
+  margin: 20px 0;
+}
+
+main ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.artists .row {
+  height: 100px;
+}
+
+.songs .row {
+  height: 30px;
+}
+
+.artists .row, 
+.songs .row {
+  clear: both;
+  background: #fff;
+  padding: 10px;
+  margin: 0 0 10px;
+}
+
+.artists .row img {
+  float: left;
+  max-height: 100px;
+}
+
+.artists .row ul {
+  float: left;
+  margin: 0 0 0 10px;
+}
+
+.artists .row h2, 
+.artists .row h2 a {
+  font-size: 20px;
+  margin: 0 0 10px;
+  text-decoration: none;
+}
+
+.songs .row ul li a,
+.songs .row ul li button {
+.artists .row ul li a,
+.artists .row ul li button {
+  color: black;
+  background:none!important;
+  border:none; 
+  padding:0!important;
+  font: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+input, select {
+  display: block;
+  line-height: 2;
+  width: 300px;
+  margin: 0 0 10px;
+}
+
+input[type=submit], 
+.btn {
+  background: #d8e1e5;
+  border: none;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  width: 305px;
+  color: #535454;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 20px;
+}
