@@ -31,8 +31,8 @@ Time | Day 1 | Day 2 | Day 3 | Day 4 | Day 5
 [4-3D]: w04/d03/m4-sql-lab "SQL Select Lab"
 [4-3E]: w04/d03/hw "Data Modeling Homework"
 
-[4-4A]: #         "Building Models with ActiveRecord and Migrations"
-[4-4B]: #             "Models and Migrations Lab"
+[4-4A]: w04/d04/m1-active-record-models       "Building Models with ActiveRecord and Migrations"
+[4-4B]: w04/d04/m2-models-and-migrations             "Models and Migrations Lab"
 [4-4C]: # " "
 [4-4D]: # "ActiveRecord Methods and Finders"
 [4-4E]: # "ActiveRecord Finders lab"
