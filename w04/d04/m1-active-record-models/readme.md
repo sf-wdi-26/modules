@@ -59,7 +59,7 @@ Using ORMs, the properties and relationships of the objects in an application ca
 
 ##ActiveRecord
 
-[Rails Guides: Active Record Basics](guides.rubyonrails.org/active_record_basics.html):
+[Rails Guides: Active Record Basics](http://guides.rubyonrails.org/active_record_basics.html):
 
 > Active Record, as an ORM Framework, gives us several mechanisms, the most important being the ability to:
 
