@@ -20,7 +20,7 @@
 
 #### MVC - Models
 
-We can apply the design pattern of MVC to make more complex applications. Models literally "model" or describe the form of an object that we will represent in our application. This model object will contain methods that sets and gets its data in our database. Using a model, to a large extent, abstracts the complex SQL statements of a database away from the developer.
+We can apply the design pattern of MVC to make more complex applications. Models literally "model" or describe the form of an object that we will represent in our application. This model object will contain methods that set and get its data in our database. Using a model, to a large extent, abstracts the complex SQL statements of a database away from the developer.
 
 <img style="max-height:300px;" src="http://i.stack.imgur.com/ocEWx.png"/>
 
@@ -69,7 +69,7 @@ Using ORMs, the properties and relationships of the objects in an application ca
 - validate models before they get persisted to the database
 - perform database operations in an object-oriented fashion
 
-Active Record is the Model in MVC. We require it in our project by adding the `gem activerecord` In other words it is the layer the system responsible for representing business data and logic.
+Active Record is the Model in MVC. In other words it is the layer in the system responsible for representing business data and logic. We require it in our project by adding the `gem activerecord`
 
 ***This will all make a lot more sense once we start using it...so, let's go!***
 
@@ -78,7 +78,7 @@ Active Record is the Model in MVC. We require it in our project by adding the `g
 
 We're a successful talent management agency for those in the music industry called Tunr. We have designed a Sinatra app to manage our artists. Look in `starter-code` and take a look at the `app.rb` & `config.ru` files.
 
-**For 5 minutes talk with a partner for a minute and discuss:**
+**For 5 minutes talk with a partner and discuss:**
 
 * differences from our Sinatra apps in the beginning of the week
 * what you think each line does and how they relate to the rest of the app
@@ -98,7 +98,7 @@ These `.all`, `.create`, `.find` ActiveRecord methods will write the SQL for us,
 
 #### Including ActiveRecord
 
-As noted earlier, ActiveRecord is a gem and since we're building an app with a bunch of gems using Bundler.
+As noted earlier, ActiveRecord is a gem and since we're building an app with a bunch of gems using Bundler, let's look at the Gemfile.
 
 **Gemfile**
 
@@ -112,7 +112,7 @@ gem "pg" #allows us to use postgresql as a DBMS for our app
 gem "tux" #allows us to have an interactive shell to play with object creation
 ```
 
-And don't forget, what do we do every time we modify the Gemfile? `bundle install`!
+...and don't forget: what do we do every time we modify the Gemfile? `bundle install`!
 
 ### Setting up the Database (Code along optional)
 
@@ -122,7 +122,7 @@ Now, all our gems from the Gemfile are already being required thanks to the firs
 
 But we're about to start using a SQL database, so we gotta configure our Sinatra application so it knows how to do that.
 
-Let's make a *directory*  called `config` in root. And inside that, `touch config/database.yml`. YAML is a nice little format that essentially works like a Ruby hash, but is written in plaintext. Key-value. Great for configuration, it'll be super easy.
+Let's make a *directory*  called `config` in root. And inside that, `touch config/database.yml`. YAML is a nice little format that essentially works like a Ruby hash, but is written in plaintext key-value. Great for configuration, it'll be super easy.
 
 ```yaml
 development:
