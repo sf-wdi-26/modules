@@ -114,9 +114,7 @@ gem "tux" #allows us to have an interactive shell to play with object creation
 
 And don't forget, what do we do every time we modify the Gemfile? `bundle install`!
 
-<!-- TODO: continue here -->
-
-### Setting up the Database (Code along)
+### Setting up the Database (Code along optional)
 
 #### Database configuration
 
@@ -132,9 +130,7 @@ development:
   database: tunr_development
 ```
 
-The name of the database is up to you, but `something_development` is a good pattern to get into.
-
-That's it – because we used that particular folder & filename & key/values, our `sinatra-activerecord` gem picks that up & automatically uses it. It's really simple.
+The name of the database is up to you, but `something_development` is a good pattern to get into. A typical application would have three databases, the other two being `something_production` and `something_test` for production and test environments respectively.
 
 #### Makin' Models
 
@@ -145,13 +141,13 @@ class Artist < ActiveRecord::Base
 end
 ```
 
-So again, this is saying: "We want a class named Artist, and it shall inherit all the code from the Active Record class, which has a bunch of handy methods already written for me."  And now, when you're working with the Artist class, you'll be able to do ```Artist.last`` in your code.  This enables ```Artist.first``` or ```Artist.new()``` or the other methods it has, without any other code having to be written, as long as we have a database.
+So again, this is saying: "We want a class named Artist, and it shall inherit all the code from the Active Record class, which has a bunch of handy methods already written for me."  And now, when you're working with the Artist class, you'll be able to do `Artist.create` in your code to create a new Artist in the database or `Artist.first` to grab the first one in the database and so on...
 
 This is where Rake comes in.
 
-Rake technically stands for 'ruby make', which is a tool we're going to use to do tasks for us. You can program your own rake functions, but active record comes with a bunch, and we're gonna use one to create our database in Postgres.
+Rake technically stands for 'ruby make', which is a tool we're going to use to run predefined tasks for us. You can program your own rake tasks, but active record comes with a bunch already preset ones, which we can use to set up the database we'll store our data in database in Postgres. First we need to create a database...
 
-Whereas earlier you learned to do this:
+Earlier you learned to do this:
 
 ```bash
 $ psql
@@ -162,19 +158,21 @@ username=# create database tunr;
 CREATE DATABASE
 ```
 
-Now, we can wrap that up in one terminal command:
+Now, we can wrap that up in one terminal command with rake's help. 
+
+>Before you do this make sure your Postgres application/server is open and running.
 
 `rake db:create`
 
 Run it. Boom, database created.
 
-Now let's boot up our application and see what we get.
+Now let's boot up our application and see what we get. In the root of the application run:
 
 ```
 rackup
 ```
 
-Start it up, check it out in your browser. Try clicking 'Add Artist' – crap!
+Start it up, check it out in your browser. Try clicking 'Add Artist' – shucks!
 
 ![](http://s30.postimg.org/d5bpwkoo1/Screen_Shot_2015_07_10_at_10_42_37_AM.png)
 
@@ -182,11 +180,11 @@ Start it up, check it out in your browser. Try clicking 'Add Artist' – crap!
 
 If you read through what this page is actually telling you, you can probably guess why this happened.
 
-Even though we have a database (`tunr_development`) we never created any tables or schema.  We never made a table, just the database!
+Even though we have a database (`tunr_development`) we never created any tables or schema.  We never made an Artist table, just the database!
 
 Just like we used a wonderful Rake command to help us quickly create a database, we have some to help us create tables, too.
 
-> Note: Explain some of the common commands we'll be using and they'll have access to.
+> Here's a pretty comprehensive list of rake commands you can run on the database.
 
 ```bash
 $ rake -T
@@ -209,57 +207,56 @@ rake db:structure:load      # Recreate the databases...
 rake db:version             # Retrieves the current ...
 ```
 
-## Let's Create Some Data Tables with migrations...and without SQL! Code Along (10 mins)
+## Let's Create Some Data Tables with migrations...and without SQL! (10 mins)
 
 You'll notice we've already set up a bit of your Rakefile for you – we're basically just using the commands that the ActiveRecord gem has built in. Don't worry about memorizing the code in this file, but _do_ make sure you understand what the commands it gives us do.
 
-The real meat & potatoes here, after creating a database, is to create a _table_.
+The real meat & potatoes here, after creating a database, is to create a _table_ in the database.
 
-To create a table we need to create a "migration".  From [rubyonrails.org](rubyonrails.org):
+To create a table we need to create a "migration".  [Ruby Guides: Migrations](http://guides.rubyonrails.org/active_record_migrations.html):
 
-*"Migrations are a convenient way to alter your database schema over time in a consistent and easy way. They use a Ruby DSL so that you don't have to write SQL by hand, allowing your schema and changes to be database independent. You can think of each migration as being a new 'version' of the database."*
+*"Migrations are a convenient way to alter your database schema over time in a consistent and easy way. They use a Ruby DSL [Domain Specific Language] so that you don't have to write SQL by hand, allowing your schema and changes to be database independent. You can think of each migration as being a new 'version' of the database."*
 
-Migrations tell your application what goes into your database, and each one is timestamped, so it knows how to walk through them over time. This is crucial, especially when on a team of developers, because it keeps your database up-to-date even when someone else changes it – the computer always has a history of changes via new migration files.
+Migrations are instructions for an iteration to your database's architecture. Each one's name is generated for you and timestamped, so it knows how to walk through them over time to repeat the same instructions on any new computer that needs to migrate to the same database state. An proper understanding of this is crucial, especially when on a team of developers, because it keeps your local databases in sync when changes are made on one computer. When the rest of the team `pull`s the new migration files migration the full set of them are a perfect record of all changes that have been made over time.
 
 So let's build a new version of our database that has an artists table:
 
 ```bash
 rake db:create_migration NAME=create_artists
-
-db/migrate/20150710152405_create_artists.rb
 ```
 
-Keep in mind those numbers will be different for you – it's a timestamp, which is the date & time the file was created.
+A file is generated in `db/migrate/`. The string of numbers at the beginning is a Unix timestamp, while the remainder is what you just named it.
 
-You'll notice you have to pass a "NAME" parameter to your migration and that a file is created for you in a new db/migrate folder, with the name of your migration and a timestamp. So easy.
-
-Now let's visit the ```db/migrate/20150710152405_create_artists.rb``` and put the finishing touches on our table:
-
-> Note: Explain the block and how it creates the necessary columns.
+Now let's open the generated file and put the finishing touches on our table:
 
 ```ruby
 class CreateArtists < ActiveRecord::Migration
   def change
-     create_table :artists do |t|
-        t.string :name
-        t.string :photo_url
-        t.string :nationality
-
-        t.timestamps
+    create_table :artists do |t| #t stands for table
+      t.string :name #add a name attribute of type string to the table
+      t.string :photo_url #also add a photo_url attribute of type string
+      t.string :nationality # finally add a nationality attribute of type string
+      t.timestamps #this will add timestamps for time created and time updated automagically!
+    end
   end
 end
+
 ```
 
-Run the migration with ```rake db:migrate```. That'll fetch any migrations it hasn't run yet and run 'em.
+Run the migration with ```rake db:migrate```. That'll run any migrations it haven't been run yet and make the appropriate changes to the database.
 
 ```bash
 == 20150710152405 CreateArtistsTable: migrating ===============================
 == 20150710152405 CreateArtistsTable: migrated (0.0000s) ======================
 ```
 
-And we have a table! Nice work!  And _now_ you've got a `schema.rb` file – this file is _sacred_. Not to be touched, only to be admired. It's a snapshot of the current state of your database, and rake is the only one who should be modifying it, ever.
+###Sacred Cows
 
-If ever you're unsure what a database looks like, browse your `schema.rb`.
+And we have a table! Nice work!  And _now_ you've got a `schema.rb` file that was generated for you – this file is _sacred_. **Not** to be touched, only to be admired. It's a snapshot of the current state of your database, and rake is the only one who should be modifying it, ever. Similarly, never change a migration file after it has been run. Repeat after me: "I shall never change a migration file after it has been run." Again! You can get a quick view of which files have been run by entering `rake db:migrate:status`; the files that have been run have a status of `up`, while those which have been not have a status of `down`. Your file should have an `up` status now.
+
+<img style="max-height: 200px;" src="http://www.thebrsblog.com/wp-content/uploads/2012/04/httpwww-andrewolsen-netwp-contentuploads201105sacred-cow.jpg"/>
+
+Peep your `schema.rb` to see what your database looks like!
 
 ```ruby
 ActiveRecord::Schema.define(version: 20150710152405) do
@@ -278,20 +275,20 @@ ActiveRecord::Schema.define(version: 20150710152405) do
 end
 ```
 
-Gorgeous, success! Now we change it.
+Gorgeous, success! Now let's change it again!
 
 ## Changes to our DB - Demo (10 mins)
 
-Just like we can write migrations to create tables, we can write migrations to add, change or delete attributes, update data types, change table names, and even delete tables.
+Just like we can write migrations to create tables, we can write migrations to add, change or delete attributes, update data types, change table names, and even delete tables. The entire purpose of migrations are to make architectural changes to the database.
 
-We decided we want to collect data about the instruments the artists play, so we need to create a migration:
+We have also decided we want to collect data about the instruments the artists play, so we need to add a column to house that data. Let's create another migration:
 
 ```bash
 rake db:create_migration NAME=add_instrument_to_artists
 db/migrate/20150710154423_add_instrument_to_artists.rb
 ```
 
-In ```db/migrate/20150710154423_add_instrument_to_artists.rb```:
+In the new migration:
 
 ```ruby
 class AddInstrumentToArtists < ActiveRecord::Migration
@@ -301,23 +298,30 @@ class AddInstrumentToArtists < ActiveRecord::Migration
 end
 ```
 
-You can probably guess what this line - ```add_column :artists, :instruments, :string``` - says: "add a column to the artists table called 'instruments' with a string as its data type".  Run the migration with ```rake db:migrate``` and BAM, you have a new column.
+You can probably guess what this line - `add_column :artists, :instruments, :string` - says: "add a column to the artists table called 'instruments' with a string as its data type".  Run `rake db:migrate:status` for funzies (you should have two migration files, one `up` and one `down`), but when you want to migrate run `rake db:migrate` and BAM, you have a new column.
 
-Do this _every_ time you need to change your database – whether it's adding or removing. Changing the database in any way means making a new migration, and telling the computer what you need done. Think of it as an assistant; you don't do the tedious Postgres work, you just tell it what needs doing and tell it to go do it.
+Make a migration _every_ time you need to change your database – whether it's adding or removing things, no exceptions! Changing the database in any way means making a new migration, and telling the computer what you need done. Think of it as an assistant; you don't do the tedious Postgres work, you just tell it what needs doing and tell it to go do it. If you make changes in other ways to your local databse, a team member who has cloned the same project will loose state with you. Running migrations of your other team members *is how* your local databases stay in state!
 
 #### Changing or deleting column
 
-By now, you've felt the pattern: create a migration, add the appropriate code to the migration, and then run the migration.  Same applies for each time you want to modify your database.  In the case of a updating a column, you would:
+By now, you've seen the pattern:
+
+* create a migration
+* add the appropriate code to the migration
+* run the migration.
+
+Same pattern applies for each time you want to modify your database. For example in the case of a updating a column, you would write something along the lines of:
 
 ```bash
-rake db:create_migration NAME=change_column_in_artists_to_new_column
+rake db:create_migration NAME=change_column_in_artists_to_new_column_name
 ```
+Note the `NAME` doesn't matter, but it's a good idea to be descriptive.
 
 In the migration add:
 
 ```ruby
 def change
-  rename_column :table, :old_column, :new_column
+  rename_column :table, :old_column_name, :new_column_name
 end
 ```
 
@@ -327,7 +331,7 @@ Then:
 rake db:migrate
 ```
 
-According to [the official ActiveRecord docs](http://edgeguides.rubyonrails.org/active_record_migrations.html), these are all the migration definitions the change method allows you to use in a migration:
+According to [the official ActiveRecord docs](http://guides.rubyonrails.org/active_record_migrations.html), these are all the migration methods that can be run inside `change`:
 
 - add_column
 - add_index
@@ -344,12 +348,12 @@ According to [the official ActiveRecord docs](http://edgeguides.rubyonrails.org/
 - remove_reference
 - rename_table
 
-As always, if you can't remember the exact syntax, take to the Google!
+As always, if you can't remember the exact syntax, reference the [rails guides](http://guides.rubyonrails.org/)!
 
 
 ## Independent Practice (10 minutes)
 
-> ***Note:*** _This can be a pair programming activity or done independently._
+> _This a recommended pair programming activity._
 
 For the last part of class, the guys at Tunr, decided they need more information about the people they represent.  Do the following to make it happen:
 
