@@ -1,50 +1,58 @@
-require 'sinatra'
-################################
-# 7 RESTful routes for Managers #
-################################
+class Tunr < Sinatra::Base
 
-# COLLECTION
-# index
-get '/managers' do
-  @managers = Manager.all
-  erb(:"managers/index")
-end
+  # RESTful Manager Controller Actions
+  # index
+  get '/managers' do
+    @managers = Manager.all
+    erb(:"managers/index")
+  end
 
-# new
-get '/managers/new' do
-  erb(:"managers/new")
-end
+  # new
+  get '/managers/new' do
+    @manager = Manager.new
+    erb(:"managers/new")
+  end
 
-# create
-post '/managers' do
-  new_manager = Manager.create(params[:manager])
-  redirect("/managers/#{new_manager.id}")
-end
+  # create
+  post '/managers' do
+    @manager = Manager.new(params[:manager])
+    if @manager.save
+      redirect("/managers/#{@manager.id}")
+    else
+      erb(:"managers/new")
+    end
+  end
 
-# MEMBER
-# show
-get '/managers/:id' do
-  @manager = Manager.find(params[:id])
-  # @managers  = Manager.where(manager_id: @manager.id)
-  erb(:"managers/show")
-end
+  # show
+  get '/managers/:id' do
+    @manager = Manager.find(params[:id])
+    erb(:"managers/show")
+  end
 
-# edit
-get '/managers/:id/edit' do
-  @manager = Manager.find(params[:id])
-  erb(:"managers/edit")
-end
+  # edit
+  get '/managers/:id/edit' do
+    @manager = Manager.find(params[:id])
+    erb(:"managers/edit")
+  end
 
-# update
-post '/managers/:id' do
-  manager = Manager.find(params[:id])
-  manager.update(params[:manager])
-  redirect("/managers/#{manager.id}")
-end
+  # update
+  put '/managers/:id' do
+    @manager = Manager.find(params[:id])
+    if @manager.update_attributes(params[:manager])
+      redirect("/managers/#{manager.id}")
+    else
+      erb(:"managers/edit")
+    end
+  end
 
-# destroy
-post '/managers/:id/delete' do
-  manager = Manager.find(params[:id])
-  manager.destroy
-  redirect('/managers')
+  # delete
+  delete '/managers/:id/delete' do
+    @manager = Manager.find(params[:id])
+    if @manager.destroy
+      redirect('/managers')
+    else
+      redirect("/managers/#{@manager.id}")
+    end
+  end
+
 end

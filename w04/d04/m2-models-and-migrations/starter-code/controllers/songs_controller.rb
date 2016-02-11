@@ -1,50 +1,58 @@
-require 'sinatra'
-################################
-# 7 RESTful routes for songs #
-################################
+class Tunr < Sinatra::Base
 
-# COLLECTION
-# index
-get '/songs' do
-  @songs = Song.all
-  erb(:"songs/index")
-end
+  # RESTful Song Controller Actions
+  # index
+  get '/songs' do
+    @songs = Song.all
+    erb(:"songs/index")
+  end
 
-# new
-get '/songs/new' do
-  erb(:"songs/new")
-end
+  # new
+  get '/songs/new' do
+    @song = Song.new
+    erb(:"songs/new")
+  end
 
-# create
-post '/songs' do
-  new_song = Song.create(params[:song])
-  redirect("/songs/#{new_song.id}")
-end
+  # create
+  post '/songs' do
+    @song = Song.new(params[:song])
+    if @song.save
+      redirect("/songs/#{@song.id}")
+    else
+      erb(:"songs/new")
+    end
+  end
 
-# MEMBER
-# show
-get '/songs/:id' do
-  @song = Song.find(params[:id])
-  # @songs  = Song.where(song_id: @song.id)
-  erb(:"songs/show")
-end
+  # show
+  get '/songs/:id' do
+    @song = Song.find(params[:id])
+    erb(:"songs/show")
+  end
 
-# edit
-get '/songs/:id/edit' do
-  @song = Song.find(params[:id])
-  erb(:"songs/edit")
-end
+  # edit
+  get '/songs/:id/edit' do
+    @song = Song.find(params[:id])
+    erb(:"songs/edit")
+  end
 
-# update
-post '/songs/:id' do
-  song = Song.find(params[:id])
-  Song.update(params[:song])
-  redirect("/songs/#{song.id}")
-end
+  # update
+  put '/songs/:id' do
+    @song = Song.find(params[:id])
+    if @song.update_attributes(params[:song])
+      redirect("/songs/#{song.id}")
+    else
+      erb(:"songs/edit")
+    end
+  end
 
-# destroy
-post '/songs/:id/delete' do
-  song = Song.find(params[:id])
-  song.destroy
-  redirect('/songs')
+  # delete
+  delete '/songs/:id/delete' do
+    @song = Song.find(params[:id])
+    if @song.destroy
+      redirect('/songs')
+    else
+      redirect("/songs/#{@song.id}")
+    end
+  end
+
 end

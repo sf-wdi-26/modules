@@ -1,4 +1,4 @@
-#Models and migrations
+#Models and Migrations Lab
 
 ## Introduction
 
@@ -13,6 +13,7 @@ You and the people at Tunr want to add some functionality to your talent managem
 - Sprint 1: Create a manager class that inherits from ActiveRecord
 
   - For this class, create a table in your database and the corresponding forms that collect and display information about the manager's name, email, and office number.
+  - Make sure that the new file is being required in your `config.ru`
 
 - Sprint 2: Create a song class that inherits from ActiveRecord
 
@@ -20,15 +21,14 @@ You and the people at Tunr want to add some functionality to your talent managem
 
 - Sprint 3:
 
-  - Add a phone number column to the manager table as an integer
+  - Add a `office_number` column to the manager table as an integer
   - Change the phone number column to a string
-  - Add a downloads column to the song table
   - Rename the phone number column to "cell phone number" in the managers table
   - Remove the downloads column from the song table as an integer
   - Add a column to the song table called artist last name
 
 
-- Sprint 4: make sure all is working well, Add a record for an `artist`, `manager`, and `song` that has this information:
+- Sprint 4: make sure all is working well. Add a record for an `artist`, `manager`, and `song`:
 
   **Artist**:  
 
@@ -53,8 +53,7 @@ You and the people at Tunr want to add some functionality to your talent managem
     - Album Title: Best Album Ever
     - Artist Last Name: Pavarotti
  
-* Actually, update `Pavarotti`'s nationality to `Italiano`, bene!
-* Feel free to add some more data to the database!
+* Actually, edit `Pavarotti`'s nationality to `Italiano`, bene!
 
 **Bonus:**
 
@@ -62,9 +61,9 @@ You and the people at Tunr want to add some functionality to your talent managem
 	* _Hint: In addition to the code you have to add to the models, you'll have to add foreign keys to both the `artists` and `songs` tables._
 
 
-#### Starter code
+#### Starting Advice
 
-Use the code in `starter-code` to get started!
+Use the code in `starter-code` to get started! Don't forget to `bundle`, `rake db:create`, `rake db:migrate`, `rackup` etc...
 
 #### Deliverable
 
@@ -85,3 +84,4 @@ A whole bunch of migrations, and your `schema.rb` file should look like this:
 	- :string
 	- :text
 	- :timestamp
+- Checkout sinatra's autoreload [gem](https://rubygems.org/gems/sinatra-auto-reload/versions/0.0.6) if you're tired on constantly restarting your server.

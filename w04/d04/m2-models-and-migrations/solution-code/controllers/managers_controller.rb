@@ -3,55 +3,55 @@ class Tunr < Sinatra::Base
   # RESTful Manager Controller Actions
   # index
   get '/managers' do
-    @artists = Manager.all
-    erb(:"artists/index")
+    @managers = Manager.all
+    erb(:"managers/index")
   end
 
   # new
-  get '/artists/new' do
+  get '/managers/new' do
     @manager = Manager.new
-    erb(:"artists/new")
+    erb(:"managers/new")
   end
 
   # create
-  post '/artists' do
+  post '/managers' do
     @manager = Manager.new(params[:manager])
     if @manager.save
-      redirect("/artists/#{@manager.id}")
+      redirect("/managers/#{@manager.id}")
     else
-      erb(:"artists/new")
+      erb(:"managers/new")
     end
   end
 
   # show
-  get '/artists/:id' do
+  get '/managers/:id' do
     @manager = Manager.find(params[:id])
-    erb(:"artists/show")
+    erb(:"managers/show")
   end
 
   # edit
-  get '/artists/:id/edit' do
+  get '/managers/:id/edit' do
     @manager = Manager.find(params[:id])
-    erb(:"artists/edit")
+    erb(:"managers/edit")
   end
 
   # update
-  put '/artists/:id' do
+  put '/managers/:id' do
     @manager = Manager.find(params[:id])
     if @manager.update_attributes(params[:manager])
-      redirect("/artists/#{manager.id}")
+      redirect("/managers/#{manager.id}")
     else
-      erb(:"artists/edit")
+      erb(:"managers/edit")
     end
   end
 
   # delete
-  delete '/artists/:id/delete' do
+  delete '/managers/:id/delete' do
     @manager = Manager.find(params[:id])
     if @manager.destroy
-      redirect('/artists')
+      redirect('/managers')
     else
-      redirect("/artists/#{@manager.id}")
+      redirect("/managers/#{@manager.id}")
     end
   end
 
