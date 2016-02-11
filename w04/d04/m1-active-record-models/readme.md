@@ -217,9 +217,12 @@ You'll notice we've already set up a bit of your Rakefile for you – we're bas
 
 The real meat & potatoes here, after creating a database, is to create a _table_ in the database.
 
-To create a table we need to create a "migration".  [Ruby Guides: Migrations](http://guides.rubyonrails.org/active_record_migrations.html):
+To create a table we need to create a "migration".
 
+#### Migrations
 *"Migrations are a convenient way to alter your database schema over time in a consistent and easy way. They use a Ruby DSL [Domain Specific Language] so that you don't have to write SQL by hand, allowing your schema and changes to be database independent. You can think of each migration as being a new 'version' of the database."*
+
+[Read more here](http://guides.rubyonrails.org/active_record_migrations.html)
 
 Migrations are instructions for an iteration to your database's architecture. Each one's name is generated for you and timestamped, so it knows how to walk through them over time to repeat the same instructions on any new computer that needs to migrate to the same database state. A proper understanding of this is crucial, especially when on a team of developers, because it keeps your local databases in sync when changes are made on one computer. When the rest of the team `pull`s the new migration files migration the full set of them are a perfect record of all changes that have been made over time.
 
@@ -304,7 +307,7 @@ end
 
 You can probably guess what this line - `add_column :artists, :instruments, :string` - says: "add a column to the artists table called 'instruments' with a string as its data type".  Run `rake db:migrate:status` for "funzies" (you should have two migration files, one `up` and one `down`), but when you want to migrate run `rake db:migrate` and BAM, you have a new column.
 
-Make a migration _every_ time you need to change your database – whether it's adding or removing things, no exceptions! Changing the database in any way means making a new migration, and telling the computer what you need done. Think of it as an assistant; you don't do the tedious Postgres work, you just tell it what needs doing and tell it to go do it. If you make changes in other ways to your local database, a team member who has cloned the same project will loose state with you. Running migrations of your other team members *is how* your both your separate local databases stay in state!
+Make a migration _every_ time you need to change your database – whether it's adding or removing things, no exceptions! Changing the database in any way means making a new migration, and telling the computer what you need done. Think of it as an assistant; you don't do the tedious Postgres work, you just tell it what needs doing and tell it to go do it. If you make changes in other ways to your local database, a team member who has cloned the same project will lose state with you. Running migrations of your other team members *is how* both of your separate local databases stay in state!
 
 #### Changing or deleting column
 
