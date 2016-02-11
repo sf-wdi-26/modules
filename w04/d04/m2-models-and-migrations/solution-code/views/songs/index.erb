@@ -1,0 +1,31 @@
+<h2>Songs</h2>
+
+<a class="btn" href="/songs/new">Add Song</a>
+
+<div class="songs">
+  <% @songs.each do |song| %>
+  <div class="row">
+    <ul>
+      <li>
+        <h2>
+          <a href="/songs/<%= song.id %>">
+            <%= song.name %>
+          </a>
+        </h2>
+      </li>
+      <li>
+        <a href="/songs/<%= song.id %>/edit">
+          Edit
+        </a>
+      </li>
+      <li>
+        <li>
+          <form method="/songs/<%= song.id %>/delete" action="post">
+            <button>Delete</button>
+          </form>
+        </li>
+      </li>
+    </ul>
+  </div>
+  <% end %>
+</div>

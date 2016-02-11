@@ -1,0 +1,20 @@
+<h2>Edit Artist</h2>
+
+<form action='/artists/<%= "#{@artist.id}" %>' method="post">
+  <label for="artist[name]">Name:</label>
+  <input name="artist[name]" value='<%= "#{@artist.name}" %>'>
+
+  <label for="artist[photo_url]">Photo URL:</label>
+  <input name="artist[photo_url]" value='<%= "#{@artist.photo_url}" %>'>
+
+  <label for="artist[nationality]">Nationality:</label>
+  <input name="artist[nationality]" value='<%= "#{@artist.nationality}" %>'>
+
+  <label for="artist[instrument]">Instrument:</label>
+  <input name="artist[instrument]" value='<%= "#{@artist.instrument}" %>'>
+
+  <label for="artist[home_address]">Photo URL:</label>
+  <input name="artist[home_address]" value='<%= "#{@artist.home_address}" %>'>
+
+  <input type="submit" value="Create">
+</form>
