@@ -2,7 +2,7 @@
 
 > _This is a suggested pair programming activity._
 
-You and the people at Tunr want to add some functionality to your talent management application. You your parter get the benefit of starting with the existing application that can already CRUD artists. Now Tunr has hired you guys to also keep track of their managers and songs!
+You and the people at Tunr want to add some functionality to your talent management application. You and your parter get the benefit of starting with the existing application that can already CRUD artists. Now Tunr has hired you guys to also keep track of their managers and songs!
 
 ## Requirements
 
@@ -60,9 +60,9 @@ You and the people at Tunr want to add some functionality to your talent managem
 * Keep an eye on your `schema.rb` file to see that your migrations are working properly!
 * Think about the most appropriate datatype for each migration.
 * If you get stuck, get unstuck! Advice for getting unstuck includes:
-	* Not freezing up and continually to trying new things (googling, reading docs, experimenting, etc)
-	* Identifing once you are stuck, as you have already tried all options you can think of
-	* Honing in on your gap in knowledge b phrasing a specific question
+	* Not freezing up but continually trying new things (googling, reading docs, experimenting, etc)
+	* Identifying once you are stuck, as you have already tried all options you can think of
+	* Honing in on your gap in knowledge by phrasing a specific question
 	* Close your knowledge gap by ASKING that question to someone!
 
 ## Deliverable
@@ -73,8 +73,8 @@ A whole bunch of migrations, and your `schema.rb` file should look like this:
 
 ## Additional Resources
 
-- [ActiveRecord Official Docs](http://edgeguides.rubyonrails.org/active_record_migrations.html)
-- Active Record [data types](http://api.rubyonrails.org/classes/ActiveRecord/ConnectionAdapters/TableDefinition.html#method-i-column):
+- [ActiveRecord Migrations Official Docs](http://edgeguides.rubyonrails.org/active_record_migrations.html)
+- [Active Record data types](http://api.rubyonrails.org/classes/ActiveRecord/ConnectionAdapters/TableDefinition.html#method-i-column):
 	- :boolean
 	- :datetime
 	- :decimal
@@ -84,9 +84,9 @@ A whole bunch of migrations, and your `schema.rb` file should look like this:
 	- :string
 	- :text
 	- :timestamp
-- Checkout sinatra's autoreload [gem](https://rubygems.org/gems/sinatra-auto-reload/versions/0.0.6) if you're tired on constantly restarting your server.
+- Checkout sinatra's autoreload [gem](https://rubygems.org/gems/sinatra-auto-reload/versions/0.0.6) if you're tired of constantly restarting your server.
 
 ##Bonus
 
-An artist can have many songs and a manager can have many artists: configure your app to make sure it is configured with these relationships using [official docs](http://guides.rubyonrails.org/association_basics.html). P.S. We're learning this next week.
+An artist can have many songs and a manager can have many artists: configure your app to make sure it is configured with these relationships using [Active Record Associations](http://guides.rubyonrails.org/association_basics.html). (We're learning this next week.)
 * _Hint: In addition to the code you have to add to the models, you'll have to add foreign keys to both the `artists` and `songs` tables._
