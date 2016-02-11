@@ -1,0 +1,32 @@
+<h2>Artists</h2>
+
+<a class="btn" href="/artists/new">Add Artist</a>
+
+<div class="artists">
+  <% @artists.each do |artist| %>
+  <div class="row">
+    <img src="<%= artist.photo_url %>" alt="<%= artist.name %> photo">
+    <ul>
+      <li>
+        <h2>
+          <a href="/artists/<%= artist.id %>">
+            <%= artist.name %>
+          </a>
+        </h2>
+      </li>
+      <li>
+        <a href="/artists/<%= artist.id %>/edit">
+          Edit
+        </a>
+      </li>
+      <li>
+        <li>
+          <form method="/artists/<%= artist.id %>/delete" action="post">
+            <button>Delete</button>
+          </form>
+        </li>
+      </li>
+    </ul>
+  </div>
+  <% end %>
+</div>

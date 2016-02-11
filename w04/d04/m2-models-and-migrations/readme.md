@@ -1,59 +1,87 @@
-# ActiveRecord Models
+#Models and migrations
 
-## Challenge
+## Introduction
 
-Your task is to write a RESTful routes & controllers for our Pizza Shop and fill in each with _actual code_. Earlier this week we had a skeleton, and now it's time to fill it out.
+> _This is a suggested pair programming activity._
 
-There are two important details to keep in mind. Tomorrow morning, we'll be demonstrating how to use HTML forms to send data from user input to our controller actions, which will be the final piece of the puzzle for creating a full blown web application.
-
-* You don't have to create the controller actions for `new` and `edit`. Skip those until tomorrow (unless you want to jump ahead on your own).
-* Hardcode your params for now. You'll need to specifically in your `create` and `update` actions. We'll get those to be real data tomorrow.
-
-```ruby
-#create
-post "/pizzas" do
-    params = {name: "Red Anchove Delight", sauce: 'red', cheese:true, mushrooms:true, extra_toppings: "anchoves"}
-    #...
-```
-
-* Definitely use `tux` to test out if your code works *before* placing inside your controller!!
-* Feel free to test out your routes with the [`curl`](http://conqueringthecommandline.com/book/curl#cid25) command (use `localhost:9292` as the url you'll hit).
-    * Tip: [how to send a POST request with curl, using parameters!](http://conqueringthecommandline.com/book/curl#uid105)
-
-> In the last 10 minutes, we'll walk through a complete solution example so you can gauge how you did!
+You and the people at Tunr want to add some functionality to your talent management application.  Specifically, they also want to be able to keep track of their managers and the songs their artists put out. Use Google and the [ActiveRecord Official Docs](http://edgeguides.rubyonrails.org/active_record_migrations.html) if you need help and incorporate the requirements below to build on what you did in the previous lesson.  Be sure to do these in order and keep an eye on your `schema.rb` file to see that your migrations are working properly!  Also, think about the most appropriate datatype for each migration and use your discretion as you write them.  The views and controllers are set up for you.
 
 ## Exercise
 
-####Requirements
+#### Requirements
 
-- Write a RESTful controller for our pizza resource with `index`, `show`, `create`, `update`, and `delete` routes. You should be using (but not limited to) the following ActiveRecord methods:
+- Sprint 1: Create a manager class that inherits from ActiveRecord
 
-  - `.find`
-  - `.all`
-  - `.new`
-  - `.save`
-  - `.update_attributes`
-  - `.destroy`
+  - For this class, create a table in your database and the corresponding forms that collect and display information about the manager's name, email, and office number.
 
-- Fill in each controller action with the CRUD operation that is appropriate for that action
-- Don't forget about `params`
+- Sprint 2: Create a song class that inherits from ActiveRecord
 
-#### Starter Code
+  - For this class, create a table in your database and the corresponding forms that collect and display information about the song title, duration, year of release, and album title.
 
-The same code as our lesson is included in the `starter-code` folder. The Sinatra setup is ready to go, you just need to fill in your controller.
+- Sprint 3:
+
+  - Add a phone number column to the manager table as an integer
+  - Change the phone number column to a string
+  - Add a downloads column to the song table
+  - Rename the phone number column to "cell phone number" in the managers table
+  - Remove the downloads column from the song table as an integer
+  - Add a column to the song table called artist last name
+
+
+- Sprint 4: make sure all is working well, Add a record for an `artist`, `manager`, and `song` that has this information:
+
+  **Artist**:  
+
+    - Name: Luciano Pavarotti
+    - Photo URL: "http://artcreationforever.com/images/luciano-pavarotti/luciano-pavarotti-03.jpg"
+    - Nationality: Italian
+    - Instrument: Voice
+    - Home Address: 1 Strada Roma
+
+  **Manager**:  
+
+    - Name: Ricky Bobby
+    - Email: rbobby@gmail.com
+    - Office Number: 516-877-0304  
+    - Cell Phone Number: 718-989-1231
+
+  **Song**:  
+  
+    - Title: The Best Song Ever
+    - Duration: 3:31
+    - Date of Release: 7/13/2015
+    - Album Title: Best Album Ever
+    - Artist Last Name: Pavarotti
+ 
+* Actually, update `Pavarotti`'s nationality to `Italiano`, bene!
+* Feel free to add some more data to the database!
+
+**Bonus:**
+
+- An artist can have many songs and a manager can have many artists: configure your app to make sure it is configured with these relationships using [official docs](http://guides.rubyonrails.org/association_basics.html). P.S. We're learning this next week.
+	* _Hint: In addition to the code you have to add to the models, you'll have to add foreign keys to both the `artists` and `songs` tables._
+
+
+#### Starter code
+
+Use the code in `starter-code` to get started!
 
 #### Deliverable
 
-Shoot to create a complete RESTful controller with appropriate ActiveRecord methods inside and compare your work with the solution code when complete.
+A whole bunch of migrations, and your `schema.rb` file should look like this:
 
-You'll get a lot more practice with this so don't sweat it if you're struggling, but if you are:
+![](http://s29.postimg.org/4sw62q90n/Screen_Shot_2015_07_13_at_12_00_36_PM.png)
 
-* Don't freeze up, try things out
-* Read all errors carefully
-* Identify your knowledge gaps
-* Formulate a question
-* ASK THAT QUESTION!
+## Additional Resources
 
-###Resources
-
-- [Rails Guides: ActiveRecord](http://guides.rubyonrails.org/active_record_basics.html)
+- [ActiveRecord Official Docs](http://edgeguides.rubyonrails.org/active_record_migrations.html)
+- Active Record [data types](http://api.rubyonrails.org/classes/ActiveRecord/ConnectionAdapters/TableDefinition.html#method-i-column):
+	- :boolean
+	- :datetime
+	- :decimal
+	- :float
+	- :integer
+	- :references
+	- :string
+	- :text
+	- :timestamp
