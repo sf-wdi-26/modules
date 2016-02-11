@@ -2,7 +2,7 @@
 
 > _This is a suggested pair programming activity._
 
-You and the people at Tunr want to add some functionality to your talent management application. You your parter get the benefit of starting with the existing application that can already CRUD artists. Now Tunr has hired you guys to also keep track of their managers and the songs!
+You and the people at Tunr want to add some functionality to your talent management application. You your parter get the benefit of starting with the existing application that can already CRUD artists. Now Tunr has hired you guys to also keep track of their managers and songs!
 
 ## Requirements
 
@@ -17,7 +17,7 @@ You and the people at Tunr want to add some functionality to your talent managem
 
 - Sprint 3:
 
-  - Add a `office_number` column to the manager table as an integer
+  - Add a phone number (in addition to the existing office number) column to the manager table as an integer
   - Change the phone number column to a string
   - Rename the phone number column to "cell phone number" in the managers table
   - Remove the downloads column from the song table as an integer
