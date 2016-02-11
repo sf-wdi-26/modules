@@ -34,8 +34,8 @@ Time | Day 1 | Day 2 | Day 3 | Day 4 | Day 5
 [4-4A]: w04/d04/m1-active-record-models       "Building Models with ActiveRecord and Migrations"
 [4-4B]: w04/d04/m2-models-and-migrations             "Models and Migrations Lab"
 [4-4C]: # " "
-[4-4D]: # "ActiveRecord Methods and Finders"
-[4-4E]: # "ActiveRecord Finders lab"
+[4-4D]: w04/d04/m3-methods-and-finders "ActiveRecord Methods and Finders"
+[4-4E]: w04/d04/hw-active-record-pizza-lab "ActiveRecord Finders lab"
 
 [4-5A]: #                        "Building and Submitting Forms"
 [4-5B]: # " "
