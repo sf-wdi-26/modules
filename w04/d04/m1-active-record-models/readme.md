@@ -16,7 +16,7 @@
 - Write object oriented Ruby
 - Set and get data from a SQL database
 
-##Models - Intro (15m)
+##Models - Intro
 
 #### MVC - Models
 
@@ -176,9 +176,13 @@ Start it up, check it out in your browser. Try clicking 'Add Artist' – shucks
 
 ![](http://s30.postimg.org/d5bpwkoo1/Screen_Shot_2015_07_10_at_10_42_37_AM.png)
 
-## Error?? Demo (5 mins)
+## Error?? Demo
 
 If you read through what this page is actually telling you, you can probably guess why this happened.
+
+We never actually required our new model into our application. In your `config.ru` add the line `require './models/artist'` **above** the require statement for the `app`.
+
+Try it again... Do we hit another error? Maybe something along the lines of `PG::UndefinedTable: ERROR: relation "artists" does not exist`.
 
 Even though we have a database (`tunr_development`) we never created any tables or schema.  We never made an Artist table, just the database!
 
@@ -207,7 +211,7 @@ rake db:structure:load      # Recreate the databases...
 rake db:version             # Retrieves the current ...
 ```
 
-## Let's Create Some Data Tables with migrations...and without SQL! (10 mins)
+## Let's Create Some Data Tables with migrations...and without SQL!
 
 You'll notice we've already set up a bit of your Rakefile for you – we're basically just using the commands that the ActiveRecord gem has built in. Don't worry about memorizing the code in this file, but _do_ make sure you understand what the commands it gives us do.
 
@@ -277,7 +281,7 @@ end
 
 Gorgeous, success! Now let's change it again!
 
-## Changes to our DB - Demo (10 mins)
+## Changes to our DB - Demo
 
 Just like we can write migrations to create tables, we can write migrations to add, change or delete attributes, update data types, change table names, and even delete tables. The entire purpose of migrations are to make architectural changes to the database.
 
@@ -350,12 +354,76 @@ According to [the official ActiveRecord docs](http://guides.rubyonrails.org/acti
 
 As always, if you can't remember the exact syntax, reference the [rails guides](http://guides.rubyonrails.org/)!
 
+##Taking a step Back
 
-## Independent Practice (10 minutes)
+**So we've created our model, but how is the application actually going to know when to CRUD the data?** The typical way to do this is for your front-end to hit a RESTUL route which executes a corresponding CRUD action on your database using your model. In fact take five minutes to with a neighbor look at the `app.rb` file again and try to figure out what is going on. Answer these questions:
+
+* Which route gets hit when the application is hit with a `POST` to `/artists`
+* What, step by step, happens in the above request?
+* If a `POST` creates a new artist, where does the information (such as name, photo_url, etc) come into the application from?
+
+##Playing with our Data
+
+**Ok great, I can rely on my application to CRUD data if all my routes are setup and I get a specfic request from the front-end, but that seems like a lot of work... what if I just want to do it manually in the console?** Good news, that's totally encouraged! Getting your hand dirty in that fashion is a good way to actually get to play with the models, see how they are working and quickly give youself some test data to work with (a `seed.rb` file is an even faster way to give yourself fake data to work with, but we'll talk about that later).
+
+We have a gem available to us called `tux`. It will pop us into a ruby environment within the *context* of our application. Run:
+
+```bash
+tux
+```
+
+###Creating
+
+```ruby
+>> david_bowie = Artist.new
+>> david_bowie.name = "David Bowie"
+>> david_bowie.nationality = "British"
+>> david_bowie.save
+```
+
+Here's `.create`, which does the same thing as `.new` and `.save`, but just in one step...
+
+```ruby
+>> Artist.create({name: "Drake", nationality: "Canadian"})
+```
+
+###Reading
+
+Now we can see how many artists we have `Artist.count` and see them all with `Artist.all`
+
+###Updating
+
+First we must find the artist to update and then change an attribute.
+
+```ruby
+>> drake = Artist.find_by_name("Drake")
+>> drake.nationality = "Canadian, aye!"
+>> drake.save
+```
+
+###Deleting
+
+We will now delete David Bowie, a moment of silence please...
+
+> It is best practice to use an `id` for finding an entry in the table. Assuming David Bowie is number `1` (which he is)...
+
+```ruby
+>> david = Arist.find(1)
+>> david.destroy
+```
+
+(´;︵;`)
+
+
+###More CRUD actions
+
+For a comprehensive set of all the CRUD actions active record can perform checkout out the CRUD section of [Active Record Basics](http://guides.rubyonrails.org/active_record_basics.html#crud-reading-and-writing-data) on Ruby Guides!
+
+## Independent Practice
 
 > _This a recommended pair programming activity._
 
-For the last part of class, the guys at Tunr, decided they need more information about the people they represent.  Do the following to make it happen:
+For the last part of class, the guys at Tunr, decided they need more information about the people they represent. Do the following to make it happen:
 
 - Add another column to your Artists table named "Address" that stores string data (be careful with the datatype on this one - it's not what you think)
 - Add a column with a different data type, and then delete it
@@ -368,7 +436,7 @@ For the last part of class, the guys at Tunr, decided they need more information
 - Register a new artist using the ```artists/new``` end point
 
 
-## Conclusion (5 mins)
+## Conclusion
 - What is ActiveRecord and how does it interact with your database?
 - What are migrations?
-- Briefly, describe how to configure your Sinatra app to use ActiveRecord.
+- Briefly, describe how to configure your Sinatra app to use ActiveRecord Models with your database.
