@@ -1,0 +1,25 @@
+<h2>Songs</h2>
+
+
+<ul class="songs">
+  <% @songs.each do |song| %>
+    <li>
+      <strong>
+        <a href="/songs/<%= song.id %>"><%= song.to_s %></a>
+      </strong>
+
+      <a href="/songs/<%= song.id %>/edit">
+        Edit
+      </a>
+
+      <form action="/songs/<%= song.id %>" method="post" class='delete'>
+        <input type="hidden" name="_method" value="delete">
+        <input type='submit' value="Delete Song">
+      </form>
+    </li>
+  <% end %>
+</ul>
+
+<hr/>
+
+<a class="btn" href="/songs/new">Add Song</a>
