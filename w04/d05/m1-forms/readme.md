@@ -1,14 +1,3 @@
----
-title: Building & Submitting Forms
-type: Lesson
-duration: "1:25"
-creator:
-    name: Micah Rich
-    city: LA
-competencies: Server Applications
----
-
-
 # Building & Submitting Forms
 
 ### Objectives
