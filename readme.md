@@ -11,7 +11,7 @@ Time | Day 1 | Day 2 | Day 3 | Day 4 | Day 5
 **10:45am Module 2** |   [Intro to Ruby Lab (Alex)][4-1B] | [Username Generator TDD Lab (Ilias)][4-2B]   | [Database Design Lab (Alex)][4-3B]       | [Models & Migrations Lab (Ilias)][4-4B]              | [Review (Alex)][4-5B]
 **1:30pm Module 3** |  [Ruby OOP Lesson (Ilias)][4-1D]| [Intro to Sinatra, View Templating(Alex)][4-2C] | [Intro to SQL (Ben)][4-3C] |  [Outcomes (Neda)][4-4C]       | [Review (Ilias)][4-5C]
 **3:00pm Module 4** |[Ruby OOP Lab (Ilias)][4-1E]  | [Sinatra Controllers & RESTful routing (Alex)][4-2D]   | [SQL Lab (Ben)][4-3D]                    | [ActiveRecord Lab (Ben)][4-4D]   | [Sinatra App Lab][4-5D]
-**Homework** | [Finish/Refactor Labs][4-1F]  | [Your own Sinatra app][4-2E]                  | [Database Design][4-3E]      | [ActiveRecord Lab][4-4E] | [Sinatra App Lab][4-5E]
+**Homework** | [Finish/Refactor Labs][4-1F]  | [Your own Sinatra app][4-2E]                  | [Database Design][4-3E]      | [ActiveRecord Lab][4-4E] | [Sinatra App Lab (Ben)][4-5E]
 
 [4-1A]: w04/d01/m1/ "Intro to Ruby"
 [4-1B]: w04/d01/m2/ "Intro to Ruby Lab"
