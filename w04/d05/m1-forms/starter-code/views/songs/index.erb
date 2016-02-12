@@ -1,0 +1,22 @@
+<h2>Songs</h2>
+
+
+<ul class="songs">
+  <% @songs.each do |song| %>
+    <li>
+      <strong>
+        <a href="/songs/<%= song.id %>"><%= song.to_s %></a>
+      </strong>
+
+      <a href="/songs/<%= song.id %>/edit">
+        Edit
+      </a>
+
+      <a href="#">Delete Song</a>
+    </li>
+  <% end %>
+</ul>
+
+<hr/>
+
+<a class="btn" href="/songs/new">Add Song</a>
