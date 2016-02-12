@@ -40,8 +40,8 @@ Time | Day 1 | Day 2 | Day 3 | Day 4 | Day 5
 [4-5A]: w04/d05/m1-forms  "Building and Submitting Forms"
 [4-5B]: # " "
 [4-5C]: # " "
-[4-5D]: # " "
-[4-5E]: #                      "Weekend Sinatra app"
+[4-5D]: w04/d05/m4-sinatra-weekend-lab  "Weekend Sinatra app"
+[4-5E]: w04/d05/m4-sinatra-weekend-lab  "Weekend Sinatra app"
 
 
 
