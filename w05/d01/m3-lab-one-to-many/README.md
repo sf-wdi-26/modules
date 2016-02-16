@@ -18,6 +18,9 @@ Think about what the relationship between `orders` and `items` should be.
   $ rake db:create
   ```
 
+2. Reference the [Rails Docs](http://guides.rubyonrails.org/association_basics.html) on Associations. 
+
+
 ## Deliverable 
 
 Create models and migrations for `orders` and `items`, and set up the proper relationship to associate data between the two tables. You can create these models in your `practice_associations` Rails app. 
