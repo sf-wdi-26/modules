@@ -1,19 +1,19 @@
-# Intro to rails
+# Intro to Rails
 
 ### Objectives
 *After this lesson, students will be able to:*
 
-- Create a new Rails application with PostgreSQL
-- Describe similarities between Sinatra routing & Rails routing
+- Create a new Rails app
+- Describe similarities between Sinatra and Rails routing
 - Generate a controller
-- Create methods for a RESTful controller
-- Create views
-- Generate a model
+- Create RESTful routes & actions
+- Create erb views
+- Generate activerecord models
 
 ### Preparation
 *Before this lesson, students should already be able to:*
 
-- Execute ruby code in `irb`
+- Build a Sinatra application
 - Explain the difference between HTTP request/request
 - Explain MVC
 - Describe SQL
@@ -84,7 +84,7 @@ Rails includes some new command-line tools, so if you're using `rbenv` you'll ne
 
 ## Codealong: Creating a Rails App (35 mins)
 
-#### Create a rails app with Postgres
+#### Create a Rails app with Postgres
 
 For this introduction, we want to create a simple app: a cookbook! The specs for this app are as follows:
 
