@@ -28,7 +28,7 @@ Notes:
 • "Hitting APIs through a JSON Controller" lesson should demonstrate an async front-end request hitting a Rails back-end controller, that in turn hits an API, which responds, and in turn the Rails back-end responds in JSON to the server.
 -->
 
-[5-1A]: # "Intro to Rails"
+[5-1A]: w05/d01/m1/ "Intro to Rails"
 [5-1B]: # "Relationships Lesson"
 [5-1C]: # "Relationships Lab"
 [5-1D]: # "Relationships Lab (cont'd)"
