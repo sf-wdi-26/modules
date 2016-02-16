@@ -94,7 +94,7 @@ For this introduction, we want to create a simple app: a cookbook! The specs for
 
 Rails follow a pattern called "convention over configuration" - this means that by default, a Rails app expects you to follow specific patterns and folder structures. This means you need to learn these conventions, but also means that once you learn them, you save time by not having to setup a lot of the configuration you'd otherwise need to set up manually.
 
-This structure may look a bit complex – there a lot of files, specific naming conventions, and some nested files and folders. We generally don't create this structure manually, but instead use the Rails command line tool, which initializes the app for us:
+This structure may look a bit complex – there are a lot of files, specific naming conventions, and some nested files and folders. We generally don't create this structure manually, but instead use the Rails command line tool, which initializes the app for us:
 
 ```bash
   rails new cookbook -d postgresql
@@ -181,7 +181,7 @@ As Rails is an MVC framework, we will need to have controllers to handle request
 
 In Rails, the controllers are files inside the folder `app/controllers`. If you open this folder, you will see that one controller is already here: the file `application_controller.rb`. This controller does not directly handle HTTP requests, but rather serves as a link between all the controllers we will create, `application_controller.rb` will be the parent of all the controllers in our app.
 
-There is 3 different ways for creating a controller in Rails:
+There are 3 different ways to create a controller in Rails:
 
 1. We can manually create a file and write the ruby code inside it.
 2. We can use a generator called `controller`, using `rails g controller CONTROLLER_NAME [ACTIONS]`. For instance, if we want to create a controller for the resource `recipes` with an action and a view for `index` and `show`, we would type in the console `rails g controller recipes index show`. This command would create a bunch of files and modify some others:
@@ -194,7 +194,7 @@ There is 3 different ways for creating a controller in Rails:
      * `get '/recipes/index', to: 'recipes#index'`
      * `get '/recipes/show', to: 'recipes#show'`
 
-3. We can use the `scaffold_controller` generator. This generator will create the same files as the previous generator but with a REST logic for views, controller and views.
+3. We can use the `scaffold_controller` generator. This generator will create the same files as the previous generator but with a REST logic for routes, controller and views.
 
 #### Create methods for a RESTful controller
 
@@ -241,13 +241,13 @@ If there is a file `about.html.erb` in `app/views/recipes`, this file will be au
 
 #### Generate a model
 
-Sometimes, you will need a model but not the related controller, in this case, you will use the model generator:
+Sometimes, you will need a model but not the related controller, in which case, you will use the model generator:
 
 ```
 rails g model MODEL_NAME [fields]
 ```
 
-This will generate the model by itself along with the migration containing all the fields and the data types if you wrote them when you typed the console.
+This will generate the model by itself along with the migration containing all the fields and the data types if you wrote them in the console.
 
 
 ## Conclusion (5 mins)
