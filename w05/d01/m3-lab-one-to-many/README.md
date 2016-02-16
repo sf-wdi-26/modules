@@ -22,7 +22,25 @@ Think about what the relationship between `orders` and `items` should be.
 
 Create models and migrations for `orders` and `items`, and set up the proper relationship to associate data between the two tables. You can create these models in your `practice_associations` Rails app. 
 
-If the relationship is modeled correctly, you'll be able to test your models in the Rails console. You should be able to do the following without throwing an error:
+###Generate a Model
+
+Here is the general syntax for generating a model in rails:
+
+```
+rails g model MODEL_NAME [fields]
+```
+
+This will generate the model by itself along with the migration containing all the fields and the data types if you wrote them in the console.
+
+###Rails Console
+
+If the relationship is modeled correctly, you'll be able to test your models in the Rails console:
+
+```
+rails c
+```
+
+You should be able to do the following without throwing an error:
 
 ```ruby
 # create new order
