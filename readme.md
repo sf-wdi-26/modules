@@ -29,9 +29,9 @@ Notes:
 -->
 
 [5-1A]: w05/d01/m1/ "Intro to Rails"
-[5-1B]: # "Relationships Lesson"
-[5-1C]: # "Relationships Lab"
-[5-1D]: # "Relationships Lab (cont'd)"
+[5-1B]: w05/d01/m2-associations/ "Relationships Lesson"
+[5-1C]: w05/d01/m3-lab-one-to-many "One to Many Lab"
+[5-1D]: w05/d01/m4-lab-many-to-many "Many to Many Lab"
 [5-1E]: # "Finish Lab + Ruby Docs"
 
 [5-2A]: # "Controllers & Routes Lesson"
