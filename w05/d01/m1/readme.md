@@ -1,13 +1,3 @@
----
-title: Intro to Rails
-type: lesson
-duration: "1:25"
-creator:
-    name: Gerry Mathe
-    city: LDN
-competencies: Server Applications
----
-
 # Intro to rails
 
 ### Objectives
@@ -51,6 +41,10 @@ As we look back at the history of Rails, let's review some of the more significa
 * Rails 3.0 (Aug 2010) - New query engine, new router for controller, mailer controller, CRSF protection
 * Rails 3.1 (Aug 2011) - jQuery, SASS, CoffeeScript, Sprockets with Assets Pipeline
 * Rails 3.2 (Jan 2012) - Journey routing engine, faster development mode, automatic query explains, tagged loggin for multi-user application
+
+![](http://guides.rubyonrails.org/images/rails4_features.png)
+
+* Rails 5 (Happening now) - ActionCable (Websockets), API mode, 
 
 Over the years, Rails has indeed made it easier for beginners to dive into web development and build large complex applications. Some popular websites built on Rails include Twitter (at one point), GitHub and, of course, 37signals' very own Basecamp. Although it has often been criticized for performance and bloat, Rails continues its iterations with an ever-growing developer community and a vibrant ecosystem.
 
