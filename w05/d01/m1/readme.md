@@ -214,7 +214,7 @@ Rails has a generator called `scaffold` that will create the whole MVC structure
 
 ```ruby
 
-rails g scaffold recipes title content:text
+rails g scaffold recipe title content:text
 
 ```
 
