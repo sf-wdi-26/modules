@@ -1,7 +1,57 @@
 # WDI 26 Web Development Immersive
 
 
-## Unit 2: The Backend
+## Unit 2: Full-stack Ruby on Rails
+
+#### Week 5
+
+
+ Time | Day 0 |                     Day 1                                       | Day 2                                                         | Day 3                                                | Day  4                                    |
+----- | -------- | --------------------------------                         | ------------------------------------                  | ------------------------------------     | ---------------------------------------   |
+ **9:00am Module 1** | Presidents' Day  | [Intro to Rails (Alex)][5-1A] | [Controllers & Routes (Alex)][5-2A] | [Auth (Ilias)][5-3A]  | [Hitting APIs through a JSON Controller (Ilias)][5-4A]              |
+ **10:45am Module 2** | Presidents' Day    | [Relationships (Dani)][5-1B] | [Controllers & Routes Lab (Alex)][5-2B] | [Auth Lab (Ilias)][5-3B]       | [Vagabond Walkthrough (Dani)][5-4B]              |
+ **1:30pm Module 3** | Presidents' Day    |  [Relationship Lab (Alex & Dani)][5-1C]| [Layouts & Partials (Ben)][5-2C] | [Outcomes (Neda)][5-3C] |  [Review (Alex)][5-4C]       |
+**3:00pm Module 4** | Presidents' Day    | [Relationship Lab (Alex & Dani)][5-1D] | [Layouts & Partials Lab (Ben)][5-2D] | [Heroku Deployment (Ben)][5-3D] | [Intro Project 2 (Ben)][5-4D] |
+**Homework** | Presidents' Day    | [Finish Lab + Ruby Docs][5-1E] | [Finish Lab + Ruby Docs][5-2E] | [Finish Lab + Ruby Docs][5-3E] | [Project 2 Planning][5-4E] |
+
+
+<!--
+Nice to have topics:
+• Heroku
+• JS in Rails
+• Action Mailer
+• Action Stream
+• Testing
+• --api option
+
+Notes:
+• "Hitting APIs through a JSON Controller" lesson should demonstrate an async front-end request hitting a Rails back-end controller, that in turn hits an API, which responds, and in turn the Rails back-end responds in JSON to the server.
+-->
+
+[5-1A]: w05/d01/m1/ "Intro to Rails"
+[5-1B]: # "Relationships Lesson"
+[5-1C]: # "Relationships Lab"
+[5-1D]: # "Relationships Lab (cont'd)"
+[5-1E]: # "Finish Lab + Ruby Docs"
+
+[5-2A]: # "Controllers & Routes Lesson"
+[5-2B]: # "Controllers & Routes Lab"
+[5-2C]: # "Layouts & Partials Lesson"
+[5-2D]: # "Layouts & Partials Lab"
+[5-2E]: # "Finish Lab + Ruby Docs"
+
+[5-3A]: # "Auth Lesson"
+[5-3B]: # "Auth Lab"
+[5-3C]: # "Outcomes"
+[5-3D]: # "Heroku Deployment"
+[5-3E]: # "Finish Lab + Ruby Docs"
+
+[5-4A]: # "Hitting APIs through a JSON Controller"
+[5-4B]: # "Vagabond Walkthrough"
+[5-4C]: # "Review"
+[5-4D]: # "Intro Project 2"
+[5-4E]: # "Project 2 Planning"
+
 
 #### Week 4 - Intro to Ruby
 
@@ -11,7 +61,7 @@ Time | Day 1 | Day 2 | Day 3 | Day 4 | Day 5
 **10:45am Module 2** |   [Intro to Ruby Lab (Alex)][4-1B] | [Username Generator TDD Lab (Ilias)][4-2B]   | [Database Design Lab (Alex)][4-3B]       | [Models & Migrations Lab (Ilias)][4-4B]              | [Review (Alex)][4-5B]
 **1:30pm Module 3** |  [Ruby OOP Lesson (Ilias)][4-1D]| [Intro to Sinatra, View Templating(Alex)][4-2C] | [Intro to SQL (Ben)][4-3C] |  [Outcomes (Neda)][4-4C]       | [Review (Ilias)][4-5C]
 **3:00pm Module 4** |[Ruby OOP Lab (Ilias)][4-1E]  | [Sinatra Controllers & RESTful routing (Alex)][4-2D]   | [SQL Lab (Ben)][4-3D]                    | [ActiveRecord Lab (Ben)][4-4D]   | [Sinatra App Lab][4-5D]
-**Homework** | [Finish/Refactor Labs][4-1F]  | [Your own Sinatra app][4-2E]                  | [Database Design][4-3E]      | [ActiveRecord Lab][4-4E] | [Sinatra App Lab][4-5E]
+**Homework** | [Finish/Refactor Labs][4-1F]  | [Your own Sinatra app][4-2E]                  | [Database Design][4-3E]      | [ActiveRecord Lab][4-4E] | [Sinatra App Lab (Ben)][4-5E]
 
 [4-1A]: w04/d01/m1/ "Intro to Ruby"
 [4-1B]: w04/d01/m2/ "Intro to Ruby Lab"
