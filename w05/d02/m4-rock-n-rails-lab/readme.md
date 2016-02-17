@@ -1,6 +1,6 @@
 #Rock 'n Rails!
 
-For this morning exercise we're going to be synthesizing all our Rails knowledge to build a record collection! At the bottom of this file you can find a link to a completed solution.
+For this exercise we're going to be synthesizing all our Rails knowledge to build a record collection! At the bottom of this file you can find a link to a completed solution.
 
 ###User stories
 
