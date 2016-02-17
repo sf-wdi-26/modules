@@ -1,0 +1,25 @@
+// Place all the styles related to the tweets controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body{
+  width: 500px;
+  margin: auto;
+  background-color: #1dcaff;
+  text-align: center
+}
+
+
+#tweets{
+  width: 100%;
+  tr{
+    display: block;
+    border: 1px solid blue;
+    display: block;
+    width: 100%;
+    .content{
+      width: 100%;
+      display: block
+    }
+  }
+}
