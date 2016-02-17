@@ -1,0 +1,173 @@
+
+
+Started GET "/" for ::1 at 2015-07-18 03:41:13 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/jasonnappy/.rvm/gems/ruby-2.1.2/gems/railties-4.2.1/lib/rails/templates/rails/welcome/index.html.erb (2.6ms)
+Completed 200 OK in 23ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/static/index" for ::1 at 2015-07-18 03:42:22 -0400
+Processing by StaticController#index as HTML
+  Rendered static/index.html.erb within layouts/application (0.6ms)
+  Rendered application/_footer.html.erb (0.6ms)
+Completed 200 OK in 2029ms (Views: 2028.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-18 03:42:24 -0400
+
+
+Started GET "/assets/static.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-18 03:42:24 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-18 03:42:24 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-18 03:42:24 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-18 03:42:24 -0400
+
+
+Started GET "/assets/static.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-18 03:42:24 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-07-18 03:42:24 -0400
+
+
+Started GET "/static/page" for ::1 at 2015-07-18 03:42:51 -0400
+Processing by StaticController#page as HTML
+  Rendered static/page.html.erb within layouts/page (0.6ms)
+  Rendered application/_footer.html.erb (0.1ms)
+Completed 200 OK in 46ms (Views: 45.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/static/index" for ::1 at 2015-07-18 03:44:32 -0400
+Processing by StaticController#index as HTML
+  Rendered static/index.html.erb within layouts/application (0.1ms)
+  Rendered application/_footer.html.erb (0.0ms)
+Completed 200 OK in 33ms (Views: 32.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/static/index?page=1" for ::1 at 2015-07-18 03:44:39 -0400
+Processing by StaticController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendered static/index_1.html.erb within layouts/application (0.3ms)
+  Rendered application/_footer.html.erb (0.0ms)
+Completed 200 OK in 32ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/static/page" for ::1 at 2015-07-18 03:53:41 -0400
+Processing by StaticController#page as HTML
+  Rendered static/page.html.erb within layouts/page (0.4ms)
+  Rendered application/_footer.html.erb (0.3ms)
+Completed 200 OK in 45ms (Views: 44.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/static/index" for ::1 at 2015-07-18 03:59:56 -0400
+Processing by StaticController#index as HTML
+  Rendered static/index.html.erb within layouts/application (0.4ms)
+  Rendered application/_footer.html.erb (0.4ms)
+Completed 200 OK in 50ms (Views: 49.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/static/index?page=1" for ::1 at 2015-07-18 04:00:04 -0400
+Processing by StaticController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendered static/index_1.html.erb within layouts/application (0.3ms)
+  Rendered application/_footer.html.erb (0.1ms)
+Completed 200 OK in 34ms (Views: 33.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/static/index" for ::1 at 2015-07-18 04:03:05 -0400
+Processing by StaticController#index as HTML
+  Rendered static/index.html.erb within layouts/application (0.1ms)
+  Rendered application/_footer.html.erb (0.1ms)
+Completed 200 OK in 36ms (Views: 35.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-18 04:03:05 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-18 04:03:05 -0400
+
+
+Started GET "/assets/static.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-18 04:03:05 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-18 04:03:05 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-18 04:03:05 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-18 04:03:05 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-07-18 04:03:05 -0400
+
+
+Started GET "/static/page" for ::1 at 2015-07-18 04:04:55 -0400
+Processing by StaticController#page as HTML
+  Rendered static/page.html.erb within layouts/page (0.7ms)
+  Rendered application/_footer.html.erb (0.1ms)
+Completed 200 OK in 112ms (Views: 111.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/static/page=1" for ::1 at 2015-07-18 04:05:10 -0400
+
+ActionController::RoutingError (No route matches [GET] "/static/page=1"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/jasonnappy/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jasonnappy/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jasonnappy/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jasonnappy/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/jasonnappy/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Users/jasonnappy/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (15.3ms)
+  Rendered /Users/jasonnappy/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/jasonnappy/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (49.5ms)
+  Rendered /Users/jasonnappy/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/jasonnappy/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/jasonnappy/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/jasonnappy/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/jasonnappy/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (23.4ms)
+  Rendered /Users/jasonnappy/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/jasonnappy/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /Users/jasonnappy/.rvm/gems/ruby-2.1.2/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (55.5ms)
+
+
+Started GET "/static/index?page=1" for ::1 at 2015-07-18 04:05:20 -0400
+Processing by StaticController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendered static/index_1.html.erb within layouts/application (0.1ms)
+  Rendered application/_footer.html.erb (0.1ms)
+Completed 200 OK in 44ms (Views: 43.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/static/index?page=2" for ::1 at 2015-07-18 04:05:33 -0400
+Processing by StaticController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered static/index_2.html.erb within layouts/application (0.5ms)
+  Rendered application/_footer.html.erb (0.0ms)
+Completed 200 OK in 43ms (Views: 42.1ms | ActiveRecord: 0.0ms)

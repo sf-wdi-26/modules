@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LayoutsAndViews</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <h1>THIS IS THE LAYOUT "APPLICATION"</h1>
+  <%= yield %>
+  <%= render "footer" %>
+</body>
+</html>
