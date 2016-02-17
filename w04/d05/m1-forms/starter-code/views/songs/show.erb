@@ -1,3 +1,11 @@
 <a href="/songs">Back to All Songs</a>
 
-<h2><%= @song.to_s %></h2>
+<%= @song.title %>
+<%= @song.published_in %>
+
+<button method ="POST" actions="/songs/ + <%=@song.id %> + ">DELETE</button>
+
+
+
+
+
