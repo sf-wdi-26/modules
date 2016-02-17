@@ -36,8 +36,8 @@ Notes:
 
 [5-2A]: w05/d02/m1/ "Controllers & Routes Lesson"
 [5-2B]: w05/d02/m2/ "First Rails App Lab"
-[5-2C]: # "Layouts & Partials Lesson"
-[5-2D]: # "Layouts & Partials Lab"
+[5-2C]: w05/d02/m3-layouts-partials-lesson/ "Layouts & Partials Lesson"
+[5-2D]: w05/d02/m4-layouts-partials-lab/ "Layouts & Partials Lab"
 [5-2E]: # "Finish Lab + Ruby Docs"
 
 [5-3A]: # "Auth Lesson"
