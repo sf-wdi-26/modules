@@ -9,7 +9,7 @@
  Time | Day 0 |                     Day 1                                       | Day 2                                                         | Day 3                                                | Day  4                                    |
 ----- | -------- | --------------------------------                         | ------------------------------------                  | ------------------------------------     | ---------------------------------------   |
  **9:00am Module 1** | Presidents' Day  | [Intro to Rails (Alex)][5-1A] | [Controllers & Routes (Alex)][5-2A] | [Auth (Ilias)][5-3A]  | [Third Party APIs (Ilias)][5-4A]              |
- **10:45am Module 2** | Presidents' Day    | [Relationships (Dani)][5-1B] | [Controllers & Routes Lab (Alex)][5-2B] | [Auth Lab (Ilias)][5-3B]       | [Vagabond Walkthrough (Dani)][5-4B]              |
+ **10:45am Module 2** | Presidents' Day    | [Relationships (Dani)][5-1B] | [First Rails App Lab (Alex)][5-2B] | [Auth Lab (Ilias)][5-3B]       | [Vagabond Walkthrough (Dani)][5-4B]              |
  **1:30pm Module 3** | Presidents' Day    |  [One to Many Lab (Dani)][5-1C]| [Layouts & Partials (Ben)][5-2C] | [Outcomes (Neda)][5-3C] |  [Review (Alex)][5-4C]       |
 **3:00pm Module 4** | Presidents' Day    | [Many to Many Lab (Dani)][5-1D] | [Layouts & Partials Lab (Ben)][5-2D] | [Heroku Deployment (Ben)][5-3D] | [Intro Project 2 (Ben)][5-4D] |
 **Homework** | Presidents' Day    | [Finish Lab + Ruby Docs][5-1E] | [Finish Lab + Ruby Docs][5-2E] | [Finish Lab + Ruby Docs][5-3E] | [Project 2 Planning][5-4E] |
@@ -34,8 +34,8 @@ Notes:
 [5-1D]: w05/d01/m4-lab-many-to-many "Many to Many Lab"
 [5-1E]: # "Finish Lab + Ruby Docs"
 
-[5-2A]: # "Controllers & Routes Lesson"
-[5-2B]: # "Controllers & Routes Lab"
+[5-2A]: w05/d02/m1/ "Controllers & Routes Lesson"
+[5-2B]: w05/d02/m2/ "First Rails App Lab"
 [5-2C]: # "Layouts & Partials Lesson"
 [5-2D]: # "Layouts & Partials Lab"
 [5-2E]: # "Finish Lab + Ruby Docs"
