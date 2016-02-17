@@ -143,7 +143,9 @@ To explain the concept of resourceful/restful routes, we will scaffold the Post 
 rails g scaffold post title content
 ```
 
-This command will create all the MVC structure for the resource blog and then add the line below to the `routes.rb` file:
+This command will create all the MVC structure for the resource blog as well as our basic routes!
+
+Check out the line 
 
 ```
 resources :posts
