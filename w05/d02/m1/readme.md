@@ -1,13 +1,3 @@
----
-title: Controllers and Routes in Rails
-type: lesson
-duration: "1:25"
-creator:
-    name: Gerry Mathe
-    city: London
-competencies: Server Applications
----
-
 # Controllers and Routes in Rails
 
 ### Objectives

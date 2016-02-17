@@ -1,14 +1,3 @@
----
-title: Building your first Rails app
-type: lab
-duration: "1:25"
-creator:
-    name: Gerry Mathe
-    city: London
-competencies: Server Applications
----
-
-
 # Building your first Rails app
 
 ## Introduction
