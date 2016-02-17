@@ -1,12 +1,14 @@
-class PagesController <ApplicationController
+class PagesController < ApplicationController
+  layout "sidebar"
+
   def faqs
-    render text: "dont ask stupid questions"
+    render template: "pages/faqs", layout: "sidebar"
   end
   def terms_and_conditions
-    render text: "its free, you are the product"
+    render template: "pages/terms_and_conditions"
   end
   def team
-    render text: "be the Me in Team"
+    render template: "pages/team"
   end
 
 end
