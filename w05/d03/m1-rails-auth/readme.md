@@ -20,22 +20,22 @@ Before this lessons you should be able to...
 
 Let's start a new Rails application:
 
-* `rails new RailsAuth -T -B -d postgresql`. (This command sets up a new application with no tests, no automatic bundle, and postgres as the database.)
-* `cd RailsAuth`
+* `rails new rails-auth -T -B -d postgresql`. (This command sets up a new application with no tests, no automatic bundle, and postgres as the database.)
+* `cd rails-auth`
 * `rake db:create`
 * `subl .`
 
 ## Authentication Review
 
-**Authentication** is the process of verifying a user's credentials to prove they are who they say they are. This is different than **authorization**, enabling or disabling access to specific resources.
+**Authentication** is the verification of a user's credentials to prove "they are who they say they are". This is fundamentally different than **authorization**, refers to the set of permissions granted to a particular user in the application.
 
-To authenticate our users we typically ask them for a **password** we can associate to their `email`. A password is a very private piece of information that must be kept secret, and so, we strategically obscure in such a way that *one can only confirm a user is authentic and never uncover what their actual password*.
+To authenticate our users we typically ask them for a `password` we can associate with their `email` or `username`. A password is a *very* private piece of information that must be kept secret, and so, we strategically obscure it in such a way that may never be reverse-engineered by *anyone* and remains the key to **confirm the user is authentic** (authentication).
 
-Our library of choice for password obfuscation is called `BCrypt`. This will be added to our gemfile for authentication setup later. In Rails, the convention is to push more logic into our models, so it shouldn't come as a surprise that authentication setup will happen in the **user model.**
+Our library of choice for password hashing is `BCrypt`, which we will add to our gemfile. In Rails, the convention is to add all our business logic into the models, so we will be writing most of our code in the `User` model.
 
-Remember, **never store plaintext passwords**, only the digested versions. 
+Remember, remember: **never store plaintext passwords**, only the digested versions. 
 
-Let's uncomment `bcrypt` at the bottom of our `Gemfile` as we will need it to digest (hash) the plain-text password and store it in a `password_digest` field.
+Let's uncomment `bcrypt` at the bottom of our `Gemfile` as we will need it to digest (hash) the plain-text password and store it in a `password_digest` field of our database's `users` table.
 
 `Gemfile`
 
@@ -44,7 +44,7 @@ Let's uncomment `bcrypt` at the bottom of our `Gemfile` as we will need it to di
 	gem 'bcrypt', '~> 3.1.7'
 ```
 
-Then run `bundle` to finish installation of `bcrypt` and the other gems.
+Then run `bundle` to install `bcrypt` and the other gems.
 
 ### Playing With `BCrypt`
 
@@ -67,6 +67,13 @@ As soon as something is installed via bundler we can access it via our `rails co
  	
  ## Exit
  	2.1.0 :005 > exit
+```
+
+> Note: the `==` method for `BCrypt::Password` is different than the typical comparator in Ruby say for an `Object`.
+
+```ruby
+BCrypt::Password.method(:==) == Array.new.method(:==)
+=> false
 ```
 
 
@@ -563,7 +570,3 @@ class UsersController < ApplicationController
   end
 end
 ```
-
-##Solution
-
-A sample solution is provided [here](https://github.com/sf-wdi-21/rails-simple-auth)
