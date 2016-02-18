@@ -11,8 +11,13 @@
  **9:00am Module 1** | Presidents' Day  | [Intro to Rails (Alex)][5-1A] | [Controllers & Routes (Alex)][5-2A] | [Auth (Ilias)][5-3A]  | [Third Party APIs (Ilias)][5-4A]              |
  **10:45am Module 2** | Presidents' Day    | [Relationships (Dani)][5-1B] | [First Rails App Lab (Alex)][5-2B] | [Auth Lab (Ilias)][5-3B]       | [Vagabond Walkthrough (Dani)][5-4B]              |
  **1:30pm Module 3** | Presidents' Day    |  [One to Many Lab (Dani)][5-1C]| [Layouts & Partials (Ben)][5-2C] | [Outcomes (Neda)][5-3C] |  [Review (Alex)][5-4C]       |
+<<<<<<< HEAD
 **3:00pm Module 4** | Presidents' Day    | [Many to Many Lab (Dani)][5-1D] | [Layouts & Partials Lab (Ben)][5-2D] | [Heroku Deployment (Ben)][5-3D] | [Intro Project 2 (Ben)][5-4D] |
 **Homework** | Presidents' Day    | [Finish Lab + Ruby Docs][5-1E] | Finish Lab + [Reading: Sessions / Cookies][5-2E] + [Video: Password Hashing](https://www.youtube.com/watch?v=b4b8ktEV4Bg) | [Finish Lab + Ruby Docs][5-3E] | [Project 2 Planning][5-4E] |
+=======
+**3:00pm Module 4** | Presidents' Day    | [Many to Many Lab (Dani)][5-1D] | [Rock-n-Rails Lab (Ben)][5-2D] | [Heroku Deployment (Ben)][5-3D] | [Intro Project 2 (Ben)][5-4D] |
+**Homework** | Presidents' Day    | [Finish Lab + Ruby Docs][5-1E] | Finish Lab + [Sessions / Cookies Reading][5-2E] | [Finish Lab + Ruby Docs][5-3E] | [Project 2 Planning][5-4E] |
+>>>>>>> f7b686b460ddca1cb9658b2176604a39f3b51af9
 
 
 <!--
@@ -37,7 +42,7 @@ Notes:
 [5-2A]: w05/d02/m1/ "Controllers & Routes Lesson"
 [5-2B]: w05/d02/m2/ "First Rails App Lab"
 [5-2C]: w05/d02/m3-layouts-partials-lesson/ "Layouts & Partials Lesson"
-[5-2D]: w05/d02/m4-layouts-partials-lab/ "Layouts & Partials Lab"
+[5-2D]: w05/d02/m4-rock-n-rails-lab/ "Rock-n-Rails Lab"
 [5-2E]: w05/readings/cookies-and-sessions.md "Sessions & Cookies Reading"
 
 [5-3A]: # "Auth Lesson"
