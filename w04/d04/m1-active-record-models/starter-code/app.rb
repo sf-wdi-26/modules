@@ -55,7 +55,7 @@ class Tunr < Sinatra::Base
   end
 
   # delete
-  delete '/artists/:id/delete' do
+  delete '/artists/:id' do
     @artist = Artist.find(params[:id])
     if @artist.destroy
       redirect('/artists')

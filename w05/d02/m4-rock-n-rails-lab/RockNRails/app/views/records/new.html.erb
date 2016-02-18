@@ -1,0 +1,16 @@
+<h1>Records#new</h1>
+<p>Find me in app/views/records/new.html.erb</p>
+<%= form_for @record do |f| %>
+  <span>Title: </span>
+  <%= f.text_field :title, required: true%> <br>
+  <span>Artist: </span>
+  <%= f.text_field :artist, required: true%> <br>
+  <span>Year: </span>
+  <%= f.text_field :year, required: true%> <br>
+  <span>Cover Art: </span>
+  <%= f.text_field :cover_art, required: true%> <br>
+  <span>Soung count: </span>
+  <%= f.text_field :song_count, required: true%> <br>
+  <%= f.submit %>
+<% end %>
+

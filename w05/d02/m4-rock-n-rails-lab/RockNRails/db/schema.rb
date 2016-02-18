@@ -11,21 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20160211193501) do
-=======
-ActiveRecord::Schema.define(version: 20160211193421) do
->>>>>>> f7b686b460ddca1cb9658b2176604a39f3b51af9
+ActiveRecord::Schema.define(version: 20160217231330) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "artists", force: :cascade do |t|
-    t.string   "name"
-    t.string   "photo_url"
-    t.string   "nationality"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+  create_table "records", force: :cascade do |t|
+    t.string   "title"
+    t.string   "artist"
+    t.integer  "year"
+    t.string   "cover_art"
+    t.integer  "song_count"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
