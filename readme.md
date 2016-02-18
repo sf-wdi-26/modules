@@ -12,7 +12,7 @@
  **10:45am Module 2** | Presidents' Day    | [Relationships (Dani)][5-1B] | [First Rails App Lab (Alex)][5-2B] | [Auth Lab (Ilias)][5-3B]       | [Vagabond Walkthrough (Dani)][5-4B]              |
  **1:30pm Module 3** | Presidents' Day    |  [One to Many Lab (Dani)][5-1C]| [Layouts & Partials (Ben)][5-2C] | [Outcomes (Neda)][5-3C] |  [Review (Alex)][5-4C]       |
 **3:00pm Module 4** | Presidents' Day    | [Many to Many Lab (Dani)][5-1D] | [Rock-n-Rails Lab (Ben)][5-2D] | [Asset Pipeline (Ben)][5-3D] | [Intro Project 2 (Ben)][5-4D] |
-**Homework** | Presidents' Day    | [Finish Lab + Ruby Docs][5-1E] | Finish Lab + [Reading: Sessions / Cookies][5-2E] + [Video: Password Hashing](https://www.youtube.com/watch?v=b4b8ktEV4Bg) | [Finish Lab + Ruby Docs][5-3E] | [Project 2 Planning][5-4E] |
+**Homework** | Presidents' Day    | [Finish Lab + Ruby Docs][5-1E] | Finish Lab + [Reading: Sessions / Cookies][5-2E] + [Video: Password Hashing](https://www.youtube.com/watch?v=b4b8ktEV4Bg) | [HW: Heroku Deploy][5-3E] | [Project 2 Planning][5-4E] |
 
 
 <!--
@@ -43,8 +43,8 @@ Notes:
 [5-3A]: w05/d03/m1-rails-auth "Auth"
 [5-3B]: w05/d03/m1-rails-auth "More Auth"
 [5-3C]: # "Outcomes"
-[5-3D]: w05/d03/m4-asset-pipeline "Heroku Deployment"
-[5-3E]: # "Finish Lab + Ruby Docs"
+[5-3D]: w05/d03/m4-asset-pipeline "Asset Pipeline"
+[5-3E]: w05/d03/hw-heroku-deploy "Heroku Deploy"
 
 [5-4A]: # "Hitting APIs through a JSON Controller"
 [5-4B]: # "Vagabond Walkthrough"
