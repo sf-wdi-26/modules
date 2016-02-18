@@ -1,0 +1,16 @@
+<%= link_to "Home", root_path %>
+
+<% if current_user %>
+
+<%= link_to "Profile", user_path(current_user) %>
+
+<%= link_to "Logout", sessions_path, method: :delete %> 
+<% else %>
+
+<%= link_to "Signup", sign_up_path %>
+
+<span>or</span>
+
+<%= link_to "Login", login_path %>
+
+<% end %>

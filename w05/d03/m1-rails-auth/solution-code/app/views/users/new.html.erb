@@ -1,0 +1,14 @@
+<h1>Signup</h1>
+
+<%= form_for @user do |f| %>
+	<span>Email: </span><br>
+	<%= f.text_field :email, required: true %><br>
+
+	<span>Password: </span><br>
+	<%= f.password_field :password, required: true %><br>
+
+	<span>Password confirmation: </span><br>
+	<%= f.password_field :password_confirmation, required: true %><br>
+
+	<%= f.submit "Signup" %>
+<% end %>

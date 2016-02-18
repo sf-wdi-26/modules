@@ -1,0 +1,9 @@
+<h1>All the users!</h1>
+
+<p>This page is only accessible if you are logged in</p>
+
+<ul>
+<% @users.each do |user| %>
+	<li><%= user.email %></li>
+<% end %>
+</ul>
