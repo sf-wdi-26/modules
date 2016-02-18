@@ -40,8 +40,8 @@ Notes:
 [5-2D]: w05/d02/m4-rock-n-rails-lab/ "Rock-n-Rails Lab"
 [5-2E]: w05/readings/cookies-and-sessions.md "Sessions & Cookies Reading"
 
-[5-3A]: # "Auth Lesson"
-[5-3B]: # "Auth Lab"
+[5-3A]: w05/d03/m1-rails-auth "Auth"
+[5-3B]: w05/d03/m1-rails-auth "More Auth"
 [5-3C]: # "Outcomes"
 [5-3D]: # "Heroku Deployment"
 [5-3E]: # "Finish Lab + Ruby Docs"
