@@ -72,7 +72,7 @@ As soon as something is installed via bundler we can access it via our `rails co
 > Note: the `==` method for `BCrypt::Password` is different than the typical comparator in Ruby say for an `Object`.
 
 ```ruby
-BCrypt::Password.method(:==) == Array.new.method(:==)
+BCrypt::Password.instance_method(:==) == Array.instance_method(:==)
 => false
 ```
 
@@ -109,7 +109,7 @@ Let's leave our controllers be for the time being and setup our models. Our test
 NOTE: The default attribute type is string, if we don't specify.
 
 ```bash
-rails g model user email password_digest
+rails g model user email:string password_digest:string
 ```
 
 `email` is the natural username for our user, and the `password_digest` is where we'll store the user's hashed password.
@@ -151,7 +151,7 @@ describe User, type: :model do
       expect(user.password_digest).to be_nil
       #password is set
       user.password = "swordfish"
-      #password digest is created after passsword is set
+      #password digest is created after password is set
       expect(user.password_digest).not_to be_nil
     end
     it "ensures the password digest is not the password" do
@@ -234,6 +234,8 @@ rspec
 ## Authentication (TDD Style)
 
 In the process of passing these tests we will build all the logic for an authentication system! You should never have to write this code from scratch, but it is very important you understand what is going on.
+
+>Exercise: Think, pair, share on what the below code is doing (7 minutes).
 
 ```ruby
 class User < ActiveRecord::Base
@@ -325,18 +327,18 @@ Run `rake routes` to see all the application's routes.
 
 ## Home Page
 
-**Challenge:** Start your application and start debugging errors until the view rendered on the `root_path` has:
+**Challenge:** Start your application and pass these user stories. On the `root_path`:
 
-* A welcome message
-* A button to signup
+* A user can see a welcome message`
+* A user can click a "Sign Up" button that directs them to the `sign_up_path`
 
 ## Controllers
 
-* Skeleton out the `UsersController` with: `rails g controller users new create show`
+* Let's create `UsersController` with the command: `rails g controller users new create show`
 
-* Add a private method that creates strong parameters for specific attributes of the user
+* Let's add a private method that creates strong parameters for specific attributes of the user
 
-* You should end up with...
+You should end up something along the lines of...
 
 ```ruby
 class UsersController < ApplicationController
@@ -345,7 +347,7 @@ class UsersController < ApplicationController
   end
 
   def create
-    # TODO: once the controller is implimented don't forget to also signin the user
+    # TODO: once the controller is implemented don't forget to also sign the user in
   end
 
   def show
@@ -372,7 +374,7 @@ end
 
 ####Step 3
 
-* Create a user in `users#create` and then redirect to `user#show` (later we will have them also be logged-in in this step)
+* Create the user in `users#create` and when done have it redirect to `user#show` (later we will have them also be logged-in in this step)
 	* Bonus: create a condition that checks if the user was saved correctly. Hint: first build the user in memory with `.new` then check `if @user.save` proceed as normal `else` render the signup page again.
 
 ####Step 4
@@ -394,7 +396,7 @@ class SessionsController < ApplicationController
   end
 
   def create
-    #pass in array that user_params returns as arguments using a splat
+    #call the User#confirm method
     if User.confirm(params[:email], params[:password])
       # this creates the session, logging in the user
       session[:user_id] = user.id
@@ -413,7 +415,7 @@ class SessionsController < ApplicationController
 end
 
 ```
-After we authenticate someone we set `session[:user_id] = user.id`. This allows the `user.id` to be stored in a cookie for lookup later. Of course, then we have to go find they the user in our DB every time using the `user_id` in the session. With all of this in mind we separate out a lot of the logic related to `sessions` into a list of very helpful methods in `SessionsHelper`.
+After we authenticate someone we set `session[:user_id] = user.id`. This allows the `user.id` to be stored in a cookie for lookup later.
 
 Now that we know how to login a user with `session[:user_id] = user.id` let's also make sure to do that when a user is signed up (it is good UX for a signup to automatically perform a login).
 
@@ -421,7 +423,9 @@ Tip: Try running `rake notes` to see all the items that have been marked as `TOD
 
 <h3 id="current_user">Current user</h3>
 
-When logging in a user, we set `session[:user_id] = user.id`. What if we could take advantage of this fact for quicker lookup? Instead of reading the user_id from the session and then finding the correct user in the database -- every time we need the user — what if we only did it once, and cached the result? In other words, what if we cached the `current_user`?
+Since we need to authenticate each request and to do so we have to read the `user_id` out of the `session` object, let's consider making a few helper methods to do so.
+
+A login for a user is when we set a unique identifier for a user in their session, aka `session[:user_id] = user.id`, so they are able to maintain their logged-in state by sending that unique piece of data back to us each time they send a new request. What is we could have a helper method that does this for us and caches the value of the  `current_user` for the duration of each request?
 
 ```ruby
 class ApplicationController < ActionController::Base
@@ -432,13 +436,13 @@ class ApplicationController < ActionController::Base
 end
 ```
 
-Defines `@current_user` if it is not already defined. The way the `&&` operator works is that it will keep evaluating if `session[:user_id]` is defined and then set `@current_user` to whatever the last item evaluated is; in this case it would be `User.find_by_id(session[:user_id])`, so the user itself.
+The above method defines `@current_user` if it is not already defined. The way the `&&` operator works is that it will keep evaluating if `session[:user_id]` is defined and then set `@current_user` to whatever the last item evaluated is; in this case it would be `User.find_by_id(session[:user_id])`, so the user itself.
 
-`current_user` is very useful for:
+The method `current_user` in is very useful for:
 
-* Conditional views based on the `current_user`'s state
+* **Conditional views** based on the `current_user`'s state
 	* I.e. is a login or logout button displayed in the nav_bar?
-* Authorization to view resources
+* **Authorization** to view resources
 	* I.e. test if `current_user` is the user who's resources are being CRUDed.
 
 <h3 id="logout">Logout</h3>
@@ -473,7 +477,7 @@ class ApplicationController < ActionController::Base
 end
 ```
 
-Now use a `before_action` to run te `require_login` method before any actions the `PostController` will perform.
+Now use a `before_action` to run the `require_login` method before any actions the `PostController` will perform.
 
 posts_controller.rb
 
@@ -489,7 +493,7 @@ Checkout the `only` & `except` [options](http://guides.rubyonrails.org/action_co
 
 <h3 id="flash_msgs">Bonus: Adding Flash Messages</h3>
 
-If someone fails to login we want to notify them, because the situation is much different than if they tried to go to `localhost:3000/users/1` and weren't logged in. The flash storage is a type of session storage that is stored between requests and then cleared each time.
+We want to notify users of any errors. Rails patterns use a [flash hash](http://guides.rubyonrails.org/action_controller_overview.html#the-flash) to do so.
 
 session_controller.rb
 
