@@ -49,7 +49,7 @@ Notes:
 [5-4A]: # "Hitting APIs through a JSON Controller"
 [5-4B]: # "Vagabond Walkthrough"
 [5-4C]: # "Review"
-[5-4D]: # "Intro Project 2"
+[5-4D]: m4-project2-intro "Intro Project 2"
 [5-4E]: # "Project 2 Planning"
 
 
