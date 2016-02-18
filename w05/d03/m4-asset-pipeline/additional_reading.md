@@ -56,7 +56,7 @@ vendor/assets/javascripts/slider.js
 vendor/assets/somepackage/phonebox.js
 ```
 
-We be as follows:
+Will be done as follows:
 
 *app/assets/javascripts/application.js*
 
@@ -69,7 +69,7 @@ We be as follows:
 
 **CSS**
 
-The same remarks about ordering in JS made above apply to CSS. In particular, you can specify individual files and they are compiled in the order specified.
+The same remarks about ordering in JS made above apply to CSS. In particular, you can specify individual files and they will be compiled in the order specified.
 
 Requiring these CSS files:
 
@@ -79,7 +79,7 @@ lib/assets/stylesheets/nav-bar.css
 vendor/assets/stylesheets/bootstrap.css
 ```
 
-We be as follows:
+Will be done as follows:
 
 *app/assets/javascripts/application.css*
 
