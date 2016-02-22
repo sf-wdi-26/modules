@@ -3,6 +3,25 @@
 
 ## Unit 2: Full-stack Ruby on Rails
 
+#### Week 6 - Project 2:  Ruby on Rails App
+
+Time | Day 1                                      | Day 2                                | Day 3                                      | Day 4                                      | Day 5
+----- |--------------------------------    | ------------------------------ | ---------------------------------  | ---------------------------------   | -----------------------------------
+**9:30am Module 1** | Project Approvals| [Stack and Queues (Ilias)][6-2A]  | [Number to Word (Dani)][6-3A] |[ Pattern Search (Alex)][6-4A] | Presentations
+ **10:45am Module 2** | Project 2 | Project 2  | Project 2 | Project 2 | Presentations
+**1:30pm Module 3** |Project 2| Project 2 | Project 2 | Project 2 |  Presentations
+**3:00pm Module 4** | Project 2 |  Project 2 |  Project 2 |  Project 2 | Presentations
+**Homework** | Project 2 | Project 2 | Project 2 | Project 2 | [Homework][6-5E]
+
+[6-2A]: w06/d02/m1-stacks-and-queues "Stacks and Queues"
+
+[6-3A]: w06/d03/m1-number-to-word "Number to Word"
+
+[6-4A]: w06/d04/m1-pattern-search "Pattern Search"
+
+[6-5E]: w06/d05/hmwk-ruby-prep "Homework"
+
+
 #### Week 5
 
 
