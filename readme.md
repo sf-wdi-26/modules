@@ -13,7 +13,7 @@ Time | Day 1                                      | Day 2                       
 **3:00pm Module 4** | Project 2 |  Project 2 |  Project 2 |  Project 2 | Presentations
 **Homework** | Project 2 | Project 2 | Project 2 | Project 2 | [Homework][6-5E]
 
-[6-2A]: w06/d02/m1-stacks-and-queues "Stacks and Queues"
+[6-2A]: w06/d02/ "Stacks and Queues"
 
 [6-3A]: w06/d03/ "Number to Word"
 
