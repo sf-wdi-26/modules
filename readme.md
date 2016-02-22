@@ -15,7 +15,7 @@ Time | Day 1                                      | Day 2                       
 
 [6-2A]: w06/d02/m1-stacks-and-queues "Stacks and Queues"
 
-[6-3A]: w06/d03/m1-number-to-word "Number to Word"
+[6-3A]: w06/d03/ "Number to Word"
 
 [6-4A]: w06/d04/m1-pattern-search "Pattern Search"
 
