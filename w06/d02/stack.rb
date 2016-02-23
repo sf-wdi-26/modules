@@ -42,6 +42,11 @@ class Stack
     @size
   end
   
+  def top
+    #examine item at top of the stack
+    @store[@top]
+  end
+  
   private
 
   def full?
