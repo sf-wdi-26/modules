@@ -9,7 +9,7 @@ class Stack
     @top = -1
   end
   
-  #return & remove the top item from the stack
+  #return & remove the top item from stack
   def pop
     if empty?
       nil
@@ -22,7 +22,7 @@ class Stack
     end
   end
   
-  #add an item to the stack
+  #add an item to stack
   def push(element)
     #if the stack is full or the element is nil don't add it to the stack
     if full? or element.nil?
@@ -37,25 +37,25 @@ class Stack
     end
   end
 
-  #getter for size attribute
+  #get for size of stack
   def size
     @size
   end
   
+  #examine item at top of stack
   def top
-    #examine item at top of the stack
     @store[@top]
   end
   
   private
 
+  #determine if stack is full
   def full?
-    #the stack is full
     @top == (@size - 1)
   end
   
+  #determine if stack is empty
   def empty?
-    #the stack is empty
     @top == -1
   end
 end
