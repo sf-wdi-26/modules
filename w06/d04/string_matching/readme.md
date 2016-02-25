@@ -18,7 +18,7 @@ pattern = "jowl"
 
 find string, pattern
 ```
-- Our function should return the **index** of the **first** occurance of the pattern **if it is found** in the string. If it is not found in the string, it should return 0. For the above example we should return
+- Our function should return the **index** of the **first** occurance of the pattern **if it is found** in the string. If it is not found in the string, it should return "Not Found". For the above example we should return
 ```
 // 35
 ```
