@@ -19,7 +19,7 @@ Time | Day 1                                      | Day 2                       
 
 [6-4A]: w06/d04/string_matching/ "Pattern Search"
 
-[6-5E]: w06/d05/hmwk-ruby-prep "Homework"
+[6-5E]: w06/d05/hmwk-readings "Homework"
 
 
 #### Week 5
