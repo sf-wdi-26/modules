@@ -8,7 +8,7 @@ Project 3 will be a group project using Javascript, Node.js, Express and MongoDB
 
 Please install and run the workshop below from [nodeschool.io](http://nodeschool.io):
 
-[Planet Proto](https://github.com/sporto/planetproto) Will 
+[Planet Proto](https://github.com/sporto/planetproto) 
 
 Type `npm install -g planetproto@latest` to install, `cd` into the directory and type `planetproto` to begin.
 
