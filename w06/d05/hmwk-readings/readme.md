@@ -6,7 +6,7 @@ Project 3 will be a group project using Javascript, Node.js, Express and MongoDB
 
 ### JS Review
 
-Please install and run the workshop below from [nodeschool.io](nodeschool.io):
+Please install and run the workshop below from [nodeschool.io](http://nodeschool.io):
 
 [Planet Proto](https://github.com/sporto/planetproto) Will 
 
@@ -14,9 +14,9 @@ Type `npm install -g planetproto@latest` to install, `cd` into the directory and
 
 This will re-introduce Javascript in a way that should provide a reasonable weekend challenge.
 
-### git Readings
+### git Readings:
 
-[Using Branches](https://www.atlassian.com/git/tutorials/using-branches/)
-[Comparing Workflows](https://www.atlassian.com/git/tutorials/comparing-workflows/)
-[Merging vs Rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing/)
-[A Successful git Branching Model](http://nvie.com/posts/a-successful-git-branching-model/)
+1. [Using Branches](https://www.atlassian.com/git/tutorials/using-branches/)
+1. [Comparing Workflows](https://www.atlassian.com/git/tutorials/comparing-workflows/)
+1. [Merging vs Rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing/)
+1. [A Successful git Branching Model](http://nvie.com/posts/a-successful-git-branching-model/)
