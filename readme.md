@@ -1,6 +1,8 @@
 # WDI 26 Web Development Immersive
 
-#### Week 7
+## Unit 3: Node and Express
+
+#### Week 6 - Project 2:  Ruby on Rails App
 
 
 Time | Day 1                                    | Day 2                                 | Day 3                                | Day 4                                    | Day 5
