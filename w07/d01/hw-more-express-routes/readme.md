@@ -281,4 +281,4 @@ This will be essential knowledge for building and interacting with applications 
 ## Exercises
 Now let's jump into a routing challenge. Follow [this link][exercises] and complete them in your homework repo, then make a pull request.
 
-[exercises]:  w07/d01/hw-more-express-routes    "Express Routes"
+[exercises]:  w07/d01/hw-more-express-routes/exercises.md    "Express Routes"
