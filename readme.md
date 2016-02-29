@@ -7,10 +7,10 @@
 
 Time | Day 1                                    | Day 2                                 | Day 3                                | Day 4                                    | Day 5
 ----- | --------------------------------         | ------------------------------------- | ------------------------------------ | ---------------------------------------- | -----------------------------------
-**9:00am Module 1** | [Intro to Node.js (Alex)][7-1A]         | [Intro to NoSQL w/ Mongo (Ilias)][7-2A]             | [Views in Express (Ben)][7-3A]    | [Tune.ly (Group)][7-4A]               | [Review][7-5A]
-**10:45am Module 2** |  [Intro to Express (Alex)][7-1B]         | [Mongo-backed models with Mongoose (Ilias)][7-2B]              | [Lab: Views in Express (Ben)][7-3B]       | [Tune.ly][7-4B]        | [Review][7-5B]
-**1:30pm Module 3** | [Lab: Building Express routes (Ben)][7-1C]                        | [Lab: CRUD with Mongoose (Ilias / Dani)][7-2C] | [+ AJAX Lesson with Express (Alex)][7-3C] | [Tune.ly][7-4C]     | [Tune.ly][7-5C]
-**3:00pm Module 4** | [Debugging and logging in Node (Ben)][7-1D]                  | [Lab: Mongoose Relationships][7-2D]| [Lab: ToDo List App (Alex)][7-3D]      | [Tune.ly][7-4D]       | [Tune.ly][7-4E]
+**9:00am Module 1** | [Intro to Node.js (Alex)][7-1A]         | [Intro to Mongo (Ilias)][7-2A]             | [Views in Express (Ben)][7-3A]    | [Tune.ly (Group)][7-4A]               | [Review][7-5A]
+**10:45am Module 2** |  [Intro to Express (Alex)][7-1B]         | [Intro to Mongoose (Ilias)][7-2B]              | [Lab: Views in Express (Ben)][7-3B]       | [Tune.ly][7-4B]        | [Review][7-5B]
+**1:30pm Module 3** | [Lab: Building Express routes (Ben)][7-1C]                        | [Mongo Relationships (Ilias / Dani)][7-2C] | [+ AJAX Lesson with Express (Alex)][7-3C] | [Tune.ly][7-4C]     | [Tune.ly][7-5C]
+**3:00pm Module 4** | [Debugging and logging in Node (Ben)][7-1D]                  | [Lab: Mongo Relationships (Ilias / Dani)][7-2D]| [Lab: ToDo List App (Alex)][7-3D]      | [Tune.ly][7-4D]       | [Tune.ly][7-4E]
 **Homework** | [+HW: Debugging and logging][7-1E] | [Lab: Connecting Express routes to Mongo][7-2E]   | [Finish and Deploy ToDo List App (Alex)][7-3E]     | [Tune.ly][7-4E]  | [Finish Tune.ly][7-5E]
 
 
