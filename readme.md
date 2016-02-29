@@ -2,7 +2,7 @@
 
 ## Unit 3: Node and Express
 
-#### Week 6 - Project 2:  Ruby on Rails App
+#### Week 6 - Intro to Node and Express
 
 
 Time | Day 1                                    | Day 2                                 | Day 3                                | Day 4                                    | Day 5
