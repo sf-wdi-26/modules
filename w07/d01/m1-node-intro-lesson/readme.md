@@ -1,12 +1,3 @@
----
-title: Intro to Node.js
-type: Lesson
-duration: "1:25"
-creator:
-    name: Micah Rich
-    city: LA
-competencies: Server Applications
----
 
 # Intro to Node.js
 
