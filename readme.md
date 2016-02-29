@@ -1,7 +1,71 @@
 # WDI 26 Web Development Immersive
 
+## Unit 3: Node and Express
+
+#### Week 6 - Intro to Node and Express
+
+
+Time | Day 1                                    | Day 2                                 | Day 3                                | Day 4                                    | Day 5
+----- | --------------------------------         | ------------------------------------- | ------------------------------------ | ---------------------------------------- | -----------------------------------
+**9:00am Module 1** | [Intro to Node.js (Alex)][7-1A]         | [Intro to NoSQL w/ Mongo (Ilias)][7-2A]             | [Views in Express (Ben)][7-3A]    | [Tune.ly (Group)][7-4A]               | [Review][7-5A]
+**10:45am Module 2** |  [Intro to Express (Alex)][7-1B]         | [Mongo-backed models with Mongoose (Ilias)][7-2B]              | [Lab: Views in Express (Ben)][7-3B]       | [Tune.ly][7-4B]        | [Review][7-5B]
+**1:30pm Module 3** | [Lab: Building Express routes (Ben)][7-1C]                        | [Lab: CRUD with Mongoose (Ilias / Dani)][7-2C] | [+ AJAX Lesson with Express (Alex)][7-3C] | [Tune.ly][7-4C]     | [Tune.ly][7-5C]
+**3:00pm Module 4** | [Debugging and logging in Node (Ben)][7-1D]                  | [Lab: Mongoose Relationships][7-2D]| [Lab: ToDo List App (Alex)][7-3D]      | [Tune.ly][7-4D]       | [Tune.ly][7-4E]
+**Homework** | [+HW: Debugging and logging][7-1E] | [Lab: Connecting Express routes to Mongo][7-2E]   | [Finish and Deploy ToDo List App (Alex)][7-3E]     | [Tune.ly][7-4E]  | [Finish Tune.ly][7-5E]
+
+
+
+[7-1A]:  w07/d01/m1-node-intro-lesson    "Intro to Node.js"
+[7-1B]:  w07/d01/m2-node-express-intro  "Intro to Express.js"
+[7-1C]: ../baseline-curriculum/resources/04-server-applications/node-express-intro-lesson     "Intro to Express / Express Routing"
+[7-1D]: ../baseline-curriculum/resources/04-server-applications/node-express-routing-lab      "Building Express Routes Lab"
+[7-1E]: # " "
+
+[7-2A]: ../baseline-curriculum/resources/05-databases/mongo-nosql-intro-lesson                    "Intro to node with Mongo"
+[7-2B]: ../baseline-curriculum/resources/04-server-applications/node-express-mongo-models-lesson  "Mongo-backed models with Mongoose"
+[7-2C]: ../baseline-curriculum/resources/04-server-applications/node-express-mongo-crud-lab  "Mongoose CRUD Lab"
+[7-2D]: ../baseline-curriculum/resources/04-server-applications/node-express-mongo-modeling-lab  "Mongoose Embedded and Referenced Relationships Lab"
+[7-2E]: ../baseline-curriculum/resources/04-server-applications/node-express-mongo-routing-lab   "Connecting Express Routes to Mongo Lab"
+
+[7-3A]: ../baseline-curriculum/resources/04-server-applications/node-express-views-lesson "Views in Express Lesson"
+[7-3B]: ../baseline-curriculum/resources/04-server-applications/node-express-views-lab "Views in Express Lab"
+[7-3C]: ../baseline-curriculum/resources/02-front-end-intro/js-ajax-lesson "AJAX Lesson"
+[7-3D]: https://github.com/sf-wdi-25/notes/tree/master/week-03-ajax-json-express/day-04-json-api/dawn-create-read "Todo Lab, Part 1"
+[7-3E]: https://github.com/sf-wdi-25/notes/tree/master/week-03-ajax-json-express/day-04-json-api/dusk-update-destroy "Todo Lab, Part 2"
+
+[7-4A]: https://github.com/sf-wdi-25/tunely "Tunely"
+[7-4B]: # " "
+[7-4C]: # " "
+[7-4D]: # " "
+[7-4E]: # " "
+
+[7-5A]: # " "
+[7-5B]: # " "
+[7-5C]: # " "
+[7-5D]: # " "
+[7-5E]: # " "
+
 
 ## Unit 2: Full-stack Ruby on Rails
+
+#### Week 6 - Project 2:  Ruby on Rails App
+
+Time | Day 1                                      | Day 2                                | Day 3                                      | Day 4                                      | Day 5
+----- |--------------------------------    | ------------------------------ | ---------------------------------  | ---------------------------------   | -----------------------------------
+**9:30am Module 1** | Project Approvals| [Stack and Queues (Ilias)][6-2A]  | [Number to Word (Dani)][6-3A] |[ Pattern Search (Alex)][6-4A] | Presentations
+ **10:45am Module 2** | Project 2 | Project 2  | Project 2 | Project 2 | Presentations
+**1:30pm Module 3** |Project 2| Project 2 | Project 2 | Project 2 |  Presentations
+**3:00pm Module 4** | Project 2 |  Project 2 |  Project 2 |  Project 2 | Presentations
+**Homework** | Project 2 | Project 2 | Project 2 | Project 2 | [Homework][6-5E]
+
+[6-2A]: w06/d02/ "Stacks and Queues"
+
+[6-3A]: w06/d03/ "Number to Word"
+
+[6-4A]: w06/d04/string_matching/ "Pattern Search"
+
+[6-5E]: w06/d05/hmwk-readings "Homework"
+
 
 #### Week 5
 
@@ -49,8 +113,7 @@ Notes:
 
 [5-4A]: # "Hitting APIs through a JSON Controller"
 [5-4B]: # "Vagabond Walkthrough"
-[5-4C]: # "Review"
-[5-4D]: w05/d04/m4-project2-intro "Intro Project 2"
+[5-4C]: w05/d04/m4-project2-intro "Intro Project 2"
 [5-4E]: # "Project 2 Planning"
 [5-4F]: w05/d04/hw-library-app "Library App"
 
