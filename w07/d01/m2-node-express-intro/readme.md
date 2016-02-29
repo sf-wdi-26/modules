@@ -318,8 +318,8 @@ Once this form is submitted, by default, the data on the server will look like t
 
 ```json
 {
-  'book[title]'  : "value",
-  'book[author]' : "value"
+  "book[title]"  : "value",
+  "book[author]" : "value"
 }
 ```
 
