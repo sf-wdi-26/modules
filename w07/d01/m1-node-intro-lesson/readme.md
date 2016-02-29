@@ -122,7 +122,7 @@ For example, lets make two files: `touch my-module.js main.js`
 ```js
 // my-module.js
 var number = 7
-module.exports.name = "Kenaniah"
+module.exports.name = "Kendrick"
 module.exports.arr = [1, 2, 3]
 module.exports.getNumber = function(){
     console.log("Get number called. Returning: ", number)
