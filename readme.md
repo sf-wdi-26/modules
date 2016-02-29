@@ -17,9 +17,9 @@ Time | Day 1                                    | Day 2                         
 
 [7-1A]:  w07/d01/m1-node-intro-lesson    "Intro to Node.js"
 [7-1B]:  w07/d01/m2-node-express-intro  "Intro to Express.js"
-[7-1C]: ../baseline-curriculum/resources/04-server-applications/node-express-intro-lesson     "Intro to Express / Express Routing"
-[7-1D]: ../baseline-curriculum/resources/04-server-applications/node-express-routing-lab      "Building Express Routes Lab"
-[7-1E]: # " "
+[7-1C]:  w07/d01/m3-express-routes-lesson "Intro to Express / Express Routing"
+[7-1D]:  w07/d01/m4-node-debugging-lesson "Building Express Routes Lab"
+[7-1E]:  w07/d01/hw-express-routes-lab "Express Routes Lab"
 
 [7-2A]: ../baseline-curriculum/resources/05-databases/mongo-nosql-intro-lesson                    "Intro to node with Mongo"
 [7-2B]: ../baseline-curriculum/resources/04-server-applications/node-express-mongo-models-lesson  "Mongo-backed models with Mongoose"
