@@ -7,19 +7,18 @@
 
 Time | Day 1                                    | Day 2                                 | Day 3                                | Day 4                                    | Day 5
 ----- | --------------------------------         | ------------------------------------- | ------------------------------------ | ---------------------------------------- | -----------------------------------
-**9:00am Module 1** | [Intro to Node.js (Alex)][7-1A]         | [Intro to NoSQL w/ Mongo (Ilias)][7-2A]             | [Views in Express (Ben)][7-3A]    | [Tune.ly (Group)][7-4A]               | [Review][7-5A]
-**10:45am Module 2** |  [Intro to Express (Alex)][7-1B]         | [Mongo-backed models with Mongoose (Ilias)][7-2B]              | [Lab: Views in Express (Ben)][7-3B]       | [Tune.ly][7-4B]        | [Review][7-5B]
-**1:30pm Module 3** | [Lab: Building Express routes (Ben)][7-1C]                        | [Lab: CRUD with Mongoose (Ilias / Dani)][7-2C] | [+ AJAX Lesson with Express (Alex)][7-3C] | [Tune.ly][7-4C]     | [Tune.ly][7-5C]
-**3:00pm Module 4** | [Debugging and logging in Node (Ben)][7-1D]                  | [Lab: Mongoose Relationships][7-2D]| [Lab: ToDo List App (Alex)][7-3D]      | [Tune.ly][7-4D]       | [Tune.ly][7-4E]
-**Homework** | [+HW: Debugging and logging][7-1E] | [Lab: Connecting Express routes to Mongo][7-2E]   | [Finish and Deploy ToDo List App (Alex)][7-3E]     | [Tune.ly][7-4E]  | [Finish Tune.ly][7-5E]
-
+**9:00am Module 1** | [Intro to Node.js (Alex)][7-1A]         | [Intro to Mongo (Ilias)][7-2A]             | [Views in Express (Ben)][7-3A]    | [Tune.ly (Group)][7-4A]               | [Review][7-5A]
+**10:45am Module 2** |  [Intro to Express (Alex)][7-1B]         | [Intro to Mongoose (Ilias)][7-2B]              | [Lab: Views in Express (Ben)][7-3B]       | [Tune.ly][7-4B]        | [Review][7-5B]
+**1:30pm Module 3** | [Building Express routes part 1 (Ben)][7-1C]                        | [Mongo Relationships (Ilias / Dani)][7-2C] | [+ AJAX Lesson with Express (Alex)][7-3C] | [Tune.ly][7-4C]     | [Tune.ly][7-5C]
+**3:00pm Module 4** | [Building Express Routes part 2 (Ben)][7-1D]                  | [Lab: Mongo Relationships (Ilias / Dani)][7-2D]| [Lab: ToDo List App (Alex)][7-3D]      | [Tune.ly][7-4D]       | [Tune.ly][7-4E]
+**Homework** | [More Express Routes][7-1E] | [Lab: Connecting Express routes to Mongo][7-2E]   | [Finish and Deploy ToDo List App (Alex)][7-3E]     | [Tune.ly][7-4E]  | [Finish Tune.ly][7-5E]
 
 
 [7-1A]:  w07/d01/m1-node-intro-lesson    "Intro to Node.js"
 [7-1B]:  w07/d01/m2-node-express-intro  "Intro to Express.js"
-[7-1C]: ../baseline-curriculum/resources/04-server-applications/node-express-intro-lesson     "Intro to Express / Express Routing"
-[7-1D]: ../baseline-curriculum/resources/04-server-applications/node-express-routing-lab      "Building Express Routes Lab"
-[7-1E]: # " "
+[7-1C]:  w07/d01/m3-express-routes-lesson "Intro to Express / Express Routing"
+[7-1D]:  w07/d01/m4-express-routes-lab "Building Express Routes Lab"
+[7-1E]:  w07/d01/hw-more-express-routes "Express Routes"
 
 [7-2A]: ../baseline-curriculum/resources/05-databases/mongo-nosql-intro-lesson                    "Intro to node with Mongo"
 [7-2B]: ../baseline-curriculum/resources/04-server-applications/node-express-mongo-models-lesson  "Mongo-backed models with Mongoose"
