@@ -185,9 +185,9 @@ Common Mistake:
 db.restaurants.insert(
    {
       name: "Cookies Corner",
-      "address" : {
-         "street" : "1970 2nd St NW",
-         "zipcode" : 20001,
+      address : {
+         street : "1970 2nd St NW",
+         zipcode : 20001,
       },
       yelp: "http://www.yelp.com/biz/cookies-corner-washington",
 });
