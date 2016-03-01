@@ -103,7 +103,7 @@ The most popular, modern convention is RESTful routing. Here is an example of an
 | DELETE | /store/:storeId/items/:itemId | Delete an item from a store | items#destroy |
 
 *In routes resources should not be nested more than one level deep*
->Note: These routes omit the commonly used `#new` and `#edit` actions, which is common to use if the server is rendering HTML instead of JSON.
+>Note: These routes omit the commonly used `#new` and `#edit` actions, which is common if the server is rendering HTML instead of JSON.
 
 ##Queries Exercise
 
