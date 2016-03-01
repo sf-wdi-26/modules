@@ -23,8 +23,8 @@ Time | Day 1                                    | Day 2                         
 [7-2A]: w07/d02/m1-intro-mongo "Intro to node with Mongo"
 [7-2B]: w07/d02/m2-mongoose-in-express "Mongo-backed models with Mongoose"
 [7-2C]: w07/d02/m3-mongo-relationships "Mongoose CRUD Lab"
-[7-2D]: ../baseline-curriculum/resources/04-server-applications/node-express-mongo-modeling-lab  "Mongoose Embedded and Referenced Relationships Lab"
-[7-2E]: ../baseline-curriculum/resources/04-server-applications/node-express-mongo-routing-lab   "Connecting Express Routes to Mongo Lab"
+[7-2D]: # "Mongoose Embedded and Referenced Relationships Lab"
+[7-2E]: #  "Connecting Express Routes to Mongo Lab"
 
 [7-3A]: ../baseline-curriculum/resources/04-server-applications/node-express-views-lesson "Views in Express Lesson"
 [7-3B]: ../baseline-curriculum/resources/04-server-applications/node-express-views-lab "Views in Express Lab"
