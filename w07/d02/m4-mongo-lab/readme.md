@@ -81,6 +81,8 @@ module.exports = Food;
 #### Step 2. Connect to the Database
 Next, let's wire it all up:
 
+First, open a new terminal tab and type `mongod` to start a local instance of MongoDB on your computer. This is only necessary the first time you use MongoDB or when you restart your computer. You MUST do this step or your database will not work!
+
 ``` bash
 touch models/index.js
 ```
@@ -129,7 +131,7 @@ Add this line near the top of `index.js`:
 var db = require('./models');
 ```
 
-#### Challenge
+## Exercise
 
 The time has come for us to swap out all our hardcoded data for live data from our database. This will require us to methodically alter each route to accomodate the new data store. Where should we start!?
 
@@ -148,3 +150,60 @@ app.get("/allthefoods", function(req, res){
 
 })
 ```
+
+## Stretch Exercise
+
+Think about how we might incorporate restaurant and ingredient models in our app. How would we design a restaurant that had many foods, or foods that had many ingredients? Would we reference or embed that data? Remeber:
+ 
+**Embedded Data** is directly nested inside of other data. Each record has a copy of the data. Example:
+
+``` javascript
+var TweetSchema = new Schema({
+  body: {
+    type: String,
+    default: ""
+  }
+});
+
+var UserSchema = new Schema({
+  username: {
+    type: String,
+    default: ""
+  },
+  tweets: [TweetSchema]   // EMBEDDING :D
+});
+```
+
+**Referenced Data** is stored as an id inside other data. The id can be used to look up the information. All records that reference the same data look up the same copy. Example:
+
+``` javasript
+var BookSchema = new Schema({
+  title: {
+    type: String,
+    default: ""
+  },
+  author: [{
+    // REFERENCING :D
+    type: Schema.Types.ObjectId,
+    ref: 'Author'
+  }]
+});
+
+var AuthorSchema = new Schema({
+  name: {
+    type: String,
+    default: ""
+  }
+});
+
+```
+
+####Challenge 1
+
+Implement a Restaurant model that EMBEDS our Foods model.
+
+####Challenge 2
+Implement an Ingredient model, and REFERENCE it in our Foods model.
+
+Check the solution branch once you've **really** thought about it!
+
