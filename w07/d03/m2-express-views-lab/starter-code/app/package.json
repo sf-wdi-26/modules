@@ -1,0 +1,22 @@
+{
+  "name": "apis-with-tokens-lab",
+  "version": "1.0.0",
+  "description": "an example solution to building an API with tokens",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.13.2",
+    "debug": "~2.2.0",
+    "express": "~4.13.1",
+    "method-override": "^2.3.4",
+    "mongoose": "^4.0.7",
+    "morgan": "~1.6.1",
+    "path": "^0.11.14"
+  },
+  "author": "micah rich",
+  "license": "ISC"
+}
