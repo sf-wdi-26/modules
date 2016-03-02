@@ -39,6 +39,7 @@
   ```
 
 5. Get that much set up, and then when in doubt, run the code and debug errors one by one.
+6. When you are finished you should be able to create, read, update and destroy todos on your app!
 
 ## Resources
 [OOP in JS: What you need to know](http://javascriptissexy.com/oop-in-javascript-what-you-need-to-know/)
