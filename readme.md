@@ -29,7 +29,7 @@ Time | Day 1                                    | Day 2                         
 [7-3A]: ../baseline-curriculum/resources/04-server-applications/node-express-views-lesson "Views in Express Lesson"
 [7-3B]: ../baseline-curriculum/resources/04-server-applications/node-express-views-lab "Views in Express Lab"
 [7-3C]: w07/d03/m3-todo-list-lab/ "Todo Lab, Part 1"
-[7-3D]:  / "AJAX Lesson"
+[7-3D]:  w07/d03/m4-ajax-oo-refactor-lab "AJAX Lesson"
 [7-3E]: https://github.com/sf-wdi-25/notes/tree/master/week-03-ajax-json-express/day-04-json-api/dusk-update-destroy "Todo Lab, Part 2"
 
 [7-4A]: https://github.com/sf-wdi-25/tunely "Tunely"
