@@ -20,7 +20,7 @@
   ```
     app.render();
   ```
- but nothing should be defined!
+ but nothing should be defined in there!
 
 3. Define all of your variables on App:
   ```js
