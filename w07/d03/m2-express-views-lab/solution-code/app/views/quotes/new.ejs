@@ -1,0 +1,16 @@
+      <% include ../partials/head %>
+        <% include ../partials/header %>
+
+        <form action="/quotes" method="POST">
+          <div class='form-group'>
+            <input type="text" name="quote[text]" placeholder="This is a quote..." class="form-control" >
+          </div>
+          <div class='form-group'>
+            <input type="text" name="quote[author]" placeholder="Maxwell P. Strong" class="form-control" >
+          </div>
+          <div class='form-group'>
+            <input type="submit" value='Save Quote' class="btn btn-default">
+          </div>
+        </form>
+
+        <% include ../partials/footer %>
