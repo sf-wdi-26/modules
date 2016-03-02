@@ -1,4 +1,4 @@
-# <img src="https://cdn.tutsplus.com/gamedev/authors/legacy/Steven%20Lambert/2012/10/28/object-oriented-programming-gamedev.png" height="60"> OOP
+# Ajax OOP Refactor Lab
 
 | Objectives |
 | :--- |
