@@ -1,4 +1,4 @@
-# <img src="https://cdn.tutsplus.com/gamedev/authors/legacy/Steven%20Lambert/2012/10/28/object-oriented-programming-gamedev.png" height="60"> OOP
+# Ajax OOP Refactor Lab
 
 | Objectives |
 | :--- |
@@ -20,7 +20,7 @@
   ```
     app.render();
   ```
- but nothing should be defined!
+ but nothing should be defined in there!
 
 3. Define all of your variables on App:
   ```js
@@ -39,6 +39,7 @@
   ```
 
 5. Get that much set up, and then when in doubt, run the code and debug errors one by one.
+6. When you are finished you should be able to create, read, update and destroy todos on your app!
 
 ## Resources
 [OOP in JS: What you need to know](http://javascriptissexy.com/oop-in-javascript-what-you-need-to-know/)
