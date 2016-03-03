@@ -1,0 +1,26 @@
+
+  <% include partials/head %>
+  <% include partials/header %>
+
+  <ul id="quotes">
+
+  <% quotes.forEach(function(quote) { %>
+
+    <li>
+      <blockquote>
+
+        <p><%= quote.text %></p>
+        <footer><%= quote.author %></footer>
+
+      // </blockquote>
+    </li>
+
+  <% }); %>
+
+  </ul>
+
+  <nav>
+    <%- link_to('Add a New Quote', 'hello') %>
+  </nav>
+
+  <% include partials/footer %>
