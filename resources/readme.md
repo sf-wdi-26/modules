@@ -1,17 +1,10 @@
-# Resources
+# Tunely Resources
 
-This directory is intended to provide additional reading, alternative references and links that didn't quite fit in our curriculum.
+## Sample Wireframe with RESTful routes for views and API
 
+![Image Alt](/images/tunely-wireframe.pdf)
 
-## git & GitHub
+## How to Collaborate on GitHub:
 
-[How to Collaborate on GitHub](github-collaboration.md)
+[How to Collaborate on GitHub](../../../resources/github-collaboration.md)
 
-
-## JavaScript, jQuery
-
-
-## Ruby and Ruby on Rails
-
-
-## HTML, CSS, Bootstrap, SASS
