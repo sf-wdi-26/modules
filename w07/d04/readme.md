@@ -2,7 +2,7 @@
 
 ## Sample Wireframe with RESTful routes for views and API
 
-<img src="./images/tunely-wireframe.pdf" width=70%>
+![Image Alt](./images/tunely-wireframe.pdf)
 
 ## How to Collaborate on GitHub:
 
