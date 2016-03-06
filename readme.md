@@ -2,6 +2,47 @@
 
 ## Unit 3: Node and Express
 
+#### Week 8: Advnaced Topics in Express:
+Encryption, Authentication, Websockets, Testing
+
+Time | Day 1                                 | Day 2                                               | Day 3                                              | Day 4                                     | Day 5
+----- | --------------------------------      | -------------------------------------               | ------------------------------------               | ----------------------------------------  | -----------------------------------
+**9:00am Module 1** | [Tune.ly Science Fair][8-1A]             | [Intro to OAuth and 3rd party APIs (Alex)][8-2A] | [Client-side templating (Ben)][8-3A]      | [Build Tools w/ Gulp (Ilias)][8-4A]        | [Review][8-5A]
+**10:30am Module 2** | [Review][8-1B]         | [Integrating Social Logins Lab (Alex)][8-2B]      |        [JSON API Best Practices Demo (Ben)][8-3B]                | [Websockets with Socket.io (Alex)][8-4B]          | [Review][8-5B]
+**1:30pm Module 3** | [Encrypting passwords with Express/Mongoose (Ben)][8-1C]      | [Testing with Jasmine (Ilias)][8-2C]                      | [ToEatly (Create, Read) (Ilias)][8-3C]           | [Real Time Lab (Alex)][8-4C]         | [Outcomes][8-5C]
+**3:00pm Module 4** | [Lab: Encrypted user models (Ben)][8-1D]      | [Testing Lab (Ilias)][8-2D]        | [ToEatly (Update, Delete) (Ilias)][8-3D]              | [Intro Project 3 (Group)][8-4D]       | [Project 3 Planning][8-5E]
+**Homework** |[Tune.ly Auth][8-1E] | [Tune.ly OAuth][8-2E]    | [][8-3E]| [][8-4E]    |
+
+[8-1A]: #   "Science Fair"
+[8-1B]: #   "Views with Express Lab"
+[8-1C]: # "Encrypting Passwords with Express and Mongoose Lesson"
+[8-1D]: #   "Encrypted user Models Lab"
+[8-1E]: # " "
+
+[8-2A]: #   "Intro to OAuth"
+[8-2B]: #   "Integrating Social Logins Lab"
+[8-2C]: # " "
+[8-2D]: # " "
+[8-2E]: # " "
+
+[8-3A]: # " "
+[8-3B]: # " "
+[8-3C]: # " "
+[8-3D]: # " "
+[8-3E]: # " "
+
+[8-4A]: # " "
+[8-4B]: #  "Websockets with socket.io"
+[8-4C]: #  "Build a Realtime app Lab"
+[8-4D]: # " "
+[8-4E]: # " "
+
+[8-5A]: # " "
+[8-5B]: # " "
+[8-5C]: # " "
+[8-5D]: # " "
+[8-5E]: # " "
+
 #### Week 7 - Intro to Node and Express
 
 
