@@ -2,7 +2,7 @@
 
 ## Unit 3: Node and Express
 
-#### Week 8: Advanced Topics in Express:
+#### Week 8: Advanced Full Stack JavaScript:
 Encryption, Authentication, Websockets, Testing
 
 Time | Day 1                                 | Day 2                                               | Day 3                                              | Day 4                                     | Day 5
