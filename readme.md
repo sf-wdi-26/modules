@@ -14,7 +14,7 @@ Time | Day 1                                 | Day 2                            
 **Homework** |[Tune.ly Auth][8-1E] | [Tune.ly OAuth][8-2E]    | [][8-3E]| [][8-4E]    |
 
 [8-1A]: #   "Science Fair"
-[8-1B]: #   "Views with Express Lab"
+[8-1B]: #   "Review"
 [8-1C]: # "Encrypting Passwords with Express and Mongoose Lesson"
 [8-1D]: #   "Encrypted user Models Lab"
 [8-1E]: # " "
