@@ -11,7 +11,7 @@
 
 ###Background
 
-This lesson assumes you have background knowledge from the [Storing Passwords w/ Bcrypt](https://github.com/sf-wdi-21/notes/blob/master/week-04/day-3-auth/readme.md) reading.
+This lesson assumes you have background knowledge from the [Storing Passwords w/ Bcrypt](https://github.com/sf-wdi-26/modules/tree/master/w08/d01/m3-bcrypt) reading.
 
 ###Our Tools
 
@@ -30,7 +30,7 @@ See all branches in this repo with `git branch -a`. If you want to skip to anoth
 
 ###Get Started
 
-Fork & Clone [this repo](https://github.com/sf-wdi-21/express_auth/tree/master).
+Fork & Clone [this repo](https://github.com/sf-wdi-26/express_auth/tree/master).
 
 ##Step 1: App Setup (10m)
 
@@ -292,7 +292,7 @@ curl --data "user[email]=alice@ga.co&user[password]=foobarbazz" localhost:3000/l
 
 ##Step 6: Sessions
 
-As you may [remember](https://github.com/sf-wdi-21/notes/blob/master/week-04/day-2-cookies-sessions/README.md#sessions), sessions help us store information about a user's current login state on the server side that is referred to by a `session-id`, placed in a cookie (session-cookie) passed to the client and returned back to the server with every request.
+As you may remember, sessions help us store information about a user's current login state on the server side that is referred to by a `session-id`, placed in a cookie (session-cookie) passed to the client and returned back to the server with every request.
 
 To add sessions into our app we can use the `express-session` middleware.
 
