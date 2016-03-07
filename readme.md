@@ -9,8 +9,8 @@ Time | Day 1                                 | Day 2                            
 ----- | --------------------------------      | -------------------------------------               | ------------------------------------               | ----------------------------------------  | -----------------------------------
 **9:00am Module 1** | [Tune.ly Science Fair][8-1A]             | [Intro to OAuth and 3rd party APIs (Alex)][8-2A] | [Client-side templating (Ben)][8-3A]      | [Build Tools w/ Gulp (Ilias)][8-4A]        | [Project 3 Planning/Approval][8-5A]
 **10:30am Module 2** | [Review][8-1B]         | [Integrating Social Logins Lab (Alex)][8-2B]      |        [JSON API Best Practices Demo (Ben)][8-3B]                | [Websockets with Socket.io (Alex)][8-4B]          | [Outcomes (10am - 11:30am)][8-5B]
-**1:30pm Module 3** | [A Brief Overview of Bcrypt, then mod 4 (Ben)][8-1C]      | [Testing with Jasmine (Ilias)][8-2C]                      | [ToEatly (Create, Read) (Ilias)][8-3C]           | [Real Time Lab (Alex)][8-4C]         | [Project 3 Planning/Approval][8-5C]
-**3:00pm Module 4** | [Lab: Express-Auth (Ben)][8-1D]      | [Testing Lab (Ilias)][8-2D]        | [ToEatly (Update, Delete) (Ilias)][8-3D]              | [Intro Project 3 (Group)][8-4D]       | [Project 3 Groupwork][8-5E]
+**1:30pm Module 3** | [A Brief Overview of Bcrypt, then mod 4 (Ben)][8-1C]      | [TDD with Jasmine (Ilias)][8-2C]                      | [ToEatly (Create, Read) (Ilias)][8-3C]           | [Real Time Lab (Alex)][8-4C]         | [Project 3 Planning/Approval][8-5C]
+**3:00pm Module 4** | [Lab: Express-Auth (Ben)][8-1D]      | [Lab: TDD Calculator (Ilias)][8-2D]        | [ToEatly (Update, Delete) (Ilias)][8-3D]              | [Intro Project 3 (Group)][8-4D]       | [Project 3 Groupwork][8-5E]
 **Homework** |[Passport reading][8-1E] | [Tune.ly OAuth][8-2E]    | [][8-3E]| [][8-4E]    |
 
 [8-1A]: #   "Science Fair"
@@ -22,7 +22,7 @@ Time | Day 1                                 | Day 2                            
 [8-2A]: /w08/d02/m1-passport-and-oauth/ "Intro to OAuth"
 [8-2B]: w08/d02/m2-oauth-lab/  "Integrating Social Logins Lab"
 [8-2C]: w08/d02/m3-testing-w-jasmine " "
-[8-2D]: # " "
+[8-2D]: w08/d02/m4-testing-lab " "
 [8-2E]: # " "
 
 [8-3A]: # " "
