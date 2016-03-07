@@ -21,7 +21,7 @@ Time | Day 1                                 | Day 2                            
 
 [8-2A]: #   "Intro to OAuth"
 [8-2B]: #   "Integrating Social Logins Lab"
-[8-2C]: # " "
+[8-2C]: w08/d02/m3-testing-w-jasmine " "
 [8-2D]: # " "
 [8-2E]: # " "
 
