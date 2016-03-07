@@ -565,4 +565,5 @@ it("makes a successful AJAX request", function(){
 ## Additional Reading
 
 * [Jasmine's really great documentation](http://jasmine.github.io/2.1/introduction.html)
-* [Testing AJAX Calls with Jasmine](http://jasmine.github.io/2.1/ajax.html)
+* [Testing AJAX Calls](http://jasmine.github.io/2.1/ajax.html)
+* [Testing Express Routes](https://semaphoreci.com/community/tutorials/getting-started-with-node-js-and-jasmine)
