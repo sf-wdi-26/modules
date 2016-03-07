@@ -19,8 +19,8 @@ Time | Day 1                                 | Day 2                            
 [8-1D]: w08/d01/m4-express-auth/ "Hand-rolled Auth with Express"
 [8-1E]: w08/d01/hw-auth-links/ "Auth Reading and Videos Homework"
 
-[8-2A]: #   "Intro to OAuth"
-[8-2B]: #   "Integrating Social Logins Lab"
+[8-2A]: /w08/d02/m1-passport-and-oauth/ "Intro to OAuth"
+[8-2B]: w08/d02/m2-oauth-lab/  "Integrating Social Logins Lab"
 [8-2C]: w08/d02/m3-testing-w-jasmine " "
 [8-2D]: # " "
 [8-2E]: # " "
