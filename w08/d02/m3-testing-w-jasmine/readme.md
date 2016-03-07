@@ -217,7 +217,7 @@ When you're done, you should be able to run `jasmine-node spec` with no failing 
 
 The fact that these tests "pass" doesn't really mean anything since the tests don't actually test anything -- but at least we know there aren't any syntax errors.
 
-## The suite life of Jasmine (5/85)
+## The suite life of Jasmine
 
 Let's break this test down according to its parts.
 
