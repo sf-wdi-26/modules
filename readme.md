@@ -15,9 +15,9 @@ Time | Day 1                                 | Day 2                            
 
 [8-1A]: #   "Science Fair"
 [8-1B]: #   "Review"
-[8-1C]: # "A Brief Overview of Bcrypt in Node"
-[8-1D]: # "Hand-rolled Auth with Express"
-[8-1E]: # " "
+[8-1C]: w08/d02/m3-bcrypt/ "A Brief Overview of Bcrypt in Node"
+[8-1D]: w08/d02/m4-express-auth/ "Hand-rolled Auth with Express"
+[8-1E]: w08/d02/hw-auth-links/ "Auth Reading and Videos Homework"
 
 [8-2A]: #   "Intro to OAuth"
 [8-2B]: #   "Integrating Social Logins Lab"
