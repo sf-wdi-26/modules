@@ -120,9 +120,9 @@ Finished in 0.001 seconds
 0 tests, 0 assertions, 0 failures, 0 skipped
 ```
 
-### Javascripting your tests (10/65)
+### Scripting your Specs
 
-Now, paste the tests you wrote earlier into the `-spec.js` file you created.
+Now, paste the specs you wrote earlier into the `*-spec.js` file you created.
 
 If you run `jasmine-node` at this point, you'll just get an error. We need to properly format the code for Javascript.
 
