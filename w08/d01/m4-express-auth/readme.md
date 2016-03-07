@@ -456,14 +456,20 @@ Then create the login view:
 
 CONGRATS! You've just hand-rolled a login system!
 
-
 ## Moar Exercises ^_^
 
-1. Use [keygenerator](https://www.npmjs.com/package/keygenerator) to generate a secret key for us
-2. Add a `GET /signup` route and view to create a new user
-3. When a user signs up also log them in and redirect them to the `/profile` page.
-4. Create a route `GET /logout` that uses the `req.logout` middleware to destroy the session. Add a link on your site that logs out the user. (bonus for using a delete request, which is shown in the branch `step_10`).
-5. The `req.currentUser` middleware finds the user who is currently logged in. Use `req.currentUser` to **authorize** parts of your site.
+## Step 8
+1. Install [keygenerator](https://www.npmjs.com/package/keygenerator) to generate a secret key for us with `keygen._({specials: true})`
+2. Add a `GET /signup` route and view to create a new user. This will be almost exactly the same as `login.html` with a few important distinctions
+
+## Step 9
+3. Create a route `GET /profile` and basic `profile.html` view
+4. Create a route `GET /logout` that uses the `req.logout` middleware to destroy the session. Add a link on your site that logs out the user.
+5. Add a templating module. Solutions provided for EJS and HBS
+
+## Step 10
+5. Bonus for using a delete request, which is shown in the branch `step_10`.
+6. The `req.currentUser` middleware finds the user who is currently logged in. Use `req.currentUser` to **authorize** parts of your site.
     * Logged-in users should NOT be able to see the /signup or /login pages.
     * Users should only be able to see /profile when logged in.
     
