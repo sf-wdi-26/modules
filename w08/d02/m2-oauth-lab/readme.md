@@ -1,43 +1,23 @@
----
-title: Local Authentication Lab - Username/Password
-type: lab
-duration: "1:25"
-creator:
-    name: Gerry
-    city: London
-competencies: Server Applications
----
-
-# Integrating Social Logins Lab
-
+# Adding more OAuth Options Lab
 ## Introduction
 
-We've covered the concept of OAuth and how to implement it using Express. Let's take an app we've previously worked on and allow for social login by adding `passport-facebook` functionality.
+We've covered the concept of OAuth and how to implement it using Express and `passport-facebook`. Let's take an app we've previously worked on and allow for social login using Github.
 
 ## Exercise
 
+Take a look at the [GitHub OAuth API docs](https://developer.github.com/v3/oauth/).
+
 #### Requirements
 
-- Create a Facebook application on the Facebook developers portal
-- Take the starter code and implement Facebook login
-- Users should only be able to add candies when they are logged-in
-- The form should only be visible when you're logged-in
-- Make sure it is not possible to CRUD candies via curl
+- Take the code from your last module and add Github Login to it.
+- Make sure the strategy doesn't create two users if you authenticate with GitHub and Facebook.
 
 **Bonus:**
-- Add a reference to a user when a candy document is created and show the user details in the candy list
-- Make sure only the user who created a candy can delete it
+- Add Google OAuth as well!
 
 #### Starter code
 
-You might recognize the starter code - it's from our Candies application we worked on earlier this week and late last week.
-
-#### Deliverable
-
-Please find screenshots of the solution-code provided
-
-![app screenshot](http://s27.postimg.org/h15kqhnyr/Screen_Shot_2015_08_10_at_17_16_51.png)
-
+Can be either your own code from the last module, or the solution-code from there.
 
 ## Additional Resources
 

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Authentication</title>
+</head>
+<body>
+  <h1>LOGIN USING PASSPORT</h1>
+  <div>
+      {{#if user }}
+        <h2> Below is the data sent by facebook</h2>
+        <pre>
+          {{user.fb}}
+          {{user.gh}}
+        </pre>
+        <a href="/logout">Logout</a>
+      {{else}}
+        <a href="/auth/facebook">Login with Facebook</a>
+        <a href="/auth/github">Login with GitHub</a>
+      {{/if}}
+  </div>
+</body>
+</html>

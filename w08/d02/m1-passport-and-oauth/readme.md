@@ -269,14 +269,6 @@ app.get("/logout", function(req, res){
 })
 ```
 
-## Independent Practice (20 minutes)
-
-> ***Note:*** _This can be a pair programming activity or done independently._
-
-Try to add GitHub to this app and make sure the strategy doesn't create two users if you authenticate with GitHub and Facebook.
-
-Take a look at the [GitHub OAuth API docs](https://developer.github.com/v3/oauth/).
-
 ## Conclusion (5 mins)
 
 - Why does OAuth make it easy for third-party libraries to be developed to allow for social login?
