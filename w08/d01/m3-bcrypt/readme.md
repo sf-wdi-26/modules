@@ -61,11 +61,11 @@ bcrypt.genSalt(10, function(err, salt) {
 });
 ```
 
-Check the user object again and see the passwordDigest stored inside of it. Great! We could store this user to a database and have implimented good security by only storing the password digest and not the plaintext version.
+Check the user object again and see the passwordDigest stored inside of it. Great! We could store this user to a database and have implemented good security by only storing the password digest _WITHOUT_ the plaintext version.
 
 ###Signin
 
-**Authenticating a user** Now that we have saved the user bob, how can we be sure it's actually him next time he logs into his account. We will require him to provide the same password again. 
+**Authenticating a user** Now that we have saved the user `bob`, how can we be sure it's actually him next time he logs into his account? We will require him to provide the same password again. 
 
 In the same node session, let's experiment with comparing a provided plaintext password with an existing password digest to authenticate a user.
 

@@ -145,9 +145,9 @@ Earlier we [played with Bcrypt](https://github.com/sf-wdi-21/notes/blob/master/w
 
 Remember `statics` are methods that will be accessible on the `db.User` model, while `methods` are accessible on an instance of the user model, aka a `new db.User()`.
 
-There are four methods we're adding to our model below. This saves us from writing logic in our the functions our routes execute, also known as **controllers** and rather *abstract* it to our **model**. It is best to have fat models and skinny controllers (more logic in the model). The four models we are writing are as follows (note `::` indicates a method on the constructor, while `#` indicates a method on all instances):
+There are four methods we're adding to our model below. This saves us from writing logic in the functions our routes execute, also known as **controllers** and rather *abstract* it to our **model**. It is best to have fat models and skinny controllers (more logic in the model). The four models we are writing are as follows:
 
-* **`User.createSecure(email, password, cb)`**: used create a new user with a password digest (signup).
+* **`User.createSecure(email, password, cb)`**: used to create a new user with a password digest (signup).
 * **`User.authenticate(email, password, cb)`**: used to hash a provided password with a specific user's existing password digest. It relies partly on the `checkPassword` method below. (signin).
 * **`user.checkPassword(password)`**: used to check if a user's password is correct.
 
@@ -456,13 +456,15 @@ Then create the login view:
 
 CONGRATS! You've just hand-rolled a login system!
 
-
 ## Moar Exercises ^_^
 
-1. Add a `GET /signup` route and view to create a new user
-2. When a user signs up also log them in and redirect them to the `/profile` page.
-3. Create a route `GET /logout` that uses the `req.logout` middleware to destroy the session. Add a link on your site that logs out the user. (bonus for using a delete request, which is shown in the branch `step_10`).
-4. The `req.currentUser` middleware finds the user who is currently logged in. Use `req.currentUser` to **authorize** parts of your site.
+1. Install [keygenerator](https://www.npmjs.com/package/keygenerator) to generate a secret key for us with `keygen._({specials: true})`
+2. Add a `GET /signup` route and view to create a new user. This will be almost exactly the same as `login.html` with a few important distinctions
+3. Create a route `GET /profile` and (very) basic `profile.html` view (`step_9`)
+4. Create a route `GET /logout` that uses the `req.logout` middleware to destroy the session. Add a link on your site that logs out the user.
+5. Add a templating module. Solutions provided for EJS and HBS
+6. Bonus for using a delete request, which is shown in the branch `step_10`.
+7. The `req.currentUser` middleware finds the user who is currently logged in. Use `req.currentUser` to **authorize** parts of your site.
     * Logged-in users should NOT be able to see the /signup or /login pages.
     * Users should only be able to see /profile when logged in.
     
