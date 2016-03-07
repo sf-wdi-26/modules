@@ -23,3 +23,5 @@ Can be either your own code from the last module, or the solution-code from ther
 
 - [Passport facebook Documentation](https://github.com/jaredhanson/passport-facebook)
 - [Facebook developers portal](https://developers.facebook.com/)
+- [Github Oauth API](https://developer.github.com/v3/oauth/)
+- 
