@@ -79,7 +79,7 @@ Today we'll be using a Javascript testing framework called Jasmine. It's the sam
 
 Jasmine is only one testing framework. There's [Mocha](https://mochajs.org/), [QUnit](https://qunitjs.com/) and more... However, they're all very similar. Most use the same "describe...it" syntax.
 
-### Getting set up (5/55)
+### Getting set up
 First, we're going to install jasmine-node globally.
 
 It doesn't matter where you run this code:
