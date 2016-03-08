@@ -550,16 +550,11 @@ it("makes a successful AJAX request", function(){
   - Refactor your app's code
   - Write failing tests for your app
 
-  > Outline, failing (red), write code, passing (green), refactor
-
 - What's the difference between a `suite`, a `spec`, and an `expectation`?
-  > A suite is a series of tests that describe a particular object or feature; a spec is one test; an expectation is the code that goes inside the spec that does the actual testing
 
 - What's the difference between `describe`, `it`, and `expect` statements?
-  > `describe` is a suite; `it` is a spec; `expect` goes inside a spec
 
 - What does `beforeEach` do?
-  > Contains code that is run before each spec
 
 ## Additional Reading
 
