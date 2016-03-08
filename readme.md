@@ -2,15 +2,56 @@
 
 ## Unit 3: Node and Express
 
-#### Week 6 - Intro to Node and Express
+#### Week 8: Advanced Full Stack JavaScript:
+Encryption, Authentication, Websockets, Testing
+
+Time | Day 1                                 | Day 2                                               | Day 3                                              | Day 4                                     | Day 5
+----- | --------------------------------      | -------------------------------------               | ------------------------------------               | ----------------------------------------  | -----------------------------------
+**9:00am Module 1** | [Tune.ly Science Fair][8-1A]             | [Intro to OAuth and 3rd party APIs (Alex)][8-2A] | [Client-side templating (Ben)][8-3A]      | [Build Tools w/ Gulp (Ilias)][8-4A]        | [Project 3 Planning/Approval][8-5A]
+**10:30am Module 2** | [Review][8-1B]         | [Integrating Social Logins Lab (Alex)][8-2B]      |        [JSON API Best Practices Demo (Ben)][8-3B]                | [Websockets with Socket.io (Alex)][8-4B]          | [Outcomes (10am - 11:30am)][8-5B]
+**1:30pm Module 3** | [A Brief Overview of Bcrypt, then mod 4 (Ben)][8-1C]      | [TDD with Jasmine (Ilias)][8-2C]                      | [ToEatly (Create, Read) (Ilias)][8-3C]           | [Real Time Lab (Alex)][8-4C]         | [Project 3 Planning/Approval][8-5C]
+**3:00pm Module 4** | [Lab: Express-Auth (Ben)][8-1D]      | [Lab: TDD Calculator (Ilias)][8-2D]        | [ToEatly (Update, Delete) (Ilias)][8-3D]              | [Intro Project 3 (Group)][8-4D]       | [Project 3 Groupwork][8-5E]
+**Homework** |[Passport reading][8-1E] | [Tune.ly OAuth][8-2E]    | [][8-3E]| [][8-4E]    |
+
+[8-1A]: #   "Science Fair"
+[8-1B]: #   "Review"
+[8-1C]: w08/d01/m3-bcrypt/ "A Brief Overview of Bcrypt in Node"
+[8-1D]: w08/d01/m4-express-auth/ "Hand-rolled Auth with Express"
+[8-1E]: w08/d01/hw-auth-links/ "Auth Reading and Videos Homework"
+
+[8-2A]: /w08/d02/m1-passport-and-oauth/ "Intro to OAuth"
+[8-2B]: w08/d02/m2-oauth-lab/  "Integrating Social Logins Lab"
+[8-2C]: w08/d02/m3-testing-w-jasmine " "
+[8-2D]: w08/d02/m4-testing-lab " "
+[8-2E]: # " "
+
+[8-3A]: # " "
+[8-3B]: # " "
+[8-3C]: # " "
+[8-3D]: # " "
+[8-3E]: # " "
+
+[8-4A]: w08/d04/m1-gulp-workflows " "
+[8-4B]: #  "Websockets with socket.io"
+[8-4C]: #  "Build a Realtime app Lab"
+[8-4D]: # " "
+[8-4E]: # " "
+
+[8-5A]: # " "
+[8-5B]: # " "
+[8-5C]: # " "
+[8-5D]: # " "
+[8-5E]: # " "
+
+#### Week 7 - Intro to Node and Express
 
 
 Time | Day 1                                    | Day 2                                 | Day 3                                | Day 4                                    | Day 5
 ----- | --------------------------------         | ------------------------------------- | ------------------------------------ | ---------------------------------------- | -----------------------------------
-**9:00am Module 1** | [Intro to Node.js (Alex)][7-1A]         | [Intro to Mongo (Ilias)][7-2A]             | [Views in Express (Ben)][7-3A]    | [Tune.ly (Group)][7-4A]               | [Review][7-5A]
-**10:45am Module 2** |  [Intro to Express (Alex)][7-1B]         | [Intro to Mongoose (Ilias)][7-2B]              |    [Views in Express Cont. (Ben)][7-3A]   | [Tune.ly][7-4B]        | [Review][7-5B]
-**1:30pm Module 3** | [Building Express routes part 1 (Ben)][7-1C]                        | [Mongo Relationships (Ilias / Dani)][7-2C] |[Lab: ToDo List App (Alex)][7-3C] | [Tune.ly][7-4C]     | [Tune.ly][7-5C]
-**3:00pm Module 4** | [Building Express Routes part 2 (Ben)][7-1D]                  | [Lab: Mongo Relationships (Ilias / Dani)][7-2D]|   [ Ajax OOP Refactor Lab (Alex)][7-3D]      | [Tune.ly][7-4D]       | [Tune.ly][7-4E]
+**9:00am Module 1** | [Intro to Node.js (Alex)][7-1A]         | [Intro to Mongo (Ilias)][7-2A]             | [Views in Express (Ben)][7-3A]    | [Tune.ly (Group)][7-4A]               | [Tune.ly group work, 10:30 SURVEY][7-5A]
+**10:45am Module 2** |  [Intro to Express (Alex)][7-1B]         | [Intro to Mongoose (Ilias)][7-2B]              |    [Views in Express Cont. (Ben)][7-3A]   | [Tune.ly][7-4B]        | [Tune.ly group work][7-5B]
+**1:30pm Module 3** | [Building Express routes part 1 (Ben)][7-1C]                        | [Mongo Relationships (Ilias / Dani)][7-2C] |[Lab: ToDo List App (Alex)][7-3C] | [Tune.ly][7-4C]     | [Finish Outcomes, return to group work][7-5C]
+**3:00pm Module 4** | [Building Express Routes part 2 (Ben)][7-1D]                  | [Lab: Mongo Relationships (Ilias / Dani)][7-2D]|   [ Ajax OOP Refactor Lab (Alex)][7-3D]      | [Tune.ly][7-4D]       | [Outcomes][7-4E]
 **Homework** | [More Express Routes][7-1E] | [Lab: Mongo][7-2E]   |   [Lab: Views in Express (Ben)][7-3B]   | [Tune.ly][7-4E]  | [Finish Tune.ly][7-5E]
 
 

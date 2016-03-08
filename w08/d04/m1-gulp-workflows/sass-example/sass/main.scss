@@ -1,0 +1,11 @@
+$fav-color: red;
+
+h1 {
+  font-size: 16;
+  a {
+    color: $fav-color;
+    span {
+      text-decoration: none;
+    }
+  }
+}
