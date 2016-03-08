@@ -442,7 +442,7 @@ I'm not even going to bother running `spec` because I know all but one of these 
 **Take 5 minutes** to add the expectation to the suite on your own. Then...
 **Take 5 minutes** to meet up with your group and review each others' expectations.
 
->Note: if you have time left, pass your spec & repeat this process
+>Note: If you have time left, pass your spec & repeat this process
 
 ## Refactor
 
