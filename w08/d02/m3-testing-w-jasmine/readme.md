@@ -431,16 +431,18 @@ describe( "A snowman", function(){
 
 I'm not even going to bother running `spec` because I know all but one of these tests will fail. That's not important right now. The important thing is that I'm writing `expect` statements that make sense to me because this will inform the coding decisions I make later.
 
-## You do: Add expectations to your code
+## You do: Add an expectation to your code
 
-You have two goals:
+- Pair-up with someone in groups of two to three.
+- Together, come up with an origional expectation! What would be something fun our snowman is able to do?
+- Write down this expectations in plain English.
 
-- Write your own expectations that make sense in English...
-- But is still valid Javascript (close all your parentheses, put semicolons where needed, etc)
+>Note: What names does it sense for the different variables/methods to have? The one who designs the spec, designs the code!
 
-Consider: What variables do you need to test? From an English perspective, what names would it make sense for the different variables and methods to have?
+**Take 5 minutes** to add the expectation to the suite on your own. Then...
+**Take 5 minutes** to meet up with your group and review each others' expectations.
 
-**Take 5 minutes** to add expectations yourself. Then, meet up with your group of 3 and take 5 minutes to review each others' expectations.
+>Note: if you have time left, pass your spec & repeat this process
 
 ## Refactor
 
