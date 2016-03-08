@@ -13,7 +13,7 @@ We first encountered Test Driven Development during Unit 2, when we ran & passed
 
 Sort yourselves into the following categories:
 
-1. I have used TDD, and I loved it.
+1. I have used TDD, and I loved it.sui
 1. I have used TDD, and I hated it.
 1. I have not used TDD, but I want to.
 1. I have not used TDD, and I do not want to.
@@ -224,7 +224,7 @@ Let's break this test down according to its parts.
 
 What you've done so far is create a **test suite**.
 
-1. **The Suite**.
+**The Suite**.
 
 ```js
 describe( "A snowman", function(){
@@ -239,7 +239,7 @@ A "suite" is the highest-level container in our test file.
   * (1) The string is the name of what we are testing
   * (2) The function contains the actual tests
 
-2. **The Specs**
+**The Specs**
 
 A suite contains **specs**. These are the `it` statements.
 
