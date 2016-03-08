@@ -448,12 +448,13 @@ What's not DRY about my tests? What repeats?
 
 `var olaf = new Snowman("Olaf");`
 
-In RSpec we could DRY up tests by making a piece of code run before each test. We can do the same thing here:
+In RSpec we could DRY up tests by making a piece of code run *before each* test. We can do the same thing here:
 
 ``` js
 describe( "A snowman", function(){
   var olaf;
 
+  // this code get run before each spec
   beforeEach(function(){
     olaf = new Snowman("Olaf");
   });
