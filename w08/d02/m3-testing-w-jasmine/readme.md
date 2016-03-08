@@ -336,7 +336,6 @@ We can create a `snowman.js` file and put this in it:
 
 function Snowman(name) {
   this.name = name;
-  this.features = ["carrot nose", "stick arms"];
 }
 
 module.exports = Snowman;
