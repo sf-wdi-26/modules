@@ -32,4 +32,4 @@ The starter code already include all the files and packages you need. The templa
 
 ## Additional Resources
 
-- [Socket IO website](http://socket.io/)
+- [Socket IO Chat Tutorial](http://socket.io/get-started/chat/)
