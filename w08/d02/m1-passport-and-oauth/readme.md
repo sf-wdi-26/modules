@@ -81,13 +81,9 @@ Save your changes.
 
 #### Save environment variables
 
-Returning to terminal, as you will need to add your Environment Variables to your `.zshrc` file
+One way to do this is to add your Environment Variables to your `.bash_profile` file (or whatever other bash config file you are using).
 
-```
-subl ~/.zshrc
-```
-
-And add:
+In there add:
 
 ```
 export FACEBOOK_API_KEY="YOUR APP ID"
@@ -95,12 +91,6 @@ export FACEBOOK_API_SECRET="YOUR SECRET"
 ```
 
 Of course, you'll need to fill in the details from Facebook Developer API; you will also need to add your password in order to get your API secret key. Keys need to be
-
-Then save and source the `.zshrc`:
-
-```
-source ~/.zshrc
-```
 
 #### Create the model
 
