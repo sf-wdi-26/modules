@@ -1,6 +1,6 @@
 #All you can Eatly!
 
-Building a single page todo-style application that tracks all the things we want to eat!
+Let's build a single page todo-style application that tracks all the things we want to eat!
 
 ##Learning Objectives
 
@@ -43,9 +43,9 @@ Here is what the application could look like at the end of [phase-3](./phase-4).
 
 Your goal is to improve the `createFood` method (in the client-side `app.js`) where the comments say `OPTIMIZE`.
 
->`createFood` call `renderFoods` after it has run. `renderFoods` helps maintain state, but unfortunately re-renders **all** the foods to achieve this. This process is slightly inefficient...
+>Note: `createFood` calls `renderFoods` after it has run. `renderFoods` helps maintain state, but unfortunately re-renders **all** the foods to achieve this. This process is slightly inefficient...
 
-Consider creating a new method, `renderFood` (note the singular).
+Consider creating a new method, `renderFood` (it's singular).
 
 * It should change nothing from the user's perspective rather than (imperceptibly) optimize performance.
 * It should template the result of **only** the most recently created food onto the top of the page.
