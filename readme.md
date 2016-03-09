@@ -8,10 +8,10 @@ Encryption, Authentication, Websockets, Testing
 Time | Day 1                                 | Day 2                                               | Day 3                                              | Day 4                                     | Day 5
 ----- | --------------------------------      | -------------------------------------               | ------------------------------------               | ----------------------------------------  | -----------------------------------
 **9:00am Module 1** | [Tune.ly Science Fair][8-1A]             | [Intro to OAuth and 3rd party APIs (Alex)][8-2A] | [More fun with Auth -- and math! (Ben)][8-3A]      | [Build Tools w/ Gulp (Ilias)][8-4A]        | [Project 3 Planning/Approval][8-5A]
-**10:30am Module 2** | [Review][8-1B]         | [Integrating Social Logins Lab (Alex)][8-2B]      |        [Client-side templating (Ben)][8-3B]                | [Websockets with Socket.io (Alex)][8-4B]          | [Outcomes (10am - 11:30am)][8-5B]
-**1:30pm Module 3** | [A Brief Overview of Bcrypt, then mod 4 (Ben)][8-1C]      | [TDD with Jasmine (Ilias)][8-2C]                      | [ToEatly Build (Ilias)][8-3C]           | [Real Time Lab (Alex)][8-4C]         | [Project 3 Planning/Approval][8-5C]
+**10:30am Module 2** | [Review][8-1B]         | [Integrating Social Logins Lab (Alex)][8-2B]      |        [Client-side templating (Ben)][8-3B]                | [Websockets with Socket.io (Alex)][8-4B]          | [Project 3 Planning/Approval][8-5B]
+**1:30pm Module 3** | [A Brief Overview of Bcrypt, then mod 4 (Ben)][8-1C]      | [TDD with Jasmine (Ilias)][8-2C]                      | [ToEatly Build (Ilias)][8-3C]           | [Real Time Lab (Alex)][8-4C]         | [Outcomes][8-5C]
 **3:00pm Module 4** | [Lab: Express-Auth (Ben)][8-1D]      | [Lab: TDD Calculator (Ilias)][8-2D]        | [ToEatly Optimize (Ilias)][8-3D]              | [Intro Project 3 (Group)][8-4D]       | [Project 3 Groupwork][8-5E]
-**Homework** |[Passport reading][8-1E] | [Tune.ly OAuth][8-2E]    | [API Best Practices (TBA)][8-3E]| [][8-4E]    |
+**Homework** |[Passport reading][8-1E] | [Tune.ly OAuth][8-2E]    | [API Best Practices][8-3E]| [][8-4E]    |
 
 [8-1A]: #   "Science Fair"
 [8-1B]: #   "Review"
