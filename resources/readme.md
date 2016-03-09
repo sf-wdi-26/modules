@@ -1,4 +1,5 @@
-# Tunely Resources
+# WDI 26 Resources
+
 
 ## Sample Wireframe with RESTful routes for views and API
 
@@ -6,5 +7,10 @@
 
 ## How to Collaborate on GitHub:
 
-[How to Collaborate on GitHub](../../../resources/github-collaboration.md)
+[How to Collaborate on GitHub](./github-collaboration.md)
+
+
+## Embedded and Referenced Relationships in Mongoose
+
+[Mongo Relationships](./mongo-relationships.md)
 
