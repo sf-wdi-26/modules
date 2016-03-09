@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- normalize -->
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+    <!-- handlebars -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+    <!-- custom scripts -->
+    <script src="/js/app.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1><a class="logo" href="/foods">To Eat.ly</a></h1>
+    </header>
+    <hr>
+    <!-- the below `triple-stash`, avoid handlebars escaping any html -->
+   {{{body}}}
+  </body>
+</html>

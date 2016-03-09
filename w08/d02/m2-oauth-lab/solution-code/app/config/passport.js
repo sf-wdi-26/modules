@@ -57,11 +57,11 @@ module.exports = function(passport){
       clientSecret: API_CONFIG.github.secret,
       callbackURL:  "http://127.0.0.1:3000/auth/github/callback"
     },
-    function(access_token, refresh_token, profile, cb) {
+    function(access_token, refresh_token, profile, cb, done) {
 
         process.nextTick(function() {
 
-          User.findOne({ 'fb.id' : profile.id }, function(err, user) {
+          User.findOne({ 'gh.id' : profile.id }, function(err, user) {
             if (err) return done(err);
             if (user) {
               return done(null, user);
