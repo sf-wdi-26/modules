@@ -1,0 +1,11 @@
+{
+  "name": "build-a-realtime-app-lab",
+  "version": "1.0.0",
+  "dependencies": {
+    "body-parser": "1.4.3",
+    "express": "4.6.1",
+    "morgan": "^1.6.1",
+    "socket.io": "1.0.6",
+    "hbs": "^4.0.0"
+  }
+}

@@ -1,0 +1,21 @@
+{{> newFood }}
+
+<div id="food-list"></div>
+
+<!-- client-side food template -->
+<script id="food-template" type="text/x-handlebars-template">
+  \{{#each foods}}
+  <div id="\{{_id}}" class="food food-card">
+    <p class="food-attribute">Name: \{{name}}</p>
+    <p class="food-attribute">Yuminess: \{{yuminess}}</p>
+    <button class="btn delete-btn" onclick="eatly.deleteFood(event)">Delete</button>
+  </div>
+  \{{/each}}
+</script>
+
+<!-- page load -->
+<script type="text/javascript">
+  // pass `foods` data to client to save a request & render foods
+  // triple stash avoids data from being escaped
+  eatly.renderFoods({{{foods}}});
+</script>

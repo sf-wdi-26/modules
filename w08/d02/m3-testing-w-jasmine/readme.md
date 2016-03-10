@@ -13,7 +13,7 @@ We first encountered Test Driven Development during Unit 2, when we ran & passed
 
 Sort yourselves into the following categories:
 
-1. I have used TDD, and I loved it.
+1. I have used TDD, and I loved it.sui
 1. I have used TDD, and I hated it.
 1. I have not used TDD, but I want to.
 1. I have not used TDD, and I do not want to.
@@ -224,7 +224,7 @@ Let's break this test down according to its parts.
 
 What you've done so far is create a **test suite**.
 
-1. **The Suite**.
+**The Suite**.
 
 ```js
 describe( "A snowman", function(){
@@ -239,7 +239,7 @@ A "suite" is the highest-level container in our test file.
   * (1) The string is the name of what we are testing
   * (2) The function contains the actual tests
 
-2. **The Specs**
+**The Specs**
 
 A suite contains **specs**. These are the `it` statements.
 
@@ -336,7 +336,6 @@ We can create a `snowman.js` file and put this in it:
 
 function Snowman(name) {
   this.name = name;
-  this.features = ["carrot nose", "stick arms"];
 }
 
 module.exports = Snowman;
@@ -432,16 +431,18 @@ describe( "A snowman", function(){
 
 I'm not even going to bother running `spec` because I know all but one of these tests will fail. That's not important right now. The important thing is that I'm writing `expect` statements that make sense to me because this will inform the coding decisions I make later.
 
-## You do: Add expectations to your code
+## You do: Add an expectation to your code
 
-You have two goals:
+- Pair-up with someone in groups of two to three.
+- Together, come up with an origional expectation! What would be something fun our snowman is able to do?
+- Write down this expectations in plain English.
 
-- Write your own expectations that make sense in English...
-- But is still valid Javascript (close all your parentheses, put semicolons where needed, etc)
+>Note: What names does it sense for the different variables/methods to have? The one who designs the spec, designs the code!
 
-Consider: What variables do you need to test? From an English perspective, what names would it make sense for the different variables and methods to have?
+**Take 5 minutes** to add the expectation to the suite on your own. Then...
+**Take 5 minutes** to meet up with your group and review each others' expectations.
 
-**Take 5 minutes** to add expectations yourself. Then, meet up with your group of 3 and take 5 minutes to review each others' expectations.
+>Note: If you have time left, pass your spec & repeat this process
 
 ## Refactor
 
@@ -449,12 +450,13 @@ What's not DRY about my tests? What repeats?
 
 `var olaf = new Snowman("Olaf");`
 
-In RSpec we could DRY up tests by making a piece of code run before each test. We can do the same thing here:
+In RSpec we could DRY up tests by making a piece of code run *before each* test. We can do the same thing here:
 
 ``` js
 describe( "A snowman", function(){
   var olaf;
 
+  // this code get run before each spec
   beforeEach(function(){
     olaf = new Snowman("Olaf");
   });
@@ -551,16 +553,11 @@ it("makes a successful AJAX request", function(){
   - Refactor your app's code
   - Write failing tests for your app
 
-  > Outline, failing (red), write code, passing (green), refactor
-
 - What's the difference between a `suite`, a `spec`, and an `expectation`?
-  > A suite is a series of tests that describe a particular object or feature; a spec is one test; an expectation is the code that goes inside the spec that does the actual testing
 
 - What's the difference between `describe`, `it`, and `expect` statements?
-  > `describe` is a suite; `it` is a spec; `expect` goes inside a spec
 
 - What does `beforeEach` do?
-  > Contains code that is run before each spec
 
 ## Additional Reading
 
