@@ -9,7 +9,6 @@
 
 ### Preparation
 *Before this lesson, students should already be able to:*
-
 - Create an Express app
 - Configure an application to use middleware, nodemon, hbs, and morgan
 - Write jQuery that updates the DOM
@@ -174,7 +173,7 @@ io.on('connect', function(socket) {
 
 #### Client Side
 
-Now that's the server side sorted, now let's do the client. Open up our `index.ejs` and add two things - first thing is to include our socket.io library in the header:
+Now that's the server side sorted, now let's do the client. Open up our `index.hbs` and add two things - first thing is to include our socket.io library in the header:
 
 ```html
  <script type="text/javascript" src="/socket.io/socket.io.js"></script>
@@ -191,7 +190,7 @@ Open up Chrome's console using `cmd+alt+j`
 < function lookup(uri,opts){if(typeof uri=="object"){opts=uri;uri=undefined}opts=opts||{};var parsed=url(uri);var source=parsed.source;var id=parsed.id;var io;if(opts.forceNew||opts["force new connection"]||false===opts.multiplex){debug("ignoring socket cache for %s",source);io=Manager(source,opts)}else{if(!cache[id]){debug("new io instance for %s",source);cache[id]=Manager(source,opts)}io=cache[id]}return io.socket(parsed.path)}
 ```
 
-Then in `index.ejs` add in our receiving code below `body`:
+Then in `index.hbs` add in our receiving code below `body`:
 
 ```html
  <script type="text/javascript">
@@ -242,7 +241,7 @@ Add a container:
  <div id="tweet-container"></div>
 ```
 
-Render the tweets with jQuery and amend the script tag in `index.ejs`:
+Render the tweets with jQuery and amend the script tag in `index.hbs`:
 
 ```html
  <script type="text/javascript">
