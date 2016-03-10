@@ -22,7 +22,7 @@ Your app must:
 * **Use Mongo & Express** to build an API and a front-end that consumes it
 * **Create an API using at least 2 related models**, one of which should be a user
 * Include **all major CRUD functions** in a **RESTful API** for at least one of those models
-* **Consume your own API** by making your front-end with HTML, Javascript, & jQuery
+* **Consume your own API** by making your front-end using Handlebars for server side templating.
 * **Add authentication to your API** to restrict access to appropriate users
 * **Craft thoughtful user stories together**, as a team
 * **Manage team contributions and collaboration** using a standard Git flow on Github
@@ -56,6 +56,7 @@ Your app must:
 * **Write your code DRY** and **build your APIs RESTful**.
 * **Be consistent with your code style.** You're working in teams, but you're only making one app per team. Make sure it looks like a unified effort.
 * **Commit early, commit often.** Don’t be afraid to break something because you can always go back in time to a previous version.
+* **Work on Branches.**
 * **Keep user stories small and well-defined**, and remember – user stories focus on what a user needs, not what development tasks need accomplishing.
 * **Write code another developer wouldn't have to ask you about**. Do your naming conventions make sense? Would another developer be able to look at your app and understand what everything is?
 * **Make it all well-formatted.** Are you indenting, consistently? Can we find the start and end of every div, curly brace, etc?
