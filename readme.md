@@ -34,7 +34,7 @@ Time | Day 1                                 | Day 2                            
 [8-4A]: w08/d04/m1-gulp-workflows " "
 [8-4B]: w08/d04/m2-websockets  "Websockets with socket.io"
 [8-4C]: w08/d04/m3-realtime-app  "Build a Realtime app Lab"
-[8-4D]: # " "
+[8-4D]: w08/d04/project-3/project-03.md  "Project 3"
 [8-4E]: # " "
 
 [8-5A]: # " "
