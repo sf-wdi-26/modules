@@ -1,0 +1,31 @@
+body {
+  background-color: #00aff0;
+  color: #323332;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0 2px #323332;
+  line-height: 3;
+}
+
+.tweet {
+  padding: 5px;
+  border: 1px solid rgba(50,51,50,0.5);
+  margin-bottom: 10px;
+  background-color: #fdfdfd;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.names, .contents {
+  margin-left: 60px;
+}
+
+form {
+  text-align: center;
+  max-width: 320px;
+  margin: 0 auto 20px;
+}
