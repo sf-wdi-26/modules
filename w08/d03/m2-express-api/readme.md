@@ -14,15 +14,15 @@ Fork and clone [this repo](https://github.com/sf-wdi-26/express-spotify-search)
 1. Carefully add the contents of your basic spotify search `main.js` to `/public/scripts/main.js` and remove conflicts.
 2. Carefully add the spotify search markup to the Express app `index.hbs` and resolve conflicts.
 3. Add the loading.gif file to the `/public` directory and copy over the relevant CSS
+4. Carefully [register partials](https://github.com/donpark/hbs#user-content-helpers-and-partials) and create the necessary directory structure to support them.
+5. Change variable names, as necessary
+6. Add the `\` comment in front of Spotify Handlebars template references
 
-#### What are the conflicts?
+#### Gotchas
 
 * You cannot declare the same variable twice in JavaScript unless they have different scope.
-* You cannot have two elements with the same id in HTML
-* You cannot have two Handlebars templates with the same id
+* You cannot have two elements with the same `id` in HTML, including Handlebars template scripts
+* You may wish to register partials, but it is not necessary for a successful project. Please note however that `main.js` will only affect code on the page where it is called (`index.hbs`)
+* (In other words `main.js` will NOT affect code rendered in a partial.)
 
-#### Problem:
 
-You will find at this point that your form works and your Spotify search logs data to the console, but you need another solution in order for both handlebars templates to render. One solution would be to put the header and footer in partials and render each template on separate documents in the middle.
-
-4. Carefully [register partials](https://github.com/donpark/hbs#user-content-helpers-and-partials) and create the necessary directory structure to support them.
