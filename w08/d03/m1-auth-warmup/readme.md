@@ -3,7 +3,7 @@
 #### Warm-up:  Auth
 Today we're going to enact a metaphor for auth inspired by [The Russian Postal Problem](http://www.jwstelly.org/BrainTeaser/Problem.php?id=14)
 
-In our version of the story, Alice (played by a student) has a bunch of candy. Bob (played by a different student) wants Alice to send him some candy without sharing with the rest of the class. Bob has a lock box and a combination lock with a given combination, say 240. Alice has another lock with a given combination, say 512.
+In our version of the story, Alice (played by a student) has a bunch of candy. Bob (played by a different student) wants Alice to send him some candy without sharing with the rest of the class. Bob has a lock box and a combination lock with a given combination, say 240. Alice has another lock with a given combination, say 512. (Alice does not know Bob's combo, and vice-versa.)
 
 Before the exercise begins, the students playing Bob and Alice must also agree upon a shared secret--a simple mathematical formula or algorithm to decrypt each others' combinations. Instuctors may bring a clock with a given circumference and a string of a given length, but it is not necessary. Our student volunteers could wrap the string around the clock a number of times to determine a multiplier. If the multiplier is 16, Bob will send a public key of 15 and Alice will know that Bob's combo is 15 * 16, or 240.
 
