@@ -26,11 +26,10 @@ Whatever happens in class, unlock the box and share the candy.
 
 [Here is a good explanation](https://www.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/what-is-modular-arithmetic)
 
-13/5 = 2 R 3
+* 13/5 = 2 R 3
+* 13 mod 5= 3
 
-13 mod 5= 3
-
-Possible Solutions:
+* Applied to our story:
 
 If the passwords are 256 and 326:
 256 / 7 = 36 R 4. 256 mod 7 = 4
