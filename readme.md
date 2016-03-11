@@ -8,8 +8,8 @@ Time | Day 1                                 | Day 2                            
 ----- | --------------------------------      | -------------------------------------               | ------------------------------------               | ----------------------------------------  | -----------------------------------
 **9:30am Module 1** | [CS Topics: String Matching w Big O (Alex)][9-1A] | [CS Topics: Linked Lists (Ben)][9-2A] | [CS Topics: Trees, Breadth First (Ilias)][9-3A] | [CS Topics: Trees, Depth First (Ilias)][9-4A] | [Project 3 Finishing Touches][9-5A]
 **10:30am Module 2** | Project 3 | Project 3 | Project 3 | Project 3 | [Project 3 Presentations][9-5B] | 
-**1:30pm Module 3** | Project 3 | Project 3 | Project 3 | Project 3 | [Outcomes][9-5C] |
-**3:00pm Module 4** | Project 3 | Project 3 | Project 3 | Project 3 | [Outcomes][9-5C] |
+**1:30pm Module 3** | Project 3 | Project 3 | Project 3 | Project 3 | [][9-5C] |
+**3:00pm Module 4** | Project 3 | Project 3 | Project 3 | Project 3 | [][9-5C] |
 **Homework** | Project 3 | Project 3 | Project 3 | Project 3 | [Angular Reading][9-5E]
 
 [9-1A]: # "String Sorting"
