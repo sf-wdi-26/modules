@@ -1,29 +1,46 @@
-# <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Boris and Natasha
+# <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> An Intro to Auth and Modular Arithmetic
 
 #### Warm-up:  Auth
+Today we're going to enact a metaphor for auth inspired by [The Russian Postal Problem](http://www.jwstelly.org/BrainTeaser/Problem.php?id=14)
 
-[Consider this challenge](http://www.jwstelly.org/BrainTeaser/Problem.php?id=14)
+In our version of the story, Alice (played by a student) has a bunch of candy. Bob (played by a different student) wants Alice to send him some candy without sharing with the rest of the class. Bob has a lock box and a combination lock with a given combination, say 240. Alice has another lock with a given combination, say 512.
 
-Two students will be given a lockbox, some candy and a few special instructions.
+Before the exercise begins, the students playing Bob and Alice must also agree upon a shared secret--a simple mathematical formula or algorithm to decrypt each others' combinations. Instuctors may bring a clock with a given circumference and a string of a given length, but it is not necessary. Our student volunteers could wrap the string around the clock a number of times to determine a multiplier. If the multiplier is 16, Bob will send a public key of 15 and Alice will know that Bob's combo is 15 * 16, or 240.
 
-The class will attempt to determine the combinations.
+This is an incredibly simple algorithm, but that's what makes it fun as an in-class activity.
 
-Student 1 will be given a string length and the combination to one lock. Student 1 sends request with "Put the candy in the box and lock it", along with public key on the outside.
+Bob sends his request inside the locked box, with public key written on a Post-It on the outside. Bob must pass the box around the class before it gets to Alice. The class can hypothesize and guess different combinations. _(NOTE: If the algorithm is more complex, it will be exponentially more difficult for the class to unlock the box, which makes the exercise kind of pointless.)_
 
-The class can attempt the password.
+So the class can attempt the password as many times as the instructor allows. You might give them 3 - 10 attempts.
 
-Student 2 does not know student 1's combination, but she will know the string length and the combination to the second lock. She will unlock the box, place the candy in the box, and then return the box to Student 1, via another classmate.
+Then Alice will unlock the box, put the candy in the box and return it to Bob with her secret key (in this example, 32). All students now know both public keys and the class can make several more attempts at figuring out the combinations. If it makes it back to Bob, he will be able to unlock both locks.
 
-All students now know both public keys and the class can make several more attempts at figuring out the combinations.
+Whatever happens in class, unlock the box and share the candy.
 
-Did the class figure it out? Did they get close?
+#### Eat Candy and Discuss:
 
-Student 1 represents the user
-Student 2 represents the server
+* Did the class figure it out? Did they get close?
+* How would we change the math to make this more realistic?
+* What is modular math and how does it work?
+* How does bcrypt use modular math?
 
-How would we change the math to make this more realistic?
+[Here is a good explanation](https://www.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/what-is-modular-arithmetic)
 
-What is the 3 mod 17 function?
+13/5 = 2 R 3
+13 mod 5= 3
 
-Eat candy and discuss.
+Possible Solutions:
+
+If the passwords are 256 and 326:
+256 / 7 = 36 R 4. 256 mod 7 = 4
+326 / 7 = 46 R 4. 326 mod 7 = 4
+
+We can use the formula x mod 7 = 4 where x is determined by another simple algorithm. For example, x = combo * 5. Bob would send a public key of 1280 (which is 256 * 5) and Alice would return a public key of 1630 (which is 326 * 5).
+
+If the passwords are 243 and 733:
+3^5 = 243 / 7 = 34 R 5
+3^6 = 729 / 7 = 104 R 1
+3^6 = 729 + 4 = 733 / 7 = 104 R 5
+
+Now the algorithm is 3^n mod 7 = 5. Alice could send the secret key of 5. Bob could return the secret key of 6. We know we must adjust 729 to 733 in order to get the proper remainder.
 
