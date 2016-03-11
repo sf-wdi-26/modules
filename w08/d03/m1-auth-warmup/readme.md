@@ -26,21 +26,31 @@ Whatever happens in class, unlock the box and share the candy.
 
 [Here is a good explanation](https://www.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/what-is-modular-arithmetic)
 
-* 13/5 = 2 R 3
-* 13 mod 5= 3
+13/5 = 2 R 3
+
+13 mod 5= 3
 
 * Applied to our story:
 
 If the passwords are 256 and 326:
-256 / 7 = 36 R 4. 256 mod 7 = 4
-326 / 7 = 46 R 4. 326 mod 7 = 4
 
-We can use the formula x mod 7 = 4 where x is determined by another simple algorithm. For example, x = combo * 5. Bob would send a public key of 1280 (which is 256 * 5) and Alice would return a public key of 1630 (which is 326 * 5).
+256 / 7 = 36 R 4; *256 mod 7 = 4*
+
+326 / 7 = 46 R 4; *326 mod 7 = 4*
+
+We can use the formula *x mod 7 = 4* where x is determined by another simple algorithm. For example, x = combo * 5. Bob would send a public key of 1280 (which is 256 * 5) and Alice would return a public key of 1630 (which is 326 * 5).
 
 If the passwords are 243 and 733:
-3^5 = 243 / 7 = 34 R 5
-3^6 = 729 / 7 = 104 R 1
-3^6 = 729 + 4 = 733 / 7 = 104 R 5
 
-Now the algorithm is 3^n mod 7 = 5. Alice could send the secret key of 5. Bob could return the secret key of 6. We know we must adjust 729 to 733 in order to get the proper remainder.
+3^5 = 243 / 7 = 34 R 5
+
+3^6 = 729 / 7 = 104 R 1
+
+3^6 = 729
+
+729 + 4 =  733 
+
+733 / 7 = 104 R 5
+
+Now the algorithm is *3^n mod 7 = 5*. Alice could send the secret key of 5. Bob could return the secret key of 6. We know we must adjust 729 to 733 in order to get the proper remainder.
 
