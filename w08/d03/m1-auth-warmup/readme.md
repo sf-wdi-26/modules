@@ -7,13 +7,11 @@ In our version of the story, Alice (played by a student) has a bunch of candy. B
 
 Before the exercise begins, the students playing Bob and Alice must also agree upon a shared secret--a simple mathematical formula or algorithm to decrypt each others' combinations. Instuctors may bring a clock with a given circumference and a string of a given length, but it is not necessary. Our student volunteers could wrap the string around the clock a number of times to determine a multiplier. If the multiplier is 16, Bob will send a public key of 15 and Alice will know that Bob's combo is 15 * 16, or 240.
 
-This is an incredibly simple algorithm, but that's what makes it fun as an in-class activity.
+This is an incredibly simple algorithm, but that's what makes it fun as an in-class activity. _(If the algorithm is more complex, it will be exponentially more difficult for the class to unlock the box, which makes the exercise kind of pointless.)_
 
-Bob sends his request inside the locked box, with public key written on a Post-It on the outside. Bob must pass the box around the class before it gets to Alice. The class can hypothesize and guess different combinations. _(NOTE: If the algorithm is more complex, it will be exponentially more difficult for the class to unlock the box, which makes the exercise kind of pointless.)_
+Bob sends his request inside the locked box, with public key written on a Post-It on the outside. Bob must pass the box around the class before it gets to Alice. The class can hypothesize and guess different combinations, as many times as the instructor allows. (You might limit it to 3 - 10 attempts, or let the students self-regulate.) Before they begin, you can identify a few points to get them on the right track. (For example, this is a 3-digit combo, so don't do math with very large numbers, negative numbers or decimals.)
 
-So the class can attempt the password as many times as the instructor allows. You might give them 3 - 10 attempts.
-
-Then Alice will unlock the box, put the candy in the box and return it to Bob with her secret key (in this example, 32). All students now know both public keys and the class can make several more attempts at figuring out the combinations. If it makes it back to Bob, he will be able to unlock both locks.
+Alice will be able to unlock the box, put in the candy and then return it to Bob with her secret key (in this example, 32). Now the class has both public keys and the class can make several more attempts at figuring out the combinations. If it makes it back to Bob, he will be able to unlock both locks.
 
 Whatever happens in class, unlock the box and share the candy.
 
