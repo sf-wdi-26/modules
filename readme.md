@@ -2,6 +2,25 @@
 
 ## Unit 3: Node and Express
 
+#### Week 9: Project 3
+
+Time | Day 1                                 | Day 2                                               | Day 3                                              | Day 4                                     | Day 5
+----- | --------------------------------      | -------------------------------------               | ------------------------------------               | ----------------------------------------  | -----------------------------------
+**9:30am Module 1** | [CS Topics: String Matching w Big O (Alex)][9-1A] | [CS Topics: Linked Lists (Ben)][9-2A] | [CS Topics: Trees, Breadth First (Ilias)][9-3A] | [CS Topics: Trees, Depth First (Ilias)][9-4A] | [Project 3 Finishing Touches][9-5A]
+**10:30am Module 2** | Project 3 | Project 3 | Project 3 | Project 3 | [Project 3 Presentations][9-5B] | 
+**1:30pm Module 3** | Project 3 | Project 3 | Project 3 | Project 3 | [Outcomes][9-5C] |
+**3:00pm Module 4** | Project 3 | Project 3 | Project 3 | Project 3 | [Outcomes][9-5C] |
+**Homework** | Project 3 | Project 3 | Project 3 | Project 3 | [Angular Reading][9-5E]
+
+[9-1A]: # "String Sorting"
+[9-2A]: # "Linked Lists"
+[9-3A]: # "Trees: Breadth First"
+[9-4A]: # "Trees: Depth First"
+[9-5A]: # "Project 3 Finishing Touches"
+[9-5B]: # "Project 3 Presentations"
+[9-5C]: # "Outcomes"
+[9-5E]: # "Angular Reading"
+
 #### Week 8: Advanced Full Stack JavaScript:
 Encryption, Authentication, Websockets, Testing
 
