@@ -25,24 +25,20 @@ Let's spend the first day trying to handroll our own Trie data structure.  For a
 ['ace', 'aces', 'aced', 'acre', 'acres', 'act', 'acted', 'acting', 'acts']
 ```
 
-**Some deep things to ponder before you code:**
+**Deep things to ponder...**
 - What would a node object have inside it? Surely it would least have a single letter.  
 - How would you store any and all of the children?  
 - How would you know when you have found a valid word? (Hint: don't forget that ace is inside aced and act is in acting)
 
-**Please implement the following:**
-- A Trie object with the following prototypical methods:
-	- add(word)
-		- integrate the word into the Trie
-	- exists(word)
-		- returns whether or not the word exists within the Trie
-	- printPrettyTrie()
-		- prints the Trie structure to the console *breadth* first not *depth* first
-	- printTrieList()
-		- prints all of the words contained within the Trie
+**Pseudocode the following:**
 - A node object that contains:
 	-  the necessary internal data structures to hold all possible children nodes
 	-  a single character (a-z only)
 	-  an indication whether or not the node is the last letter in a valid word
+- A Trie object with the prototypical method:
+	- add(word)
+		- integrate a new word into the Trie, using a node for each letter
 
-**Suggested Implementation:** Talk out how you would go about adding a single word into a fresh and empty Trie.  Write some pseudocode.  Talk out how you would add a second word similar in spelling to the first word, such as `rockslide` & `rockbiter`. Write some pseudocode. Now talk out how you would handle adding a word that is contained within other words, such as `rock` in this case.  Write some more pseudocode!  Try out what you've written down and see what happens.
+**Suggested Implementation:** Talk out how you would go about adding a single word into a fresh and empty Trie.  Talk out how you would add a second word similar in spelling to the first word, such as `rockslide` & `rocknroll`.
+
+*This stuff is hard, just trie your best!*
