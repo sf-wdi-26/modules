@@ -13,7 +13,7 @@ Time | Day 1                                 | Day 2                            
 **Homework** | Project 3 | Project 3 | Project 3 | Project 3 | [Angular Reading][9-5E]
 
 [9-1A]: # "String Sorting"
-[9-2A]: # "Linked Lists"
+[9-2A]: w09/d02/m1-linked-lists/ "Linked Lists"
 [9-3A]: # "Trees: Breadth First"
 [9-4A]: # "Trees: Depth First"
 [9-5A]: # "Project 3 Finishing Touches"
