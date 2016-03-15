@@ -1,4 +1,4 @@
-#A Tree Grows in San Francisco
+#Growing a Tree
 
 A **tree** **is** a common data structure in computer science. It represents a hierarchical structure amongst a set of nodes, where each node is a data structure consisting of both: a value and a list of references (pointers) to other nodes (children nodes). The structure is organized around a single root node.
 
@@ -30,7 +30,7 @@ A **tree** **is** a common data structure in computer science. It represents a h
 
 The simplest form of a tree is a **Binary Tree**
 
-![binary tree](http://en.wikipedia.org/wiki/File:Binary_search_tree.svg)
+![binary tree](https://upload.wikimedia.org/wikipedia/commons/d/da/Binary_search_tree.svg)
 
 It is comprised of an organized set of nodes, each with a pointer to other `left` / `right` nodes and a `value` of the current node.
 
@@ -68,9 +68,7 @@ return a
 
 Here is the corresponding AST for the above program:
 
-![syntanx tree](https://upload.wikimedia.org/wikipedia/commons/5/54/Parse_tree_1.jpg)
-
->Challenge: Draw an abstract syntax tree for the below program
+![syntanx tree](https://upload.wikimedia.org/wikipedia/commons/c/c7/Abstract_syntax_tree_for_Euclidean_algorithm.svg)
 
 ```
 if a > b
@@ -79,6 +77,8 @@ else
   max = b
 return max
 ```
+>Challenge: Draw an abstract syntax tree for the above program
 
 ##Bonus
-* [Balancing Binary Search Tree](https://en.wikipedia.org/wiki/Self-balancing_binary_search_tree)
+* What is a [Balancing Binary Search Tree](https://en.wikipedia.org/wiki/Self-balancing_binary_search_tree)?
+* How would you impliment a self-balancing tree, such as an [AVL Tree](https://www.youtube.com/watch?v=rwzuze_tTwQ)?
