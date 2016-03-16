@@ -79,6 +79,22 @@ return max
 ```
 >Challenge: Draw an abstract syntax tree for the above program
 
+##Implimentation
+
+You have a Binary Tree constructor as follows:
+
+```js
+function BinTree(value){
+  this.left = null;
+  this.right = null;
+  this.value = value;
+};
+```
+
+Now you want to impliment the following prototypical methods for this constructor: `insert`, `search`, and `max`. 
+
+>Challenge: Impliment the above by passing the specs in the `starter-code` directory. Note: the tests will give more context into how the methods should be designed.
+
 ##Bonus
 * What is a [Balancing Binary Search Tree](https://en.wikipedia.org/wiki/Self-balancing_binary_search_tree)?
-* How would you impliment a self-balancing tree, such as an [AVL Tree](https://www.youtube.com/watch?v=rwzuze_tTwQ)?
+* How does a self-balancing tree, such as an [AVL Tree](https://www.youtube.com/watch?v=rwzuze_tTwQ) work?
