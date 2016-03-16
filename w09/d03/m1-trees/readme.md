@@ -42,7 +42,7 @@ var node = {
 };
 ```
 
-In a binary search tree, nodes are ordered based no their values. For any given node, the left subtree's nodes are always less than that given node's value. The opposite is true of it's right subtree, the nodes' values are always greater. This simplifies searching for a value in a binary search tree. Head left when the value you're looking for is less than the node you’re on or go right otherwise.
+In a binary search tree, nodes are ordered based on their values. For any given node, the left subtree's nodes are always less than that given node's value. The opposite is true of it's right subtree, the nodes' values are always greater. This simplifies searching for a value in a binary search tree. Head left when the value you're looking for is less than the node you’re on or go right otherwise.
 
 The above tree was created in a particular order with nodes that have the following values: [8, 3, 1, 10, 6, 4, 7, 14, 13].
 
