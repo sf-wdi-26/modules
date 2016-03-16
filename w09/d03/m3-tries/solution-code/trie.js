@@ -17,18 +17,14 @@ function Node(letter, valid) {
 
 Trie.prototype.add = function(word) {
     console.log("\nAdding the word '" + word + "'");
-    // protect from root damage
     var current = this.root;
-    console.log("CURRENT", current)
     var match = (word[0] === current.letter);
-
     // checks if word belongs in this Trie
     if(!match) {
       return false;
     }
     console.log("Skipping the node for   " + word[0]);
     while(word.length>1){
-      //console.log(word);
       // remove first letter from word (it already belongs)
       word = word.slice(1,word.length);
       var firstLetter = word[0];
@@ -54,18 +50,14 @@ Trie.prototype.add = function(word) {
     }
     return current.valid = true;
 };
-// 
-// Trie.prototype.exists = function(word) {
-//     // TODO: returns whether or not the word exists within the Trie
-//     return false;
-// };
 
-/* New recursive structure: helper and recursive methods */
+/******************************|
+|        Helper Methods        |
+|******************************/
 Trie.prototype.printPrettyTrie = function() {
-    // protects the this.root from being smashed down to a leaf
     var current = this.root;
-    console.log("\nPrinting DEPTH first:\n");
-    console.log(current.letter + " " + (current.valid ? 'valid' : ''));
+    var isValid = current.valid ? 'valid' : '';
+    console.log(current.letter + " " + isValid);
     print(current, '  ');
 };
 
@@ -83,13 +75,15 @@ function createArray() {
     .map(Number.prototype.valueOf,0);
 }
 
-function print(current, space) {
-    current.letters.forEach(function printLetter(element){
-      if(element !== 0){
-        console.log(space + element.letter + " " + (element.valid ? 'valid' : ''));
-        print(element, space + '  ');
-      }
-    });
+function print(current, whitespace) {
+  current.letters.forEach(function(element){
+    if(element !== 0) {
+      var isValid = element.valid ? 'valid' : '';
+      console.log(whitespace + element.letter + " " + isValid);
+      // recursively call self & add more whitespace
+      print(element, whitespace + '  ');
+    }
+  });
 }
 
 /******************************|
@@ -102,13 +96,5 @@ wordList.forEach(function(word) {
   trie.add(word);
 });
 
-// checks for existence of words previously added (all should be true)
-// var first = trie.exists('ace');
-// var second = trie.exists('acre');
-// var third = trie.exists('acted');
-//
 // prints out tree structure
 trie.printPrettyTrie();
-
-// // prints out full list of words
-// trie.printTrieList();
