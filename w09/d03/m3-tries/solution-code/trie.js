@@ -7,7 +7,7 @@ function Trie(seed, valid) {
 
 function Node(letter, valid) {
   this.letter = letter;
-  this.letters = createArray();
+  this.letters = createAlphaBet();
   this.valid = valid || false;
 }
 
@@ -16,6 +16,8 @@ function Node(letter, valid) {
 |******************************/
 
 Trie.prototype.add = function(word) {
+    // normalize case
+    var word = word.toLowerCase();
     console.log("\nAdding the word '" + word + "'");
     var current = this.root;
     var match = (word[0] === current.letter);
@@ -24,17 +26,18 @@ Trie.prototype.add = function(word) {
       return false;
     }
     console.log("Skipping the node for   " + word[0]);
-    while(word.length>1){
-      // remove first letter from word (it already belongs)
-      word = word.slice(1,word.length);
-      var firstLetter = word[0];
-      // position of new fisrt letter
-      var position = firstLetter.charCodeAt(0) - 97;
+    while(word.length > 1) {
+      // slice off the first letter from the word
+      word = word.slice(1, word.length);
+      // take the first letter from shortened word
+      var letter = word[0];
+      // alphabetical position of new first letter
+      var position = letter.charCodeAt(0) - 97;
       // if position is empty, create a new node and dive in
-      if(current.letters[position] === 0){
+      if(current.letters[position] === null){
         // instantiate a next variable
-        console.log("Creating a new node for " + firstLetter);
-        var next = new Node(firstLetter);
+        console.log("Creating a new node for " + letter);
+        var next = new Node(letter);
         // set the new node's letter to the this.root's current letter
         // add next to the letters array in this.root
         current.letters[position] = next;
@@ -61,23 +64,17 @@ Trie.prototype.printPrettyTrie = function() {
     print(current, '  ');
 };
 
-Trie.prototype.printTrieList = function(word) {
-    var wordList = [];
-    // TODO: prints all of the words contained within the Trie
-    console.log("Total List Length: " + wordList.length)
-};
-
 /******************************|
 |       Helper Functions       |
 |******************************/
-function createArray() {
-  return Array.apply(null, Array(26))
-    .map(Number.prototype.valueOf,0);
+function createAlphaBet() {
+  // create empty spaces representing each position in the alphabet
+  return new Array(26).fill(null);
 }
 
 function print(current, whitespace) {
   current.letters.forEach(function(element){
-    if(element !== 0) {
+    if(element !== null) {
       var isValid = element.valid ? 'valid' : '';
       console.log(whitespace + element.letter + " " + isValid);
       // recursively call self & add more whitespace
