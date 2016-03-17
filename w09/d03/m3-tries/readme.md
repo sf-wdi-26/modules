@@ -29,19 +29,18 @@ Let's spend the first day trying to handroll our own trie data structure.  For a
 ['ace', 'aces', 'aced', 'acre', 'acres', 'act', 'acted', 'acting', 'acts']
 ```
 
-**Deep things to ponder...**
+**Considerations**
 - What would a node object have inside it? Surely it would least have a single letter.  
 - How would you store any and all of the children?  
 - How would you know when you have found a valid word? (Hint: don't forget that ace is inside aced and act is in acting)
 
-**Pseudocode the following:**
+How would you impliment, in pseudocode, the following:
 - A node object that contains:
-	-  the necessary internal data structures to hold all possible children nodes
 	-  a single character (a-z only)
 	-  an indication whether or not the node is the last letter in a valid word
+	-  the necessary internal data structures to hold all possible children nodes (ponder this...)
 - A Trie object with the prototypical method:
-	- add(word)
-		- integrate a new word into the Trie, using a node for each letter
+	- `#add(word)` that integrates a new word into the Trie, using a node for each letter
 
 **Suggested Implementation:** Talk out how you would go about adding a single word into a fresh and empty Trie.  Talk out how you would add a second word similar in spelling to the first word, such as `rockslide` & `rocknroll`.
 
