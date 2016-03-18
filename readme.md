@@ -19,7 +19,7 @@ Time | Day 1                                 | Day 2                            
 [9-5A]: # "Project 3 Finishing Touches"
 [9-5B]: # "Project 3 Presentations"
 [9-5C]: # "Outcomes"
-[9-5E]: # "Angular Reading"
+[9-5E]: https://docs.angularjs.org/guide/introduction "Angular Reading"
 
 #### Week 8: Advanced Full Stack JavaScript:
 Encryption, Authentication, Websockets, Testing
