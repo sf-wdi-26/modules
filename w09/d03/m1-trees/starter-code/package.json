@@ -1,0 +1,22 @@
+{
+  "name": "tree_lesson",
+  "version": "0.0.0",
+  "description": "* Recursive Datastructures   * A look back at linked lists * Intro To Trees   * Defining a tree     * A tree node     * A `leaf`     * A `root`     * A `parent`       * `children`   * Defining Attributes of Trees     * height     * level   * Tree As A List   * A BinaryTree     * Implementation (Test Driven)       * `#insert`       * `#max`       * `#min`       * REVIEW       * `search`       * `height`   * An N-arry Tree",
+  "main": "binary_tree.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wdi-sf-march-2014/tree_lesson.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wdi-sf-march-2014/tree_lesson/issues"
+  },
+  "homepage": "https://github.com/wdi-sf-march-2014/tree_lesson",
+  "dependencies": {
+    "jasmine-node": "^1.14.5"
+  }
+}

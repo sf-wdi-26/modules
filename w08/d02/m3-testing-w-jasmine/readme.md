@@ -7,13 +7,13 @@
 * Implement hooks to DRY up test code.
 * Plan a project by first creating a series of unit tests.
 
-## Do You Even Test, Bro?
+## Do You Test?
 
 We first encountered Test Driven Development during Unit 2, when we ran & passed unit tests in Ruby using RSpec.
 
 Sort yourselves into the following categories:
 
-1. I have used TDD, and I loved it.sui
+1. I have used TDD, and I loved it.
 1. I have used TDD, and I hated it.
 1. I have not used TDD, but I want to.
 1. I have not used TDD, and I do not want to.
