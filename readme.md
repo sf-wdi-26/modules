@@ -1,5 +1,51 @@
 # WDI 26 Web Development Immersive
 
+
+## Unit 4: MEAN Stack
+
+
+#### Week 10: Intro Angular
+
+Time | Day 1                                 | Day 2                                               | Day 3                                              | Day 4                                     | Day 5
+----- | --------------------------------      | -------------------------------------               | ------------------------------------               | ----------------------------------------  | -----------------------------------
+**9:00am Module 1** | [Intro to Angular (Ilias)][10-1A] | [Angular Hangman (Ilias)][10-2A] | [ngResource (Ben)][10-3A] | [MEAN (Alex & Dani)][10-4A] | [Review][10-5A]
+**10:30am Module 2** |[Angular LAB (Ilias)][10-1B] | [Angular Hangman (Ilias)][10-2B] | [Book App (Ben)][10-3B] | [MEAN ToDo (Alex & Dani)][10-4B] | [Questions in a Hat (Group)][10-5B]
+**1:30pm Module 3** |[Directives (Ben)][10-1C] | [$http and promises (Alex)][10-2C] | [Routing (Alex)][10-3C] | [ngAnimate (Ben)][10-4C] | [Outcomes][10-5C]
+**3:00pm Module 4** |[Movie App (Ben)][10-1D] | [$http LAB (Alex)][10-2D] | [Wine App (Alex)][10-3D] | [Firebase (Ilias)][10-4D] | [Rapid Prototyping][10-5D]
+**Homework** |[Movie App (cont'd)][10-1E] | [Reading: ui-router][10-2E] | [Bower Reading][10-3E] | [d04 hw][10-4E] | [Rapid Prototyping and Lightning Talk Research][10-5E]
+
+[10-1A]: # "Intro to Angular"
+[10-1B]: # "Intro to Angular Lab"
+[10-1C]: w10/d01/m3-angular-directives/ "Angular Directives"
+[10-1D]: w10/d01/m4-intro-angular-lab/ "Movie App"
+[10-1E]: # "Movie App II"
+
+[10-2A]: # "Angular Hangman"
+[10-2B]: # "Angular Hangman"
+[10-2C]: # "$http and promises"
+[10-2D]: # "$http lab"
+[10-2E]: # "ui-router"
+
+[10-3A]: # "ngResource"
+[10-3B]: # "Book App"
+[10-3C]: # "Routing"
+[10-3D]: # "Wine App"
+[10-3E]: # "Bower reading"
+
+[10-4A]: # "MEAN Stack"
+[10-4B]: # "MEAN ToDo"
+[10-4C]: # "ngAnimate"
+[10-4D]: # "Firebase"
+[10-4E]: # " "
+
+[10-5A]: # "Review"
+[10-5B]: # "Rapid Prototyping"
+[10-5C]: # "Outcomes"
+[10-5D]: # "Outcomes"
+[10-5E]: # "Weekend Lab"
+
+
+
 ## Unit 3: Node and Express
 
 #### Week 9: Project 3
