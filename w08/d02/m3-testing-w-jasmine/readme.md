@@ -7,7 +7,7 @@
 * Implement hooks to DRY up test code.
 * Plan a project by first creating a series of unit tests.
 
-## Do You Even Test, Bro?
+## Do You Test?
 
 We first encountered Test Driven Development during Unit 2, when we ran & passed unit tests in Ruby using RSpec.
 

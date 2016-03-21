@@ -1,6 +1,72 @@
 # WDI 26 Web Development Immersive
 
+
+## Unit 4: MEAN Stack
+
+
+#### Week 10: Intro Angular
+
+Time | Day 1                                 | Day 2                                               | Day 3                                              | Day 4                                     | Day 5
+----- | --------------------------------      | -------------------------------------               | ------------------------------------               | ----------------------------------------  | -----------------------------------
+**9:00am Module 1** | [Intro to Angular (Ilias)][10-1A] | [Angular Hangman (Ilias)][10-2A] | [ngResource (Ben)][10-3A] | [MEAN (Alex & Dani)][10-4A] | [Review][10-5A]
+**10:30am Module 2** |[Angular LAB (Ilias)][10-1B] | [Angular Hangman (Ilias)][10-2B] | [Book App (Ben)][10-3B] | [MEAN ToDo (Alex & Dani)][10-4B] | [Questions in a Hat (Group)][10-5B]
+**1:30pm Module 3** |[Directives (Ben)][10-1C] | [$http and promises (Alex)][10-2C] | [Routing (Alex)][10-3C] | [ngAnimate (Ben)][10-4C] | [Outcomes][10-5C]
+**3:00pm Module 4** |[Movie App (Ben)][10-1D] | [$http LAB (Alex)][10-2D] | [Wine App (Alex)][10-3D] | [Firebase (Ilias)][10-4D] | [Rapid Prototyping][10-5D]
+**Homework** |[Movie App (cont'd)][10-1E] | [Reading: ui-router][10-2E] | [Bower Reading][10-3E] | [d04 hw][10-4E] | [Rapid Prototyping and Lightning Talk Research][10-5E]
+
+[10-1A]: w10/d01/m1-angular-intro/ "Intro to Angular"
+[10-1B]: w10/d01/m1-angular-intro/ "Intro to Angular Lab"
+[10-1C]: w10/d01/m3-angular-directives/ "Angular Directives"
+[10-1D]: w10/d01/m4-intro-angular-lab/ "Movie App"
+[10-1E]: # "Movie App II"
+
+[10-2A]: # "Angular Hangman"
+[10-2B]: # "Angular Hangman"
+[10-2C]: # "$http and promises"
+[10-2D]: # "$http lab"
+[10-2E]: # "ui-router"
+
+[10-3A]: # "ngResource"
+[10-3B]: # "Book App"
+[10-3C]: # "Routing"
+[10-3D]: # "Wine App"
+[10-3E]: # "Bower reading"
+
+[10-4A]: # "MEAN Stack"
+[10-4B]: # "MEAN ToDo"
+[10-4C]: # "ngAnimate"
+[10-4D]: # "Firebase"
+[10-4E]: # " "
+
+[10-5A]: # "Review"
+[10-5B]: # "Rapid Prototyping"
+[10-5C]: # "Outcomes"
+[10-5D]: # "Outcomes"
+[10-5E]: # "Weekend Lab"
+
+
+
 ## Unit 3: Node and Express
+
+#### Week 9: Project 3
+
+Time | Day 1                                 | Day 2                                               | Day 3                                              | Day 4                                     | Day 5
+----- | --------------------------------      | -------------------------------------               | ------------------------------------               | ----------------------------------------  | -----------------------------------
+**9:30am Module 1** | CS Topics: [String Matching w Big O][9-1A] (Alex) | CS Topics: [Linked Lists][9-2A] (Ben) | CS Topics: [Trees][9-3A] (Ilias) | CS Topics: [BFS/DFS][9-4A] & [Tries][9-4B] (Ilias) | [Project 3 Wrap-up][9-5A]
+**10:30am Module 2** | Project 3 | Project 3 | Project 3 | Project 3 | [Project 3 Presentations][9-5B] | 
+**1:30pm Module 3** | Project 3 | Project 3 | Project 3 | Project 3 | [][9-5C] |
+**3:00pm Module 4** | Project 3 | Project 3 | Project 3 | Project 3 | [][9-5C] |
+**Homework** | Project 3 | Project 3 | Project 3 | Project 3 | [Angular Reading][9-5E]
+
+[9-1A]: # "String Sorting"
+[9-2A]: w09/d02/m1-linked-lists/ "Linked Lists"
+[9-3A]: w09/d03/m1-trees "Trees"
+[9-4A]: w09/d03/m2-dfs-bfs "Searching Trees"
+[9-4B]: w09/d03/m3-tries "Tries"
+[9-5A]: # "Project 3 Finishing Touches"
+[9-5B]: # "Project 3 Presentations"
+[9-5C]: # "Outcomes"
+[9-5E]: https://docs.angularjs.org/guide/introduction "Angular Reading"
 
 #### Week 8: Advanced Full Stack JavaScript:
 Encryption, Authentication, Websockets, Testing
@@ -32,9 +98,9 @@ Time | Day 1                                 | Day 2                            
 [8-3E]: w08/d03/hw-api-best-practices "API Best Practices"
 
 [8-4A]: w08/d04/m1-gulp-workflows " "
-[8-4B]: #  "Websockets with socket.io"
-[8-4C]: #  "Build a Realtime app Lab"
-[8-4D]: # " "
+[8-4B]: w08/d04/m2-websockets  "Websockets with socket.io"
+[8-4C]: w08/d04/m3-realtime-app  "Build a Realtime app Lab"
+[8-4D]: w08/d04/project-3/project-03.md  "Project 3"
 [8-4E]: # " "
 
 [8-5A]: # " "

@@ -77,7 +77,7 @@ Create a new directory `sass-to-css` and `cd` into it.
 
 ```bash
 npm init
-npm install --save-dave gulp gulp-sass
+npm install --save-dev gulp gulp-sass
 ```
 
 ```js

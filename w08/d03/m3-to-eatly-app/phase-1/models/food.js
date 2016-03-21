@@ -12,6 +12,7 @@ var FoodSchema = new mongoose.Schema({
 
 // create a method directly on the model: `all`
 FoodSchema.statics.all = function all(cb) {
+
   // return
   //   this.model.find({})
   //   .catch(function(err) {
@@ -21,6 +22,17 @@ FoodSchema.statics.all = function all(cb) {
   //     cb(foods);
   //   })
   // ;
+
+  return
+    this.model.find({})
+    .catch(function(err) {
+      console.log(err);
+    })
+    .then(function(foods) {
+      cb(foods);
+    })
+  ;
+>>>>>>> d9975323f3f770a9ae1996ee3f04c67cb594c087
 }
 
 // todo: `FoodSchema.methods.updateAttributes`
