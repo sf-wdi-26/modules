@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ngFun</title>
+    <link rel="stylesheet" href="bower_components/bootstrap-css-only/css/bootstrap.css">
+    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </head>
+  <body ng-app="ngFun">
+    <div ng-controller="PokemonCtrl">
+
+      <h1>Trainer: {{trainer.name}}</h1>
+
+      <span>Enter your name:</span>
+      <input ng-model="trainer.name"/>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Ndex</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Nemeses</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="poke in pokemon | orderBy:'Ndex'">
+            <td>{{poke.Ndex}}</td>
+            <td>{{poke.name}}</td>
+            <td>{{poke.type}}</td>
+            <td>{{poke.name|reverse}}</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </body>
+</html>
