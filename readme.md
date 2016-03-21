@@ -14,8 +14,8 @@ Time | Day 1                                 | Day 2                            
 **3:00pm Module 4** |[Movie App (Ben)][10-1D] | [$http LAB (Alex)][10-2D] | [Wine App (Alex)][10-3D] | [Firebase (Ilias)][10-4D] | [Rapid Prototyping][10-5D]
 **Homework** |[Movie App (cont'd)][10-1E] | [Reading: ui-router][10-2E] | [Bower Reading][10-3E] | [d04 hw][10-4E] | [Rapid Prototyping and Lightning Talk Research][10-5E]
 
-[10-1A]: # "Intro to Angular"
-[10-1B]: # "Intro to Angular Lab"
+[10-1A]: w10/d01/m1-angular-intro/ "Intro to Angular"
+[10-1B]: w10/d01/m1-angular-intro/ "Intro to Angular Lab"
 [10-1C]: w10/d01/m3-angular-directives/ "Angular Directives"
 [10-1D]: w10/d01/m4-intro-angular-lab/ "Movie App"
 [10-1E]: # "Movie App II"
