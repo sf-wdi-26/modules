@@ -1,0 +1,27 @@
+@import url(http://fonts.googleapis.com/css?family=IM+Fell+English+SC|IM+Fell+Great+Primer:400,400italic);
+
+body {
+  font-family: 'IM Fell Great Primer', serif;
+  line-height: 1.5;
+  margin: 1rem;
+}
+
+h1 {
+  font-family: 'IM Fell English SC', serif;
+}
+
+em {
+  font-family: 'IM Fell Great Primer', serif;
+  font-style: italic;
+}
+
+form.add-president {
+    border: 1px solid black;
+    padding: 1rem;
+    max-width: 60%;
+    margin-top: 3rem;
+}
+
+form.add-president div {
+  margin-top: 0.618rem;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="ThePresidentsApp">
+  <head>
+    <meta charset="utf-8">
+    <title>The Presidents App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="js/app.js" charset="utf-8"></script>
+    <script src="js/presidentsController.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+    <section ng-controller="PresidentsController as presidents">
+      <h1>The Presidents of the United States of America</h1>
+
+      <ul id="presidents">
+        <li ng-repeat="president in presidents.all">
+          <strong>{{president.name}}</strong> <em>({{president.start}} - {{president.end}})</em>
+        </li>
+      </ul>
+
+      <form class="add-president" ng-submit='presidents.addPresident()'>
+        <div>
+          <label for="new-president-name">President's Name</label>
+          <input type="text" id="new-president-name" placeholder="James Monroe" ng-model='presidents.newPresident.name'>
+        </div>
+
+        <div>
+          <label for="new-president-start">President's Starting Year</label>
+          <input type="text" id="new-president-start" placeholder="1817" ng-model='presidents.newPresident.start'>
+        </div>
+
+        <div>
+          <label for="new-president-end">President's Ending Year</label>
+          <input type="text" id="new-president-end" placeholder="1825" ng-model='presidents.newPresident.end'>
+        </div>
+
+        <div>
+          <input type="submit" value="Add President">
+        </div>
+      </form>
+
+    </section>
+
+  </body>
+</html>
