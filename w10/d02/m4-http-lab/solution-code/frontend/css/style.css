@@ -1,0 +1,137 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300,600,600italic,300italic);
+
+html {
+  border-left: 0.382rem solid red;
+  min-height: 100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+h1 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 4.8rem;
+  margin: 4.8rem auto 0;
+  letter-spacing: -2px;
+}
+
+h1:after {
+  content: "™";
+  font-size: 1.4rem;
+  vertical-align: super;
+  position: relative;
+  top: -0.618rem;
+}
+
+ul#criminals {
+  list-style: none;
+}
+
+ul#criminals li {
+  margin-bottom: 0.382rem;
+}
+
+ul#criminals li em {
+  margin-left: 0.382rem;
+  opacity: 0.5;
+}
+
+ul#criminals li button.delete {
+  margin-left: 0.618rem;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 100px;
+  background: white;
+  color: rgba(0,0,0,0.18);
+  cursor: pointer;
+}
+ul#criminals li button.delete:hover {
+  border-color: grey;
+  color: grey;
+}
+
+span.status {
+  font-size: 0.6rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  background: black;
+  color: white;
+  padding: 0.1em 0.618em 0.1618em;
+  border-radius: 3px;
+  float: left;
+  position: relative;
+  top: 4px;
+  margin-right: 0.618em;
+}
+
+span.status.dead {
+  background: red;
+}
+span.status.alive {
+  background: green;
+}
+
+form#newCriminal {
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 1.8rem 1rem 0.618rem;
+  max-width: 300px;
+  margin-top: 2.4rem;
+}
+
+form#newCriminal div {
+  margin-bottom: 0.618rem;
+}
+
+form#newCriminal label {
+  width: 4.8rem;
+  text-align: right;
+  display: inline-block;
+  margin-right: 0.192rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+form#newCriminal input[type=text] {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 0.8rem;
+  display: inline-block;
+  min-width: 60%;
+  border: 1px solid rgba(0,0,0,0.14);
+  padding: 0.368em;
+}
+
+form#newCriminal input[type=submit] {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  display: block;
+  width: 100%;
+  border: 1px solid rgba(0,0,0,0.14);
+  background: white;
+  border-radius: 4px;
+  margin: 2rem auto 0;
+  padding: 1rem;
+  background: rgba(0,0,0,0.04);
+  background: linear-gradient(white, rgba(0,0,0,0.04));
+  box-shadow: 0px 3px 4px rgba(0,0,0,0.04);
+  cursor: pointer;
+  color: rgba(0,0,0,0.7);
+  font-weight: 600;
+  text-shadow: 0px 1px 0px white;
+}
+
+form#newCriminal input[type=submit]:hover {
+  color: black;
+  background: white;
+}
+
+form#newCriminal input[type=submit]:focus {
+  box-shadow: none;
+  outline: none;
+}
