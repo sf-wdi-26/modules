@@ -12,8 +12,8 @@
 
       <h1>Trainer: {{trainer.name}}</h1>
 
-      <span>Enter your name:</span>
-      <input ng-model="trainer.name"/>
+      <input ng-model="trainer.name" placeholder="Enter your name">
+      <input ng-model="pokeSearch" placeholder="Search a Pokemon">
       <table class="table table-striped">
         <thead>
           <tr>
@@ -24,7 +24,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr ng-repeat="poke in pokemon | orderBy:'Ndex'">
+          <tr ng-repeat="poke in pokemon | orderBy:'Ndex' | filter: pokeSearch">
             <td>{{poke.Ndex}}</td>
             <td>{{poke.name}}</td>
             <td>{{poke.type}}</td>
