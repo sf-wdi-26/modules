@@ -1,0 +1,17 @@
+.food-card {
+  background-color: grey; }
+  .food-card a {
+    font-size: 23px;
+    color: red; }
+
+a {
+  color: red; }
+
+p {
+  color: grey; }
+
+h1 {
+  color: black; }
+
+h3 {
+  color: purple; }

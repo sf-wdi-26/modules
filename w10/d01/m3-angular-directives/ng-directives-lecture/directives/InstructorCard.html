@@ -1,0 +1,9 @@
+<h1> Name: {{ instructor.name}} </h1>
+<h2> GitHub: {{ instructor.github}} </h2>
+<img ng-src="{{ instructor.image }}">
+<h2> Position: {{instructor.position}}</h2>
+<h4> Cohort: {{instructor.cohort}} </h4>
+<button ng-click="count = count + 1" ng-init="count=0"> Automagic</button>
+<span>  count: {{count}} </span>
+<span ng-if="count >= 10"> {{ instructor.name }} is a wizard!!!!! </span> 
+<br>
