@@ -95,6 +95,6 @@ Accomplish the following features on your own or in a pair. User can...
 * enter an uppercase word that's treated as a lower case word
 * be challenged with a random word from a list of words
 * restart the game after win/lose
-* keep score of games won and lost.
+* keep score of games won and lost
 * see a drawing of the hangman as the game progresses
 
