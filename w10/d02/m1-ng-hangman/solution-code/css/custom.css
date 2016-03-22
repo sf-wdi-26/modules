@@ -1,0 +1,11 @@
+body { font-size: 32px; }
+.small-font { font-size: 12px; }
+
+.wide {
+  letter-spacing: 10px;
+  font-stretch: ultra-expanded;
+}
+.label-default {
+  font-size: 14px;
+  vertical-align: middle;
+}

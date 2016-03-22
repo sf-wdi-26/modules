@@ -20,8 +20,8 @@ Time | Day 1                                 | Day 2                            
 [10-1D]: w10/d01/m4-intro-angular-lab/ "Movie App"
 [10-1E]: # "Movie App II"
 
-[10-2A]: # "Angular Hangman"
-[10-2B]: # "Angular Hangman"
+[10-2A]: w10/d02/m1-ng-hangman "Angular Hangman"
+[10-2B]: w10/d02/m1-ng-hangman "Angular Hangman"
 [10-2C]: # "$http and promises"
 [10-2D]: # "$http lab"
 [10-2E]: # "ui-router"

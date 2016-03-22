@@ -1,0 +1,22 @@
+{
+  "name": "client",
+  "homepage": "https://github.com/sf-wdi-25/angular_hangman_lab",
+  "authors": [
+    "Ilias Tsangaris <iliastsangaris@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-css-only": "^3.3.6",
+    "angular": "^1.5.2"
+  }
+}
