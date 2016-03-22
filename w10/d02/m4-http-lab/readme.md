@@ -1,13 +1,3 @@
----
-title: Angular $http
-type: Lab
-duration: "1:25"
-creator:
-    name: Micah Rich
-    city: LA
-competencies: Front-end frameworks
----
-
 # Angular $http
 
 ## Introduction
