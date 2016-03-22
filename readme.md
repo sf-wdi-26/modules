@@ -24,7 +24,7 @@ Time | Day 1                                 | Day 2                            
 [10-2B]: w10/d02/m1-ng-hangman "Angular Hangman"
 [10-2C]: w10/d02/m3-http "$http and promises"
 [10-2D]: w10/d02/m4-http-lab "$http lab"
-[10-2E]: # "ui-router"
+[10-2E]: w10/readings/ui-router.md "ui-router"
 
 [10-3A]: # "ngResource"
 [10-3B]: # "Book App"
