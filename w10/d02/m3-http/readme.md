@@ -30,7 +30,11 @@ Now, real quick – we might want a little seed data. Take a minute and make som
   {"name": "James Madison", "start": 1809, "end": 1817 }
 ]
 ```
-
+curl example:
+```bash
+curl -H "Content-Type: application/json" -X POST -d '{"name": "George Washington", "start": 1789, "end": 1797 }' http://localhost:3000/presidents
+{"president":{"__v":0,"name":"George Washington","start":1789,"end":1797,"_id":"56f18463508799dc44f2fbee"}}
+```
 Once you have some, do a quick `GET` request to `http://localhost:3000/presidents` and make sure you've got some JSON.
 
 ## Demo of Starter Code (5 mins)
