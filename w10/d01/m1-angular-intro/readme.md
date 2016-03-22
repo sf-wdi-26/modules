@@ -223,8 +223,8 @@ For example if we wanted to render a list of of the todos we could set the direc
 Let's say we want to print out an unordered list (`ul`) of many pokemon, where each of their name's is printed out inside a list item (`li`). Given we've agreed to use `poke` as the singular form of `pokemon`, we could say something along the lines of:
 
 ```html
-<ul ng-repeat="poke in pokemon">
-	<li>{{poke.name}}</li>
+<ul>
+	<li ng-repeat="poke in pokemon">{{poke.name}}</li>
 </ul>
 ```
 
