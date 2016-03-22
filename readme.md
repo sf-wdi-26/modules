@@ -12,7 +12,7 @@ Time | Day 1                                 | Day 2                            
 **10:30am Module 2** |[Angular LAB (Ilias)][10-1B] | [Angular Hangman (Ilias)][10-2B] | [Book App (Ben)][10-3B] | [MEAN ToDo (Alex & Dani)][10-4B] | [Questions in a Hat (Group)][10-5B]
 **1:30pm Module 3** |[Directives (Ben)][10-1C] | [$http and promises (Alex)][10-2C] | [Routing (Alex)][10-3C] | [ngAnimate (Ben)][10-4C] | [Outcomes][10-5C]
 **3:00pm Module 4** |[Movie App (Ben)][10-1D] | [$http LAB (Alex)][10-2D] | [Wine App (Alex)][10-3D] | [Firebase (Ilias)][10-4D] | [Rapid Prototyping][10-5D]
-**Homework** |[Movie App (cont'd)][10-1E] | [Reading: ui-router][10-2E] | [TBD][10-3E] | [TBD][10-4E] | [Rapid Prototyping and Lightning Talk Research][10-5E]
+**Homework** |[Movie App (cont'd)][10-1E] | [Reading: ui-router][10-2E] | [Finish Labs][10-3E] | [Finish Labs][10-4E] | [Rapid Prototyping and Lightning Talk Research][10-5E]
 
 [10-1A]: w10/d01/m1-angular-intro/ "Intro to Angular"
 [10-1B]: w10/d01/m1-angular-intro/ "Intro to Angular Lab"
