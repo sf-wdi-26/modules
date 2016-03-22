@@ -1,0 +1,26 @@
+{
+  "name": "ng-directives-lecture",
+  "version": "1.0.0",
+  "description": "directives lecture",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sf-wdi-21/ng-directives-lecture.git"
+  },
+  "keywords": [
+    "directives"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sf-wdi-21/ng-directives-lecture/issues"
+  },
+  "homepage": "https://github.com/sf-wdi-21/ng-directives-lecture#readme",
+  "dependencies": {
+    "bower": "^1.5.3",
+    "http-server": "^0.8.5"
+  }
+}

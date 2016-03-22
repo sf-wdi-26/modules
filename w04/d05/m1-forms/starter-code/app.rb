@@ -24,12 +24,12 @@ class SongsApp < Sinatra::Base
 
   # create
   post '/songs' do
-    @song = Song.new(params[:song])
-    if @song.save
+    @song = Song.create(params[:song])
+    # if @song.save
       redirect("/songs/#{@song.id}")
-    else
+    # else
       erb(:"songs/new")
-    end
+    # end
   end
 
   # show
@@ -56,6 +56,7 @@ class SongsApp < Sinatra::Base
 
   # destroy
   delete '/songs/:id' do
+    p "DELETING"
     @song = Song.find(params[:id])
     if @song.destroy
       redirect('/songs')

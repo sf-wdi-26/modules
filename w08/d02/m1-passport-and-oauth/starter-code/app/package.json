@@ -3,14 +3,19 @@
     "body-parser": "~1.0.0",
     "connect-flash": "~0.1.1",
     "cookie-parser": "^1.0.1",
-    "hbs": "^4.0.0",
     "express": "~4.0.0",
+    "express-passport-logout": "^0.1.0",
     "express-session": "^1.0.4",
+    "github": "^0.2.4",
+    "hbs": "^4.0.0",
+    "keygenerator": "^1.0.4",
     "method-override": "^1.0.2",
     "mongoose": "4.1.1",
     "morgan": "~1.0.0",
-    "passport": "^0.2.0",
+    "passport": "^0.2.2",
     "passport-facebook": "^2.0.0",
-    "passport-google-oauth": "~0.1.5"
+    "passport-github": "^1.1.0",
+    "passport-google-oauth": "~0.1.5",
+    "passport-google-oauth2": "^0.1.6"
   }
 }

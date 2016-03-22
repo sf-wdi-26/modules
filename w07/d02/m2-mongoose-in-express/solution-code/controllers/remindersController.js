@@ -6,7 +6,7 @@ var remindersController = {
       res.render("reminders/index", {reminders: docs});
     });
   },
-  new: function(req, res) {
+  new: function(req, .vres) {
     res.render("reminders/new")
   },
   create: function(req, res) {

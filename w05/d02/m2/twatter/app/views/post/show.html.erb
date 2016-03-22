@@ -1,0 +1,11 @@
+<p>
+  <strong>Title:</strong>
+  <%= @post.name %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @post.content %>
+</p>
+
+<%= link_to "delete", @post, method: :delete%>

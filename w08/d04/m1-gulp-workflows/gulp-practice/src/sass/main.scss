@@ -1,0 +1,25 @@
+$color: grey;
+$other-color: red;
+.food-card {
+  background-color: $color;
+  a {
+    font-size: 23px;
+    color: red;
+  }
+}
+
+a {
+  color: $other-color;
+}
+
+p {
+  color: $color;
+}
+
+h1 {
+  color: black;
+}
+
+h3 {
+  color: purple;
+}

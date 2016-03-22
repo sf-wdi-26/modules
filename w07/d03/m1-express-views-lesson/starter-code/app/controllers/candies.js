@@ -1,11 +1,20 @@
 var Candy = require('../models/Candy');
 
 // GET
-
-
+function getAll(req,res) {
+  var candies = req.body
+  Candy.find(candies, function(err, data) {
+    err ? console.log(err) : res.render('layout', {candies: data});
+  })
+}
 // POST
 
-
+function createCandy(req, res) {
+  candy = req.body
+  Candy.create(candy, function(err, data) {
+    err ? console.log(err) : res.redirect('/candies')
+  })
+}
 // GET
 function getCandy(request, response) {
   var id = request.params.id;

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Facebook authentication</title>
+</head>
+<body>
+  <h1>FACEBOOK LOGIN USING PASSPORT</h1>
+  <div>
+      {{#if user }}
+        <h2> Below is the data sent by facebook</h2>
+        <pre>
+          {{user.fb}}
+          {{user.gh}}
+          {{user.google}}
+        </pre>
+        <a href="/logout">Logout</a>
+      {{else}}
+        <a href="/auth/facebook"> Login with Facebook </a>
+        <p> OR </p>
+        <a href="/auth/github"> Login with GitHub </a>
+        <p> OR </p>
+        <a href="/auth/google"> Login with Google </a>
+      {{/if}}
+  </div>
+</body>
+</html>

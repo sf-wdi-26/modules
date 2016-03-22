@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+  <script type="text/javascript" src="./bower_components/angular/angular.js"></script>
+
+   <link rel="stylesheet" href="./bower_components/bootstrap-css-only/css/bootstrap.css">
+
+  <script type="text/javascript" src="app/app.js"></script>
+
+  <!-- custom filter -->
+  <script type="text/javascript" src="reverseFilter.js"></script>
+
+
+</head>
+<body ng-app="ngFun">
+
+<div ng-controller="PokemonController">
+  <h1> {{ catchphrase | uppercase}} </h1>
+
+  <h1> Trainer: {{trainer.name || "Misty"}} </h1>
+  <span>Enter your name:</span>
+
+  <input ng-model="trainer.name" placeholder="Enter trainer name" />
+  <input ng-model="searchPoke" placeholder="search a poke" />
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <td>Ndex</td>
+        <td>Name</td>
+        <td>Type</td>
+        <td>Nemesis</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="poke in pokemon | orderBy: 'Ndex' | filter: searchPoke" >
+        <td> {{poke.Ndex }} </td>
+        <td> {{poke.name }} </td>
+        <td> {{poke.type }} </td>
+        <td> {{poke.name | reverse }} </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- controllers -->
+<script src="./controllers/PokemonController.js"></script>
+</body>
+</html>
+

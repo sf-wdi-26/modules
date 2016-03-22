@@ -1,0 +1,12 @@
+<h1>Records#index</h1>
+<p>Find me in app/views/records/index.html.erb</p>
+<h1>Rock 'n Rails!</h1>
+<% @records.each do |record| %>
+  <p>Title: <%= record.title %></p>
+  <p>Artist: <%= record.artist %></p>
+  <img src="<%= record.cover_art %>">
+  <!-- link to a show page -->
+  <br>
+  <%= link_to "Show page", record_path(record) %>
+  <a href = '/records/<%= record.id %>' data-method='delete'> Delete </a>
+<% end %>

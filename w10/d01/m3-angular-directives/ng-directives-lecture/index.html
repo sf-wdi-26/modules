@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en" ng-app="gaBook">
+<head>
+  <meta charset="UTF-8">
+  <title>Instructor List</title>
+
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="app.js"></script>
+</head>
+
+<body ng-app="gaBook">
+  <div ng-controller="InstructorController">
+    <!--  Traverses $scope.students in app.js controller -->
+    <div ng-repeat="instructor in instructors | orderBy: 'cohort' ">
+     <instructor-card> </instructor-card>
+    </div>
+  </div>
+
+  <!-- Controllers -->
+  <script type="text/javascript" src="./controllers/InstructorController.js"></script>
+
+   <!-- Directives -->
+    <script src="directives/InstructorCard.js"></script>
+</body>
+</html>

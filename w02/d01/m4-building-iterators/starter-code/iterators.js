@@ -14,6 +14,10 @@ var o_o = {
    		=> ["words", "are", "here"]
     	```
     */
+
+    for (var i = 0; i <= collection.length; i++) {
+      callback(collection[i]);
+    };
   },
   map: function(collection, callback){
     /*
@@ -28,6 +32,13 @@ var o_o = {
 			=> [2,3,4]
     	```
     */
+
+    var newArray = [];
+    for (var i = 0; i <= collection.length; i++) {
+        newArray.push(callback(collection[i]));
+    };
+        return newArray;
+
   },
   filter: function(collection, callback) {
     /*
@@ -42,5 +53,15 @@ var o_o = {
     	=> [2,4,6,8]
     	```
     */
+
+    var anotherNewArray = []
+    for (var i = 0; i < collection.length; i++) {
+        // if (callback == true) 
+
+        if (callback(collection[i])) {
+            anotherNewArray.push(collection[i]));
+        }
+    };
+    return anotherNewArray;
   }
 };

@@ -1,3 +1,7 @@
 development:
   adapter: postgresql
+<<<<<<< HEAD
   database: tunr_development
+=======
+  database: tunr_development
+>>>>>>> f7b686b460ddca1cb9658b2176604a39f3b51af9

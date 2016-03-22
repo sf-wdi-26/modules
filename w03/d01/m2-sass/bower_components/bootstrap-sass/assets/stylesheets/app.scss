@@ -1,0 +1,15 @@
+@import "./bootstrap";
+@import "bootstrap/variables";
+
+.text-center {
+    background-color: #eee;
+    h1 {
+        font-size: 1.4em;
+        color: #666;
+        a {
+            color: #05f; 
+            text-decoration: underline;
+        }
+    }
+}
+
