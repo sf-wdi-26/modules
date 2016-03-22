@@ -20,7 +20,7 @@ You'll be making an in-browser [hang-man game](https://en.wikipedia.org/wiki/Han
     * `ng-repeat` to visualize a collection
     * `ng-change` to fire an event
 
-## Wireframes 4U
+## Mockup of End Result
 
 ![screenshot](./imgs/sample-solution.png)
 
