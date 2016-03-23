@@ -74,7 +74,7 @@ showing the new data. This means that in most cases one never has to write a cal
 action methods.
 ```
 
-##Challenges
+##Excercise: We Do
 Refactor your Infamous Criminals app from yesterday to use $resource!
 
 ##Links
