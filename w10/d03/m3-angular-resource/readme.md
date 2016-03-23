@@ -79,10 +79,15 @@ Refactor your Infamous Criminals app from yesterday to use $resource!
 
 Setup:
 1. The $resource service doesn’t come bundled with the main Angular script. Run bower install --save angular-resource.
+
 2. Add a link to the angular-resource module in your index.html (BELOW angular.js!):
-  <script src="bower_components/angular-resource/angular-resource.min.js"></script>
+
+ ` <script src="bower_components/angular-resource/angular-resource.min.js"></script>`
+ 
 3. Now you need to load the $resource module into your application.
+
   `angular.module('app', [..., 'ngResource']);`
+  
 4. In the application directory run a local server:
 
 ```bash
