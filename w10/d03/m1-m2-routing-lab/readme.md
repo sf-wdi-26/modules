@@ -111,7 +111,7 @@ Add, or uncomment, the following in your route configuration so that we don't ha
 
 Now instead of linking to `#/wines/1424` we can link to "/wines/1424".
 
-### Wine Show Challege
+### Wine Show Challenge
 To setup a `wines#show` route, we need to first figure out how to capture the id parameter in the URL.
 
 For each of your wines on the `wines#index` page, let's add a link:
