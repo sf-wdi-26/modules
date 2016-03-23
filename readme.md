@@ -29,7 +29,7 @@ Time | Day 1                                 | Day 2                            
 [10-3A]: w10/d03/m1-m2-routing-lab/ "Routing"
 [10-3B]: w10/d03/m1-m2-routing-lab/ "Wine App"
 [10-3C]: w10/d03/m3-angular-resource/ "ngResource"
-[10-3D]: # "Book App"
+[10-3D]: https://github.com/sf-wdi-26/angular_book_app "Book App"
 [10-3E]: # "reading"
 
 [10-4A]: # "MEAN Stack"
