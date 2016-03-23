@@ -26,8 +26,8 @@ Time | Day 1                                 | Day 2                            
 [10-2D]: w10/d02/m4-http-lab "$http lab"
 [10-2E]: w10/readings/ui-router.md "ui-router"
 
-[10-3A]: # "Routing"
-[10-3B]: # "Wine App"
+[10-3A]: w10/d03/m1-m2-routing-lab/ "Routing"
+[10-3B]: w10/d03/m1-m2-routing-lab/ "Wine App"
 [10-3C]: # "ngResource"
 [10-3D]: # "Book App"
 [10-3E]: # "reading"
