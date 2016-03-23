@@ -10,7 +10,7 @@ Time | Day 1                                 | Day 2                            
 ----- | --------------------------------      | -------------------------------------               | ------------------------------------               | ----------------------------------------  | -----------------------------------
 **9:00am Module 1** | [Intro to Angular (Ilias)][10-1A] | [Angular Hangman (Ilias)][10-2A] | [Routing (Ben)][10-3A] | [MEAN (Alex & Dani)][10-4A] | [Review][10-5A]
 **10:30am Module 2** |[Angular LAB (Ilias)][10-1B] | [Angular Hangman (Ilias)][10-2B] | [Wine App (Ben)][10-3B] | [MEAN ToDo (Alex & Dani)][10-4B] | [Questions in a Hat (Group)][10-5B]
-**1:30pm Module 3** |[Directives (Ben)][10-1C] | [$http and promises (Alex)][10-2C] | [Resources (Alex)][10-3C] | [ngAnimate (Ben)][10-4C] | [Outcomes][10-5C]
+**1:30pm Module 3** |[Directives (Ben)][10-1C] | [$http and promises (Alex)][10-2C] | [$resource (Alex)][10-3C] | [ngAnimate (Ben)][10-4C] | [Outcomes][10-5C]
 **3:00pm Module 4** |[Movie App (Ben)][10-1D] | [$http LAB (Alex)][10-2D] | [Book App (Alex)][10-3D] | [Firebase (Ilias)][10-4D] | [Rapid Prototyping][10-5D]
 **Homework** |[Movie App (cont'd)][10-1E] | [Reading: ui-router][10-2E] | [Finish Labs][10-3E] | [Finish Labs][10-4E] | [Rapid Prototyping and Lightning Talk Research][10-5E]
 
