@@ -59,7 +59,19 @@ app.controller('WineController',function($scope, Wine) {
 
 From the Angular Docs:
 ```
-It is important to realize that invoking a $resource object method immediately returns an empty reference (object or array depending on isArray). Once the data is returned from the server the existing reference is populated with the actual data. This is a useful trick since usually the resource is assigned to a model which is then rendered by the view. Having an empty object results in no rendering, once the data arrives from the server then the object is populated with the data and the view automatically re-renders itself showing the new data. This means that in most cases one never has to write a callback function for the action methods.
+It is important to realize that invoking a $resource object method immediately returns an empty reference 
+
+(object or array depending on isArray). Once the data is returned from the server the existing reference is 
+
+populated with the actual data. This is a useful trick since usually the resource is assigned to a model 
+
+which is then rendered by the view. Having an empty object results in no rendering, once the data arrives 
+
+from the server then the object is populated with the data and the view automatically re-renders itself 
+
+showing the new data. This means that in most cases one never has to write a callback function for the 
+
+action methods.
 ```
 
 ##Challenges
@@ -67,4 +79,5 @@ Refactor your Infamous Criminals app from yesterday to use $resource!
 
 ##Links
 [Angular $resource docs](https://docs.angularjs.org/api/ngResource/service/$resource)
+
 [CRUD using $resource](http://www.sitepoint.com/creating-crud-app-minutes-angulars-resource/)
