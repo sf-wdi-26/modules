@@ -78,6 +78,7 @@ action methods.
 Refactor your Infamous Criminals app from yesterday to use $resource!
 
 Setup:
+
 1. The $resource service doesn’t come bundled with the main Angular script. Run bower install --save angular-resource.
 
 2. Add a link to the angular-resource module in your index.html (BELOW angular.js!):
