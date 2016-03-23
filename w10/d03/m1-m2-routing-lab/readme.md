@@ -38,7 +38,7 @@ A Single Page App needs a way of responding to user navigation. In order to perf
 1. Include `angular-route`:
     * Run `bower install -s angular-route` in your terminal.
     * Go to `index.html` and uncomment the angular-route script.
-    * Add an `ng-route` attribute to the `div` on `index.html#23`.
+    * Add an `ng-view` attribute to the `div` on `index.html`, line 23.
 2. Configure your routes:
     * In `app.js`, we need to add the `ngRoute` module:
 
@@ -143,7 +143,7 @@ app.controller('WinesShowCtrl', function ($scope, WineService, $routeParams) {
 });
 ```
 
-Can you get it working now that you know how to grab the corret `id`? How would you display only that individual wine?
+Can you get it working now that you know how to grab the correct `id`? How would you display only that individual wine?
 
 ### Stretch: Prettify
 Go crazy. Use Bootstrap to make a fancy index and show page, listing out all the wine info, and showing an image for each of them.
