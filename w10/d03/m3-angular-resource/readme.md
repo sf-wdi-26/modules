@@ -3,7 +3,7 @@
 | Learning Objectives |
 | :--- |
 | Review $http
-| Refactor $http using $resource in a service factory |
+| Refactor $http using $resource in a factory |
 
 ##$http Review
 
