@@ -1,0 +1,22 @@
+{
+  "name": "m4-ng-firebase",
+  "homepage": "https://github.com/sf-wdi-26/staging",
+  "authors": [
+    "Ilias Tsangaris <iliastsangaris@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.2",
+    "angularfire": "^1.1.4"
+  }
+}
