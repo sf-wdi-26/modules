@@ -5,14 +5,9 @@
 - Animate elements with CSS transitions or keyframe animations (see Lesson 1)
 - Learn how to do animations _the Angular way_ (see Lesson 2)
 
-There are two mini-lessons for today, plus homework for extra practice.
+There are two mini-lessons for today:
 
 [LESSON 1 LINK](https://github.com/sf-wdi-26/angular-ui-practice)
 
 [LESSON 2 LINK](https://github.com/sf-wdi-26/angular-animations)
 
-###HOMEWORK
-
-1) Finish the [MEAN ToDo lab](https://github.com/sf-wdi-26/mean_todo) from this mornings module! 
-
-2) Use the above lesson links to add animations to the MEAN ToDo lab. Feel free to take is as far as you want.
