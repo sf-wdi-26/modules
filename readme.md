@@ -36,7 +36,7 @@ Time | Day 1                                 | Day 2                            
 [10-4B]: https://github.com/sf-wdi-26/mean_todo "MEAN ToDo"
 [10-4C]: w10/d04/m3-animate/ "Animations"
 [10-4D]: w10/d04/m4-ng-firebase "Firebase"
-[10-4E]: w10/d04/m3-animate/ "Animations"
+[10-4E]: https://github.com/sf-wdi-26/modules/blob/master/w10/d04/hw-ui-and-animations/readme.md
 
 [10-5A]: # "Review"
 [10-5B]: # "Rapid Prototyping"
