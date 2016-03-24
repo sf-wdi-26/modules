@@ -32,7 +32,7 @@ Time | Day 1                                 | Day 2                            
 [10-3D]: https://github.com/sf-wdi-26/angular_book_app "Book App"
 [10-3E]: # "reading"
 
-[10-4A]: # "MEAN Stack"
+[10-4A]: w10/d04/m1-intro-MEAN/ "MEAN Stack"
 [10-4B]: # "MEAN ToDo"
 [10-4C]: # "ngAnimate"
 [10-4D]: # "Firebase"
