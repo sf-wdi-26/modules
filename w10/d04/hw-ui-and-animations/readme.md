@@ -1,14 +1,11 @@
+# Animations Homework
 
 ## Exploration and Discovery
+Pick one or more of the activities below for your personal growth and development. Pick any project we've worked on this week and add some animation. Make it awesome! Upload and submit your pull request. We will share in class tomorrow morning!
 
-Pick one or more of the activities below for your personal growth and development. Partner with a friend.
-Finish early? Try another!
+### ngClass
 
-_We will spend time at the end of class sharing our work on the big screen!_
-
-### ngClass - Independent Practice
-
-Now, go crazy. You have 10 minutes - start experimenting with your own `ngClass` expressions:
+Go crazy experimenting with your own `ngClass` expressions:
 
 - Add more class names and booleans as properties of your `ngClass` object string
 - Try `ngClass` inside the `ngRepeat`
@@ -28,6 +25,10 @@ There are a lot of CSS properties to play with and a lot of possibilities.  For 
 - Trying changing both opacity and color when fading in
 - How could you make something fade _out_?
 - Most importantly – **what simple animations could you add to help guide a user to know what to do with this page?** How could you use animation to show them how the interface works?
+
+### Do it the Angular Way!
+
+Follow the tutorial and incorporate your own animations.
 
 ### Add UI-Bootstrap
 
@@ -50,3 +51,14 @@ Try incorporating community-made Angular modules into an existing Angular projec
   * Add the `currentWeather` directive from the Angular Custom Directives <a href="https://github.com/sf-wdi-26/intro-angular-lab/blob/solution/custom-directives.md" target="_blank">reading</a>.
 
   * Add the <a href="https://github.com/allenhwkim/angularjs-google-maps" target="_blank">ngMap</a> directive to display a map in your app centered on SF. **Hint:** <a href="http://allenhwkim.tumblr.com/post/70986888283/google-map-as-the-simplest-way" target="_blank">This blog post</a> has some very helpful examples.
+
+
+### Useful links:
+
+- [The `Applying Animations` step of the official Angular Tutorial](https://docs.angularjs.org/tutorial/step_12)
+- [Angular Developer Guide / Animations](https://docs.angularjs.org/guide/animations)
+- [Angular API Reference / ngAnimate](https://docs.angularjs.org/api/ngAnimate)
+- [Angular ngClass Source Code](https://github.com/angular/angular.js/blob/master/src/ng/directive/ngClass.js)
+- [Angular form validation](https://docs.angularjs.org/guide/forms)
+- [Animate.css Library](https://daneden.github.io/animate.css/)
+- [TweenMax, AKA GreenSock](http://greensock.com/)
