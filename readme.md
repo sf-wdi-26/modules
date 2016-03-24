@@ -33,7 +33,7 @@ Time | Day 1                                 | Day 2                            
 [10-3E]: # "reading"
 
 [10-4A]: w10/d04/m1-intro-MEAN/ "MEAN Stack"
-[10-4B]: # "MEAN ToDo"
+[10-4B]: https://github.com/sf-wdi-26/mean_todo "MEAN ToDo"
 [10-4C]: # "ngAnimate"
 [10-4D]: # "Firebase"
 [10-4E]: # " "
