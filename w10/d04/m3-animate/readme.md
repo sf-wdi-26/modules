@@ -13,6 +13,6 @@ There are two mini-lessons for today, plus homework for extra practice.
 
 ###HOMEWORK
 
-1) Finish the MEAN ToDo lab from this mornings module! 
+1) Finish the [MEAN ToDo lab](https://github.com/sf-wdi-26/mean_todo) from this mornings module! 
 
 2) Use the above lesson links to add animations to the MEAN ToDo lab. Feel free to take is as far as you want.
