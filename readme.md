@@ -42,7 +42,7 @@ Time | Day 1                                 | Day 2                            
 [10-5B]: # "Rapid Prototyping"
 [10-5C]: # "Outcomes"
 [10-5D]: # "Outcomes"
-[10-5E]: # "Weekend Lab"
+[10-5E]: w10/d05/m4-rapid-prototype "Weekend Lab"
 
 
 
