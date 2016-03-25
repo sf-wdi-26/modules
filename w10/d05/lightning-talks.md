@@ -6,7 +6,7 @@ Your goal is to create a 5-6 minute presentation on a topic that is useful to yo
 - How do you use it? Is there a "cheatsheet" you found or made that others can reference?
 - What did you build?
 
-Lightning talks will be on Wednesday morning next week, December 9th.
+Lightning talks will be on Tuesday and Wednesday afternoon next week.
 
 ##Topics:
 Here are some suggestions; you are welcome to add your own:
@@ -45,6 +45,7 @@ Here are some suggestions; you are welcome to add your own:
 - [ ] ES6
 - [ ] Cheerio
 - [ ] Browserify
+- [ ] Hapi.js
 
 **UI Elements and Tools**
 
