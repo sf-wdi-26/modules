@@ -16,9 +16,9 @@ Time | Day 1                                 | Day 2                            
 **Homework** |[Finalize Lightning Talk Prep][11-1E] | [More Lightning Talk Prep][11-2E] | [TBD][11-3E] | [Project 4 Planning][11-4E] | [Project 4][11-5E]
 
 [11-1A]: # " "
-[11-1B]: w11/d01/m2-angular-auth-jwt "Angular JWT Lesson"
-[11-1C]: https://github.com/sf-wdi-26/angular_auth_satellizer "Angular Auth Lab"
-[11-1D]: # " "
+[11-1B]: w11/d01/m2-angular-auth-jwt/links.md "JWT Readings"
+[11-1C]: w11/d01/m2-angular-auth-jwt "Angular Auth Lesson"
+[11-1D]: https://github.com/sf-wdi-26/angular_auth_satellizer "Angular Auth Lab"
 [11-1E]: # " "
 
 [11-2A]: # " "
