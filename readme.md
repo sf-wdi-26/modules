@@ -10,14 +10,14 @@
 Time | Day 1                                 | Day 2                                               | Day 3                                              | Day 4                                     | Day 5
 ----- | --------------------------------      | -------------------------------------               | ------------------------------------               | ----------------------------------------  | -----------------------------------
 **9:00am Module 1** | [Science Fair (Group)][11-1A] | [Rangular (Alex)][11-2A] | [React (Ilias)][11-3A] | [Redux (Ilias)][11-4A] | [Approvals][11-5A]
-**10:30am Module 2** |[JWT (Dani)][11-1B] | [Rangular Lab (Alex)][11-2B] | [React LAB (Ilias)][11-3B] | [Redux Lab (Ilias)][11-4B] | [Approvals][11-5B]
-**1:30pm Module 3** |[Auth w/ Sattelizer (Ben)][11-1C] | [Lightning Talks][11-2C] | [Lightning Talks][11-3C] | [Project 4 Intro][11-4C] | [Outcomes][11-5C]
+**10:30am Module 2** |[JWT (Ben and Dani)][11-1B] | [Rangular Lab (Alex)][11-2B] | [React LAB (Ilias)][11-3B] | [Redux Lab (Ilias)][11-4B] | [Approvals][11-5B]
+**1:30pm Module 3** |[Auth w/ Sattelizer (Ben and Dani)][11-1C] | [Lightning Talks][11-2C] | [Lightning Talks][11-3C] | [Project 4 Intro][11-4C] | [Outcomes][11-5C]
 **3:00pm Module 4** |[LAB (Ben)][11-1D] | [Lightning Talks][11-2D] | [Lightning Talks][11-3D] | [Project 4 Planning][11-4D] | [Outcomes][11-5D]
 **Homework** |[Finalize Lightning Talk Prep][11-1E] | [More Lightning Talk Prep][11-2E] | [TBD][11-3E] | [Project 4 Planning][11-4E] | [Project 4][11-5E]
 
 [11-1A]: # " "
-[11-1B]: # " "
-[11-1C]: # " "
+[11-1B]: w11/d01/m2-angular-auth-jwt "Angular JWT Lesson"
+[11-1C]: https://github.com/sf-wdi-26/angular_auth_satellizer "Angular Auth Lab"
 [11-1D]: # " "
 [11-1E]: # " "
 
