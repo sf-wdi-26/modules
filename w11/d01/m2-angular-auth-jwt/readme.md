@@ -138,9 +138,11 @@ app.config(['$httpProvider', function ($httpProvider) {
 1. Provides methods to authenticate a user with email/password and any OAuth provider. These methods send requests to the server, and when the server responds, Satellizer takes care of saving the JWT to `localStorage`.
 2. Sends the JWT with every request using an **Angular Interceptor**.
 
+<!-- Removed for wdi 26 to postpone lab
 ## Challenges
 
 Work on the <a href="https://github.com/sf-wdi-26/angular_auth_satellizer" target="_blank">Angular Auth Satellizer Challenges</a>.
+-->
 
 ## Resources
 
