@@ -85,8 +85,28 @@ var app = angular.module('myApp', [])
 
 * Head over to [Thinkster.io](https://thinkster.io/angular-rails) and start their tutorial for Angular and Rails. It uses all of the same strategies and patterns we've gone over.
 
-This tutorial is **optional**. Its almost the end of the course and if you have something else you'd rather invest your time on for the rest of the morning, that is up to you.
-To practice how to set up and integrate Angular and Rails work through the "Wiring Everything Up" section. Keep going through to the end to learn and practice Auth using Devise with Angular and Rails.
+This tutorial is **optional**. Its almost the end of the course and if you have something else you'd rather invest your time on for the rest of the morning, that is up to you. This tutorial also is pretty time consuming and a bit challenging. It takes some thinking, not just copy and pasting. Which is great!
+
+To practice how to set up and integrate Angular and Rails work through the "Wiring Everything Up" section. Keep going through to the end to learn and practice Auth using Devise with Angular and Rails. The solution code only takes you through Wiring Everything Up for now. 
+
+If you want to do a simpler version of this tutorial, just skip the comments and upvotes parts and simply add, and delete posts.
+
+#### Gotcha's in this tutorial:
+1. CDN links do not have 'https:' prefix, and will need it to work.
+
+2. It can be a little unclear what they are doing as far as adding things to the angular.module. This tutorial doesn't use the `var app =` pattern, it chains things together. If you get a 'MainCtrl is not a function' error, this might be what is going on. Ask fellow students or an instructor or check the solution-code if you are having a lot of trouble.
+
+3. This tutorial temporarily uses inline templating. This is a bad practice AND a bit confusing. However this is **only temporary**. You will factor these out once you get to the rails part. It will make sense when you get there.
+
+4. Use `python -m SimpleHTTPServer 8000
+`
+
+5. You aren't crazy. The post show page instructions are confusing. Ask for help or check the solution if you need to.
+
+6. Restart your server after bower installs and asset changes.
+
+8. Resolve in Angular is new to you and can be confusing. [Here](http://www.undefinednull.com/2014/02/17/resolve-in-angularjs-routes-explained-as-story/)'s a nice resource explaining it.
+7. In Wiring Everything Up, make sure you return 'o' at the **end** of the flapperNews factory or you will run into all kinds of problems by returning the object too soon.
 
 ### Solution
 
