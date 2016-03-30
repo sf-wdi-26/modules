@@ -442,9 +442,6 @@ class Comment extends React.Component {
 ```
 </details>
 
-
-# Break!
-
 ## State
 
 We already went over properties.
@@ -489,7 +486,7 @@ const MoodTracker = React.createClass({
 
   increaseMood() {
     this.setState({
-      points: newPoints
+      points: this.state.points + 1
     })
   },
   render() {
