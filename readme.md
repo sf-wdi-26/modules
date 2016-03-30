@@ -21,14 +21,14 @@ Time | Day 1                                 | Day 2                            
 [11-1D]: https://github.com/sf-wdi-26/angular_auth_satellizer "Angular Auth Lab"
 [11-1E]: # " "
 
-[11-2A]: w11/d02/m1-react " "
-[11-2B]: w11/d02/m1-react " "
+[11-2A]: w11/d02/m1-react "React Lesson"
+[11-2B]: w11/d02/m1-react "React Lesson"
 [11-2C]: # " "
 [11-2D]: # " "
 [11-2E]: # " "
 
-[11-3A]: # " "
-[11-3B]: # " "
+[11-3A]: /w11/d03/m1-rangular "Rangular Lesson"
+[11-3B]: /w11/d03/m1-rangular "Rangular Lesson"
 [11-3C]: # " "
 [11-3D]: # " "
 [11-3E]: # " "
