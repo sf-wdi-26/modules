@@ -489,7 +489,7 @@ const MoodTracker = React.createClass({
 
   increaseMood() {
     this.setState({
-      points: newPoints
+      points: this.state.points + 1
     })
   },
   render() {
