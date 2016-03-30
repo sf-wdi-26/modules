@@ -442,9 +442,6 @@ class Comment extends React.Component {
 ```
 </details>
 
-
-# Break!
-
 ## State
 
 We already went over properties.
