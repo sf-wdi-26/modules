@@ -15,7 +15,7 @@ Make sure you review your project proposal with your instructor so you can make 
 Your app must:
 
 * **Build a full-stack application** by making your own backend and your own front-end
-* **Have an API of your design**
+* **Consume and/or serve an API**
 * **Have an interactive front-end**, preferably using a modern front-end framework
 * **Be a complete product**, which most likely means multiple relationships and CRUD functionality for at least a couple models
 * **Use a database**, whether that's one we've covered in class or one you want to learn
@@ -50,7 +50,7 @@ Your app must:
 * **Don’t hesitate to write throwaway code** to solve short term problems.
 * **Read the docs for whatever technologies / frameworks / API’s you use**.
 * **Write your code DRY** and **build your APIs RESTful**.
-* **Be consistent with your code style.** You're working in teams, but you're only making one app per team. Make sure it looks like a unified effort.
+* **Be consistent with your code style.** These are individual projects but you will likely incorporate code from another source. Imagine there is a style guide for writing your code--or better yet, write one!
 * **Commit early, commit often.** Don’t be afraid to break something because you can always go back in time to a previous version.
 * **Keep user stories small and well-defined**, and remember – user stories focus on what a user needs, not what development tasks need accomplishing.
 * **Write code another developer would have to ask you about**. Do your naming conventions make sense? Would another developer be able to look at your app and understand what everything is?
