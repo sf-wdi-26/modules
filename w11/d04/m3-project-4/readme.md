@@ -53,7 +53,7 @@ Your app must:
 * **Be consistent with your code style.** You're working in teams, but you're only making one app per team. Make sure it looks like a unified effort.
 * **Commit early, commit often.** Don’t be afraid to break something because you can always go back in time to a previous version.
 * **Keep user stories small and well-defined**, and remember – user stories focus on what a user needs, not what development tasks need accomplishing.
-* **Write code another developer wouldn't have to ask you about**. Do your naming conventions make sense? Would another developer be able to look at your app and understand what everything is?
+* **Write code another developer would have to ask you about**. Do your naming conventions make sense? Would another developer be able to look at your app and understand what everything is?
 * **Make it all well-formatted.** Are you indenting, consistently? Can we find the start and end of every div, curly brace, etc?
 * **Comment your code.** Will someone understand what is going on in each block or function? Even if it's obvious, explaining the what & why means someone else can pick it up and get it.
 * **Write pseudocode before you write actual code.** Thinking through the logic of something helps.
