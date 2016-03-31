@@ -35,7 +35,7 @@ Time | Day 1                                 | Day 2                            
 
 [11-4A]: w11/d04/m1-redux " "
 [11-4B]: w11/d04/m1-redux " "
-[11-4C]: # " "
+[11-4C]: w11/d04/m3-project-4 "Project 4"
 [11-4D]: # " "
 [11-4E]: # " "
 
