@@ -1,7 +1,14 @@
 # Animations Homework
 
+###HOMEWORK
+
+1) Finish the [MEAN ToDo lab](https://github.com/sf-wdi-26/mean_todo) from this mornings module! 
+
+2) Do the following on your MEAN ToDo lab once you're finished.
+
+
 ## Exploration and Discovery
-Pick one or more of the activities below for your personal growth and development. Pick any project we've worked on this week and add some animation. Make it awesome! Upload and submit your pull request. We will share in class tomorrow morning!
+Pick one or more of the activities below for your personal growth and development. We will share in class tomorrow morning!
 
 ### ngClass
 

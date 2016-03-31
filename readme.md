@@ -4,6 +4,49 @@
 ## Unit 4: MEAN Stack
 
 
+
+#### Week 11: More MEAN
+
+Time | Day 1                                 | Day 2                                               | Day 3                                              | Day 4                                     | Day 5
+----- | --------------------------------      | -------------------------------------               | ------------------------------------               | ----------------------------------------  | -----------------------------------
+**9:00am Module 1** | [Science Fair (Group)][11-1A] | [React (Ilias)][11-2A] | [Rangular (Alex)][11-3A] | [Redux (Ilias)][11-4A] | [Approvals][11-5A]
+**10:30am Module 2** |[JWT (Ben and Dani)][11-1B] | [React LAB (Ilias)][11-2B] | [Rangular Lab (Alex)][11-3B] | [Redux Lab (Ilias)][11-4B] | [Approvals][11-5B]
+**1:30pm Module 3** |[Auth w/ Sattelizer (Ben and Dani)][11-1C] | [Lightning Talks][11-2C] | [Lightning Talks][11-3C] | [Project 4 Intro][11-4C] | [Outcomes][11-5C]
+**3:00pm Module 4** |[LAB (Ben)][11-1D] | [Lightning Talks][11-2D] | [Lightning Talks][11-3D] | [Project 4 Planning][11-4D] | [Outcomes][11-5D]
+**Homework** |[Finalize Lightning Talk Prep][11-1E] | [More Lightning Talk Prep][11-2E] | [TBD][11-3E] | [Project 4 Planning][11-4E] | [Project 4][11-5E]
+
+[11-1A]: # " "
+[11-1B]: w11/d01/m2-angular-auth-jwt/links.md "JWT Readings"
+[11-1C]: w11/d01/m2-angular-auth-jwt "Angular Auth Lesson"
+[11-1D]: https://github.com/sf-wdi-26/angular_auth_satellizer "Angular Auth Lab"
+[11-1E]: # " "
+
+[11-2A]: w11/d02/m1-react "React Lesson"
+[11-2B]: w11/d02/m1-react "React Lesson"
+[11-2C]: # " "
+[11-2D]: # " "
+[11-2E]: # " "
+
+[11-3A]: /w11/d03/m1-rangular "Rangular Lesson"
+[11-3B]: /w11/d03/m1-rangular "Rangular Lesson"
+[11-3C]: # " "
+[11-3D]: # " "
+[11-3E]: # " "
+
+[11-4A]: w11/d04/m1-redux " "
+[11-4B]: w11/d04/m1-redux " "
+[11-4C]: # " "
+[11-4D]: # " "
+[11-4E]: # " "
+
+[11-5A]: # " "
+[11-5B]: # " "
+[11-5C]: # " "
+[11-5D]: # " "
+[11-5E]: # " "
+
+
+
 #### Week 10: Intro Angular
 
 Time | Day 1                                 | Day 2                                               | Day 3                                              | Day 4                                     | Day 5
@@ -12,7 +55,7 @@ Time | Day 1                                 | Day 2                            
 **10:30am Module 2** |[Angular LAB (Ilias)][10-1B] | [Angular Hangman (Ilias)][10-2B] | [Wine App (Ben)][10-3B] | [MEAN ToDo (Alex & Dani)][10-4B] | [Questions in a Hat (Group)][10-5B]
 **1:30pm Module 3** |[Directives (Ben)][10-1C] | [$http and promises (Alex)][10-2C] | [$resource (Alex)][10-3C] | [ngAnimate (Ben)][10-4C] | [Outcomes][10-5C]
 **3:00pm Module 4** |[Movie App (Ben)][10-1D] | [$http LAB (Alex)][10-2D] | [Book App (Alex)][10-3D] | [Firebase (Ilias)][10-4D] | [Rapid Prototyping][10-5D]
-**Homework** |[Movie App (cont'd)][10-1E] | [Reading: ui-router][10-2E] | [Finish Labs][10-3E] | [Finish Labs][10-4E] | [Rapid Prototyping and Lightning Talk Research][10-5E]
+**Homework** |[Movie App (cont'd)][10-1E] | [Reading: ui-router][10-2E] | [Finish Labs][10-3E] | [Finish Labs][10-4E] | [Rapid Prototyping][10-5E] and [Lightning Talk Research](/w10/d05/lightning-talks.md)
 
 [10-1A]: w10/d01/m1-angular-intro/ "Intro to Angular"
 [10-1B]: w10/d01/m1-angular-intro/ "Intro to Angular Lab"
@@ -36,13 +79,13 @@ Time | Day 1                                 | Day 2                            
 [10-4B]: https://github.com/sf-wdi-26/mean_todo "MEAN ToDo"
 [10-4C]: w10/d04/m3-animate/ "Animations"
 [10-4D]: w10/d04/m4-ng-firebase "Firebase"
-[10-4E]: # "Homework"
+[10-4E]: https://github.com/sf-wdi-26/modules/blob/master/w10/d04/hw-ui-and-animations/readme.md
 
 [10-5A]: # "Review"
 [10-5B]: # "Rapid Prototyping"
 [10-5C]: # "Outcomes"
-[10-5D]: # "Outcomes"
-[10-5E]: # "Weekend Lab"
+[10-5D]: w10/d05/m4-rapid-prototype "Outcomes"
+[10-5E]: w10/d05/m4-rapid-prototype "Weekend Lab"
 
 
 
@@ -393,4 +436,3 @@ Time | Monday - Wednesday | Thursday | Friday |
 3:00 | Module 4 | Module 3 | Module 4 |
 4:15 | Break | Break | Break |
 4:30 | One-on-ones | One-on-ones | *Retrospective* |
-
