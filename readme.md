@@ -4,6 +4,47 @@
 ## Unit 4: MEAN Stack
 
 
+#### Week 12: Project 4
+
+Time | Day 1                                 | Day 2                                               | Day 3                                              | Day 4                                     | Day 5
+----- | --------------------------------      | -------------------------------------               | ------------------------------------               | ----------------------------------------  | -----------------------------------
+**9:30am** | [Scrum][12-1A] | [Scrum][12-2A] | [Scrum][12-3A] | [Scrum][12-4A] | [Final Presentations][12-5A]
+**9:45am** | [Project Work][12-1B] | [Project Work][12-2B] | [Project Work][12-3B] | [Project Work][12-4B] | [Final Presentations][12-5B]  
+**11am** |[Mock Interviews][12-1C] | [Mock Interviews][12-2C] | [Mock Interviews][12-3C] | [Mock Interviews][12-4C] | [Final Presentations][12-5C]
+**1:30pm - 5pm** |[Project Work][12-1D] | [Project Work][12-2D] | [Project Work][12-3D] | [Project Work][12-4D] | [Final Presentations][12-5D]
+**Homework** |[Project Work][12-1E] | [Project Work][12-2E] | [Project Work][12-3E] | [Project Work][12-4E] | [ Happy Hour][12-5E]
+
+[12-1A]: # " "
+[12-1B]: # " "
+[12-1C]: # " "
+[12-1D]: # " "
+[12-1E]: # " "
+
+[12-2A]: # " "
+[12-2B]: # " "
+[12-2C]: # " "
+[12-2D]: # " "
+[12-2E]: # " "
+
+[12-3A]: # " "
+[12-3B]: # " "
+[12-3C]: # " "
+[12-3D]: # " "
+[12-3E]: # " "
+
+[12-4A]: # " "
+[12-4B]: # " "
+[12-4C]: # " "
+[12-4D]: # " "
+[12-4E]: # " "
+
+[12-5A]: # " "
+[12-5B]: # " "
+[12-5C]: # " "
+[12-5D]: # " "
+[12-5E]: # " "
+
+
 
 #### Week 11: More MEAN
 
