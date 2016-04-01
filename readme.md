@@ -50,33 +50,33 @@ Time | Day 1                                 | Day 2                            
 
 Time | Day 1                                 | Day 2                                               | Day 3                                              | Day 4                                     | Day 5
 ----- | --------------------------------      | -------------------------------------               | ------------------------------------               | ----------------------------------------  | -----------------------------------
-**9:00am Module 1** | [Science Fair (Group)][11-1A] | [Rangular (Alex)][11-2A] | [React (Ilias)][11-3A] | [Redux (Ilias)][11-4A] | [Approvals][11-5A]
-**10:30am Module 2** |[JWT (Ben and Dani)][11-1B] | [Rangular Lab (Alex)][11-2B] | [React LAB (Ilias)][11-3B] | [Redux Lab (Ilias)][11-4B] | [Approvals][11-5B]
+**9:00am Module 1** | [Science Fair (Group)][11-1A] | [React (Ilias)][11-2A] | [Rangular (Alex)][11-3A] | [Redux (Ilias)][11-4A] | [Approvals][11-5A]
+**10:30am Module 2** |[JWT (Ben and Dani)][11-1B] | [React LAB (Ilias)][11-2B] | [Rangular Lab (Alex)][11-3B] | [Redux Lab (Ilias)][11-4B] | [Approvals][11-5B]
 **1:30pm Module 3** |[Auth w/ Sattelizer (Ben and Dani)][11-1C] | [Lightning Talks][11-2C] | [Lightning Talks][11-3C] | [Project 4 Intro][11-4C] | [Outcomes][11-5C]
 **3:00pm Module 4** |[LAB (Ben)][11-1D] | [Lightning Talks][11-2D] | [Lightning Talks][11-3D] | [Project 4 Planning][11-4D] | [Outcomes][11-5D]
 **Homework** |[Finalize Lightning Talk Prep][11-1E] | [More Lightning Talk Prep][11-2E] | [TBD][11-3E] | [Project 4 Planning][11-4E] | [Project 4][11-5E]
 
 [11-1A]: # " "
-[11-1B]: w11/d01/m2-angular-auth-jwt "Angular JWT Lesson"
-[11-1C]: https://github.com/sf-wdi-26/angular_auth_satellizer "Angular Auth Lab"
-[11-1D]: # " "
+[11-1B]: w11/d01/m2-angular-auth-jwt/links.md "JWT Readings"
+[11-1C]: w11/d01/m2-angular-auth-jwt "Angular Auth Lesson"
+[11-1D]: https://github.com/sf-wdi-26/angular_auth_satellizer "Angular Auth Lab"
 [11-1E]: # " "
 
-[11-2A]: # " "
-[11-2B]: # " "
+[11-2A]: w11/d02/m1-react "React Lesson"
+[11-2B]: w11/d02/m1-react "React Lesson"
 [11-2C]: # " "
 [11-2D]: # " "
 [11-2E]: # " "
 
-[11-3A]: # " "
-[11-3B]: # " "
+[11-3A]: /w11/d03/m1-rangular "Rangular Lesson"
+[11-3B]: /w11/d03/m1-rangular "Rangular Lesson"
 [11-3C]: # " "
 [11-3D]: # " "
 [11-3E]: # " "
 
-[11-4A]: # " "
-[11-4B]: # " "
-[11-4C]: # " "
+[11-4A]: w11/d04/m1-redux " "
+[11-4B]: w11/d04/m1-redux " "
+[11-4C]: w11/d04/m3-project-4 "Project 4"
 [11-4D]: # " "
 [11-4E]: # " "
 
@@ -477,4 +477,3 @@ Time | Monday - Wednesday | Thursday | Friday |
 3:00 | Module 4 | Module 3 | Module 4 |
 4:15 | Break | Break | Break |
 4:30 | One-on-ones | One-on-ones | *Retrospective* |
-

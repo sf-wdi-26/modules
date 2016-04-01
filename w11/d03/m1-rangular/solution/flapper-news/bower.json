@@ -1,0 +1,23 @@
+{
+  "name": "flapper-news",
+  "homepage": "https://github.com/sf-wdi-26/modules",
+  "authors": [
+    "Alex White <awhit012@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.3",
+    "angular-ui-router": "^0.2.18",
+    "bootstrap": "^3.3.6"
+  }
+}
