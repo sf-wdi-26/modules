@@ -13,7 +13,7 @@
 ### Preparation
 *Before this lesson, students should already be able to:*
 
-- Describe briefly what javascript
+- Describe briefly what javascript is
 - Be comfortable with a text editor
 
 
@@ -23,26 +23,26 @@
 From the [Wikipedia](https://en.wikipedia.org/wiki/Data_type):
 
 
-_In computer science and computer programming, a data type or simply type is a classification identifying one of various types of data that determines: the possible values for that type; the operations that can be done on values of that type; the meaning of the data; and the way values of that type can be stored._  
+_In computer science and computer programming, a data type is a classification identifying one of various types of data that determines: the possible values for that type, the operations that can be done on values of that type, the meaning of the data and the way values of that type can be stored._
 
-Data types are really similar across different languages:
+Data types are really similar across many different languages:
 
 | Data Type | Description | Example |
 | --- | --- | --- |
 | Strings | Single words or sentences, surrounded by double or single quotes | `"lots of kittens"`, `'lots of kittens'` |
 | Integers | Whole numbers, with no delimiter. Can optionally have underscores to make large numbers easier to read | `42`, `1024`, `1\_000\_000` |
 | Floats | Decimals, with no delimiter | `3.14`, `3.0` |
-| Booleans | Represents either true or false | `true`, `false` |
+| Booleans | A binary data type representing true or false | `true`, `false` |
 
-We'll elaborate all thes - except Booleans - talk about how they differ in JavaScript, show you some helper methods your given to work with each type, and then, practice the helper methods you are given in JavaScript to manipulate this data.
+We'll elaborate on all of these - except Booleans - talk about how they differ in JavaScript, show you some built-in methods for each type and then give you time to practice some of the methods to manipulate data.
 
 #### Working with data in JavaScript
 
-From the [mozilla developer network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction): "JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements...Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation."
+From the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction): "JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements...Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation."
 
-#### What are we working with? Codealong (20mins)
+#### What are we working with? Codealong (20 min)
 
-For this lesson, we're going to use the Chrome console shell.  Open a chrome window, and type `cmd+alt+j` to open the console.
+For this lesson, we're going to use the Chrome Developer Tools Console shell.  Open a Chrome window and type `cmd+alt+j` to open the console.
 
 #### typeof()
 
@@ -196,14 +196,14 @@ Try your favorite number operators as expressions:
   => 1
 ```
 
-You can also create expressions with strings using addition:
+You can also create expressions with strings using the plus operator `+`:
 
 ```javascript
   "Hello, " + "world!"
   => "Hello, world!"
 ```
 
-This is called **String Concatentation.**
+This is not the same thing as addition. It is another operation called **String Concatentation** using the same symbolic operator.
 
 
 #### Converting Strings to Integers with parseInt() and pasreFloat()
@@ -220,15 +220,34 @@ parseInt("010", 10);
 
 This will be important later when we're taking user input from the web and using it on our server or in our browser to do some type of numeric calculation.
 
+<summary>
+  <details>
+    Try calling `parseInt` to interpret a binary or hexadecimal value or string.
+  </details>
+
+```javascript
+parseInt("fa4542", 16);
+=> 16401730
+
+parseInt("111", 2);
+=> 7
+```
+</summary>
+
 
 Similarly, you can parse floating point numbers using the built-in [`parseFloat()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat) function which uses base 10 always unlike its `parseInt()` cousin.
 
 ```
 parseFloat("11.2");
 => 11.2
+
+parseFloat("1" + Math.PI);
+=> 13.141592653589793
+
 ```
 
-You can also use the unary `+` operator to convert values to numbers:
+
+You can also use the unary `+` operator to convert string values to numbers:
 
 ```javascript
 +"42";
@@ -267,13 +286,13 @@ JavaScript's numeric operators are `+`, `-`, `*`, `/` and `%` and all work as yo
 JavaScript distinguishes between:
 
 - `null` a value that indicates a deliberate non-value
-- `undefined` that indicates an uninitialized value — that is, a value hasn't even been assigned yet
+- `undefined` indicates an uninitialized value — that is, a value that hasn't even been assigned yet
 
 ## Variables and Keywords - Codealong (10 mins)
 
 Variables are used to store data types into the memory of the computer so that they can be referenced later.
 
-#### Always use var!
+#### Always use var (unless you are using ES6, aka ES2015)
 
 New variables in JavaScript are declared using the [`var`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var "/en/JavaScript/Reference/Statements/var") keyword.
 
@@ -457,7 +476,7 @@ Arrays come with a number of methods. Here's a list of some popular helpers:
 
 - `a.unshift([item])` - Prepends items to the start of the array.
 
-Remember, though, you'll never remember _every_ method.  Explore the the [full documentation for array methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) and other helper methods given to you for particular objects.
+Remember, though, you'll never remember _every_ method.  Explore the the [full documentation for array methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) and other helper methods given to you for different objects (like Math, Date, String, et c).
 
 ## Iterating through an array - Codealong (10 mins)
 
