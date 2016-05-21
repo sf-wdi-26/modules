@@ -92,7 +92,7 @@ Instead of sending some text when we hit our site let's have it serve an index p
 ```
 npm install ejs --save
 ```
-You can install from a project with:
+You can uninstall from a project with:
 
 ```
 npm uninstall ejs --save
@@ -380,6 +380,6 @@ Also, test your application with `cURL` requests to each of the RESTful endpoint
 ## Conclusion (5 mins)
 A framework can be overwhelming at the start, after a couple of days you will see how it makes your life easier.  We will work more on how to make RESTful controllers, this is just an introduction.
 
-- What is Middleware and why is it helpful in Exrpess?
+- What is Middleware and why is it helpful in Express?
 - Explain how body-parser helps decode information in your application.
 - Identify some similarities and differences between Express and Sinatra.
