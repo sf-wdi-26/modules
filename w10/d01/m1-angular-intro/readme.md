@@ -65,7 +65,7 @@ Great, we're up and running!
 
 Angular creates it's views by templating directly into HTML with expressions. This is it's declarative way of building the UI.
 
-Try writing any regular javascript expression in side double curly brackets, such as: `{{ <someExpression> }}` and see what your HTML evaluates to. What happens what you express:
+Try writing any regular javascript expression inside double curly brackets, such as: `{{ __someExpression__ }}` and see what your HTML evaluates to. What happens when you express:
 
 * `4 * 4`
 * `"hola!".toUpperCase()`
@@ -97,7 +97,7 @@ index.html
 </div>
 ```
 
-In order to pass data or behavior to our HTMl view we need to use the object `$scope`. It is the interface to pass data and behavior into our views. Both the View and Controller share access to the $scope object.
+In order to pass data or behavior to our HTML view we need to use the `$scope` object. `$scope` is Angular's interface to pass data and behavior to our views. Both the View and Controller share access to the `$scope` object.
 
 ![scope](http://devgirl.org/wp-content/uploads/2013/03/concepts-controller.png)
 
@@ -147,7 +147,7 @@ That's cool, but it doesn't look very great. What if we could format our data so
 
 ###Challenge
 
-* Use an Angular [filter](https://docs.angularjs.org/guide/filter) to render the data as JSON! Here are a [list](https://docs.angularjs.org/api/ng/filter) of options you can implement.
+* Use an Angular [filter](https://docs.angularjs.org/guide/filter) to render the data as JSON! Here is a [list](https://docs.angularjs.org/api/ng/filter) of options you can implement.
 
 * Pass a new variable `catchphrase` from the Controller to the View. Set it's value as "gotta catch 'em all!" and use an angular filter to uppercase it in the View.
 
@@ -173,7 +173,7 @@ A few worth introducing:
 
 ###ng-Model
 
-Our user wants to be able to input their name in a field, so that the application acknowledges them as the trainer for these Pokemon.
+Our user wants to be able to input their name in a field so that the application acknowledges them as the trainer for these Pokemon.
 
 Above our list of Pokemon, but still inside our `PokemonCtrl` `div` tag, let's create an input field for our trainers name.
 
@@ -218,9 +218,9 @@ Additionally if we want the value of the `trainer.name` variable to be printed o
 
 `ngRepeat` is a very useful directive for iterating through a collection to render each item.
 
-For example if we wanted to render a list of of the todos we could set the directive equal `ng-repeat` to `"todo in todos"`.
+For example if we wanted to render a list of todos we could set the directive `ng-repeat` to equal `"todo in todos"`.
 
-Let's say we want to print out an unordered list (`ul`) of many pokemon, where each of their name's is printed out inside a list item (`li`). Given we've agreed to use `poke` as the singular form of `pokemon`, we could say something along the lines of:
+Let's say we want to print out an unordered list (`ul`) of many pokemon, where each of their names is printed out inside a list item (`li`). Given we've agreed to use `poke` as the singular form of `pokemon`, we could say something along the lines of:
 
 ```html
 <ul>
@@ -266,12 +266,12 @@ app.filter('reverse', function() {
 
 ###Challenge
 
-* Create a new column in your table called "Nemesis" and populate it with that pokemon's name reversed (some google searching may be required).
+* Create a new column in your table called "Nemesis" and populate it with that pokemon's name reversed (some Google searching may be required).
 * Hint: Don't forget to require your custom filter as a dependency in your controller.
 
 ##Pro-tip: Minification in Angular
 
-Remember the main goal in [minification](https://en.wikipedia.org/wiki/Minification_(programming)) is to save space and deliver the file quickly. A variable `myVariableName` may be renamed to `A` during minification. A computer doesn't care what the name is as long as they are consistent.
+Remember the main goal in [minification](https://en.wikipedia.org/wiki/Minification_(programming)) is to save space and deliver the file quickly. A variable `myVariableName` may be renamed to `a` during minification. A computer doesn't care what the name is as long as they are consistent.
 
 However, if you ever minify your angular code when delivering it to a client your variables will be renamed and this may cause problems because of this variable renaming. Currently, we're used to seeing code like this.
 
@@ -291,7 +291,7 @@ PokemonCtrl.$inject = ['$scope', '$http'];
 app.controller('PokemonCtrl', PokemonCtrl);
 ```
 
-**or** we can pass our controller an array that contains an array of our dependencies as strings and a function, whose arguments have a 1 to 1 correspondence to the array's items. This is the more common method.
+**or** we can pass our controller an array that contains an array of our dependencies as strings and a function, whose arguments have a 1-to-1 correspondence to the array's items. This is the more common method.
 
 ```js
 app.controller('PokemonCtrl', ['$scope', '$http', function($scope, $http) {
