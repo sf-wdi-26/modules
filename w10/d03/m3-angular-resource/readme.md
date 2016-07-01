@@ -43,7 +43,7 @@ Of course these aren't routes, they are AJAX requests. Here's an example:
 
 ```js
 app.factory("Wine", function($resource) {
-  return $resource("http://daretodiscover.herokuapp.com/wines/:id")
+  return $resource("http://daretoexplore.herokuapp.com/wines/:id")
 });
 
 app.controller('WineController',function($scope, Wine) {
